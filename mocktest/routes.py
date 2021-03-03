@@ -86,11 +86,15 @@ def account():
         if form.password.data:
             hashed_password = bcrypt.generate_password_hash(form.password.data).decode('utf-8')
             current_user.password = hashed_password  
+        if form.phoneno.data:
+            current_user.phoneno = form.phoneno.data
         db.session.commit()
         flash('Your account was successfully updated!', 'success')  
         return redirect(url_for('account'))
     elif request.method == 'GET':
         form.username.data = current_user.username
+        if not current_user.phoneno=='None':
+            form.phoneno.data = current_user.phoneno
     image_file = url_for('static', filename='profile_pics/' + current_user.image_file)
     return render_template('account.html', title='Account', image_file = image_file, form=form)
 

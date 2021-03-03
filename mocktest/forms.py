@@ -1,7 +1,8 @@
+import phonenumbers
 from flask_wtf import FlaskForm
 from flask_wtf.file import FileField, FileAllowed
 from wtforms import StringField, PasswordField, SubmitField, BooleanField, RadioField
-from wtforms.validators import DataRequired, Length, Email, EqualTo, ValidationError, InputRequired
+from wtforms.validators import DataRequired, Length, Email, EqualTo, ValidationError
 from mocktest.models import User
 from flask_login import current_user
 
@@ -39,7 +40,9 @@ class AccountUpdateForm(FlaskForm):
     password = PasswordField('Password')
     confirm_password = PasswordField('Confirm Password',
                                      validators=[EqualTo('password')])
-    picture = FileField('Update Profile Picture', validators=[FileAllowed(['jpg','png','jpeg'])])                                
+    picture = FileField('Update Profile Picture', validators=[FileAllowed(['jpg','png','jpeg'])])    
+    phoneno = StringField('Contact No (Enter country code)')  
+    address = StringField('Enter Your Address')                          
     submit = SubmitField('Update')
 
     def validate_username(self, username):
@@ -47,12 +50,18 @@ class AccountUpdateForm(FlaskForm):
             user = User.query.filter_by(username = username.data).first()
             if user:
                 raise ValidationError('Username already taken!')
-
-    def validate_password(self, password):
-        if password.data != current_user.password:
-            user = User.query.filter_by(password = password.data).first()
-            if user:
-                raise ValidationError('Email already exists!')
+    
+    def validate_phoneno(self, phoneno):
+        try:
+            p = phonenumbers.parse(phoneno.data)
+            if not phonenumbers.is_valid_number(p):
+                raise ValueError()
+            elif phoneno.data != current_user.phoneno:
+                user = User.query.filter_by(phoneno = phoneno.data).first()
+                if user:
+                    raise ValidationError('Contact no already in use!')
+        except (phonenumbers.phonenumberutil.NumberParseException, ValueError):
+            raise ValidationError('Invalid phone number')
 
 class RequestResetForm(FlaskForm):
     email = StringField('Email',
