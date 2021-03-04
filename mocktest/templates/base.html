@@ -30,18 +30,18 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarToggle">
             <div class="navbar-nav mr-auto">
-              <a class="nav-item nav-link active" href="{{ url_for('home') }}">Home</a>
+              <a class="nav-item nav-link active" href="{{ url_for('main.home') }}">Home</a>
             </div>
             <!-- Navbar Right Side -->
             <div class="navbar-nav">
               {% if current_user.is_authenticated %}
-              <a class="nav-item nav-link" href="{{ url_for('java') }}">Java</a>
-              <a class="nav-item nav-link" href="{{ url_for('python') }}">Python</a>
-              <a class="nav-item nav-link" href="{{ url_for('account') }}">Account</a>
-              <a class="nav-item nav-link" href="{{ url_for('logout') }}">Logout</a>
+              <a class="nav-item nav-link" href="{{ url_for('tests.java') }}">Java</a>
+              <a class="nav-item nav-link" href="{{ url_for('tests.python') }}">Python</a>
+              <a class="nav-item nav-link" href="{{ url_for('users.account') }}">Account</a>
+              <a class="nav-item nav-link" href="{{ url_for('users.logout') }}">Logout</a>
               {% else %}
-              <a class="nav-item nav-link" href="{{ url_for('login') }}">Login</a>
-              <a class="nav-item nav-link" href="{{ url_for('register') }}">Register</a>
+              <a class="nav-item nav-link" href="{{ url_for('users.login') }}">Login</a>
+              <a class="nav-item nav-link" href="{{ url_for('users.register') }}">Register</a>
               {% endif %}
             </div>
           </div>
@@ -67,7 +67,7 @@
           <div class="col">
             <h1 class="h1 ml-5">JAVA</h1>
             <p class="lead" style="font-weight: 500;">A programming language</p>
-            <a href="{{ url_for('java') }}" type="button" class="btn btn-outline-success ml-5 mb-4">Practice <i class="bi bi-caret-right-fill"></i></a>
+            <a href="{{ url_for('tests.java') }}" type="button" class="btn btn-outline-success ml-5 mb-4">Practice <i class="bi bi-caret-right-fill"></i></a>
           </div>
           <div class="col">
             <div class="card">
@@ -109,7 +109,7 @@
           <div class="col">
             <h1 class="h1 ml-4">PYTHON</h1>
             <p class="lead" style="font-weight: 500;">A programming language</p>
-            <a href="{{ url_for('python') }}" type="button" class="btn btn-outline-success ml-5">Practice <i class="bi bi-caret-right-fill"></i></a>
+            <a href="{{ url_for('tests.python') }}" type="button" class="btn btn-outline-success ml-5">Practice <i class="bi bi-caret-right-fill"></i></a>
           </div>
           </div>
         </div>

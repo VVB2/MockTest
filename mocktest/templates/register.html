@@ -11,12 +11,12 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarToggle">
           <div class="navbar-nav mr-auto">
-            <a class="nav-item nav-link" href="{{ url_for('home') }}">Home</a>
+            <a class="nav-item nav-link" href="{{ url_for('main.home') }}">Home</a>
           </div>
           <!-- Navbar Right Side -->
           <div class="navbar-nav">
-            <a class="nav-item nav-link" href="{{ url_for('login') }}">Login</a>
-            <a class="nav-item nav-link active" href="{{ url_for('register') }}">Register</a>
+            <a class="nav-item nav-link" href="{{ url_for('users.login') }}">Login</a>
+            <a class="nav-item nav-link active" href="{{ url_for('users.register') }}">Register</a>
           </div>
         </div>
       </div>
@@ -92,7 +92,7 @@
     </div>
     <div class="border-top pt-3">
         <small class="text-muted">
-            Already Have An Account? <a class="ml-2" href="{{ url_for('login') }}">Sign In</a>
+            Already Have An Account? <a class="ml-2" href="{{ url_for('users.login') }}">Sign In</a>
         </small>
     </div>
 {% endblock content %}

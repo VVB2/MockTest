@@ -11,12 +11,12 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarToggle">
           <div class="navbar-nav mr-auto">
-            <a class="nav-item nav-link" href="{{ url_for('home') }}">Home</a>
+            <a class="nav-item nav-link" href="{{ url_for('main.home') }}">Home</a>
           </div>
           <!-- Navbar Right Side -->
           <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="{{ url_for('login') }}">Login</a>
-            <a class="nav-item nav-link" href="{{ url_for('register') }}">Register</a>
+            <a class="nav-item nav-link active" href="{{ url_for('users.login') }}">Login</a>
+            <a class="nav-item nav-link" href="{{ url_for('users.register') }}">Register</a>
           </div>
         </div>
       </div>
@@ -66,13 +66,13 @@
                 {{ form.submit(class="btn btn-outline-info") }}
             </div>
             <small class="text-muted ml-2">
-                <a href="{{ url_for('reset_request') }}">Forgot Password?</a>
+                <a href="{{ url_for('users.reset_request') }}">Forgot Password?</a>
             </small>
         </form>
     </div>
     <div class="border-top pt-3">
         <small class="text-muted">
-            Need An Account? <a class="ml-2" href="{{ url_for('register') }}">Sign Up Now</a>
+            Need An Account? <a class="ml-2" href="{{ url_for('users.register') }}">Sign Up Now</a>
         </small>
     </div>
 {% endblock content %}

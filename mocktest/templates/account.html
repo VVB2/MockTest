@@ -10,14 +10,14 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarToggle">
           <div class="navbar-nav mr-auto">
-            <a class="nav-item nav-link" href="{{ url_for('home') }}">Home</a>
+            <a class="nav-item nav-link" href="{{ url_for('main.home') }}">Home</a>
           </div>
           <!-- Navbar Right Side -->
           <div class="navbar-nav">
-              <a class="nav-item nav-link" href="{{ url_for('java') }}">Java</a>
-              <a class="nav-item nav-link" href="{{ url_for('python') }}">Python</a>
-              <a class="nav-item nav-link active" href="{{ url_for('account') }}">Account</a>
-              <a class="nav-item nav-link" href="{{ url_for('logout') }}">Logout</a>
+              <a class="nav-item nav-link" href="{{ url_for('tests.java') }}">Java</a>
+              <a class="nav-item nav-link" href="{{ url_for('tests.python') }}">Python</a>
+              <a class="nav-item nav-link active" href="{{ url_for('users.account') }}">Account</a>
+              <a class="nav-item nav-link" href="{{ url_for('users.logout') }}">Logout</a>
           </div>
         </div>
       </div>
@@ -56,32 +56,6 @@
                     </div>
                 {% else %}
                     {{ form.username(class="form-control form-control-md") }}
-                {% endif %}
-            </div>
-            <div class="form-group">
-                {{ form.password.label(class="form-control-label") }}
-                {% if form.password.errors %}
-                    {{ form.password(class="form-control form-control-md is-invalid") }}
-                    <div class="invalid-feedback">
-                        {% for error in form.password.errors %}
-                            <span>{{ error }}</span>
-                        {% endfor %}
-                    </div>
-                {% else %}
-                    {{ form.password(class="form-control form-control-md") }}
-                {% endif %}
-            </div>
-            <div class="form-group">
-                {{ form.confirm_password.label(class="form-control-label") }}
-                {% if form.confirm_password.errors %}
-                    {{ form.confirm_password(class="form-control form-control-md is-invalid") }}
-                    <div class="invalid-feedback">
-                        {% for error in form.confirm_password.errors %}
-                            <span>{{ error }}</span>
-                        {% endfor %}
-                    </div>
-                {% else %}
-                    {{ form.confirm_password(class="form-control form-control-md") }}
                 {% endif %}
             </div>
             <div class="form-group">

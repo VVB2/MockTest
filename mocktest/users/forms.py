@@ -1,11 +1,10 @@
 import phonenumbers
 from flask_wtf import FlaskForm
 from flask_wtf.file import FileField, FileAllowed
-from wtforms import StringField, PasswordField, SubmitField, BooleanField, RadioField
+from wtforms import StringField, PasswordField, SubmitField, BooleanField
 from wtforms.validators import DataRequired, Length, Email, EqualTo, ValidationError
-from mocktest.models import User
 from flask_login import current_user
-
+from mocktest.models import User
 
 class RegistrationForm(FlaskForm):
     username = StringField('Username',
@@ -37,12 +36,9 @@ class LoginForm(FlaskForm):
 class AccountUpdateForm(FlaskForm):
     username = StringField('Username',
                            validators=[DataRequired(), Length(min=2, max=20)])
-    password = PasswordField('Password')
-    confirm_password = PasswordField('Confirm Password',
-                                     validators=[EqualTo('password')])
     picture = FileField('Update Profile Picture', validators=[FileAllowed(['jpg','png','jpeg'])])    
-    phoneno = StringField('Contact No (Enter country code)')  
-    address = StringField('Enter Your Address')                          
+    phoneno = StringField('Contact No (Enter country code)', render_kw={"placeholder": "Enter your contact no"})  
+    address = StringField('Enter Your Address',render_kw={"placeholder": "Enter your address"})                          
     submit = SubmitField('Update')
 
     def validate_username(self, username):
@@ -52,16 +48,16 @@ class AccountUpdateForm(FlaskForm):
                 raise ValidationError('Username already taken!')
     
     def validate_phoneno(self, phoneno):
+        if phoneno.data != current_user.phoneno:
+            user = User.query.filter_by(phoneno = phoneno.data).first()
+            if user:
+                raise ValidationError('Contact no already in use!')
         try:
-            p = phonenumbers.parse(phoneno.data)
+            p = phonenumbers.parse(phoneno.data,"IN")
             if not phonenumbers.is_valid_number(p):
                 raise ValueError()
-            elif phoneno.data != current_user.phoneno:
-                user = User.query.filter_by(phoneno = phoneno.data).first()
-                if user:
-                    raise ValidationError('Contact no already in use!')
         except (phonenumbers.phonenumberutil.NumberParseException, ValueError):
-            raise ValidationError('Invalid phone number')
+            raise ValidationError('Please enter a valid contact no!')
 
 class RequestResetForm(FlaskForm):
     email = StringField('Email',
