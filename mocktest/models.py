@@ -15,7 +15,9 @@ class User(db.Model, UserMixin):
     password = db.Column(db.String(60), nullable=False)
     hackos = db.Column(db.Integer, default=20)
     phoneno = db.Column(db.String(20), default='None')
-    address = db.Column(db.String(255))
+    address = db.Column(db.String(255), default='None')
+    gender = db.Column(db.String(6), nullable=False)
+    badge = db.Column(db.String(20), default='Novice')
 
     def get_reset_token(self, expires_sec = 600):
         s = Serializer(app.config['SECRET_KEY'], expires_sec)

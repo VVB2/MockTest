@@ -84,6 +84,25 @@
                         {{ form.confirm_password(class="form-control form-control-md") }}
                     {% endif %}
                 </div>
+                <div class="form-group">
+                    <div class="form-control-label">{{ form.gender.label }}</div>
+                    {% if form.gender.errors %}
+                        {% for subfield in form.gender %}
+                        <div class="form-check">
+                            <div class="form-check-input">{{ subfield }}</div>
+                            <label class="form-check-label mt-1">{{ subfield.label }}</label>
+                        </div>
+                        {% endfor %}
+                        <span class="text-danger">Please select an option!</span>
+                    {% else %}
+                        {% for subfield in form.gender %}
+                        <div class="form-check">
+                            <div class="form-check-input">{{ subfield }}</div>
+                            <label class="form-check-label mt-1">{{ subfield.label }}</label>
+                        </div>
+                        {% endfor %}
+                    {% endif %}                               
+                </div>
             </fieldset>
             <div class="form-group">
                 {{ form.submit(class="btn btn-outline-info") }}

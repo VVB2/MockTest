@@ -29,7 +29,17 @@
 {% block content %}
 <div class="content-section">
     <div class="media">
+      {% if current_user.image_file=='default.png' %}
+        {% if current_user.gender=='Male'%}
+          <img class="rounded-circle account-img" src="../static/profile_pics/default.png">
+        {% elif current_user.gender=='Female'%}
+          <img class="rounded-circle account-img" src="../static/profile_pics/default_female.jpg">
+        {% else %}
+          <img class="rounded-circle account-img" src="../static/profile_pics/default_other.jpg">
+        {% endif %}
+      {% else %}
         <img class="rounded-circle account-img" src="{{ image_file }}">
+      {% endif %}
         <div class="media-body">
           <div class="float-right mr-5 mt-2">
             <h4 class="text-dark">Credits</h4>
@@ -37,7 +47,17 @@
               <i class="bi bi-info-circle-fill ml-3" data-toggle="tooltip" data-placement="right" title="Use this to unlock answers."></i>
             </h4>   
           </div>
-          <h2 class="account-heading">{{ current_user.username }}</h2>
+          <h2 class="account-heading">{{ current_user.username }}
+            {% if current_user.badge=='Novice' %}
+            <h4><span class="badge badge-pill badge-success"  data-toggle="tooltip" data-placement="right" title="Solve tests to get higher ranking." style="cursor: default;">{{ current_user.badge }}</span></h4>
+            {% elif current_user.badge=='Intermediate' %}
+            <h4><span class="badge badge-pill badge-info"  data-toggle="tooltip" data-placement="right" title="Solve tests to get higher ranking." style="cursor: default;">{{ current_user.badge }}</span></h4>
+            {% elif current_user.badge=='Advanced' %}
+            <h4><span class="badge badge-pill badge-dark"  data-toggle="tooltip" data-placement="right" title="Solve tests to get higher ranking." style="cursor: default;">{{ current_user.badge }}</span></h4>
+            {% elif current_user.badge=='Expert' %}
+            <h4><span class="badge badge-pill badge-danger"  data-toggle="tooltip" data-placement="right" title="Solve tests to get higher ranking." style="cursor: default;">{{ current_user.badge }}</span></h4>
+            {% endif %}
+          </h2>
           <p class="text-secondary">{{ current_user.email }}</p>  
         </div>
     </div>
@@ -88,12 +108,13 @@
               {{ form.picture.label() }}
               {{ form.picture(class="form-control-file") }}
               {% if form.picture.errors %}
-                {% for error in form.picture.errors %}
-                  <span class="text-danger">
-                    {{ error }}<br>
-                  </span>
-                {% endfor %}
+                  {% for error in form.picture.errors %}
+                      <span class="text-danger">{{ error }}</span></br>
+                  {% endfor %}
               {% endif %}
+            </div>
+            <div class="form-group">
+              <p class="mt-2"><em>Enter the data and get extra credits!</em></p>
             </div>
         </fieldset>
         <div class="form-group">

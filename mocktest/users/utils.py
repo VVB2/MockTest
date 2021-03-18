@@ -1,25 +1,24 @@
+from PIL import Image
 import os
 import secrets
-from PIL import Image
-from flask import url_for, current_app
-from flask_login import current_user
+from flask import url_for, app, current_app
 from flask_mail import Message
-from mocktest import mail,app
+from mocktest import mail
+from flask_login import current_user
 
 def save_picture(form_picture):
-    if current_user.image_file=='default.png':
+    if current_user.image_file=='default.png':       
         random_hex = secrets.token_hex(8)
         _, f_ext = os.path.splitext(form_picture.filename)
         picture_name = random_hex + f_ext
     else:
         _, f_ext = os.path.splitext(form_picture.filename)
         try:
-            os.remove(os.path.join(app.root_path, f'static/profile_pics/', current_user.image_file))
+            os.remove(os.path.join(current_app.root_path, 'static', 'profile_pics', current_user.image_file))
         except:
             pass
         picture_name = os.path.splitext(current_user.image_file)[0] + f_ext
-    print(picture_name)
-    picture_path = os.path.join(app.root_path, f'static/profile_pics/', picture_name)
+    picture_path = os.path.join(current_app.root_path, 'static', 'profile_pics/', picture_name)
     try:
         image = Image.open(form_picture)
         image.thumbnail((150,150))
