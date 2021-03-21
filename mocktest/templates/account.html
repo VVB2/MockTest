@@ -31,11 +31,11 @@
     <div class="media">
       {% if current_user.image_file=='default.png' %}
         {% if current_user.gender=='Male'%}
-          <img class="rounded-circle account-img" src="../static/profile_pics/default.png">
+          <img class="rounded-circle account-img" src="../static/profile_pics/male.png">
         {% elif current_user.gender=='Female'%}
-          <img class="rounded-circle account-img" src="../static/profile_pics/default_female.jpg">
+          <img class="rounded-circle account-img" src="../static/profile_pics/female.png">
         {% else %}
-          <img class="rounded-circle account-img" src="../static/profile_pics/default_other.jpg">
+          <img class="rounded-circle account-img" src="../static/profile_pics/other.png">
         {% endif %}
       {% else %}
         <img class="rounded-circle account-img" src="{{ image_file }}">
