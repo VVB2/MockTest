@@ -56,25 +56,21 @@ def send_reset_email(user):
 <!DOCTYPE html>
 <html lang="en">
     <link href="http://steveville.org/assets/css/cosmo.css" rel="stylesheet" type="text/css" media="all" />
-    
-    <body style="background-color: #ccc;align : center">
-        <div class="text-center">
-            <h1>               
-                Web Academy
-            </h1>
-        </div>
-        <hr>
-        <br />
-        <div class="maincontent" style="background-color: #FFF; margin: auto; padding: 20px; width: 450px; border-top: 2px solid #27ae60;">
-            <div class="text-center">
-                <h1>Dear {user.username},</h1>
-                <p>Hello there future engineer!</p>
+    <body>
+        <div style="background-color:#1d1b1b;width:60%;margin:auto;color:#fff">
+            <div style="padding:5px;background-color:#4285f4;border-bottom:0.5px solid #91a3b0">
+                <h1 style="text-align:center;color:#1d1b1b">              
+                    Web Academy
+                </h1>
+            </div>         
+            <div style="text-align:center;font-weight:500;margin-top:10px">
+                <h1>{user.username}, reset your password.</h1>
+                <p style="color:#91a3b0">Looks like you forgot your password?</p>
                 <p>
-                    Here is the link for password reset to your Web Academy account                 
+                    <strong>We're here to help. Click on the button below to reset your password.</strong>              
                 </p>
-                <p><button><a class="btn btn-success btn-lg" href="{url_for('users.reset_token', token=token, _external=True)}"><i class="fa fa-check"></i>CHANGE PASSWORD</button></a></p>     
-                <p>If the fancy button does not work, you can copy and paste this link into your browser:{url_for('users.reset_token', token=token, _external=True)}</p>
-                <p>If this was not you please ignore this message.</p>
+                <p><button style="background-color:#1ca9c9;border-radius:5px;padding:10px;text-align:center;display:inline-block;font-size:16px;border:none"><a style="text-decoration:none;color:#fff" href="{url_for('users.reset_token', token=token, _external=True)}">Change my password</a></button></p>     
+                <p style="margin-top:30px;padding-bottom:20px"><i>If you didn't ask to reset your password, please ignore this email.</i></p>
             </div>
         </div>
     </body>
