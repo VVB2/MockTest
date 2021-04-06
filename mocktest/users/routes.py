@@ -70,7 +70,7 @@ def account():
                     current_user.hackos += 5
                     current_user.phoneno = form.phoneno.data
             current_user.phoneno = form.phoneno.data
-            
+
         db.session.commit()
         flash('Your account was successfully updated!', 'success')  
         return redirect(url_for('users.account'))
@@ -114,3 +114,8 @@ def reset_token(token):
         flash('Your password has been updated! You are now able to login', 'success')
         return redirect(url_for('users.login'))
     return render_template('reset_token.html', title='Reset Password', form=form)
+
+@users.route("/performance", methods=['GET'])
+@login_required
+def performance():
+    return render_template('performance.html', title=current_user.username+"'s Performance", image_file=current_user.image_file)

@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block header %}
+<header class="site-header">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand mr-4" href="/">Web Academy</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarToggle">
+          <div class="navbar-nav mr-auto">
+            <a class="nav-item nav-link" href="{{ url_for('main.home') }}">Home</a>
+          </div>
+          <!-- Navbar Right Side -->
+          <div class="navbar-nav">
+              <a class="nav-item nav-link" href="{{ url_for('tests.java') }}">Java</a>
+              <a class="nav-item nav-link" href="{{ url_for('tests.python') }}">Python</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle ml-3" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="padding: 0px;">
+                  <img class="rounded-circle" style="width:40px ;height:40px" src="../static/profile_pics/{{image_file }}">
+                </a>
+                <div class="dropdown-menu mt-2" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="{{ url_for('users.account') }}">Account</a>
+                  <a class="dropdown-item" href="{{ url_for('users.performance') }}" style="font-weight: 500;">Performance</a>
+                  <a class="dropdown-item bg-danger text-white" href="{{ url_for('users.logout') }}" style="border-radius: 5px;">Logout</a>               
+                </div>
+              </li>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+{% endblock %}
+
+{% block content %}
+{% endblock %}

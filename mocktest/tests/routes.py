@@ -7,9 +7,15 @@ tests = Blueprint('tests', __name__)
 @tests.route("/java-practice")
 @login_required
 def java():
-    return render_template('java.html', title='Java MockTest Selection')
+    if(current_user.is_authenticated):
+        return render_template('java.html', title='Java MockTest Selection', image_file=current_user.image_file)
+    else:
+        return render_template('java.html', title='Java MockTest Selection')
 
 @tests.route("/python-practice")
 @login_required
 def python():
-    return render_template('python.html', title='Python MockTest Selection')
+    if(current_user.is_authenticated):
+        return render_template('python.html', title='Python MockTest Selection', image_file=current_user.image_file)
+    else:
+        return render_template('python.html', title='Python MockTest Selection')
