@@ -1,3 +1,4 @@
+from datetime import datetime
 from itsdangerous import TimedJSONWebSignatureSerializer as Serializer
 from datetime import datetime
 from mocktest import db, login_manager, app
@@ -18,6 +19,7 @@ class User(db.Model, UserMixin):
     address = db.Column(db.String(255), default='None')
     gender = db.Column(db.String(6), nullable=False)
     badge = db.Column(db.String(20), default='Novice')
+    created = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
 
     def get_reset_token(self, expires_sec = 600):
         s = Serializer(app.config['SECRET_KEY'], expires_sec)

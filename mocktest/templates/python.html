@@ -18,7 +18,17 @@
               <a class="nav-item nav-link active" href="{{ url_for('tests.python') }}">Python</a>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle ml-3" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="padding: 0px;">
-                  <img class="rounded-circle" style="width:40px ;height:40px" src="../static/profile_pics/{{ image_file }}">
+                  {% if current_user.image_file=='default.png' %}
+                    {% if current_user.gender=='Male'%}
+                      <img class="rounded-circle" style="width:40px ;height:40px;background-color:#ffffff;" src="../static/profile_pics/male.png">
+                    {% elif current_user.gender=='Female'%}
+                      <img class="rounded-circle" style="width:40px ;height:40px" src="../static/profile_pics/female.png">
+                    {% else %}
+                      <img class="rounded-circle" style="width:40px ;height:40px" src="../static/profile_pics/other.png">
+                    {% endif %}
+                  {% else %}
+                    <img class="rounded-circle" style="width:40px ;height:40px" src="../static/profile_pics/{{ image_file }}">
+                  {% endif %}
                 </a>
                 <div class="dropdown-menu mt-2" aria-labelledby="navbarDropdownMenuLink">
                   <a class="dropdown-item" href="{{ url_for('users.account') }}">Account</a>

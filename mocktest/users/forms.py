@@ -4,7 +4,7 @@ from flask_wtf import FlaskForm
 from flask_wtf.file import FileAllowed, FileField
 from mocktest.models import User
 from wtforms import (BooleanField, PasswordField, RadioField, StringField,
-                     SubmitField)
+                     SubmitField, SelectMultipleField)
 from wtforms.validators import (DataRequired, Email, EqualTo, Length,
                                 ValidationError)
 
@@ -44,7 +44,6 @@ class AccountUpdateForm(FlaskForm):
     phoneno = StringField('Contact No', render_kw={"placeholder": "Enter your contact no"})  
     address = StringField('Enter Your Address',render_kw={"placeholder": "Enter your address"})  
     submit = SubmitField('Update')
-    remove = SubmitField('Remove')
 
     def validate_username(self, username):
         if username.data != current_user.username:
