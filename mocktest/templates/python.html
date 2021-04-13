@@ -31,9 +31,9 @@
                   {% endif %}
                 </a>
                 <div class="dropdown-menu mt-2" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="{{ url_for('users.account') }}">Account</a>
-                  <a class="dropdown-item" href="{{ url_for('users.performance') }}">Performance</a>
-                  <a class="dropdown-item bg-danger text-white" href="{{ url_for('users.logout') }}" style="border-radius: 5px;">Logout</a>               
+                  <a class="dropdown-item" href="{{ url_for('users.account') }}"><i class="bi bi-person-lines-fill pr-2"></i>Account</a>
+                  <a class="dropdown-item" href="{{ url_for('users.performance') }}"><i class="bi bi-graph-up pr-2"></i>Performance</a>
+                  <a class="dropdown-item bg-danger text-white" href="{{ url_for('users.logout') }}" style="border-radius: 5px;"><i class="bi bi-box-arrow-left pr-2"></i>Logout</a>               
                 </div>
               </li>
             </div>
