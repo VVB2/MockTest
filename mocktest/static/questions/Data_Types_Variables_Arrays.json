@@ -1,0 +1,796 @@
+{
+
+	"quiz": [{
+			"id": "1",
+			"subject": "JAVA",
+			"module": "Data Types, Variables & Arrays",
+			"question": "If the size of the array used to implement a circular queue is MAX_SIZE. How rear moves to traverse inorder to insert an element in the queue?",
+			"options": [{
+					"a": "rear=(rear%1)+MAX_SIZE"
+				},
+				{
+					"b": "rear=(rear+1)%MAX_SIZE"
+				},
+				{
+					"c": "rear=rear+(1%MAX_SIZE)"
+				},
+				{
+					"d": "rear=rear%(MAX_SIZE+1)"
+				}
+			],
+			"answer": "b",
+			"reason": "The front and rear pointer od circular queue point to the first element"
+		},
+		{
+			"id": "2",
+			"subject": "JAVA",
+			"module": "Data Types, Variables & Arrays",
+			"question": "Where does a new element be inserted in linked list implementation of a queue?",
+			"options": [{
+					"a": "Head of list"
+				},
+				{
+					"b": "Head of list"
+				},
+				{
+					"c": "At the centre of list"
+				},
+				{
+					"d": "All the old entries are pushed and then the new element is inserted"
+				}
+			],
+			"answer": "b",
+			"reason": "The front and rear pointer od circular queue point to the first element"
+		},
+                {
+			"id": "3",
+			"subject": "JAVA",
+			"module": "Data Types, Variables & Arrays",
+			"question": "What is the range of short data type in Java?",
+			"options": [{
+					"a": " -128 to 127"
+				},
+				{
+					"b": "-32768 to 32767"
+				},
+				{
+					"c": "-2147483648 to 2147483647"
+				},
+				{
+					"d": "None of the mentioned"
+				}
+			],
+			"answer": "b",
+			"reason": "Short occupies 16 bits in memory. Its range is from -32768 to 32767"
+		},
+
+                {
+			"id": "4",
+			"subject": "JAVA",
+			"module": "Data Types, Variables & Arrays",
+			"question": "What is the range of byte data type in Java?",
+			"options": [{
+					"a": " -128 to 127"
+				},
+				{
+					"b": "-32768 to 32767"
+				},
+				{
+					"c": "-2147483648 to 2147483647"
+				},
+				{
+					"d": "None of the mentioned"
+				}
+			],
+			"answer": "a",
+			"reason": "Byte occupies 8 bits in memory. Its range is from -128 to 127."
+		},
+                {
+			"id": "5",
+			"subject": "JAVA",
+			"module": "Data Types, Variables & Arrays",
+			"question": "An expression involving byte, int, and literal numbers is promoted to which of these?",
+			"options": [{
+					"a": " int"
+				},
+				{
+					"b": "long"
+				},
+				{
+					"c": "byte"
+				},
+				{
+					"d": "float"
+				}
+			],
+			"answer": "a",
+			"reason": "An expression involving bytes, ints, shorts, literal numbers, the entire expression is promoted to int before any calculation is done."
+		},
+                {
+			"id": "6",
+			"subject": "JAVA",
+			"module": "Data Types, Variables & Arrays",
+			"question": "Which of these literals can be contained in float data type variable?",
+			"options": [{
+					"a": " -1.7e+308"
+				},
+				{
+					"b": " -3.4e+038"
+				},
+				{
+					"c": "+1.7e+308"
+				},
+				{
+					"d": "-3.4e+050"
+				}
+			],
+			"answer": "b",
+			"reason": "Range of float data type is -(3.4e38) To +(3.4e38)"
+		},
+                {
+			"id": "7",
+			"subject": "JAVA",
+			"module": "Data Types, Variables & Arrays",
+			"question": "Which data type value is returned by all transcendental math functions?",
+			"options": [{
+					"a": " int"
+				},
+				{
+					"b": "float"
+				},
+				{
+					"c": "double"
+				},
+				{
+					"d": " long"
+				}
+			],
+			"answer": "c",
+			"reason": "None."
+		},
+                {
+			"id": "8",
+			"subject": "JAVA",
+			"module": "Data Types, Variables & Arrays",
+			"question":"Which of these can not be used for a variable name in Java?",
+			"options": [{
+					"a": " identifier"
+				},
+				{
+					"b": "1keyword"
+				},
+				{
+					"c": "identifier & keyword"
+				},
+				{
+					"d": "None of the mentioned"
+				}
+			],
+			"answer": "b",
+			"reason": "Keywords are specially reserved words which can not be used for naming a user defined variable, example: class, int, for etc."
+		},
+                {
+			"id": "9",
+			"subject": "JAVA",
+			"module": "Data Types, Variables & Arrays",
+			"question": "What is the numerical range of a char data type in Java?",
+			"options": [{
+					"a": " -128 to 127"
+				},
+				{
+					"b": "0 to 256"
+				},
+				{
+					"c": "0 to 32767"
+				},
+				{
+					"d": "0 to 65535"
+				}
+			],
+			"answer": "d",
+			"reason": "Char occupies 16-bit in memory, so it supports 216 i:e from 0 to 65535."
+		},
+                {
+			"id": "10",
+			"subject": "JAVA",
+			"module": "Data Types, Variables & Arrays",
+			"question": "Which of these coding types is used for data type characters in Java?",
+			"options": [{
+					"a": " ASCII"
+				},
+				{
+					"b": "ISO-LATIN-1"
+				},
+				{
+					"c": "UNICODE"
+				},
+				{
+					"d": " None of the mentioned"
+				}
+			],
+			"answer": "c",
+			"reason": "Unicode defines fully international character set that can represent all the characters found in all human languages. Its range is from 0 to 65536.."
+		},
+                {
+			"id": "11",
+			"subject": "JAVA",
+			"module": "Data Types, Variables & Arrays",
+			"question": " Which of these values can a boolean variable contain?",
+			"options": [{
+					"a": " True & False"
+				},
+				{
+					"b": "0 & 1"
+				},
+				{
+					"c": "Any integer value"
+				},
+				{
+					"d": " true"
+				}
+			],
+			"answer": "a",
+			"reason": "Boolean variable can contain only one of two possible values, true and false."
+		},
+                {
+			"id": "12",
+			"subject": "JAVA",
+			"module": "Data Types, Variables & Arrays",
+			"question": "Which of these occupy first 0 to 127 in Unicode character set used for characters in Java?",
+			"options": [{
+					"a": " ASCII"
+				},
+				{
+					"b": "ISO-LATIN-1"
+				},
+				{
+					"c": "None of the mentioned"
+				},
+				{
+					"d": " ASCII and ISO-LATIN1"
+				}
+			],
+			"answer": "d",
+			"reason": "First 0 to 127 character set in Unicode are same as those of ISO-LATIN-1 and ASCII."
+		},
+                {
+			"id": "13",
+			"subject": "JAVA",
+			"module": "Data Types, Variables & Arrays",
+			"question": "Which one is a valid declaration of a boolean?",
+			"options": [{
+					"a": " boolean b1 = 1;"
+				},
+				{
+					"b": "boolean b2 = ‘false’;"
+				},
+				{
+					"c": "boolean b3 = false;"
+				},
+				{
+					"d": " boolean b4 = ‘true’"
+				}
+			],
+			"answer": "c",
+			"reason": "Boolean can only be assigned true or false literals."
+		},
+                {
+			"id": "14",
+			"subject": "JAVA",
+			"module": "Data Types, Variables & Arrays",
+			"question": "Which of these coding types is used for data type characters in Java?",
+			"options": [{
+					"a": " ASCII"
+				},
+				{
+					"b": "ISO-LATIN-1"
+				},
+				{
+					"c": "UNICODE"
+				},
+				{
+					"d": " None of the mentioned"
+				}
+			],
+			"answer": "c",
+			"reason": "Unicode defines fully international character set that can represent all the characters found in all human languages. Its range is from 0 to 65536.."
+		},
+                {
+			"id": "15",
+			"subject": "JAVA",
+			"module": "Data Types, Variables & Arrays",
+			"question": "Which of these is necessary condition for automatic type conversion in Java?",
+			"options": [{
+					"a": " The destination type is smaller than source type"
+				},
+				{
+					"b": "The destination type is larger than source type"
+				},
+				{
+					"c": "The destination type can be larger or smaller than source type"
+				},
+				{
+					"d": " None of the mentioned"
+				}
+			],
+			"answer": "b",
+			"reason": "None"
+		},
+                {
+			"id": "16",
+			"subject": "JAVA",
+			"module": "Data Types, Variables & Arrays",
+			"question": "  If an expression contains double, int, float, long, then the whole expression will be promoted into which of these data types?",
+			"options": [{
+					"a": " long"
+				},
+				{
+					"b": "int"
+				},
+				{
+					"c": "double"
+				},
+				{
+					"d": " float"
+				}
+			],
+			"answer": "c",
+			"reason": "If any operand is double the result of an expression is double."
+		},
+                {
+			"id": "17",
+			"subject": "JAVA",
+			"module": "Data Types, Variables & Arrays",
+			"question": "Which of these operators is used to allocate memory to array variable in Java?",
+			"options": [{
+					"a": " malloc"
+				},
+				{
+					"b": "alloc"
+				},
+				{
+					"c": "new"
+				},
+				{
+					"d": " new malloc"
+				}
+			],
+			"answer": "c",
+			"reason": "Operator new allocates a block of memory specified by the size of an array, and gives the reference of memory allocated to the array variable."
+		},
+                {
+			"id": "18",
+			"subject": "JAVA",
+			"module": "Data Types, Variables & Arrays",
+			"question": "Which of these is an incorrect array declaration?",
+			"options": [{
+					"a": "  int arr[] = new int[5]"
+				},
+				{
+					"b": "int [] arr = new int[5]"
+				},
+				{
+					"c": "int arr[] = new int[5]"
+				},
+				{
+					"d": "  int arr[] = int [5] new"
+				}
+			],
+			"answer": "d",
+			"reason": "Operator new must be succeeded by array type and array size."
+		},
+                {
+			"id": "19",
+			"subject": "JAVA",
+			"module": "Data Types, Variables & Arrays",
+			"question": "Which of these is an incorrect Statement?",
+			"options": [{
+					"a": "  It is necessary to use new operator to initialize an array"
+				},
+				{
+					"b": "Array can be initialized using comma separated expressions surrounded by curly braces"
+				},
+				{
+					"c": "Array can be initialized when they are declared"
+				},
+				{
+					"d": " None of the mentioned"
+				}
+			],
+			"answer": "a",
+			"reason": "Array can be initialized using both new and comma separated expressions surrounded by curly braces example : int arr[5] = new int[5]; and int arr[] = { 0, 1, 2, 3, 4};"
+		},
+                {
+			"id": "20",
+			"subject": "JAVA",
+			"module": "Data Types, Variables & Arrays",
+			"question": " Which of these is necessary to specify at time of array initialization?",
+			"options": [{
+					"a": " Row"
+				},
+				{
+					"b": "Column"
+				},
+				{
+					"c": "Both Row and Column"
+				},
+				{
+					"d": " None of the mentioned"
+				}
+			],
+			"answer": "a",
+			"reason": "None"
+		},
+                {
+			"id": "21",
+			"subject": "JAVA",
+			"module": "Data Types, Variables & Arrays",
+			"question": " What is the order of variables in Enum?",
+			"options": [{
+					"a": " Ascending order"
+				},
+				{
+					"b": "Descending order"
+				},
+				{
+					"c": "Random order"
+				},
+				{
+					"d": " Depends on the order() method"
+				}
+			],
+			"answer": "a",
+			"reason": "The compareTo() method is implemented to order the variable in ascending order."
+		},
+                {
+			"id": "22",
+			"subject": "JAVA",
+			"module": "Data Types, Variables & Arrays",
+			"question": " Can we create an instance of Enum outside of Enum itself?",
+			"options": [{
+					"a": " True"
+				},
+				{
+					"b": "False"
+				}
+				
+			],
+			"answer": "b",
+			"reason": "Enum does not have a public constructor."
+		},
+                {
+			"id": "23",
+			"subject": "JAVA",
+			"module": "Data Types, Variables & Arrays",
+			"question": "  If we try to add Enum constants to a TreeSet, what sorting order will it use?",
+			"options": [{
+					"a": "  Sorted in the order of declaration of Enums"
+				},
+				{
+					"b": "Sorted in alphabetical order of Enums"
+				},
+				{
+					"c": "Sorted based on order() method"
+				},
+				{
+					"d": " Sorted in descending order of names of Enums"
+				}
+			],
+			"answer": "a",
+			"reason": "Tree Set will sort the values in the order in which Enum constants are declared."
+		},
+                {
+			"id": "24",
+			"subject": "JAVA",
+			"module": "Data Types, Variables & Arrays",
+			"question": " Which method returns the elements of Enum class?",
+			"options": [{
+					"a": " getEnums()"
+				},
+				{
+					"b": "getEnumConstants()"
+				},
+				{
+					"c": " getEnumList()"
+				},
+				{
+					"d": " getEnum()"
+				}
+			],
+			"answer": "b",
+			"reason": "getEnumConstants() returns the elements of this enum class or null if this Class object does not represent an enum type."
+		},
+                {
+			"id": "25",
+			"subject": "JAVA",
+			"module": "Data Types, Variables & Arrays",
+			"question": " Which class does all the Enums extend?",
+			"options": [{
+					"a": " Object"
+				},
+				{
+					"b": "Enums"
+				},
+				{
+					"c": "Enum"
+				},
+				{
+					"d": " EnumClass"
+				}
+			],
+			"answer": "c",
+			"reason": "All enums implicitly extend java.lang.Enum. Since Java does not support multiple inheritance, an enum cannot extend anything else."
+		},
+                {
+			"id": "26",
+			"subject": "JAVA",
+			"module": "Data Types, Variables & Arrays",
+			"question": "  Are enums are type-safe?",
+			"options": [{
+					"a": " True"
+				},
+				{
+					"b": "False"
+				}
+				
+			],
+			"answer": "a",
+			"reason": "Enums are type-safe as they have own name-space."
+		},
+                {
+			"id": "27",
+			"subject": "JAVA",
+			"module": "Data Types, Variables & Arrays",
+			"question": " Which of these is long data type literal?",
+			"options": [{
+					"a": " 0x99fffL"
+				},
+				{
+					"b": "ABCDEFG"
+				},
+				{
+					"c": "0x99fffa"
+				},
+				{
+					"d": " 99671246"
+				}
+			],
+			"answer": "a",
+			"reason": "Data type long literals are appended by an upper or lowercase L. 0x99fffL is hexadecimal long literal."
+		},
+                {
+			"id": "28",
+			"subject": "JAVA",
+			"module": "Data Types, Variables & Arrays",
+			"question": " Which of these can be returned by the operator &?",
+			"options": [{
+					"a": " Integer"
+				},
+				{
+					"b": "Boolean"
+				},
+				{
+					"c": "Character"
+				},
+				{
+					"d": " Integer or Boolean"
+				}
+			],
+			"answer": "d",
+			"reason": "We can use binary ampersand operator on integers/chars (and it returns an integer) or on booleans (and it returns a boolean)."
+		},
+                {
+			"id": "29",
+			"subject": "JAVA",
+			"module": "Data Types, Variables & Arrays",
+			"question": " Literals in java must be appended by which of these?",
+			"options": [{
+					"a": " L"
+				},
+				{
+					"b": "l"
+				},
+				{
+					"c": "D"
+				},
+				{
+					"d": " L and I"
+				}
+			],
+			"answer": "d",
+			"reason": "Data type long literals are appended by an upper or lowercase L."
+		},
+                {
+			"id": "30",
+			"subject": "JAVA",
+			"module": "Data Types, Variables & Arrays",
+			"question": " Literal can be of which of these data types?",
+			"options": [{
+					"a": " integer"
+				},
+				{
+					"b": "float"
+				},
+				{
+					"c": "boolean"
+				},
+				{
+					"d": "All of the mentioned"
+				}
+			],
+			"answer": "d",
+			"reason": "None"
+		},
+                {
+			"id": "31",
+			"subject": "JAVA",
+			"module": "Data Types, Variables & Arrays",
+			"question": " What is the limitation of toString() method of BigDecimal?",
+			"options": [{
+					"a": " There is no limitation"
+				},
+				{
+					"b": "toString returns null"
+				},
+				{
+					"c": "toString returns the number in expanded form"
+				},
+				{
+					"d": "toString uses scientific notation"
+				}
+			],
+			"answer": "d",
+			"reason": "toString() of BigDecimal uses scientific notation to represent numbers known as canonical representation. We must use toPlainString() to avoid scientific notation."
+		},
+                {
+			"id": "32",
+			"subject": "JAVA",
+			"module": "Data Types, Variables & Arrays",
+			"question": " Which of the following is not provided by BigDecimal?",
+			"options": [{
+					"a": "scale manipulation"
+				},
+				{
+					"b": "+ operator"
+				},
+				{
+					"c": "rounding"
+				},
+				{
+					"d": "hashing"
+				}
+			],
+			"answer": "b",
+			"reason": "toBigInteger() converts BigDecimal to a BigInteger.toBigIntegerExact() converts this BigDecimal to a BigInteger by checking for lost information."
+		},
+        
+                {
+			"id": "33",
+			"subject": "JAVA",
+			"module": "Data Types, Variables & Arrays",
+			"question": "BigDecimal is a part of which package?",
+			"options": [{
+					"a": "java.lang"
+				},
+				{
+					"b": "java.math"
+				},
+				{
+					"c": "java.util"
+				},
+				{
+					"d": "java.io"
+				}
+			],
+			"answer": "b",
+			"reason": " BigDecimal is a part of java.math. This package provides various classes for storing numbers and mathematical operations."
+		},
+
+                {
+			"id": "34",
+			"subject": "JAVA",
+			"module": "Data Types, Variables & Arrays",
+			"question": " What is BigDecimal.ONE?",
+			"options": [{
+					"a": "wrong statement"
+				},
+				{
+					"b": "custom defined statement"
+				},
+				{
+					"c": "static variable with value 1 on scale 10"
+				},
+				{
+					"d": "static variable with value 1 on scale 0"
+				}
+			],
+			"answer": "d",
+			"reason": "BigDecimal.ONE is a static variable of BigDecimal class with value 1 on scale 0."
+		},
+                {
+			"id": "35",
+			"subject": "JAVA",
+			"module": "Data Types, Variables & Arrays",
+			"question": " Which of the following option leads to the portability and security of Java?",
+			"options": [{
+					"a": " Bytecode is executed by JVM"
+				},
+				{
+					"b": "The applet makes the Java code secure and portable"
+				},
+				{
+					"c": "Use of exception handling"
+				},
+				{
+					"d": " Dynamic binding between objects"
+				}
+			],
+			"answer": "a",
+			"reason": "The output of the Java compiler is bytecode, which leads to the security and portability of the Java code. It is a highly developed set of instructions that are designed to be executed by the Java runtime system known as Java Virtual Machine (JVM). The Java programs executed by the JVM that makes the code portable and secure. Because JVM prevents the code from generating its side effects. The Java code is portable, as the same byte code can run on any platform."
+		},
+                {
+			"id": "36",
+			"subject": "JAVA",
+			"module": "Data Types, Variables & Arrays",
+			"question": " Which of the following is not a Java features?",
+			"options": [{
+					"a": " Dynamic"
+				},
+				{
+					"b": "Architecture Neutral"
+				},
+				{
+					"c": "Use of pointers"
+				},
+				{
+					"d": " Object-oriented"
+				}
+			],
+			"answer": "c",
+			"reason": "None"
+
+		},
+                {
+			"id": "37",
+			"subject": "JAVA",
+			"module": "Data Types, Variables & Arrays",
+			"question": " The \u0021 article referred to as a",
+			"options": [{
+					"a": " Unicode escape sequence"
+				},
+				{
+					"b": "Octal escape"
+				},
+				{
+					"c": "Hexadecimal"
+				},
+				{
+					"d": " Line feed"
+				}
+			],
+			"answer": "a",
+			"reason": "In Java, Unicode characters can be used in string literals, comments, and commands, and are expressed by Unicode Escape Sequences. A Unicode escape sequence is made up of the following articleA backslash '\\' (ASCII character 92).A 'u' (ASCII 117) One / more additional 'u' characters that are optional.A four hexadecimal digits (a character  0 - 9 / a-f / A-F)"
+                },
+                {
+			"id": "38",
+			"subject": "JAVA",
+			"module": "Data Types, Variables & Arrays",
+			"question": " _____ is used to find and fix bugs in the Java programs.",
+			"options": [{
+					"a": " JVM"
+				},
+				{
+					"b": "JRE"
+				},
+				{
+					"c": "JDK"
+				},
+				{
+					"d": " JDB"
+				}
+			],
+			"answer": "d",
+			"reason": "None"
+		}
+  ]
+}

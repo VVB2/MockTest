@@ -8,7 +8,6 @@ from wtforms import (BooleanField, PasswordField, RadioField, StringField,
 from wtforms.validators import (DataRequired, Email, EqualTo, Length,
                                 ValidationError)
 
-
 class RegistrationForm(FlaskForm):
     username = StringField('Username',
                            validators=[DataRequired(), Length(min=2, max=20)])
