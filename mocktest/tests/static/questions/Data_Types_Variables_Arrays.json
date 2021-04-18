@@ -157,7 +157,7 @@
 					"a": " identifier"
 				},
 				{
-					"b": "1keyword"
+					"b": "keyword"
 				},
 				{
 					"c": "identifier & keyword"
@@ -196,7 +196,7 @@
 			"module": "Data Types, Variables & Arrays",
 			"question": "Which of these coding types is used for data type characters in Java?",
 			"options": [{
-					"a": " ASCII"
+					"a": "ASCII"
 				},
 				{
 					"b": "ISO-LATIN-1"

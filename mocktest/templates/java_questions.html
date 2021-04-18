@@ -44,16 +44,16 @@
   {% endblock %}
 
 {% block content %}
-<div id="timer"></div>
+<h4 class="pb-5"><div id="timer" class="float-right">Time left</div><i class="bi bi-hourglass-bottom float-right mr-2" id="hourglass"></i></h4>
 {% for question in data.quiz %}
 <div class="content-section">
     <h6>Q{{ question.id }}. {{ question.question }}</h6>
     {% for options in question.options %}
       <div class="form-check">
-        <input class="form-check-input" type="radio" name= '{{ question.id }}' id='{{ loop.index }}' value='{{ options }}'>
+        <input class="form-check-input" type="radio" name='{{ question.id }}' id='{{ loop.index }}'>
           <label class="form-check-label" for='{{ loop.index }}'>      
             {% for key, value in options.items() %}
-              {{value | capitalize }}
+              {{value | trim | capitalize }}
             {% endfor %}
           </label>
       </div>
@@ -65,14 +65,23 @@
 {% block script %}
 <script>
 let timerInterval = null;
-const TIME_LIMIT = 5;
+const TIME_LIMIT = 1800;
 let timePassed = 0;
 let timeLeft = TIME_LIMIT;
 let seconds = 0;
 startTimer();
 function formatTimeLeft(time) {
     const minutes = Math.floor(time / 60);
-    seconds = time % 60; 
+    seconds = time % 60;   
+    if (seconds % 3 == 0){
+      hourglassDown();
+    }
+    else if(seconds % 3 == 1){
+      hourglassMid();
+    }
+    else if (seconds % 3 == 2){
+      hourglassUp();
+    }
     if (seconds < 10) {
         seconds = `0${seconds}`;
     }
@@ -90,6 +99,18 @@ function startTimer() {
                 document.getElementById("timer").innerHTML = formatTimeLeft(timeLeft);
             }
     }, 1000);
+}
+
+function hourglassDown() {
+  document.getElementById('hourglass').className = "bi bi-hourglass-bottom float-right mr-2";
+}
+
+function hourglassUp() {
+  document.getElementById('hourglass').className = "bi bi-hourglass-top float-right mr-2";
+}
+
+function hourglassMid() {
+  document.getElementById('hourglass').className = "bi bi-hourglass-split float-right mr-2";
 }
 </script>
 {% endblock %}
