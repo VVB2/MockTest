@@ -44,7 +44,8 @@
   {% endblock %}
 
 {% block content %}
-{% for question in data.quiz %} -->
+<div id="timer"></div>
+{% for question in data.quiz %}
 <div class="content-section">
     <h6>Q{{ question.id }}. {{ question.question }}</h6>
     {% for options in question.options %}
@@ -57,17 +58,38 @@
           </label>
       </div>
     {% endfor %}
-    <button class="btn btn-primary float-right" type="button" data-toggle="collapse" data-target="#id{{ question.id }}" aria-expanded="false" aria-controls="multiCollapseExample2">Toggle second element</button>
-    <div class="collapse multi-collapse" id="id{{ question.id }}">
-      <div class="card card-body">
-        {{ question.reason }}
-      </div>
-    </div>
 </div>
 {% endfor %}
 {% endblock %}
 
 {% block script %}
 <script>
+let timerInterval = null;
+const TIME_LIMIT = 5;
+let timePassed = 0;
+let timeLeft = TIME_LIMIT;
+let seconds = 0;
+startTimer();
+function formatTimeLeft(time) {
+    const minutes = Math.floor(time / 60);
+    seconds = time % 60; 
+    if (seconds < 10) {
+        seconds = `0${seconds}`;
+    }
+    if (seconds == 0) {
+        console.log("Khatam");
+    }
+    return `${minutes}:${seconds}`;
+}
+
+function startTimer() {    
+    timerInterval = setInterval(() => {       
+            timePassed = timePassed += 1;
+            timeLeft = TIME_LIMIT - timePassed;
+            if(timeLeft >= 0) {
+                document.getElementById("timer").innerHTML = formatTimeLeft(timeLeft);
+            }
+    }, 1000);
+}
 </script>
 {% endblock %}

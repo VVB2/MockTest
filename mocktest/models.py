@@ -34,16 +34,6 @@ class User(db.Model, UserMixin):
             return None
         return User.query.get(user_id)
     
-class Data_Types_Variables_Arrays(db.Model, UserMixin):
-    id = db.Column(db.Integer, primary_key=True)
-    subject = db.Column(db.String(10), nullable=False)
-    module = db.Column(db.String(10), nullable=False)
-    question = db.Column(db.String(10), nullable=False)
-    options0a = db.Column(db.String(10), nullable=False)
-    options1b = db.Column(db.String(10), nullable=False)
-    options2c = db.Column(db.String(10), nullable=False)
-    options3d = db.Column(db.String(10), nullable=False)
-    answer = db.Column(db.String(10), nullable=False)
-    reason = db.Column(db.String(10), nullable=False)
-
+    def __repr__(self):
+        return f"User('{self.username}', '{self.email}', '{self.image_file}')"
 

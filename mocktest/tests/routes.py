@@ -1,6 +1,7 @@
 import os
+import time
 from flask import (render_template,
-                abort, Blueprint, json, current_app as app, url_for)
+                abort, Blueprint, json, current_app as app, url_for, g)
 from flask_login import current_user, login_required
 
 tests = Blueprint('tests', __name__)
@@ -18,10 +19,9 @@ def python():
 
 @tests.route("/java-practice/<page>")
 @login_required
-def java_que(page):
+def java_que(page):   
     #filename = url_for('static', filename='questions/'+ page +'.json')
     filename = os.path.join(SITE_ROOT, 'static', 'questions', page +'.json')
-    print(filename)
     with open(filename) as test_file:
         data = json.load(test_file)
     return render_template('java_questions.html', title='Java MockTest Selection', image_file=current_user.image_file, data=data)
