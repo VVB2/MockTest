@@ -3,7 +3,7 @@
 	"quiz": [{
 			"id": "1",
 			"subject": "JAVA",
-			"module": "Data Types, Variables & Arrays",
+			"module": "Data_Types_Variables_Arrays",
 			"question": "If the size of the array used to implement a circular queue is MAX_SIZE. How rear moves to traverse inorder to insert an element in the queue?",
 			"options": [{
 					"a": "rear=(rear%1)+MAX_SIZE"
@@ -24,7 +24,7 @@
 		{
 			"id": "2",
 			"subject": "JAVA",
-			"module": "Data Types, Variables & Arrays",
+			"module": "Data_Types_Variables_Arrays",
 			"question": "Where does a new element be inserted in linked list implementation of a queue?",
 			"options": [{
 					"a": "Head of list"
@@ -45,7 +45,7 @@
                 {
 			"id": "3",
 			"subject": "JAVA",
-			"module": "Data Types, Variables & Arrays",
+			"module": "Data_Types_Variables_Arrays",
 			"question": "What is the range of short data type in Java?",
 			"options": [{
 					"a": " -128 to 127"
@@ -67,7 +67,7 @@
                 {
 			"id": "4",
 			"subject": "JAVA",
-			"module": "Data Types, Variables & Arrays",
+			"module": "Data_Types_Variables_Arrays",
 			"question": "What is the range of byte data type in Java?",
 			"options": [{
 					"a": " -128 to 127"
@@ -88,7 +88,7 @@
                 {
 			"id": "5",
 			"subject": "JAVA",
-			"module": "Data Types, Variables & Arrays",
+			"module": "Data_Types_Variables_Arrays",
 			"question": "An expression involving byte, int, and literal numbers is promoted to which of these?",
 			"options": [{
 					"a": " int"
@@ -109,7 +109,7 @@
                 {
 			"id": "6",
 			"subject": "JAVA",
-			"module": "Data Types, Variables & Arrays",
+			"module": "Data_Types_Variables_Arrays",
 			"question": "Which of these literals can be contained in float data type variable?",
 			"options": [{
 					"a": " -1.7e+308"
@@ -130,7 +130,7 @@
                 {
 			"id": "7",
 			"subject": "JAVA",
-			"module": "Data Types, Variables & Arrays",
+			"module": "Data_Types_Variables_Arrays",
 			"question": "Which data type value is returned by all transcendental math functions?",
 			"options": [{
 					"a": " int"
@@ -151,7 +151,7 @@
                 {
 			"id": "8",
 			"subject": "JAVA",
-			"module": "Data Types, Variables & Arrays",
+			"module": "Data_Types_Variables_Arrays",
 			"question":"Which of these can not be used for a variable name in Java?",
 			"options": [{
 					"a": " identifier"
@@ -172,7 +172,7 @@
                 {
 			"id": "9",
 			"subject": "JAVA",
-			"module": "Data Types, Variables & Arrays",
+			"module": "Data_Types_Variables_Arrays",
 			"question": "What is the numerical range of a char data type in Java?",
 			"options": [{
 					"a": " -128 to 127"
@@ -193,7 +193,7 @@
                 {
 			"id": "10",
 			"subject": "JAVA",
-			"module": "Data Types, Variables & Arrays",
+			"module": "Data_Types_Variables_Arrays",
 			"question": "Which of these coding types is used for data type characters in Java?",
 			"options": [{
 					"a": "ASCII"
@@ -214,7 +214,7 @@
                 {
 			"id": "11",
 			"subject": "JAVA",
-			"module": "Data Types, Variables & Arrays",
+			"module": "Data_Types_Variables_Arrays",
 			"question": " Which of these values can a boolean variable contain?",
 			"options": [{
 					"a": " True & False"
@@ -235,7 +235,7 @@
                 {
 			"id": "12",
 			"subject": "JAVA",
-			"module": "Data Types, Variables & Arrays",
+			"module": "Data_Types_Variables_Arrays",
 			"question": "Which of these occupy first 0 to 127 in Unicode character set used for characters in Java?",
 			"options": [{
 					"a": " ASCII"
@@ -256,7 +256,7 @@
                 {
 			"id": "13",
 			"subject": "JAVA",
-			"module": "Data Types, Variables & Arrays",
+			"module": "Data_Types_Variables_Arrays",
 			"question": "Which one is a valid declaration of a boolean?",
 			"options": [{
 					"a": " boolean b1 = 1;"
@@ -277,7 +277,7 @@
                 {
 			"id": "14",
 			"subject": "JAVA",
-			"module": "Data Types, Variables & Arrays",
+			"module": "Data_Types_Variables_Arrays",
 			"question": "Which of these coding types is used for data type characters in Java?",
 			"options": [{
 					"a": " ASCII"
@@ -298,7 +298,7 @@
                 {
 			"id": "15",
 			"subject": "JAVA",
-			"module": "Data Types, Variables & Arrays",
+			"module": "Data_Types_Variables_Arrays",
 			"question": "Which of these is necessary condition for automatic type conversion in Java?",
 			"options": [{
 					"a": " The destination type is smaller than source type"
@@ -319,7 +319,7 @@
                 {
 			"id": "16",
 			"subject": "JAVA",
-			"module": "Data Types, Variables & Arrays",
+			"module": "Data_Types_Variables_Arrays",
 			"question": "  If an expression contains double, int, float, long, then the whole expression will be promoted into which of these data types?",
 			"options": [{
 					"a": " long"
@@ -340,7 +340,7 @@
                 {
 			"id": "17",
 			"subject": "JAVA",
-			"module": "Data Types, Variables & Arrays",
+			"module": "Data_Types_Variables_Arrays",
 			"question": "Which of these operators is used to allocate memory to array variable in Java?",
 			"options": [{
 					"a": " malloc"
@@ -361,7 +361,7 @@
                 {
 			"id": "18",
 			"subject": "JAVA",
-			"module": "Data Types, Variables & Arrays",
+			"module": "Data_Types_Variables_Arrays",
 			"question": "Which of these is an incorrect array declaration?",
 			"options": [{
 					"a": "  int arr[] = new int[5]"
@@ -382,7 +382,7 @@
                 {
 			"id": "19",
 			"subject": "JAVA",
-			"module": "Data Types, Variables & Arrays",
+			"module": "Data_Types_Variables_Arrays",
 			"question": "Which of these is an incorrect Statement?",
 			"options": [{
 					"a": "  It is necessary to use new operator to initialize an array"
@@ -403,7 +403,7 @@
                 {
 			"id": "20",
 			"subject": "JAVA",
-			"module": "Data Types, Variables & Arrays",
+			"module": "Data_Types_Variables_Arrays",
 			"question": " Which of these is necessary to specify at time of array initialization?",
 			"options": [{
 					"a": " Row"
@@ -424,7 +424,7 @@
                 {
 			"id": "21",
 			"subject": "JAVA",
-			"module": "Data Types, Variables & Arrays",
+			"module": "Data_Types_Variables_Arrays",
 			"question": " What is the order of variables in Enum?",
 			"options": [{
 					"a": " Ascending order"
@@ -445,7 +445,7 @@
                 {
 			"id": "22",
 			"subject": "JAVA",
-			"module": "Data Types, Variables & Arrays",
+			"module": "Data_Types_Variables_Arrays",
 			"question": " Can we create an instance of Enum outside of Enum itself?",
 			"options": [{
 					"a": " True"
@@ -461,7 +461,7 @@
                 {
 			"id": "23",
 			"subject": "JAVA",
-			"module": "Data Types, Variables & Arrays",
+			"module": "Data_Types_Variables_Arrays",
 			"question": "  If we try to add Enum constants to a TreeSet, what sorting order will it use?",
 			"options": [{
 					"a": "  Sorted in the order of declaration of Enums"
@@ -482,7 +482,7 @@
                 {
 			"id": "24",
 			"subject": "JAVA",
-			"module": "Data Types, Variables & Arrays",
+			"module": "Data_Types_Variables_Arrays",
 			"question": " Which method returns the elements of Enum class?",
 			"options": [{
 					"a": " getEnums()"
@@ -503,7 +503,7 @@
                 {
 			"id": "25",
 			"subject": "JAVA",
-			"module": "Data Types, Variables & Arrays",
+			"module": "Data_Types_Variables_Arrays",
 			"question": " Which class does all the Enums extend?",
 			"options": [{
 					"a": " Object"
@@ -524,7 +524,7 @@
                 {
 			"id": "26",
 			"subject": "JAVA",
-			"module": "Data Types, Variables & Arrays",
+			"module": "Data_Types_Variables_Arrays",
 			"question": "  Are enums are type-safe?",
 			"options": [{
 					"a": " True"
@@ -540,7 +540,7 @@
                 {
 			"id": "27",
 			"subject": "JAVA",
-			"module": "Data Types, Variables & Arrays",
+			"module": "Data_Types_Variables_Arrays",
 			"question": " Which of these is long data type literal?",
 			"options": [{
 					"a": " 0x99fffL"
@@ -561,7 +561,7 @@
                 {
 			"id": "28",
 			"subject": "JAVA",
-			"module": "Data Types, Variables & Arrays",
+			"module": "Data_Types_Variables_Arrays",
 			"question": " Which of these can be returned by the operator &?",
 			"options": [{
 					"a": " Integer"
@@ -582,7 +582,7 @@
                 {
 			"id": "29",
 			"subject": "JAVA",
-			"module": "Data Types, Variables & Arrays",
+			"module": "Data_Types_Variables_Arrays",
 			"question": " Literals in java must be appended by which of these?",
 			"options": [{
 					"a": " L"
@@ -603,7 +603,7 @@
                 {
 			"id": "30",
 			"subject": "JAVA",
-			"module": "Data Types, Variables & Arrays",
+			"module": "Data_Types_Variables_Arrays",
 			"question": " Literal can be of which of these data types?",
 			"options": [{
 					"a": " integer"
@@ -624,7 +624,7 @@
                 {
 			"id": "31",
 			"subject": "JAVA",
-			"module": "Data Types, Variables & Arrays",
+			"module": "Data_Types_Variables_Arrays",
 			"question": " What is the limitation of toString() method of BigDecimal?",
 			"options": [{
 					"a": " There is no limitation"
@@ -645,7 +645,7 @@
                 {
 			"id": "32",
 			"subject": "JAVA",
-			"module": "Data Types, Variables & Arrays",
+			"module": "Data_Types_Variables_Arrays",
 			"question": " Which of the following is not provided by BigDecimal?",
 			"options": [{
 					"a": "scale manipulation"
@@ -667,7 +667,7 @@
                 {
 			"id": "33",
 			"subject": "JAVA",
-			"module": "Data Types, Variables & Arrays",
+			"module": "Data_Types_Variables_Arrays",
 			"question": "BigDecimal is a part of which package?",
 			"options": [{
 					"a": "java.lang"
@@ -689,7 +689,7 @@
                 {
 			"id": "34",
 			"subject": "JAVA",
-			"module": "Data Types, Variables & Arrays",
+			"module": "Data_Types_Variables_Arrays",
 			"question": " What is BigDecimal.ONE?",
 			"options": [{
 					"a": "wrong statement"
@@ -710,7 +710,7 @@
                 {
 			"id": "35",
 			"subject": "JAVA",
-			"module": "Data Types, Variables & Arrays",
+			"module": "Data_Types_Variables_Arrays",
 			"question": " Which of the following option leads to the portability and security of Java?",
 			"options": [{
 					"a": " Bytecode is executed by JVM"
@@ -731,7 +731,7 @@
                 {
 			"id": "36",
 			"subject": "JAVA",
-			"module": "Data Types, Variables & Arrays",
+			"module": "Data_Types_Variables_Arrays",
 			"question": " Which of the following is not a Java features?",
 			"options": [{
 					"a": " Dynamic"
@@ -753,7 +753,7 @@
                 {
 			"id": "37",
 			"subject": "JAVA",
-			"module": "Data Types, Variables & Arrays",
+			"module": "Data_Types_Variables_Arrays",
 			"question": " The \u0021 article referred to as a",
 			"options": [{
 					"a": " Unicode escape sequence"
@@ -774,7 +774,7 @@
                 {
 			"id": "38",
 			"subject": "JAVA",
-			"module": "Data Types, Variables & Arrays",
+			"module": "Data_Types_Variables_Arrays",
 			"question": " _____ is used to find and fix bugs in the Java programs.",
 			"options": [{
 					"a": " JVM"

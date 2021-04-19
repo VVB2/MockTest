@@ -30,10 +30,17 @@
                     <img class="rounded-circle" style="width:40px ;height:40px" src="../static/profile_pics/{{ image_file }}">
                   {% endif %}
                 </a>
+                
                 <div class="dropdown-menu mt-2" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="{{ url_for('users.account') }}"><i class="bi bi-person-lines-fill pr-2"></i>Account</a>
-                  <a class="dropdown-item" href="{{ url_for('users.performance') }}"><i class="bi bi-graph-up pr-2"></i>Performance</a>
-                  <a class="dropdown-item bg-danger text-white" href="{{ url_for('users.logout') }}" style="border-radius: 5px;"><i class="bi bi-box-arrow-left pr-2"></i>Logout</a>               
+                  <a class="dropdown-item" href="{{ url_for('users.account') }}">
+                    <i class="bi bi-person-lines-fill pr-2"></i>Account
+                  </a>
+                  <a class="dropdown-item" href="{{ url_for('users.performance') }}">
+                    <i class="bi bi-graph-up pr-2"></i>Performance
+                  </a>
+                  <a class="dropdown-item bg-danger text-white" href="{{ url_for('users.logout') }}" style="border-radius: 5px;">
+                    <i class="bi bi-box-arrow-left pr-2"></i>Logout
+                  </a>               
                 </div>
               </li>
             </div>
@@ -44,22 +51,13 @@
   {% endblock %}
 
 {% block content %}
-<h4 class="pb-5"><div id="timer" class="float-right">Time left</div><i class="bi bi-hourglass-bottom float-right mr-2" id="hourglass"></i></h4>
-{% for question in data.quiz %}
-<div class="content-section">
-    <h6>Q{{ question.id }}. {{ question.question }}</h6>
-    {% for options in question.options %}
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name='{{ question.id }}' id='{{ loop.index }}'>
-          <label class="form-check-label" for='{{ loop.index }}'>      
-            {% for key, value in options.items() %}
-              {{value | trim | capitalize }}
-            {% endfor %}
-          </label>
-      </div>
-    {% endfor %}
-</div>
-{% endfor %}
+<h4 class="pb-5">
+  <div id="timer" class="float-right">Time left</div>
+  <i class="bi bi-hourglass-bottom float-right mr-2" id="hourglass"></i>
+</h4>
+
+<div>{{ form.question.label }}</div>
+
 {% endblock %}
 
 {% block script %}
@@ -74,13 +72,13 @@ function formatTimeLeft(time) {
     const minutes = Math.floor(time / 60);
     seconds = time % 60;   
     if (seconds % 3 == 0){
-      hourglassDown();
+      document.getElementById('hourglass').className = "bi bi-hourglass-bottom float-right mr-2";
     }
     else if(seconds % 3 == 1){
-      hourglassMid();
+      document.getElementById('hourglass').className = "bi bi-hourglass-split float-right mr-2";
     }
     else if (seconds % 3 == 2){
-      hourglassUp();
+      document.getElementById('hourglass').className = "bi bi-hourglass-top float-right mr-2";
     }
     if (seconds < 10) {
         seconds = `0${seconds}`;
@@ -101,16 +99,6 @@ function startTimer() {
     }, 1000);
 }
 
-function hourglassDown() {
-  document.getElementById('hourglass').className = "bi bi-hourglass-bottom float-right mr-2";
-}
 
-function hourglassUp() {
-  document.getElementById('hourglass').className = "bi bi-hourglass-top float-right mr-2";
-}
-
-function hourglassMid() {
-  document.getElementById('hourglass').className = "bi bi-hourglass-split float-right mr-2";
-}
 </script>
 {% endblock %}

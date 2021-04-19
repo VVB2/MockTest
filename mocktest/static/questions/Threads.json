@@ -1,0 +1,844 @@
+{
+
+	"quiz": [{
+			"id": "1",
+			"subject": "JAVA",
+			"module": "Threads",
+			"question": "Which of these method can be used to make the main thread to be executed last among all the threads?",
+			"options": [{
+					"a": "stop()"
+				},
+				{
+					"b": "sleep()"
+				},
+				{
+					"c": "join()"
+				},
+				{
+					"d": "call()"
+				}
+			],
+			"answer": "b",
+			"reason": "By calling sleep() within main(), with long enough delay to ensure that all child threads terminate prior to the main thread."
+		},
+		{
+			"id": "2",
+			"subject": "JAVA",
+			"module": "Threads",
+			"question": "Which of these method is used to find out that a thread is still running or not?",
+			"options": [{
+					"a": "run()"
+				},
+				{
+					"b": "Alive()"
+				},
+				{
+					"c": "isAlive()"
+				},
+				{
+					"d": "checkRun()"
+				}
+			],
+			"answer": "c",
+			"reason": "The isAlive( ) method returns true if the thread upon which it is called is still running. It returns false otherwise."
+		},
+		{
+			"id": "3",
+			"subject": "JAVA",
+			"module": "Threads",
+			"question": "Which of these method waits for the thread to treminate?",
+			"options": [{
+					"a": "sleep()"
+				},
+				{
+					"b": "isAlive()"
+				},
+				{
+					"c": "join()"
+				},
+				{
+					"d": "stop()"
+				}
+			],
+			"answer": "c",
+			"reason": "join()"
+		},
+		{
+			"id": "4",
+			"subject": "JAVA",
+			"module": "Threads",
+			"question": "Which of these method is used to explicitly set the priority of a thread?",
+			"options": [{
+					"a": "set()"
+				},
+				{
+					"b": "make()"
+				},
+				{
+					"c": "setPriority()"
+				},
+				{
+					"d": "makePriority()"
+				}
+			],
+			"answer": "c",
+			"reason": "The default value of priority given to a thread is 5 but we can explicitly change that value between the permitted values 1 & 10, this is done by using the method setPriority()"
+		},
+		{
+			"id": "5",
+			"subject": "JAVA",
+			"module": "Threads",
+			"question": "What is synchronization in reference to a thread?",
+			"options": [{
+					"a": "It’s a process of handling situations when two or more threads need access to a shared resource."
+				},
+				{
+					"b": "Its a process by which many thread are able to access same shared resource simultaneously."
+				},
+				{
+					"c": "Its a process by which a method is able to access many different threads simultaneously."
+				},
+				{
+					"d": "Its a method that allow to many threads to access any information require."
+				}
+			],
+			"answer": "a",
+			"reason": "When two or more threads need to access the same shared resource, they need some way to ensure that the resource will be used by only one thread at a time, the process by which this is achieved is called synchronization"
+		},
+		{
+			"id": "6",
+			"subject": "JAVA",
+			"module": "Threads",
+			"question": "Which of these method is used to implement Runnable interface?",
+			"options": [{
+					"a": "stop()"
+				},
+				{
+					"b": "run()"
+				},
+				{
+					"c": "runThread()"
+				},
+				{
+					"d": "stopThread()"
+				}
+			],
+			"answer": "b",
+			"reason": "To implement Runnable interface, a class needs only to implement a single method called run()."
+		},
+		{
+			"id": "7",
+			"subject": "JAVA",
+			"module": "Threads",
+			"question": "Which of these interface is implemented by Thread class?",
+			"options": [{
+					"a": "Runnable"
+				},
+				{
+					"b": "Connections"
+				},
+				{
+					"c": "Set"
+				},
+				{
+					"d": "MapConnections"
+				}
+			],
+			"answer": "a",
+			"reason": "Runnable"
+		},
+		{
+			"id": "8",
+			"subject": "JAVA",
+			"module": "Threads",
+			"question": "Which of these method is used to begin the execution of a thread?",
+			"options": [{
+					"a": "run()"
+				},
+				{
+					"b": "start()"
+				},
+				{
+					"c": "runThread()"
+				},
+				{
+					"d": "startThread()"
+				}
+			],
+			"answer": "b",
+			"reason": "start()"
+		},
+		{
+			"id": "9",
+			"subject": "JAVA",
+			"module": "Threads",
+			"question": "Which of these are types of multitasking?",
+			"options": [{
+					"a": "Process based"
+				},
+				{
+					"b": "Thread based"
+				},
+				{
+					"c": "Process and Thread based"
+				},
+				{
+					"d": "None of the mentioned"
+				}
+			],
+			"answer": "c",
+			"reason": "There are two types of multitasking: Process based multitasking and Thread based multitasking."
+		},
+		{
+			"id": "10",
+			"subject": "JAVA",
+			"module": "Threads",
+			"question": "Thread priority in Java is?",
+			"options": [{
+					"a": "Integer"
+				},
+				{
+					"b": "Float"
+				},
+				{
+					"c": "double"
+				},
+				{
+					"d": "long"
+				}
+			],
+			"answer": "a",
+			"reason": "Java assigns to each thread a priority that determines hoe that thread should be treated with respect to others. Thread priority are integers that specify relative priority of one thread to another."
+		},
+		{
+			"id": "11",
+			"subject": "JAVA",
+			"module": "Threads",
+			"question": "What will happen if two thread of same priority are called to be processed simultaneously?",
+			"options": [{
+					"a": "Any one will be executed first lexographically"
+				},
+				{
+					"b": "Both of them will be executed simultaneously"
+				},
+				{
+					"c": "None of them will be executed"
+				},
+				{
+					"d": "It is dependent on the operating system."
+				}
+			],
+			"answer": "d",
+			"reason": "In cases where two or more thread with same priority are competing for CPU cycles, different operating system handle this situation differently. Some execute them in time sliced manner some depending on the thread they call."
+		},
+		{
+			"id": "12",
+			"subject": "JAVA",
+			"module": "Threads",
+			"question": "Which of these statements is incorrect?",
+			"options": [{
+					"a": "By multithreading CPU’s idle time is minimized, and we can take maximum use of it."
+				},
+				{
+					"b": "By multitasking CPU’s idle time is minimized, and we can take maximum use of it."
+				},
+				{
+					"c": "Two thread in Java can have same priority"
+				},
+				{
+					"d": "A thread can exist only in two states, running and blocked."
+				}
+			],
+			"answer": "d",
+			"reason": "Thread exist in several states, a thread can be running, suspended, blocked, terminated & ready to run."
+		},
+		{
+			"id": "13",
+			"subject": "JAVA",
+			"module": "Threads",
+			"question": "What are green threads in java?",
+			"options": [{
+					"a": "Green threads are user-level threads"
+				},
+				{
+					"b": "Green threads are high level threads"
+				},
+				{
+					"c": "Green threads are OS level threads"
+				},
+				{
+					"d": "None"
+				}
+			],
+			"answer": "d",
+			"reason": "None"
+		},
+		{
+			"id": "14",
+			"subject": "JAVA",
+			"module": "threads",
+			"question": "Which cannot directly cause a thread to stop executing?",
+			"options": [{
+					"a": "Calling the SetPriority() method on a Thread object."
+				},
+				{
+					"b": "Calling read() method on an InputStream object."
+				},
+				{
+					"c": "Calling notify() method on an object."
+				},
+				{
+					"d": "Calling the wait() method on an object."
+				}
+			],
+			"answer": "c",
+			"reason": "notify() - wakes up a single thread that is waiting on this object's monitor."
+		},
+		{
+			"id": "15",
+			"subject": "JAVA",
+			"module": "threads",
+			"question": "Assume the following method is properly synchronized and called from a thread A on an object B: wait(2000); After calling this method, when will the thread A become a candidate to get another turn at the CPU?",
+			"options": [{
+					"a": "After thread A is notified, or after two seconds."
+				},
+				{
+					"b": "Two seconds after thread A is notified."
+				},
+				{
+					"c": "After the lock on B is released, or after two seconds."
+				},
+				{
+					"d": "Two seconds after lock B is released."
+				}
+			],
+			"answer": "a",
+			"reason": "Either of the two events (notification or wait time expiration) will make the thread become a candidate for running again."
+		},
+		{
+			"id": "16",
+			"subject": "JAVA",
+			"module": "Threads",
+			"question": "Which will contain the body of the thread?",
+			"options": [{
+					"a": "main();"
+				},
+				{
+					"b": "stop();"
+				},
+				{
+					"c": "start();"
+				},
+				{
+					"d": "run();"
+				}
+			],
+			"answer": "d",
+			"reason": "The run() method to a thread is like the main() method to an application. Starting the thread causes the object's run method to be called in that separately executing thread."
+		},
+		{
+			"id": "17",
+			"subject": "JAVA",
+			"module": "Threads",
+			"question": "In java multi-threading, a thread can be created by",
+			"options": [{
+					"a": "Extending Thread class"
+				},
+				{
+					"b": "Implementing Runnable interface"
+				},
+				{
+					"c": "Using both"
+				},
+				{
+					"d": "None"
+				}
+			],
+			"answer": "c",
+			"reason": "In java multi-threaded program, a thread can be created using both by extending Thread class and Implementing Runnable interface."
+		},
+		{
+			"id": "18",
+			"subject": "JAVA",
+			"module": "Threads",
+			"question": "What is maximum thread priority in Java",
+			"options": [{
+					"a": "10"
+				},
+				{
+					"b": "12"
+				},
+				{
+					"c": "5"
+				},
+				{
+					"d": "8"
+				}
+			],
+			"answer": "a",
+			"reason": "None"
+		},
+		{
+			"id": "19",
+			"subject": "JAVA",
+			"module": "Threads",
+			"question": "How many ways a thread can be created in Java multithreading?",
+			"options": [{
+					"a": "1"
+				},
+				{
+					"b": "2"
+				},
+				{
+					"c": "3"
+				},
+				{
+					"d": "4"
+				}
+			],
+			"answer": "b",
+			"reason": "Threads in Java multithreading can be created in two ways. First, by implementing runnable interface and second as by extending thread class."
+		},
+		{
+			"id": "20",
+			"subject": "JAVA",
+			"module": "Threads",
+			"question": "Which statements is correct",
+			"options": [{
+					"a": "On calling Thread start () method a new thread get created."
+				},
+				{
+					"b": "Thread run () method can also be called directly to create thread."
+				},
+				{
+					"c": "Both a and b"
+				},
+				{
+					"d": "None"
+				}
+			],
+			"answer": "a",
+			"reason": "None"
+		},
+		{
+			"id": "21",
+			"subject": "JAVA",
+			"module": "Threads",
+			"question": "Which method is used to make main thread to wait for all child threads",
+			"options": [{
+					"a": "Join ()"
+				},
+				{
+					"b": "Sleep ()"
+				},
+				{
+					"c": "Wait ()"
+				},
+				{
+					"d": "Stop ()"
+				}
+			],
+			"answer": "a",
+			"reason": "None"
+		},
+		{
+			"id": "22",
+			"subject": "JAVA",
+			"module": "Threads",
+			"question": "Default value of a java thread is",
+			"options": [{
+					"a": "0"
+				},
+				{
+					"b": "1"
+				},
+				{
+					"c": "5"
+				},
+				{
+					"d": "10"
+				}
+			],
+			"answer": "c",
+			"reason": "Default priority of thread is = 5. And minimum Priority = 1 & maximum Priority = 10."
+		},
+		{
+			"id": "23",
+			"subject": "JAVA",
+			"module": "Threads",
+			"question": " If a priority of a java thread is 3 then the default priority of its child thread will be",
+			"options": [{
+					"a": "0"
+				},
+				{
+					"b": "1"
+				},
+				{
+					"c": "5"
+				},
+				{
+					"d": "3"
+				}
+			],
+			"answer": "d",
+			"reason": "The default thread priority of a child thread is same as what parent thread has."
+		},
+		{
+			"id": "24",
+			"subject": "JAVA",
+			"module": "Threads",
+			"question": "Min and Max priority of a thread in Java multithreading are",
+			"options": [{
+					"a": "1, 10"
+				},
+				{
+					"b": "0,10"
+				},
+				{
+					"c": "0,255"
+				},
+				{
+					"d": "1,256"
+				}
+			],
+			"answer": "a",
+			"reason": "None"
+		},
+		{
+			"id": "25",
+			"subject": "JAVA",
+			"module": "Threads",
+			"question": "Daemon thread runs in",
+			"options": [{
+					"a": "Background"
+				},
+				{
+					"b": "Foreground"
+				},
+				{
+					"c": "Both"
+				},
+				{
+					"d": "none"
+				}
+			],
+			"answer": "a",
+			"reason": "Threads that run-in background within same process is called daemon thread"
+		},
+		{
+			"id": "26",
+			"subject": "JAVA",
+			"module": "Threads",
+			"question": "To create a daemon thread",
+			"options": [{
+					"a": "First thread setDaemon() is called then start()"
+				},
+				{
+					"b": "First thread start() is called then setDaemon()"
+				},
+				{
+					"c": "Call thread start() and setDaemon() in any order"
+				},
+				{
+					"d": "All correct"
+				}
+			],
+			"answer": "a",
+			"reason": "To make a java thread daemon we need to call setDaemon method before start method"
+		},
+		{
+			"id": "27",
+			"subject": "JAVA",
+			"module": "Threads",
+			"question": "Which thread will be executed first if two threads have same priority",
+			"options": [{
+					"a": "They will fall in starvation and none will be executed."
+				},
+				{
+					"b": "Both will be executed simultaneously"
+				},
+				{
+					"c": "It depends upon operating system"
+				},
+				{
+					"d": "They will be executed on first come first serve basis"
+				}
+			],
+			"answer": "c",
+			"reason": "None"
+		},
+		{
+			"id": "28",
+			"subject": "JAVA",
+			"module": "Threads",
+			"question": "The life cycle of a thread in java is controlled by",
+			"options": [{
+					"a": "JRE"
+				},
+				{
+					"b": "JDK"
+				},
+				{
+					"c": "JVM"
+				},
+				{
+					"d": "None"
+				}
+			],
+			"answer": "c",
+			"reason": "None"
+		},
+		{
+			"id": "29",
+			"subject": "JAVA",
+			"module": "Threads",
+			"question": "Which method is used to get current running thread object?",
+			"options": [{
+					"a": "runningThread()"
+				},
+				{
+					"b": "currentThread()"
+				},
+				{
+					"c": "runnableThread()"
+				},
+				{
+					"d": "None"
+				}
+			],
+			"answer": "b",
+			"reason": "None"
+		},
+		{
+			"id": "30",
+			"subject": "JAVA",
+			"module": "Threads",
+			"question": "Which method registers a thread in a thread scheduler?",
+			"options": [{
+					"a": "run();"
+				},
+				{
+					"b": "construct();"
+				},
+				{
+					"c": "start();"
+				},
+				{
+					"d": "register();"
+				}
+			],
+			"answer": "c",
+			"reason": "The start() method causes this thread to begin execution; the Java Virtual Machine calls the run method of this thread."
+		},
+		{
+			"id": "31",
+			"subject": "JAVA",
+			"module": "Threads",
+			"question": "Which class or interface defines the wait(), notify(),and notifyAll() methods?",
+			"options": [{
+					"a": "Object"
+				},
+				{
+					"b": "Thread"
+				},
+				{
+					"c": "Runnable"
+				},
+				{
+					"d": "Class"
+				}
+			],
+			"answer": "a",
+			"reason": "The Object class defines these thread-specific methods."
+		},
+		{
+			"id": "32",
+			"subject": "JAVA",
+			"module": "Threads",
+			"question": "Threads are",
+			"options": [{
+					"a": "lightweight process"
+				},
+				{
+					"b": "heavyweight process"
+				},
+				{
+					"c": "both"
+				},
+				{
+					"d": "none"
+				}
+			],
+			"answer": "a",
+			"reason": "None"
+		},
+		{
+			"id": "33",
+			"subject": "JAVA",
+			"module": "Threads",
+			"question": "The tasks or job that thread needs to perform is written inside",
+			"options": [{
+					"a": "static block"
+				},
+				{
+					"b": "inner class"
+				},
+				{
+					"c": "Both A & B"
+				},
+				{
+					"d": "run()"
+				}
+			],
+			"answer": "d",
+			"reason": "None"
+		},
+		{
+			"id": "34",
+			"subject": "JAVA",
+			"module": "Threads",
+			"question": "If there occurs any exception in thread, then other threads",
+			"options": [{
+					"a": "gets impacted"
+				},
+				{
+					"b": "doesn't gets impacted"
+				},
+				{
+					"c": "stop executing"
+				},
+				{
+					"d": "daemon thread starts executing"
+				}
+			],
+			"answer": "b",
+			"reason": "None"
+		},
+		{
+			"id": "35",
+			"subject": "JAVA",
+			"module": "Threads",
+			"question": "A thread can acquire a lock by using which reserved keyword?",
+			"options": [{
+					"a": "volatile"
+				},
+				{
+					"b": "synchronized"
+				},
+				{
+					"c": "locked"
+				},
+				{
+					"d": "none"
+				}
+			],
+			"answer": "b",
+			"reason": "None"
+		},
+		{
+			"id": "36",
+			"subject": "JAVA",
+			"module": "Threads",
+			"question": "What is valid about threads",
+			"options": [{
+					"a": "Threads have their own heap allocated area."
+				},
+				{
+					"b": "Threads have their own stack."
+				},
+				{
+					"c": "Threads doesn't have own stack."
+				},
+				{
+					"d": "None"
+				}
+			],
+			"answer": "b",
+			"reason": "None"
+		},
+		{
+			"id": "37",
+			"subject": "JAVA",
+			"module": "Threads",
+			"question": "Which method restarts the thread",
+			"options": [{
+					"a": "start()"
+				},
+				{
+					"b": "restart()"
+				},
+				{
+					"c": "restartThread()"
+				},
+				{
+					"d": "none"
+				}
+			],
+			"answer": "d",
+			"reason": "None"
+		},
+		{
+			"id": "38",
+			"subject": "JAVA",
+			"module": "Threads",
+			"question": "How can Thread go from waiting to runnable state?",
+			"options": [{
+					"a": "notify/notifAll"
+				},
+				{
+					"b": "When sleep time is up"
+				},
+				{
+					"c": "Using resume() method when thread was suspended"
+				},
+				{
+					"d": "All"
+				}
+			],
+			"answer": "d",
+			"reason": "None"
+		},
+		{
+			"id": "39",
+			"subject": "JAVA",
+			"module": "Threads",
+			"question": "Which method can be used to find whether Thread hasn't entered dead state?",
+			"options": [{
+					"a": "isAlive()"
+				},
+				{
+					"b": "isRunning()"
+				},
+				{
+					"c": "isNotDead"
+				},
+				{
+					"d": "All"
+				}
+			],
+			"answer": "a",
+			"reason": "None"
+		},
+		{
+			"id": "40",
+			"subject": "JAVA",
+			"module": "Threads",
+			"question": "Which is thread safe?",
+			"options": [{
+					"a": "StringBuffer"
+				},
+				{
+					"b": "StringBuilder"
+				},
+				{
+					"c": "All"
+				},
+				{
+					"d": "None"
+				}
+			],
+			"answer": "a",
+			"reason": "None"
+		}
+	]
+}

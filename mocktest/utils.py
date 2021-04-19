@@ -1,0 +1,36 @@
+import json
+from mocktest import db
+from mocktest.models import Java
+
+def add_questions():
+    question_entries = []
+    list_files = ['Threads', 'Data_Types_Variables_Arrays']
+
+    for file_name in list_files:
+        with open(f'mocktest/static/questions/{file_name}.json') as f:
+            data = json.load(f)
+        
+        for question in data["quiz"]:   
+            if(len(question['options']) == 4):
+                new_question = Java(question_id=question['id'],
+                                        subject=question['subject'],
+                                        module=question['module'],
+                                        question=question['question'],
+                                        answer=question['answer'],
+                                        reason=question['reason'],
+                                        optiona=question['options'][0]['a'],
+                                        optionb=question['options'][1]['b'],
+                                        optionc=question['options'][2]['c'],
+                                        optiond=question['options'][3]['d']) 
+            else:
+                new_question = Java(question_id=question['id'],
+                                        subject=question['subject'],
+                                        module=question['module'],
+                                        question=question['question'],
+                                        answer=question['answer'],
+                                        reason=question['reason'],
+                                        optiona=question['options'][0]['a'],
+                                        optionb=question['options'][1]['b'])                      
+            question_entries.append(new_question)
+        db.session.add_all(question_entries)
+        db.session.commit()

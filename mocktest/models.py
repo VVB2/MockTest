@@ -1,3 +1,4 @@
+import json
 from datetime import datetime
 from itsdangerous import TimedJSONWebSignatureSerializer as Serializer
 from datetime import datetime
@@ -37,4 +38,23 @@ class User(db.Model, UserMixin):
     
     def __repr__(self):
         return f"User('{self.username}', '{self.email}', '{self.image_file}')"
+
+class Java(db.Model, UserMixin):
+    __tablename__ = 'JAVA'
+    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    question_id = db.Column(db.Integer)
+    subject = db.Column(db.String(10), nullable=False)
+    module = db.Column(db.String(30), nullable=False)
+    question = db.Column(db.String(500), nullable=False)
+    answer = db.Column(db.String(5), nullable=False)
+    reason = db.Column(db.String(255), nullable=False)
+    optiona = db.Column(db.String(100))
+    optionb = db.Column(db.String(100))
+    optionc = db.Column(db.String(100))
+    optiond = db.Column(db.String(100))
+
+    def __repr__(self):
+        return f"Variable('{self.module}', '{self.question}')"
+
+
 
