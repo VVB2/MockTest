@@ -4,7 +4,7 @@ from mocktest.models import Java
 
 def add_questions():
     question_entries = []
-    list_files = ['Threads', 'Data_Types_Variables_Arrays']
+    list_files = ['Data_Types_Variables_Arrays','Exception','Threads']
 
     for file_name in list_files:
         with open(f'mocktest/static/questions/{file_name}.json') as f:

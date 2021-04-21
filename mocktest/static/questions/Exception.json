@@ -1,0 +1,697 @@
+{
+
+	"quiz": [{
+			"id": "1",
+			"subject": "JAVA",
+			"module": "Exception",
+			"question": "Types of exceptions in Java programming are",
+			"options": [{
+					"a": "Checked exception"
+				},
+				{
+					"b": "unchecked exception"
+				},
+				{
+					"c": "Both A & B"
+				},
+				{
+					"d": "None"
+				}
+			],
+			"answer": "c",
+			"reason": "None"
+		},
+		{
+			"id": "2",
+			"subject": "JAVA",
+			"module": "Exception",
+			"question": "Checked exception caught at",
+			"options": [{
+					"a": "compile time"
+				},
+				{
+					"b": "run time"
+				},
+				{
+					"c": "Both at compile and run time"
+				},
+				{
+					"d": "None"
+				}
+			],
+			"answer": "a",
+			"reason": "None"
+		},
+		{
+			"id": "3",
+			"subject": "JAVA",
+			"module": "Exception",
+			"question": "Which is the super class of all java exceptions classes?",
+			"options": [{
+					"a": "Exception"
+				},
+				{
+					"b": "RuntimeException"
+				},
+				{
+					"c": "Throwable"
+				},
+				{
+					"d": "IOException"
+				}
+			],
+			"answer": "c",
+			"reason": "None"
+		},
+			{
+			"id": "4",
+			"subject": "JAVA",
+			"module": "Exception",
+			"question": "Direct subclass of Throwable in Java",
+			"options": [{
+					"a": "Exception"
+				},
+				{
+					"b": "Error"
+				},
+				{
+					"c": "Both A & C"
+				},
+				{
+					"d": "None"
+				}
+			],
+			"answer": "c",
+			"reason": "None"
+		},
+		{
+		    "id": "5",
+		    "subject": "JAVA",
+	    	"module": "Exception",
+	    	"question": "un-checked(runtime) exception in java is/are",
+		    "options": [{
+			    	"a": "ArrayIndexOutOfBoundsException"
+			    },  
+			    {
+				    "b": "ArithmeticException"
+			    },
+			    {
+				    "c": "NullPointerException"
+			    },
+			    {
+				    "d": "All"
+			    }
+		    ],
+		    "answer": "d",
+		    "reason": "All above mentioned exceptions are run time exceptions."
+	    },
+	    {
+	        "id": "6",
+	    	"subject": "JAVA",
+	    	"module": "Exception",
+		    "question": " Incorrect statement(s) about finally block in java exception",
+		    "options": [{
+			    	"a": "Finally block always follow try catch block"
+			    },
+			    {
+				    "b": "finally block always executes whether exception is handled or not."
+			    },
+			    {
+				    "c": "There can be multiple finally blocks followed by try catch block."
+			    },
+			    {
+				    "d": "All"
+			    }
+		    ],
+		    "answer": "c",
+		    "reason": "In java exception handling, for each try block there can be zero or more catch blocks, but only one finally block."
+	    },
+	    {
+	        "id": "7",
+	    	"subject": "JAVA",
+	    	"module": "Exception",
+		    "question": "True statement(s) about try catch block",
+		    "options": [{
+			    	"a": "Throws is used with the method signature."
+			    },
+			    {
+				    "b": "Throw is used within the method."
+			    },
+			    {
+				    "c": "using throws multiple exceptions can be declared"
+			    },
+			    {
+				    "d": "All are correct."
+			    }
+		    ],
+		    "answer": "d",
+		    "reason": "None"
+	    },
+	    {
+	        "id": "8",
+	    	"subject": "JAVA",
+	    	"module": "Exception",
+		    "question": "Which is not an exception in Java?",
+		    "options": [{
+			    	"a": "IO Exception"
+			    },
+			    {
+				    "b": "Logical Exception"
+			    },
+			    {
+				    "c": "Array Index out of bound Exception"
+			    },
+			    {
+				    "d": "Arithmetic Exception"
+			    }
+		    ],
+		    "answer": "b",
+		    "reason": "None"
+	    },
+	    {
+	        "id": "9",
+	    	"subject": "JAVA",
+	    	"module": "Exception",
+		    "question": "If an exception is thrown from try block in java program then which block handle the exception?",
+		    "options": [{
+			    	"a": "Catch"
+			    },
+			    {
+				    "b": "finally"
+			    },
+			    {
+				    "c": "final"
+			    },
+			    {
+				    "d": "finalize"
+			    }
+		    ],
+		    "answer": "a",
+		    "reason": "None"
+	    },
+	    {
+	        "id": "10",
+	    	"subject": "JAVA",
+	    	"module": "Exception",
+		    "question": "Which of these keywords must be used to handle the exception thrown by try block in some rational manner?",
+		    "options": [{
+			    	"a": "try"
+			    },
+			    {
+				    "b": "finally"
+			    },
+			    {
+				    "c": "throw"
+			    },
+			    {
+				    "d": "catch"
+			    }
+		    ],
+		    "answer": "d",
+		    "reason": "If an exception occurs within the try block, it is thrown and cached by catch block for processing."
+	    },
+	    {
+	        "id": "11",
+	    	"subject": "JAVA",
+	    	"module": "Exception",
+		    "question": "Which statement is true?",
+		    "options": [{
+			    	"a": "catch(X x) can catch subclasses of X where X is a subclass of Exception."
+			    },
+			    {
+				    "b": "Any statement that can throw an Exception must be enclosed in a try block."
+			    },
+			    {
+				    "c": "The Error class is a RuntimeException."
+			    },
+			    {
+				    "d": "Any statement that can throw an Error must be enclosed in a try block."
+			    }
+		    ],
+		    "answer": "a",
+		    "reason": "If the class specified in the catch clause does have subclasses, any exception object that subclasses the specified class will be caught as well."
+	    },
+	    {
+	        "id": "12",
+	    	"subject": "JAVA",
+	    	"module": "Exception",
+		    "question": "Which of these is a super class of all errors and exceptions in the Java language?",
+		    "options": [{
+			    	"a": "Catchable"
+			    },
+			    {
+				    "b": "Throwable"
+			    },
+			    {
+				    "c": "RunTimeExceptions"
+			    },
+			    {
+				    "d": "None of the above"
+			    }
+		    ],
+		    "answer": "b",
+		    "reason": "Throwable is a super class of all errors and exceptions in the Java language"
+	    },
+	    {
+	        "id": "13",
+	    	"subject": "JAVA",
+	    	"module": "Exception",
+		    "question": "In which of the following package Exception class exist?",
+		    "options": [{
+			    	"a": " java.file"
+			    },
+			    {
+				    "b": " java.lang"
+			    },
+			    {
+				    "c": "java.io"
+			    },
+			    {
+				    "d": "java.util"
+			    }
+		    ],
+		    "answer": "b",
+		    "reason": "None"
+	    },
+	    {
+	        "id": "14",
+	    	"subject": "JAVA",
+	    	"module": "Exception",
+		    "question": "Which exception is thrown when divide by zero statement executes?",
+		    "options": [{
+			    	"a": "NumberFormatException"
+			    },
+			    {
+				    "b": "NullPointerException"
+			    },
+			    {
+				    "c": "ArithmeticException"
+			    },
+			    {
+				    "d": "None of these"
+			    }
+		    ],
+		    "answer": "c",
+		    "reason": "ArithmeticException is thrown when divide by zero statement executes."
+	    },
+	    {
+	        "id": "15",
+	    	"subject": "JAVA",
+	    	"module": "Exception",
+		    "question": "Exception was introduced in which java version",
+		    "options": [{
+			    	"a": "Java 1"
+			    },
+			    {
+				    "b": "Java 2"
+			    },
+			    {
+				    "c": "Java 3"
+			    },
+			    {
+				    "d": "Java 4"
+			    }
+		    ],
+		    "answer": "a",
+		    "reason": "None"
+	    },
+	    {
+	        "id": "16",
+	    	"subject": "JAVA",
+	    	"module": "Exception",
+		    "question": "Which of these class is highest in hierarchy in java",
+		    "options": [{
+			    	"a": "java.lang.Exception"
+			    },
+			    {
+				    "b": "java.lang.Error"
+			    },
+			    {
+				    "c": "java.lang.Throwable"
+			    },
+			    {
+				    "d": "java.lang.Object"
+			    }
+		    ],
+		    "answer": "d",
+		    "reason": "None"
+	    },
+	    {
+	        "id": "17",
+	    	"subject": "JAVA",
+	    	"module": "Exception",
+		    "question": "Exception and Error are direct subclasses of?",
+		    "options": [{
+			    	"a": "BaseException"
+			    },
+			    {
+				    "b": "Throwable"
+			    },
+			    {
+				    "c": "Object"
+			    },
+			    {
+				    "d": "RuntimeException"
+			    }
+		    ],
+		    "answer": "b",
+		    "reason": "None"
+	    },
+	    {
+	        "id": "18",
+	    	"subject": "JAVA",
+	    	"module": "Exception",
+		    "question": "FileNotFoundException",
+		    "options": [{
+			    	"a": "Is a subclass/extends IOException"
+			    },
+			    {
+				    "b": "Is a Compile time exception"
+			    },
+			    {
+				    "c": "Found in java.io package"
+			    },
+			    {
+				    "d": "All"
+			    }
+		    ],
+		    "answer": "d",
+		    "reason": "None"
+	    },
+	    {
+	        "id": "19",
+	    	"subject": "JAVA",
+	    	"module": "Exception",
+		    "question": "Which of these points will be valid If superclass method does not throw any exception",
+		    "options": [{
+			    	"a": "overridden method of subclass can throw any RuntimeException"
+			    },
+			    {
+				    "b": "overridden method of subclass cannot throw any checked exception"
+			    },
+			    {
+				    "c": "overridden method of subclass may not throw any exception."
+			    },
+			    {
+				    "d": "None"
+			    }
+		    ],
+		    "answer": "c",
+		    "reason": "None"
+	    },
+	    {
+	        "id": "20",
+	    	"subject": "JAVA",
+	    	"module": "Exception",
+		    "question": "Which of these exceptions are always needed to be manually propagated?",
+		    "options": [{
+			    	"a": "Error"
+			    },
+			    {
+				    "b": "unchecked exceptions"
+			    },
+			    {
+				    "c": "checked exceptions"
+			    },
+			    {
+				    "d": "None"
+			    }
+		    ],
+		    "answer": "c",
+		    "reason": "None"
+	    },
+	    {
+	        "id": "21",
+	    	"subject": "JAVA",
+	    	"module": "Exception",
+		    "question": "Which of these not a Error?",
+		    "options": [{
+			    	"a": "VirtualMachineError"
+			    },
+			    {
+				    "b": "ClassNotFoundError"
+			    },
+			    {
+				    "c": "OutOfMemoryError"
+			    },
+			    {
+				    "d": "IOError"
+			    }
+		    ],
+		    "answer": "b",
+		    "reason": "None"
+	    },
+	    {
+	        "id": "22",
+	    	"subject": "JAVA",
+	    	"module": "Exception",
+		    "question": "Which of these is valid code snippet in exception handling in java?",
+		    "options": [{
+			    	"a": "catch{ }"
+			    },
+			    {
+				    "b": "finally{ }"
+			    },
+			    {
+				    "c": "try{ }finally{ }"
+			    },
+			    {
+				    "d": "try{ }"
+			    }
+		    ],
+		    "answer": "c",
+		    "reason": "None"
+	    },
+	    {
+	        "id": "23",
+	    	"subject": "JAVA",
+	    	"module": "Exception",
+		    "question": "Which of these keywords is used to by the calling function to guard against the exception that is thrown by called function?",
+		    "options": [{
+			    	"a": "try"
+			    },
+			    {
+				    "b": "throw"
+			    },
+			    {
+				    "c": "throws"
+			    },
+			    {
+				    "d": "catch"
+			    }
+		    ],
+		    "answer": "c",
+		    "reason": "If a method is capable of causing an exception that it does not handle. It must specify this behaviour the behaviour so that callers of the method can guard themselves against that exception. This is done by using throws clause in methods declaration."
+	    },
+	    {
+	        "id": "24",
+	    	"subject": "JAVA",
+	    	"module": "Exception",
+		    "question": "Which of the following exceptions are thrown by the JVM?",
+		    "options": [{
+			    	"a": "ArrayIndexOutOfBoundsException"
+			    },
+			    {
+				    "b": "ExceptionInInitializerError"
+			    },
+			    {
+				    "c": "NullPointerException"
+			    },
+			    {
+				    "d": "All"
+			    }
+		    ],
+		    "answer": "d",
+		    "reason": "None"
+	    },
+	    {
+	        "id": "25",
+	    	"subject": "JAVA",
+	    	"module": "Exception",
+		    "question": "Which of these methods return description of an exception?",
+		    "options": [{
+			    	"a": "getException()"
+			    },
+			    {
+				    "b": "getMessage()"
+			    },
+			    {
+				    "c": "obtainDescription()"
+			    },
+			    {
+				    "d": "obtainException()"
+			    }
+		    ],
+		    "answer": "b",
+		    "reason": "getMessage() returns a description of the exception."
+	    },
+	    {
+	        "id": "26",
+	    	"subject": "JAVA",
+	    	"module": "Exception",
+		    "question": "Which of these methods is used to print stack trace?",
+		    "options": [{
+			    	"a": "obtainStackTrace()"
+			    },
+			    {
+				    "b": "printStackTrace()"
+			    },
+			    {
+				    "c": "getStackTrace()"
+			    },
+			    {
+				    "d": "displayStackTrace()"
+			    }
+		    ],
+		    "answer": "b",
+		    "reason": "None"
+	    },
+	    {
+	        "id": "27",
+	    	"subject": "JAVA",
+	    	"module": "Exception",
+		    "question": "Which of these classes is used to define exceptions?",
+		    "options": [{
+			    	"a": "Exception"
+			    },
+			    {
+				    "b": "Throwable"
+			    },
+			    {
+				    "c": "Abstract"
+			    },
+			    {
+				    "d": "System"
+			    }
+		    ],
+		    "answer": "a",
+		    "reason": "None"
+	    },
+	    {
+	        "id": "28",
+	    	"subject": "JAVA",
+	    	"module": "Exception",
+		    "question": "A single try block must be followed by which of these?",
+		    "options": [{
+			    	"a": "finally"
+			    },
+			    {
+				    "b": "catch"
+			    },
+			    {
+				    "c": "finally & catch"
+			    },
+			    {
+				    "d": "none of the mentioned"
+			    }
+		    ],
+		    "answer": "c",
+		    "reason": "try block can be followed by any of finally or catch block, try block checks for exceptions and work is performed by finally and catch block as per the exception."
+	    },
+	    {
+	        "id": "29",
+	    	"subject": "JAVA",
+	    	"module": "Exception",
+		    "question": "Which of these exceptions will occur if we try to access the index of an array beyond its length?",
+		    "options": [{
+			    	"a": "ArithmeticException"
+			    },
+			    {
+				    "b": "ArrayException"
+			    },
+			    {
+				    "c": "ArrayIndexException"
+			    },
+			    {
+				    "d": "ArrayIndexOutOfBoundsException"
+			    }
+		    ],
+		    "answer": "d",
+		    "reason": "ArrayIndexOutOfBoundsException is a built in exception that is caused when we try to access an index location which is beyond the length of an array."
+	    },
+	    {
+	        "id": "30",
+	    	"subject": "JAVA",
+	    	"module": "Exception",
+		    "question": "Which of these operator is used to generate an instance of an exception than can be thrown by using throw?",
+		    "options": [{
+			    	"a": "new"
+			    },
+			    {
+				    "b": "malloc"
+			    },
+			    {
+				    "c": "alloc"
+			    },
+			    {
+				    "d": "thrown"
+			    }
+		    ],
+		    "answer": "a",
+		    "reason": "new is used to create an instance of an exception. All of java�s built in run-time exceptions have two constructors: one with no parameters and one that takes a string parameter."
+	    },
+	    {
+	        "id": "31",
+	    	"subject": "JAVA",
+	    	"module": "Exception",
+		    "question": "What exception thrown by parseInt() method?",
+		    "options": [{
+			    	"a": "ArithmeticException"
+			    },
+			    {
+				    "b": "ClassNotFoundException"
+			    },
+			    {
+				    "c": "NullPointerException"
+			    },
+			    {
+				    "d": "NumberFormatException"
+			    }
+		    ],
+		    "answer": "d",
+		    "reason": "None"
+	    },
+	    {
+	        "id": "32",
+	    	"subject": "JAVA",
+	    	"module": "Exception",
+		    "question": "Which of the following ways can be used to handle exceptions?X: By wrapping the desired code in a try block followed by a catch block to catch the exceptions.Y: List the desired exceptions in the throws clause of the method and let the caller of the method handle those exceptions.",
+		    "options": [{
+			    	"a": "X only"
+			    },
+			    {
+				    "b": "Y only"
+			    },
+			    {
+				    "c": "Both X and Y"
+			    },
+			    {
+				    "d": "None of them"
+			    }
+		    ],
+		    "answer": "c",
+		    "reason": "None"
+	    },
+	    {
+	        "id": "33",
+	    	"subject": "JAVA",
+	    	"module": "Exception",
+		    "question": "Which of the following is correct?",
+		    "options": [{
+			    	"a": "All classes of Exception extend from Error."
+			    },
+			    {
+				    "b": "All classes of Error extend from Exception."
+			    },
+			    {
+				    "c": "All classes of Exception extend from Throwable."
+			    },
+			    {
+				    "d": "All classes of Throwable extend from Exception."
+			    }
+		    ],
+		    "answer": "c",
+		    "reason": "None"
+	    }
+	]
+}

@@ -53,17 +53,46 @@
 {% block content %}
 <h4 class="pb-5">
   <div id="timer" class="float-right">Time left</div>
-  <i class="bi bi-hourglass-bottom float-right mr-2" id="hourglass"></i>
+  <img src="https://i.gifer.com/XVo6.gif" class="float-right" width="30px" height="30px"></img>
 </h4>
-
-<div>{{ form.question.label }}</div>
-
+{% for question in data %}
+<div class="content-section">
+  <h6>Q{{ question.id }}. {{ question.question }}</h6>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name= '{{ question.id }}' id='option' value='a'>
+      <label class="form-check-label" for='{{ loop.index }}'>      
+        {{ question.optiona }}
+      </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name= '{{ question.id }}' id='option' value='b'>
+      <label class="form-check-label" for='{{ loop.index }}'>      
+        {{ question.optionb }}
+      </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name= '{{ question.id }}' id='option' value='c'>
+      <label class="form-check-label" for='{{ loop.index }}'>      
+        {{ question.optionc }}
+      </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name= '{{ question.id }}' id='option' value='d'>
+      <label class="form-check-label" for='{{ loop.index }}'>      
+        {{ question.optiond }}
+      </label>
+  </div>
+</div>
+{% endfor %}
+<button type="button" onclick="displayRadioValue()">
+  Submit
+</button>
 {% endblock %}
 
 {% block script %}
 <script>
 let timerInterval = null;
-const TIME_LIMIT = 1800;
+let TIME_LIMIT = 1800;
 let timePassed = 0;
 let timeLeft = TIME_LIMIT;
 let seconds = 0;
@@ -71,20 +100,10 @@ startTimer();
 function formatTimeLeft(time) {
     const minutes = Math.floor(time / 60);
     seconds = time % 60;   
-    if (seconds % 3 == 0){
-      document.getElementById('hourglass').className = "bi bi-hourglass-bottom float-right mr-2";
-    }
-    else if(seconds % 3 == 1){
-      document.getElementById('hourglass').className = "bi bi-hourglass-split float-right mr-2";
-    }
-    else if (seconds % 3 == 2){
-      document.getElementById('hourglass').className = "bi bi-hourglass-top float-right mr-2";
-    }
     if (seconds < 10) {
         seconds = `0${seconds}`;
     }
     if (seconds == 0) {
-        console.log("Khatam");
     }
     return `${minutes}:${seconds}`;
 }
@@ -99,6 +118,21 @@ function startTimer() {
     }, 1000);
 }
 
+function displayRadioValue() {
+  let answers = {};
+  var ele = document.getElementsByTagName('input');           
+  for(i = 0; i < ele.length; i++) {       
+      if(ele[i].type="radio") {                 
+          if(ele[i].checked) {
+            answers[ele[i].name] = ele[i].value;
+          }
+      }
+  }
+  console.log(answers);
+  // for (let i = 0; i < answers.length; i++) {
+  //   console.log(answers);
+  // }
+}
 
 </script>
 {% endblock %}

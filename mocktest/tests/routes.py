@@ -1,10 +1,9 @@
 import os
 import time
 from flask import (render_template,
-                abort, Blueprint, json, current_app as app, url_for, g)
+                abort, Blueprint, json, current_app as app, url_for)
 from mocktest.models import Java
 from flask_login import current_user, login_required
-from mocktest.tests.forms import QuestionForm 
 
 tests = Blueprint('tests', __name__)
 
@@ -21,5 +20,6 @@ def python():
 @tests.route("/java-practice/<page>")
 @login_required
 def java_que(page):
-    form = QuestionForm(page = page)
-    return render_template('java_questions.html', title='Java MockTest Selection', image_file=current_user.image_file, form=form)
+    data = Java.query.filter_by(module=page).all()
+    print(len(page))
+    return render_template('java_questions.html', title=page.replace('_',' '), image_file=current_user.image_file, data=data)
