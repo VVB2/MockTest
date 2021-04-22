@@ -1,0 +1,1674 @@
+{
+  "quiz": [
+    {
+      "id": "1",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "Is Python case sensitive when dealing with identifiers?",
+      "options": [
+        {
+          "a": "yes"
+        },
+        {
+          "b": "no"
+        },
+        {
+          "c": "machine dependent"
+        },
+        {
+          "d": "none of the mentioned"
+        }
+      ],
+      "answer": "a",
+      "reason": "Case is always significant."
+    },
+    {
+      "id": "2",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "What is the maximum possible length of an identifier?",
+      "options": [
+        {
+          "a": "31 characters"
+        },
+        {
+          "b": "63 characters"
+        },
+        {
+          "c": "63 characters"
+        },
+        {
+          "d": "none of the mentioned"
+        }
+      ],
+      "answer": "d",
+      "reason": "Identifiers can be of any length."
+    },
+    {
+      "id": "3",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "Which of the following is invalid?",
+      "options": [
+        {
+          "a": "_a = 1"
+        },
+        {
+          "b": "__a = 1"
+        },
+        {
+          "c": "__str__ = 1"
+        },
+        {
+          "d": "none of the mentioned"
+        }
+      ],
+      "answer": "d",
+      "reason": "All the statements will execute successfully but at the cost of reduced readability."
+    },
+    {
+      "id": "4",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "Which of the following is an invalid variable?",
+      "options": [
+        {
+          "a": "my_string_1"
+        },
+        {
+          "b": "1st_string"
+        },
+        {
+          "c": " foo"
+        },
+        {
+          "d": "-"
+        }
+      ],
+      "answer": "b",
+      "reason": "Variable names should not start with a number."
+    },
+    {
+      "id": "5",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "Why are local variable names beginning with an underscore discouraged?",
+      "options": [
+        {
+          "a": "they are used to indicate a private variables of a class"
+        },
+        {
+          "b": "they confuse the interpreter"
+        },
+        {
+          "c": "they are used to indicate global variables"
+        },
+        {
+          "d": "they slow down execution"
+        }
+      ],
+      "answer": "a",
+      "reason": "As Python has no concept of private variables, leading underscores are used to indicate variables that must not be accessed from outside the class."
+    },
+    {
+      "id": "6",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "Which of the following is not a keyword?",
+      "options": [
+        {
+          "a": "eval"
+        },
+        {
+          "b": "assert"
+        },
+        {
+          "c": "nonlocal"
+        },
+        {
+          "d": "pass"
+        }
+      ],
+      "answer": "a",
+      "reason": "eval can be used as a variable."
+    },
+    {
+      "id": "7",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "All keywords in Python are in _________",
+      "options": [
+        {
+          "a": "lower case"
+        },
+        {
+          "b": "UPPER CASE"
+        },
+        {
+          "c": "Capitalized"
+        },
+        {
+          "d": "None of the mentioned"
+        }
+      ],
+      "answer": "d",
+      "reason": "True, False and None are capitalized while the others are in lower case."
+    },
+    {
+      "id": "8",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "Which of the following is true for variable names in Python?",
+      "options": [
+        {
+          "a": "unlimited length"
+        },
+        {
+          "b": "all private members must have leading and trailing underscores"
+        },
+        {
+          "c": "underscore and ampersand are the only two special characters allowed"
+        },
+        {
+          "d": "none of the mentioned"
+        }
+      ],
+      "answer": "a",
+      "reason": "Variable names can be of any length."
+    },
+    {
+      "id": "9",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "Which of the following is an invalid statement?",
+      "options": [
+        {
+          "a": "abc = 1,000,000"
+        },
+        {
+          "b": "a b c = 1000 2000 3000"
+        },
+        {
+          "c": "a,b,c = 1000, 2000, 3000"
+        },
+        {
+          "d": "a_b_c = 1,000,000"
+        }
+      ],
+      "answer": "b",
+      "reason": "Spaces are not allowed in variable names."
+    },
+    {
+      "id": "10",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "Which of the following cannot be a variable? ",
+      "options": [
+        {
+          "a": " __init__"
+        },
+        {
+          "b": "in"
+        },
+        {
+          "c": "it"
+        },
+        {
+          "d": "on"
+        }
+      ],
+      "answer": "b",
+      "reason": "in is a keyword."
+    },
+    {
+      "id": "11",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "Which is the correct operator for power(xy)?",
+      "options": [
+        {
+          "a": "X^y"
+        },
+        {
+          "b": "X**y"
+        },
+        {
+          "c": "X^^y"
+        },
+        {
+          "d": "None of the mentioned"
+        }
+      ],
+      "answer": "b",
+      "reason": "In python, power operator is x**y i.e. 2**3=8."
+    },
+    {
+      "id": "12",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "Which one of these is floor division?",
+      "options": [
+        {
+          "a": "/"
+        },
+        {
+          "b": "//"
+        },
+        {
+          "c": "%"
+        },
+        {
+          "d": "None of the mentioned"
+        }
+      ],
+      "answer": "b",
+      "reason": "When both of the operands are integer then python chops out the fraction part and gives you the round off value, to get the accurate answer use floor division. This is floor division. For ex, 5/2 = 2.5 but both of the operands are integer so answer of this expression in python is 2. To get the 2.5 answer, use floor division."
+    },
+    {
+      "id": "13",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "What is the answer to this expression, 22 % 3 is?",
+      "options": [
+        {
+          "a": "7"
+        },
+        {
+          "b": "1"
+        },
+        {
+          "c": "0"
+        },
+        {
+          "d": "5"
+        }
+      ],
+      "answer": "b",
+      "reason": "Modulus operator gives the remainder. So, 22%3 gives the remainder, that is, 1"
+    },
+    {
+      "id": "14",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "Mathematical operations can be performed on a string.",
+      "options": [
+        {
+          "a": "True"
+        },
+        {
+          "b": "False"
+        }
+      ],
+      "answer": "b",
+      "reason": " You can’t perform mathematical operation on string even if the string is in the form: ‘1234…’."
+    },
+    {
+      "id": "15",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "Operators with the same precedence are evaluated in which manner?",
+      "options": [
+        {
+          "a": "Left to Right"
+        },
+        {
+          "b": "Right to Left"
+        },
+        {
+          "c": "Can’t say"
+        },
+        {
+          "d": "None of the mentioned"
+        }
+      ],
+      "answer": "a",
+      "reason": "None."
+    },
+    {
+      "id": "16",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "What is the output of this expression, 3*1**3?",
+      "options": [
+        {
+          "a": "27"
+        },
+        {
+          "b": "9"
+        },
+        {
+          "c": "3"
+        },
+        {
+          "d": "1"
+        }
+      ],
+      "answer": "c",
+      "reason": "First this expression will solve 1**3 because exponential has higher precedence than multiplication, so 1**3 = 1 and 3*1 = 3."
+    },
+    {
+      "id": "17",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "Which one of the following has the same precedence level?",
+      "options": [
+        {
+          "a": "Addition and Subtraction"
+        },
+        {
+          "b": "Multiplication, Division and Addition"
+        },
+        {
+          "c": "Multiplication, Division, Addition and Subtraction"
+        },
+        {
+          "d": "Addition and Multiplication"
+        }
+      ],
+      "answer": "a",
+      "reason": "“Addition and Subtraction” are at the same precedence level. Similarly, “Multiplication and Division” are at the same precedence level. However, Multiplication and Division operators are at a higher precedence level than Addition and Subtraction operators."
+    },
+    {
+      "id": "18",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "The expression Int(x) implies that the variable x is converted to integer.",
+      "options": [
+        {
+          "a": "True"
+        },
+        {
+          "b": "False"
+        }
+      ],
+      "answer": "a",
+      "reason": "None."
+    },
+    {
+      "id": "19",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "Which one of the following has the highest precedence in the expression?",
+      "options": [
+        {
+          "a": "Exponential"
+        },
+        {
+          "b": "Addition"
+        },
+        {
+          "c": "Multiplication"
+        },
+        {
+          "d": "Parentheses"
+        }
+      ],
+      "answer": "d",
+      "reason": "Just remember: PEMDAS, that is, Parenthesis, Exponentiation, Division, Multiplication, Addition, Subtraction. Note that the precedence order of Division and Multiplication is the same. Likewise, the order of Addition and Subtraction is also the same."
+    },
+    {
+      "id": "20",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "Which of these in not a core data type?",
+      "options": [
+        {
+          "a": "Lists"
+        },
+        {
+          "b": "Dictionary"
+        },
+        {
+          "c": "Tuples"
+        },
+        {
+          "d": "Class"
+        }
+      ],
+      "answer": "d",
+      "reason": "Class is a user defined data type."
+    },
+    {
+      "id": "21",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "Given a function that does not return any value, What value is thrown by default when executed in shell.",
+      "options": [
+        {
+          "a": "int"
+        },
+        {
+          "b": "bool"
+        },
+        {
+          "c": "void"
+        },
+        {
+          "d": "None"
+        }
+      ],
+      "answer": "d",
+      "reason": " Python shell throws a NoneType object back."
+    },
+    {
+      "id": "22",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "Which of the following will run without errors?",
+      "options": [
+        {
+          "a": "round(45.8)"
+        },
+        {
+          "b": "round(6352.898,2,5)"
+        },
+        {
+          "c": "round()"
+        },
+        {
+          "d": "round(7463.123,2,1)"
+        }
+      ],
+      "answer": "a",
+      "reason": "Execute help(round) in the shell to get details of the parameters that are passed into the round function."
+    },
+    {
+      "id": "23",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "What is the return type of function id?",
+      "options": [
+        {
+          "a": "int"
+        },
+        {
+          "b": "float"
+        },
+        {
+          "c": "bool"
+        },
+        {
+          "d": "dict"
+        }
+      ],
+      "answer": "a",
+      "reason": "Execute help(id) to find out details in python shell.id returns a integer value that is unique."
+    },
+    {
+      "id": "24",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": " In order to store values in terms of key and value we use what core data type.",
+      "options": [
+        {
+          "a": "list"
+        },
+        {
+          "b": "tuple"
+        },
+        {
+          "c": "class"
+        },
+        {
+          "d": "dictionary"
+        }
+      ],
+      "answer": "d",
+      "reason": "Dictionary stores values in terms of keys and values."
+    },
+    {
+      "id": "25",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "What is the return value of trunc()?",
+      "options": [
+        {
+          "a": "int"
+        },
+        {
+          "b": "bool"
+        },
+        {
+          "c": "float"
+        },
+        {
+          "d": "None"
+        }
+      ],
+      "answer": "a",
+      "reason": "Execute help(math.trunc) to get details."
+    },
+    {
+      "id": "26",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "What is the output of print 0.1 + 0.2 == 0.3?",
+      "options": [
+        {
+          "a": "True"
+        },
+        {
+          "b": "False"
+        },
+        {
+          "c": "Machine dependent"
+        },
+        {
+          "d": "Error"
+        }
+      ],
+      "answer": "b",
+      "reason": "Neither of 0.1, 0.2 and 0.3 can be represented accurately in binary. The round off errors from 0.1 and 0.2 accumulate and hence there is a difference of 5.5511e-17 between (0.1 + 0.2) and 0.3."
+    },
+    {
+      "id": "27",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "Which of the following is not a complex number?",
+      "options": [
+        {
+          "a": "k = 2 + 3j"
+        },
+        {
+          "b": "k = complex(2, 3)"
+        },
+        {
+          "c": " k = 2 + 3l"
+        },
+        {
+          "d": "k = 2 + 3J"
+        }
+      ],
+      "answer": "c",
+      "reason": "l (or L) stands for long."
+    },
+    {
+      "id": "28",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "What is the type of inf?",
+      "options": [
+        {
+          "a": "Boolean"
+        },
+        {
+          "b": "Integer"
+        },
+        {
+          "c": "Float"
+        },
+        {
+          "d": "Complex"
+        }
+      ],
+      "answer": "c",
+      "reason": " Infinity is a special case of floating point numbers. It can be obtained by float(‘inf’)."
+    },
+    {
+      "id": "29",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "What does ~4 evaluate to?",
+      "options": [
+        {
+          "a": "-5"
+        },
+        {
+          "b": "-4"
+        },
+        {
+          "c": "-3"
+        },
+        {
+          "d": "+3"
+        }
+      ],
+      "answer": "a",
+      "reason": "~x is equivalent to -(x+1)."
+    },
+    {
+      "id": "30",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "Which of the following is incorrect?",
+      "options": [
+        {
+          "a": "x = 0b101"
+        },
+        {
+          "b": "x = 0x4f5"
+        },
+        {
+          "c": "x = 19023"
+        },
+        {
+          "d": "x = 03964"
+        }
+      ],
+      "answer": "d",
+      "reason": "Numbers starting with a 0 are octal numbers but 9 isn’t allowed in octal numbers."
+    },
+    {
+      "id": "31",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "What is the result of cmp(3, 1)?",
+      "options": [
+        {
+          "a": "1"
+        },
+        {
+          "b": "0"
+        },
+        {
+          "c": "True"
+        },
+        {
+          "d": "False"
+        }
+      ],
+      "answer": "a",
+      "reason": "cmp(x, y) returns 1 if x > y, 0 if x == y and -1 if x < y."
+    },
+    {
+      "id": "32",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "Which of the following is incorrect?",
+      "options": [
+        {
+          "a": "float(‘inf’)"
+        },
+        {
+          "b": "float(‘nan’)"
+        },
+        {
+          "c": "float(’56’+’78’)"
+        },
+        {
+          "d": "float(’12+34′)"
+        }
+      ],
+      "answer": "d",
+      "reason": " ‘+’ cannot be converted to a float."
+    },
+    {
+      "id": "33",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "What is the result of round(0.5) – round(-0.5)?",
+      "options": [
+        {
+          "a": "1.0"
+        },
+        {
+          "b": "2.0"
+        },
+        {
+          "c": "0.0"
+        },
+        {
+          "d": "Value depends on Python version"
+        }
+      ],
+      "answer": "d",
+      "reason": "The behavior of the round() function is different in Python 2 and Python 3. In Python 2, it rounds off numbers away from 0 when the number to be rounded off is exactly halfway through. round(0.5) is 1 and round(-0.5) is -1 whereas in Python 3, it rounds off numbers towards nearest even number when the number to be rounded off is exactly halfway through."
+    },
+    {
+      "id": "34",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "What does 3 ^ 4 evaluate to?",
+      "options": [
+        {
+          "a": "81"
+        },
+        {
+          "b": "12"
+        },
+        {
+          "c": "0.75"
+        },
+        {
+          "d": "7"
+        }
+      ],
+      "answer": "d",
+      "reason": "^ is the Binary XOR operator."
+    },
+    {
+      "id": "35",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "The value of the expressions 4/(3*(2-1)) and 4/3*(2-1) is the same.",
+      "options": [
+        {
+          "a": "True"
+        },
+        {
+          "b": "False"
+        },
+        {
+          "c": ""
+        },
+        {
+          "d": ""
+        }
+      ],
+      "answer": "a",
+      "reason": "Although the presence of parenthesis does affect the order of precedence, in the case shown above, it is not making a difference. The result of both of these expressions is 1.333333333. Hence the statement is true."
+    },
+    {
+      "id": "36",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "What will be the value of the 4 + 3 % 5 Python expression?",
+      "options": [
+        {
+          "a": "4"
+        },
+        {
+          "b": "7"
+        },
+        {
+          "c": "2"
+        },
+        {
+          "d": "0"
+        }
+      ],
+      "answer": "b",
+      "reason": "The order of precedence is: %, +. Hence the expression above, on simplification results in 4 + 3 = 7. Hence the result is 7."
+    },
+    {
+      "id": "37",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "Evaluate the expression A % B // A if A = 16 and B = 15.",
+      "options": [
+        {
+          "a": "0.0"
+        },
+        {
+          "b": "0"
+        },
+        {
+          "c": "1.0"
+        },
+        {
+          "d": "1"
+        }
+      ],
+      "answer": "b",
+      "reason": "The above expression is evaluated as: 16%15//16, which is equal to 1//16, which results in 0."
+    },
+    {
+      "id": "38",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "Which of the following operators has its associativity from right to left?",
+      "options": [
+        {
+          "a": "+"
+        },
+        {
+          "b": "//"
+        },
+        {
+          "c": "%"
+        },
+        {
+          "d": "**"
+        }
+      ],
+      "answer": "d",
+      "reason": "All of the operators shown above have associativity from left to right, except exponentiation operator (**) which has its associativity from right to left."
+    },
+    {
+      "id": "39",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "What will be the value of x in the x = int(43.55+2/2) Python expression?",
+      "options": [
+        {
+          "a": "43"
+        },
+        {
+          "b": "44"
+        },
+        {
+          "c": "22"
+        },
+        {
+          "d": "23"
+        }
+      ],
+      "answer": "b",
+      "reason": "The expression shown above is an example of explicit conversion. It is evaluated as int(43.55+1) = int(44.55) = 44. Hence the result of this expression is 44."
+    },
+    {
+      "id": "40",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "What is the value of the expression: 2+4.00, 2**4.0",
+      "options": [
+        {
+          "a": "(6.0, 16.0)"
+        },
+        {
+          "b": "(6.00, 16.00)"
+        },
+        {
+          "c": "(6, 16)"
+        },
+        {
+          "d": "(6.00, 16.0)"
+        }
+      ],
+      "answer": "a",
+      "reason": "The result of the expression shown above is (6.0, 16.0). This is because the result is automatically rounded off to one decimal place."
+    },
+    {
+      "id": "41",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "Which of the following is the truncation division operator?",
+      "options": [
+        {
+          "a": "/"
+        },
+        {
+          "b": "%"
+        },
+        {
+          "c": "//"
+        },
+        {
+          "d": "|"
+        }
+      ],
+      "answer": "c",
+      "reason": "// is the operator for truncation division. It is called so because it returns only the integer part of the quotient, truncating the decimal part. For example: 20//3 = 6."
+    },
+    {
+      "id": "42",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "What is the value of the expression: 8/4/2, 8/(4/2)",
+      "options": [
+        {
+          "a": "(1.0, 4.0)"
+        },
+        {
+          "b": "(1.0, 1.0)"
+        },
+        {
+          "c": "(4.0. 1.0)"
+        },
+        {
+          "d": "(4.0, 4.0)"
+        }
+      ],
+      "answer": "a",
+      "reason": "The above expressions are evaluated as: 2/2, 8/2, which is equal to (1.0, 4.0)."
+    },
+    {
+      "id": "43",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "What is the value of the expression: float(22//3+3/3)",
+      "options": [
+        {
+          "a": "8"
+        },
+        {
+          "b": "8.0"
+        },
+        {
+          "c": "8.3"
+        },
+        {
+          "d": "8.33"
+        }
+      ],
+      "answer": "b",
+      "reason": "The expression shown above is evaluated as: float( 7+1) = float(8) = 8.0. Hence the result of this expression is 8.0."
+    },
+    {
+      "id": "44",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "What will be the output of the Python expression: print(4.00/(2.0+2.0))",
+      "options": [
+        {
+          "a": "Error"
+        },
+        {
+          "b": "1.0"
+        },
+        {
+          "c": "1.00"
+        },
+        {
+          "d": "1"
+        }
+      ],
+      "answer": "b",
+      "reason": "The result of the expression shown above is 1.0 because print rounds off digits."
+    },
+    {
+      "id": "45",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "Which of the following expressions involves coercion when evaluated in Python?",
+      "options": [
+        {
+          "a": "4.7 – 1.5"
+        },
+        {
+          "b": "7.9 * 6.3"
+        },
+        {
+          "c": "1.7 % 2"
+        },
+        {
+          "d": "3.4 + 4.6"
+        }
+      ],
+      "answer": "c",
+      "reason": "Coercion is the implicit (automatic) conversion of operands to a common type. Coercion is automatically performed on mixed-type expressions. The expression 1.7 % 2 is evaluated as 1.7 % 2.0 (that is, automatic conversion of int to float)."
+    },
+    {
+      "id": "46",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "What will be the output of the following Python expression: 24//6%3, 24//4//2",
+      "options": [
+        {
+          "a": "(1,3)"
+        },
+        {
+          "b": "(0,3)"
+        },
+        {
+          "c": " (0,3)"
+        },
+        {
+          "d": "(3,1)"
+        }
+      ],
+      "answer": "a",
+      "reason": "The expressions are evaluated as: 4%3 and 6//2 respectively. This results in the answer (1,3). This is because the associativity of both of the expressions shown above is left to right."
+    },
+    {
+      "id": "47",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": " Which among the list of operators: +, -, **, %, /, <<, >>, | has the highest precedence?",
+      "options": [
+        {
+          "a": "<<,>>"
+        },
+        {
+          "b": "**"
+        },
+        {
+          "c": "|"
+        },
+        {
+          "d": "%"
+        }
+      ],
+      "answer": "b",
+      "reason": "The highest precedence is that of the exponentiation operator, that is of **."
+    },
+    {
+      "id": "48",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "What will be the value of the Python expression: float(4+int(2.39)%2)",
+      "options": [
+        {
+          "a": "5.0"
+        },
+        {
+          "b": "5"
+        },
+        {
+          "c": "4.0"
+        },
+        {
+          "d": "4"
+        }
+      ],
+      "answer": "c",
+      "reason": "The above expression is an example of explicit conversion. It is evaluated as: float(4+int(2.39)%2) = float(4+2%2) = float(4+0) = 4.0. Hence the result of this expression is 4.0."
+    },
+    {
+      "id": "49",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "Which of the following expressions is an example of type conversion?",
+      "options": [
+        {
+          "a": "4.0 + float(3)"
+        },
+        {
+          "b": "5.3 + 6.3"
+        },
+        {
+          "c": "5.0 + 3"
+        },
+        {
+          "d": "3 + 7"
+        }
+      ],
+      "answer": "a",
+      "reason": "Type conversion is nothing but explicit conversion of operands to a specific type. Options 5.3 + 6.3 and 5.0 + 3 are examples of implicit conversion whereas option 4.0 + float(3) is an example of explicit conversion or type conversion."
+    },
+    {
+      "id": "50",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "Which of the following expressions results in an error?",
+      "options": [
+        {
+          "a": "float(‘10’)"
+        },
+        {
+          "b": "int(‘10’)"
+        },
+        {
+          "c": "float(’10.8’)"
+        },
+        {
+          "d": "int(’10.8’)"
+        }
+      ],
+      "answer": "d",
+      "reason": "All of the above examples show explicit conversion. However the expression int(’10.8’) results in an error."
+    },
+    {
+      "id": "51",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "What will be the value of the Python expression: 4+2**5//10",
+      "options": [
+        {
+          "a": "3"
+        },
+        {
+          "b": "7"
+        },
+        {
+          "c": "77"
+        },
+        {
+          "d": "0"
+        }
+      ],
+      "answer": "b",
+      "reason": "The order of precedence is: **, //, +. The expression 4+2**5//10 is evaluated as 4+32//10, which is equal to 4+3 = 7. Hence the result of the expression shown above is 7."
+    },
+    {
+      "id": "52",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "The expression 2**2**3 is evaluates as: (2**2)**3.",
+      "options": [
+        {
+          "a": "True"
+        },
+        {
+          "b": "False"
+        }
+      ],
+      "answer": "b",
+      "reason": "The value of the expression (2**2)**3 = 4**3 = 64. When the expression 2**2**3 is evaluated in python, we get the result as 256, because this expression is evaluated as 2**(2**3). This is because the associativity of exponentiation operator (**) is from right to left and not from left to right."
+    },
+    {
+      "id": "53",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "What will be the output of the Python code snippet x<<2 if x=1",
+      "options": [
+        {
+          "a": "8"
+        },
+        {
+          "b": "1"
+        },
+        {
+          "c": "2"
+        },
+        {
+          "d": "4"
+        }
+      ],
+      "answer": "d",
+      "reason": "The binary form of 1 is 0001. The expression x<<2 implies we are performing bitwise left shift on x. This shift yields the value: 0100, which is the binary form of the number 4."
+    },
+    {
+      "id": "54",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "What will be the output of the Python expression: bin(29)",
+      "options": [
+        {
+          "a": "‘0b10111’"
+        },
+        {
+          "b": "‘0b11101’"
+        },
+        {
+          "c": "‘0b11111’"
+        },
+        {
+          "d": "‘0b11011’"
+        }
+      ],
+      "answer": "b",
+      "reason": "The binary form of the number 29 is 11101. Hence the output of this expression is ‘0b11101’."
+    },
+    {
+      "id": "55",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "What will be the value of x in the Python expression: x>>2, if the result of that expression is 2?",
+      "options": [
+        {
+          "a": "8"
+        },
+        {
+          "b": "4"
+        },
+        {
+          "c": "2"
+        },
+        {
+          "d": "1"
+        }
+      ],
+      "answer": "a",
+      "reason": "When the value of x is equal to 8 (1000), then x>>2 (bitwise right shift) yields the value 0010, which is equal to 2. Hence the value of x is 8."
+    },
+    {
+      "id": "56",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "What will be the output of the following Python expression: int(1011)?",
+      "options": [
+        {
+          "a": "1011"
+        },
+        {
+          "b": "11"
+        },
+        {
+          "c": "13"
+        },
+        {
+          "d": "1101"
+        }
+      ],
+      "answer": "a",
+      "reason": "The result of the expression shown will be 1011. This is because we have not specified the base in this expression. Hence it automatically takes the base as 10."
+    },
+    {
+      "id": "57",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "To find the decimal value of 1111, that is 15, we can use the function:",
+      "options": [
+        {
+          "a": "int(1111,10)"
+        },
+        {
+          "b": "int(‘1111’,10)"
+        },
+        {
+          "c": "int(1111,2)"
+        },
+        {
+          "d": "int(‘1111’,2)"
+        }
+      ],
+      "answer": "d",
+      "reason": "The expression int(‘1111’,2) gives the result 15. The expression int(‘1111’, 10) will give the result 1111"
+    },
+    {
+      "id": "58",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "What will be the output of the Python expression: x & y if x=15 and y=12?",
+      "options": [
+        {
+          "a": "b1101"
+        },
+        {
+          "b": "0b1101"
+        },
+        {
+          "c": "12"
+        },
+        {
+          "d": "1101"
+        }
+      ],
+      "answer": "c",
+      "reason": "The symbol ‘&’ represents bitwise AND. This gives 1 if both the bits are equal to 1, else it gives 0. The binary form of 15 is 1111 and that of 12 is 1100. Hence on performing the bitwise AND operation, we get 1100, which is equal to 12."
+    },
+    {
+      "id": "59",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": " Which of the following expressions results in an error?",
+      "options": [
+        {
+          "a": "int(1011)"
+        },
+        {
+          "b": "int(‘1011’,23)"
+        },
+        {
+          "c": "int(1011,2)"
+        },
+        {
+          "d": "int(‘1011’)"
+        }
+      ],
+      "answer": "c",
+      "reason": "The expression int(1011,2) results in an error. Had we written this expression as int(‘1011’,2), then there would not be an error."
+    },
+    {
+      "id": "60",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "Which of the following represents the bitwise XOR operator?",
+      "options": [
+        {
+          "a": "&"
+        },
+        {
+          "b": "^"
+        },
+        {
+          "c": "|"
+        },
+        {
+          "d": "!"
+        }
+      ],
+      "answer": "b",
+      "reason": "The ^ operator represent bitwise XOR operation. &: bitwise AND, | : bitwise OR and ! represents bitwise NOT."
+    },
+    {
+      "id": "61",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": " What is the value of the following Python expression: bin(0x8)",
+      "options": [
+        {
+          "a": "‘0bx1000’"
+        },
+        {
+          "b": "8"
+        },
+        {
+          "c": "1000"
+        },
+        {
+          "d": "‘0b1000’"
+        }
+      ],
+      "answer": "d",
+      "reason": "The prefix 0x specifies that the value is hexadecimal in nature. When we convert this hexadecimal value to binary form, we get the result as: ‘0b1000’."
+    },
+    {
+      "id": "62",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "What will be the output of the following Python expression: 0x35 | 0x75",
+      "options": [
+        {
+          "a": "115"
+        },
+        {
+          "b": "116"
+        },
+        {
+          "c": "117"
+        },
+        {
+          "d": "118"
+        }
+      ],
+      "answer": "c",
+      "reason": "The binary value of 0x35 is 110101 and that of 0x75 is 1110101. On OR-ing these two values we get the output as: 1110101, which is equal to 117. Hence the result of the above expression is 117."
+    },
+    {
+      "id": "63",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "It is not possible for the two’s complement value to be equal to the original value in any case.",
+      "options": [
+        {
+          "a": "True"
+        },
+        {
+          "b": "False"
+        }
+      ],
+      "answer": "b",
+      "reason": "In most cases the value of two’s complement is different from the original value. However, there are cases in which the two’s complement value may be equal to the original value. For example, the two’s complement of 10000000 is also equal to 10000000. Hence the statement is false."
+    },
+    {
+      "id": "64",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "The one’s complement of 110010101 is:",
+      "options": [
+        {
+          "a": "001101010"
+        },
+        {
+          "b": "110010101"
+        },
+        {
+          "c": "001101011"
+        },
+        {
+          "d": "110010100"
+        }
+      ],
+      "answer": "a",
+      "reason": "The one’s complement of a value is obtained by simply changing all the 1’s to 0’s and all the 0’s to 1’s. Hence the one’s complement of 110010101 is 001101010."
+    },
+    {
+      "id": "65",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "Bitwise _________ gives 1 if either of the bits is 1 and 0 when both of the bits are 1.",
+      "options": [
+        {
+          "a": "OR"
+        },
+        {
+          "b": "AND"
+        },
+        {
+          "c": "XOR"
+        },
+        {
+          "d": "NOT"
+        }
+      ],
+      "answer": "c",
+      "reason": "Bitwise XOR gives 1 if either of the bits is 1 and 0 when both of the bits are 1."
+    },
+    {
+      "id": "66",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "What will be the output of the following Python expression: 4^12",
+      "options": [
+        {
+          "a": "2"
+        },
+        {
+          "b": "4"
+        },
+        {
+          "c": "8"
+        },
+        {
+          "d": "12"
+        }
+      ],
+      "answer": "c",
+      "reason": "^ is the XOR operator. The binary form of 4 is 0100 and that of 12 is 1100. Therefore, 0100^1100 is 1000, which is equal to 8."
+    },
+    {
+      "id": "67",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "Any odd number on being AND-ed with ________ always gives 1. Hint: Any even number on being AND-ed with this value always gives 0.",
+      "options": [
+        {
+          "a": "10"
+        },
+        {
+          "b": "2"
+        },
+        {
+          "c": "1"
+        },
+        {
+          "d": "0"
+        }
+      ],
+      "answer": "c",
+      "reason": "Any odd number on being AND-ed with 1 always gives 1. Any even number on being AND-ed with this value always gives 0."
+    },
+    {
+      "id": "68",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "What will be the value of the following Python expression: bin(10-2)+bin(12^4)",
+      "options": [
+        {
+          "a": "0b10000"
+        },
+        {
+          "b": "0b10001000"
+        },
+        {
+          "c": "0b1000b1000"
+        },
+        {
+          "d": "0b10000b1000"
+        }
+      ],
+      "answer": "d",
+      "reason": "The output of bin(10-2) = 0b1000 and that of bin(12^4) is ob1000. Hence the output of the above expression is: 0b10000b1000."
+    },
+    {
+      "id": "69",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "Which of the following expressions can be used to multiply a given number ‘a’ by 4?",
+      "options": [
+        {
+          "a": "a<<2"
+        },
+        {
+          "b": "a<<4"
+        },
+        {
+          "c": "a>>2"
+        },
+        {
+          "d": "a>>4"
+        }
+      ],
+      "answer": "a",
+      "reason": "Let us consider an example wherein a=2. The binary form of 2 is 0010. When we left shift this value by 2, we get 1000, the value of which is 8. Hence if we want to multiply a given number ‘a’ by 4, we can use the expression: a<<2."
+    },
+    {
+      "id": "70",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "What is the two’s complement of -44?",
+      "options": [
+        {
+          "a": "1011011"
+        },
+        {
+          "b": "11010100"
+        },
+        {
+          "c": "11101011"
+        },
+        {
+          "d": "10110011"
+        }
+      ],
+      "answer": "b",
+      "reason": "The binary form of -44 is 00101100. The one’s complement of this value is 11010011. On adding one to this we get: 11010100 (two’s complement)."
+    },
+    {
+      "id": "71",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": " What will be the output of the following Python expression: ~100?",
+      "options": [
+        {
+          "a": "101"
+        },
+        {
+          "b": "-101"
+        },
+        {
+          "c": "100"
+        },
+        {
+          "d": "-100"
+        }
+      ],
+      "answer": "b",
+      "reason": "Suppose we have an expression ~A. This is evaluated as: -A – 1. Therefore, the expression ~100 is evaluated as -100 – 1, which is equal to -101."
+    },
+    {
+      "id": "72",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "What will be the output of the following Python code snippet: ['hello', 'morning'][bool('')]",
+      "options": [
+        {
+          "a": "error"
+        },
+        {
+          "b": "no output"
+        },
+        {
+          "c": "hello"
+        },
+        {
+          "d": "morning"
+        }
+      ],
+      "answer": "c",
+      "reason": "The line of code shown above can be simplified to state that ‘hello’ should be printed if the argument passed to the Boolean function amounts to zero, else ‘morning’ will be printed."
+    },
+    {
+      "id": "73",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": " What will be the output of the following Python code: ['f', 't'][bool('spam')]",
+      "options": [
+        {
+          "a": "t"
+        },
+        {
+          "b": "f"
+        },
+        {
+          "c": "No output"
+        },
+        {
+          "d": "Error"
+        }
+      ],
+      "answer": "a",
+      "reason": "The line of code can be translated to state that ‘f’ is printed if the argument passed to the Boolean function amount to zero. Else ‘t’ is printed. The argument given to the Boolean function in the above case is ‘spam’, which does not amount to zero. Hence the output is t."
+    },
+    {
+      "id": "74",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "Which of the following Boolean expressions is not logically equivalent to the other three?",
+      "options": [
+        {
+          "a": "not(-6<0 or-6>10)"
+        },
+        {
+          "b": "-6>=0 and -6<=10"
+        },
+        {
+          "c": "not(-6<10 or-6==10)"
+        },
+        {
+          "d": "not(-6>10 or-6==10)"
+        }
+      ],
+      "answer": "d",
+      "reason": "The expression not(-6<0 or -6>10) returns the output False. The expression -6>=0 and -6<=10 returns the output False. The expression not(-6<10 or -6==10) returns the output False."
+    },
+    {
+      "id": "75",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "What will be the output of the following Python code snippet: not(10<20) and not(10>30)",
+      "options": [
+        {
+          "a": "True"
+        },
+        {
+          "b": "False"
+        },
+        {
+          "c": "Error"
+        },
+        {
+          "d": "No output"
+        }
+      ],
+      "answer": "b",
+      "reason": "The expression not(10<20) returns false. The expression not(10>30) returns true. The and operation between false and true returns false. Hence the output is false."
+    },
+    {
+      "id": "76",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "Which of the following results in a SyntaxError?",
+      "options": [
+        {
+          "a": "‘”Once upon a time…”, she said.’"
+        },
+        {
+          "b": "“He said, ‘Yes!'”"
+        },
+        {
+          "c": "'3/'"
+        },
+        {
+          "d": "”’That’s okay”’"
+        }
+      ],
+      "answer": "c",
+      "reason": "Carefully look at the colons."
+    },
+    {
+      "id": "77",
+      "subject": "Python",
+      "module": "Python Basic",
+      "question": "What will be the value of X in the Python expression: X = 2+9*((3*12)-8)/10 ?",
+      "options": [
+        {
+          "a": "30.0"
+        },
+        {
+          "b": "30.8"
+        },
+        {
+          "c": "28.4"
+        },
+        {
+          "d": "27.2"
+        }
+      ],
+      "answer": "d",
+      "reason": "The expression shown above is evaluated as: 2+9*(36-8)/10, which simplifies to give 2+9*(2.8), which is equal to 2+25.2 = 27.2. Hence the result of this expression is 27.2."
+    }
+  ]
+}

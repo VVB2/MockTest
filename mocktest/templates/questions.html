@@ -14,13 +14,18 @@
             </div>
             <!-- Navbar Right Side -->
             <div class="navbar-nav">
-              <a class="nav-item nav-link active" href="{{ url_for('tests.java') }}">Java</a>
-              <a class="nav-item nav-link" href="{{ url_for('tests.python') }}">Python</a>
+              {% if subject == 'java-question' %}
+                <a class="nav-item nav-link active" href="{{ url_for('tests.java') }}">Java</a>
+                <a class="nav-item nav-link" href="{{ url_for('tests.python') }}">Python</a>
+              {% else %}
+                <a class="nav-item nav-link" href="{{ url_for('tests.java') }}">Java</a>
+                <a class="nav-item nav-link active" href="{{ url_for('tests.python') }}">Python</a>
+              {% endif %}
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle ml-3" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="padding: 0px;">
                   {% if current_user.image_file=='default.png' %}
                     {% if current_user.gender=='Male'%}
-                      <img class="rounded-circle" style="width:40px ;height:40px;background-color:#ffffff;" src="../static/profile_pics/male.png">
+                      <img class="rounded-circle" style="width:40px ;height:40px" src="../static/profile_pics/male.png">
                     {% elif current_user.gender=='Female'%}
                       <img class="rounded-circle" style="width:40px ;height:40px" src="../static/profile_pics/female.png">
                     {% else %}
@@ -51,88 +56,90 @@
   {% endblock %}
 
 {% block content %}
-<h4 class="pb-5">
+<h4 class="pb-3">
+  <span>{{ page | replace('_', ' ') | replace('Arrays', '& Arrays') }} Quiz :</span>
   <div id="timer" class="float-right">Time left</div>
   <img src="https://i.gifer.com/XVo6.gif" class="float-right" width="30px" height="30px"></img>
 </h4>
 {% for question in data %}
 <div class="content-section">
-  <h6>Q{{ question.id }}. {{ question.question }}</h6>
+  <h6>Q{{ question.question_id }}. {{ question.question }}</h6>
   <div class="form-check">
     <input class="form-check-input" type="radio" name= '{{ question.id }}' id='option' value='a'>
       <label class="form-check-label" for='{{ loop.index }}'>      
-        {{ question.optiona }}
+        {{ question.optiona | trim | capitalize }}
       </label>
   </div>
   <div class="form-check">
     <input class="form-check-input" type="radio" name= '{{ question.id }}' id='option' value='b'>
       <label class="form-check-label" for='{{ loop.index }}'>      
-        {{ question.optionb }}
+        {{ question.optionb | trim | capitalize }}
       </label>
   </div>
   <div class="form-check">
     <input class="form-check-input" type="radio" name= '{{ question.id }}' id='option' value='c'>
       <label class="form-check-label" for='{{ loop.index }}'>      
-        {{ question.optionc }}
+        {{ question.optionc | trim | capitalize }}
       </label>
   </div>
   <div class="form-check">
     <input class="form-check-input" type="radio" name= '{{ question.id }}' id='option' value='d'>
       <label class="form-check-label" for='{{ loop.index }}'>      
-        {{ question.optiond }}
+        {{ question.optiond | trim | capitalize }}
       </label>
   </div>
 </div>
 {% endfor %}
-<button type="button" onclick="displayRadioValue()">
+<button type="button" class="btn btn-outline-success mb-5" onclick="displayRadioValue()">
   Submit
 </button>
 {% endblock %}
 
 {% block script %}
 <script>
-let timerInterval = null;
-let TIME_LIMIT = 1800;
-let timePassed = 0;
-let timeLeft = TIME_LIMIT;
-let seconds = 0;
-startTimer();
-function formatTimeLeft(time) {
-    const minutes = Math.floor(time / 60);
-    seconds = time % 60;   
-    if (seconds < 10) {
-        seconds = `0${seconds}`;
-    }
-    if (seconds == 0) {
-    }
-    return `${minutes}:${seconds}`;
-}
-
-function startTimer() {    
-    timerInterval = setInterval(() => {       
-            timePassed = timePassed += 1;
-            timeLeft = TIME_LIMIT - timePassed;
-            if(timeLeft >= 0) {
-                document.getElementById("timer").innerHTML = formatTimeLeft(timeLeft);
-            }
-    }, 1000);
-}
-
-function displayRadioValue() {
-  let answers = {};
-  var ele = document.getElementsByTagName('input');           
-  for(i = 0; i < ele.length; i++) {       
-      if(ele[i].type="radio") {                 
-          if(ele[i].checked) {
-            answers[ele[i].name] = ele[i].value;
-          }
+  let timerInterval = null;
+  let TIME_LIMIT = 1800;
+  let timePassed = 0;
+  let timeLeft = TIME_LIMIT;
+  let seconds = 0;
+  startTimer();
+  function formatTimeLeft(time) {
+      const minutes = Math.floor(time / 60);
+      seconds = time % 60;   
+      if (seconds < 10) {
+          seconds = `0${seconds}`;
       }
+      if (seconds == 0) {
+      }
+      return `${minutes}:${seconds}`;
   }
-  console.log(answers);
-  // for (let i = 0; i < answers.length; i++) {
-  //   console.log(answers);
-  // }
-}
+
+  function startTimer() {    
+      timerInterval = setInterval(() => {       
+              timePassed = timePassed += 1;
+              timeLeft = TIME_LIMIT - timePassed;
+              if(timeLeft >= 0) {
+                  document.getElementById("timer").innerHTML = formatTimeLeft(timeLeft);
+              }
+      }, 1000);
+  }
+
+  function displayRadioValue() {
+    let answers = {};
+    var ele = document.getElementsByTagName('input');           
+    for(i = 0; i < ele.length; i++) {       
+        if(ele[i].type="radio") {                 
+            if(ele[i].checked) {
+              answers[ele[i].name] = ele[i].value;
+            }
+        }
+    }
+    console.log(answers);
+  }
+
+  $(window).bind('beforeunload', function(){
+  return 'Are you sure you want to leave?';
+});
 
 </script>
 {% endblock %}

@@ -20,7 +20,7 @@
                 <a class="nav-link dropdown-toggle ml-3" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="padding: 0px;">
                   {% if current_user.image_file=='default.png' %}
                     {% if current_user.gender=='Male'%}
-                      <img class="rounded-circle" style="width:40px ;height:40px;background-color:#ffffff;" src="../static/profile_pics/male.png">
+                      <img class="rounded-circle" style="width:40px ;height:40px" src="../static/profile_pics/male.png">
                     {% elif current_user.gender=='Female'%}
                       <img class="rounded-circle" style="width:40px ;height:40px" src="../static/profile_pics/female.png">
                     {% else %}
@@ -44,5 +44,14 @@
 {% endblock %}
 
 {% block content %}
-<h1 class="h1">PYTHON</h1>
+<h2>Java Quiz</h2>
+<p class="lead">You can test your Python skills with Web Academy Quiz.</p>
+<ul class="list-group">
+  <li class="list-group-item list-group-item-action">Python Basics<a href="{{ url_for('tests.question', page='Python_Basic', subject='python-question') }}" class="float-right btn btn-outline-success">Take a test<i class="bi bi-journals ml-1"></i></a></li>
+  <li class="list-group-item list-group-item-action">A second item<a href="{{ url_for('tests.question', page='Python_Basic', subject='python-question') }}" class="float-right btn btn-outline-success">Take a test<i class="bi bi-journals ml-1"></i></a></li>
+  <li class="list-group-item list-group-item-action">A third button item<a href="{{ url_for('tests.question', page='Python_Basic', subject='python-question') }}" class="float-right btn btn-outline-success">Take a test<i class="bi bi-journals ml-1"></i></a></li>
+  <li class="list-group-item list-group-item-action">Exception<a href="{{ url_for('tests.question', page='Python_Basic', subject='python-question') }}" class="float-right btn btn-outline-success">Take a test<i class="bi bi-journals ml-1"></i></a></li>
+  <li class="list-group-item list-group-item-action">A disabled button item<a href="{{ url_for('tests.question', page='Python_Basic', subject='python-question') }}" class="float-right btn btn-outline-success">Take a test<i class="bi bi-journals ml-1"></i></a></li>
+  <li class="list-group-item list-group-item-action">Threads<a href="{{ url_for('tests.question', page='Python_Basic', subject='python-question') }}" class="float-right btn btn-outline-success">Take a test<i class="bi bi-journals ml-1"></i></a></li>
+</ul>
 {% endblock %}

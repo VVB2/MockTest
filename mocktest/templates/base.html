@@ -45,7 +45,7 @@
                 <a class="nav-link dropdown-toggle ml-3" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="padding: 0px;">
                   {% if current_user.image_file=='default.png' %}
                     {% if current_user.gender=='Male'%}
-                      <img class="rounded-circle" style="width:40px ;height:40px;background-color:#ffffff;" src="../static/profile_pics/male.png">
+                      <img class="rounded-circle" style="width:40px ;height:40px" src="../static/profile_pics/male.png">
                     {% elif current_user.gender=='Female'%}
                       <img class="rounded-circle" style="width:40px ;height:40px" src="../static/profile_pics/female.png">
                     {% else %}
@@ -145,5 +145,4 @@
     {% block script %}{% endblock %}
 </body>
 </html>
-</body>
 </html>
