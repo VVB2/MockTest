@@ -1,0 +1,850 @@
+
+{
+
+	"quiz": [
+		{
+			"id": "1",
+			"subject": "JAVA",
+			"module": "Classes_Methods",
+			"question": " Which of these keywords is used to make a class?",
+			"options": [{
+					"a": "class"
+				},
+				{
+					"b": "struct"
+				},
+				{
+					"c": "int"
+				},
+				{
+					"d": "none of the mentioned"
+				}
+			],
+			"answer": "a",
+			"reason": "Class keyword is used."
+},
+		{
+			"id": "2",
+			"subject": "JAVA",
+			"module": "Classes_Methods",
+			"question": " Which of the following is a valid declaration of an object of class Box?",
+			"options": [{
+					"a": " Box obj = new Box()"
+				},
+				{
+					"b": "Box obj = new Box;"
+				},
+				{
+					"c": "obj = new Box();"
+				},
+				{
+					"d": "new Box obj;"
+				}
+			],
+			"answer": "a",
+			"reason": "Syntax"
+},    
+        {
+			"id": "3",
+			"subject": "JAVA",
+			"module": "Classes_Methods",
+			"question": " Which of these operators is used to allocate memory for an object?",
+			"options": [{
+					"a": "malloc"
+				},
+				{
+					"b": "alloc"
+				},
+				{
+					"c": "new"
+				},
+				{
+					"d": "Give"
+				}
+			],
+			"answer": "c",
+			"reason": "Operator new dynamically allocates memory for an object and returns a reference to it. This reference is address in memory of the object allocated by new."
+},   
+        {
+			"id": "4",
+			"subject": "JAVA",
+			"module": "Classes_Methods",
+			"question": "Which of these statement is incorrect?",
+			"options": [{
+					"a": "Every class must contain a main() method"
+				},
+				{
+					"b": " Applets do not require a main() method at all"
+				},
+				{
+					"c": "There can be only one main() method in a program"
+				},
+				{
+					"d": "main() method must be made public"
+				}
+			],
+			"answer": "a",
+			"reason": "Every class does not need to have a main() method, there can be only one main() method which is made public."
+},  
+        {
+			"id": "5",
+			"subject": "JAVA",
+			"module": "Classes_Methods",
+			"question": "Which of the following statements is correct?",
+			"options": [{
+					"a": "Public method is accessible to all other classes in the hierarchy"
+				},
+				{
+					"b": "Public method is accessible only to subclasses of its parent class"
+				},
+				{
+					"c": "Public method can only be called by object of its class"
+				},
+				{
+					"d": "Public method can be accessed by calling object of the public class"
+				}
+			],
+			"answer": "a",
+			"reason": "None"
+},       
+
+        {
+			"id": "6",
+			"subject": "JAVA",
+			"module": "Classes_Methods",
+			"question": "What is the return type of a method that does not return any value?",
+			"options": [{
+					"a": "int"
+				},
+				{
+					"b": "float"
+				},
+				{
+					"c": "void"
+				},
+				{
+					"d": "double"
+				}
+			],
+			"answer": "c",
+			"reason": "Return type of a method must be made void if it is not returning any value."
+},
+        {
+			"id": "7",
+			"subject": "JAVA",
+			"module": "Classes_Methods",
+			"question": "What is the process of defining more than one method in a class differentiated by method signature?",
+			"options": [{
+					"a": "Function Overriding"
+				},
+				{
+					"b": "Function overloading"
+				},
+				{
+					"c": "Function doubling"
+				},
+				{
+					"d": "none of the mentioned"
+				}
+			],
+			"answer": "b",
+			"reason": " Function overloading is a process of defining more than one method in a class with same name differentiated by function signature i:e return type or parameters type and number. Example – int volume(int length, int width) & int volume(int length , int width , int height) can be used to calculate volume.."
+},    
+        {
+			"id": "8",
+			"subject": "JAVA",
+			"module": "Classes_Methods",
+			"question": " Which of the following is a method having same name as that of it’s class?",
+			"options": [{
+					"a": "finalize"
+				},
+				{
+					"b": "delete"
+				},
+				{
+					"c": "class"
+				},
+				{
+					"d": "construct"
+				}
+			],
+			"answer": "d",
+			"reason": "A constructor is a method that initializes an object immediately upon creation. It has the same name as that of class in which it resides."
+},     
+        {
+			"id": "9",
+			"subject": "JAVA",
+			"module": "Classes_Methods",
+			"question": " Which of this statement is incorrect?",
+			"options": [{
+					"a": "All object of a class are allotted memory for the all the variables defined in the class"
+				},
+				{
+					"b": "If a function is defined public it can be accessed by object of other class by inheritation"
+				},
+				{
+					"c": "main() method must be made public"
+				},
+				{
+					"d": "All object of a class are allotted memory for the methods defined in the class View Answer"
+				}
+			],
+			"answer": "d",
+			"reason": " All object of class share a single copy of methods defined in a class, Methods are allotted memory only once. All the objects of the class have access to methods of that class are allotted memory only for the variables not for the methods."
+},     
+       {
+			"id": "10",
+			"subject": "JAVA",
+			"module": "Classes_Methods",
+			"question": "  What is the return type of Constructors?",
+			"options": [{
+					"a": "int"
+				},
+				{
+					"b": "float"
+				},
+				{
+					"c": "void"
+				},
+				{
+					"d": "None of the above"
+				}
+			],
+			"answer": "d",
+			"reason": "Constructors does not have any return type, not even void."
+}, 
+       {
+			"id": "11",
+			"subject": "JAVA",
+			"module": "Classes_Methods",
+			"question": "Which keyword is used by the method to refer to the object that invoked it?",
+			"options": [{
+					"a": "import"
+				},
+				{
+					"b": "catch"
+				},
+				{
+					"c": "abstract"
+				},
+				{
+					"d": "this"
+				}
+			],
+			"answer": "d",
+			"reason": "this keyword can be used inside any method to refer to the current object. this is always a reference to the object on which the method was invoked."
+},  
+     {
+			"id": "12",
+			"subject": "JAVA",
+			"module": "Classes_Methods",
+			"question": "Which operator is used by Java run time implementations to free the memory of an object when it is no longer needed? ",
+			"options": [{
+					"a": "delete"
+				},
+				{
+					"b": "free"
+				},
+				{
+					"c": "new"
+				},
+				{
+					"d": "none "
+				}
+			],
+			"answer": "d",
+			"reason": "Java handles deallocation of memory automatically, we do not need to explicitly delete an element. Garbage collection only occurs during execution of the program. When no references to the object exist, that object is assumed to be no longer needed, and the memory occupied by the object can be reclaimed. "
+}, 
+      {
+			"id": "13",
+			"subject": "JAVA",
+			"module": "Classes_Methods",
+			"question": " Which function is used to perform some action when the object is to be destroyed?",
+			"options": [{
+					"a": " finalize() "
+				},
+				{
+					"b": " delete() "
+				},
+				{
+					"c": " main() "
+				},
+				{
+					"d": "none "
+				}
+			],
+			"answer": "a",
+			"reason": " Syntax"
+},   
+        {
+			"id": "14",
+			"subject": "JAVA",
+			"module": "Classes_Methods",
+			"question": "Which of the following statements are incorrect? ",
+			"options": [{
+					"a": " default constructor is called at the time of object declaration "
+				},
+				{
+					"b": "constructor can be parameterized  "
+				},
+				{
+					"c": " finalize() method is called when a object goes out of scope and is no longer needed "
+				},
+				{
+					"d": "finalize() method must be declared protected  "
+				}
+			],
+			"answer": "c",
+			"reason": "finalize() method is called just prior to garbage collection. it is not called when object goes out of scope. "
+},   
+      {
+			"id": "15",
+			"subject": "JAVA",
+			"module": "Classes_Methods",
+			"question": "What is true about private constructor? ",
+			"options": [{
+					"a": " Private constructor ensures only one instance of a class exist at any point of time "
+				},
+				{
+					"b": " Private constructor ensures multiple instances of a class exist at any point of time "
+				},
+				{
+					"c": " Private constructor eases the instantiation of a class "
+				},
+				{
+					"d": " Private constructor allows creating objects in other classes "
+				}
+			],
+			"answer": "a",
+			"reason": "Object of private constructor can only be created within class. Private constructor is used in singleton pattern. "
+}, 
+       {
+			"id": "16",
+			"subject": "JAVA",
+			"module": "Classes_Methods",
+			"question": "What would be the behaviour if this() and super() used in a method? ",
+			"options": [{
+					"a": " Runtime error "
+				},
+				{
+					"b": " Throws exception "
+				},
+				{
+					"c": " compile time error "
+				},
+				{
+					"d": "Runs successfully  "
+				}
+			],
+			"answer": "c",
+			"reason": "  this() and super() cannot be used in a method. This throws compile time error."
+},
+      {
+			"id": "17",
+			"subject": "JAVA",
+			"module": "Classes_Methods",
+			"question": "What is false about constructor? ",
+			"options": [{
+					"a": "Constructors cannot be synchronized in Java  "
+				},
+				{
+					"b": " Java does not provide default copy constructor "
+				},
+				{
+					"c": " Constructor can have a return type "
+				},
+				{
+					"d": " “this” and “super” can be used in a constructor "
+				}
+			],
+			"answer": "c",
+			"reason": "The constructor cannot have a return type. It should create and return new objects. Hence it would give a compilation error. "
+},
+      {
+			"id": "18",
+			"subject": "JAVA",
+			"module": "Classes_Methods",
+			"question": "What is true about constructor?",
+			"options": [{
+					"a": " It can contain return type "
+				},
+				{
+					"b": " It can take any number of parameters "
+				},
+				{
+					"c": "It can have any non access modifiers "
+				},
+				{
+					"d": " Constructor cannot throw an exception "
+				}
+			],
+			"answer": "b",
+			"reason": " Constructor returns a new object with variables defined as in the class. Instance variables are newly created and only one copy of static variables are created. 6. Abstract class cannot have a constructor."
+},
+        {
+			"id": "19",
+			"subject": "JAVA",
+			"module": "Classes_Methods",
+			"question": "What is true about protected constructor? ",
+			"options": [{
+					"a": "Protected constructor can be called directly  "
+				},
+				{
+					"b": "Protected constructor can only be called using super()  "
+				},
+				{
+					"c": " Protected constructor can be used outside package  "
+				},
+				{
+					"d": "protected constructor can be instantiated even if child is in a different package  "
+				}
+			],
+			"answer": "b",
+			"reason": " Protected access modifier means that constructor can be accessed by child classes of the parent class and classes in the same package"
+},
+      {
+			"id": "20",
+			"subject": "JAVA",
+			"module": "Classes_Methods",
+			"question": "What is not the use of “this” keyword in Java? ",
+			"options": [{
+					"a": "Passing itself to another method "
+				},
+				{
+					"b": "Calling another constructor in constructor chaining  "
+				},
+				{
+					"c": " Referring to the instance variable when local variable has the same name "
+				},
+				{
+					"d": " Passing itself to method of the same class "
+				}
+			],
+			"answer": "d",
+			"reason": "“this” is an important keyword in java. It helps to distinguish between local variable and variables passed in the method as parameters. "
+},
+     {
+			"id": "21",
+			"subject": "JAVA",
+			"module": "Classes_Methods",
+			"question": "What would be the behaviour if one parameterized constructor is explicitly defined? ",
+			"options": [{
+					"a": "Compilation error "
+				},
+				{
+					"b": " Compilation succeeds "
+				},
+				{
+					"c": " Runtime error "
+				},
+				{
+					"d": "Compilation succeeds but at the time of creating object using default constructor, it throws compilation error "
+				}
+			],
+			"answer": "d",
+			"reason": " The class compiles successfully. But the object creation of that class gives a compilation error."
+},
+        {
+			"id": "22",
+			"subject": "JAVA",
+			"module": "Classes_Methods",
+			"question": " What would be behaviour if the constructor has a return type?",
+			"options": [{
+					"a": "  Compilation error "
+				},
+				{
+					"b": " Runtime error "
+				},
+				{
+					"c": " Compilation and runs successfully "
+				},
+				{
+					"d": "Only String return type is allowed  "
+				}
+			],
+			"answer": "a",
+			"reason": "The constructor cannot have a return type. It should create and return new object. Hence it would give compilation error. "
+},
+        {
+			"id": "23",
+			"subject": "JAVA",
+			"module": "Classes_Methods",
+			"question": " What is the process of defining two or more methods within same class that have same name but different parameters declaration?",
+			"options": [{
+					"a": "method overloading  "
+				},
+				{
+					"b": "method overriding  "
+				},
+				{
+					"c": "method hiding  "
+				},
+				{
+					"d": " none of the mentioned  "
+				}
+			],
+			"answer": "a",
+			"reason": "Two or more methods can have same name as long as their parameters declaration is different, the methods are said to be overloaded and process is called method overloading. Method overloading is a way by which Java implements polymorphism "
+},
+        {
+			"id": "24",
+			"subject": "JAVA",
+			"module": "Classes_Methods",
+			"question": "Which of these is correct about passing an argument by call-by-value process? ",
+			"options": [{
+					"a": "Copy of argument is made into the formal parameter of the subroutine  "
+				},
+				{
+					"b": "Reference to original argument is passed to formal parameter of the subroutine  "
+				},
+				{
+					"c": "Copy of argument is made into the formal parameter of the subroutine and changes made on parameters of subroutine have effect on original argument  "
+				},
+				{
+					"d": "Reference to original argument is passed to formal parameter of the subroutine and changes made on parameters of subroutine have effect on original argument  "
+				}
+			],
+			"answer": "a",
+			"reason": " When we pass an argument by call-by-value a copy of argument is made into the formal parameter of the subroutine and changes made on parameters of subroutine have no effect on original argument, they remain the same."
+},
+        {
+			"id": "25",
+			"subject": "JAVA",
+			"module": "Classes_Methods",
+			"question": "  Which of these can be overloaded?",
+			"options": [{
+					"a": " Methods  "
+				},
+				{
+					"b": "Constructors  "
+				},
+				{
+					"c": "All of the mentioned  "
+				},
+				{
+					"d": " None of the mentioned  "
+				}
+			],
+			"answer": "c",
+			"reason": "Both"
+},
+        {
+			"id": "26",
+			"subject": "JAVA",
+			"module": "Classes_Methods",
+			"question": "What is the process of defining a method in terms of itself, that is a method that calls itself? ",
+			"options": [{
+					"a": " Polymorphism "
+				},
+				{
+					"b": " Abstraction  "
+				},
+				{
+					"c": "Encapsulation  "
+				},
+				{
+					"d": "Recursion  "
+				}
+			],
+			"answer": "d",
+			"reason": "None"
+},
+        {
+			"id": "27",
+			"subject": "JAVA",
+			"module": "Classes_Methods",
+			"question": "Which of these access specifiers must be used for main() method? ",
+			"options": [{
+					"a": "private"
+				},
+				{
+					"b": "public"
+				},
+				{
+					"c": "protected"
+				},
+				{
+					"d": " None"
+				}
+			],
+			"answer": "b",
+			"reason": "main() method must be specified public as it called by Java run time system, outside of the program. If no access specifier is used then by default member is public within its own package & cannot be accessed by Java run time system."
+},
+        {
+			"id": "28",
+			"subject": "JAVA",
+			"module": "Classes_Methods",
+			"question": "Which of these is used to access a member of class before object of that class is created? ",
+			"options": [{
+					"a": "public"
+				},
+				{
+					"b": "private"
+				},
+				{
+					"c": " static"
+				},
+				{
+					"d": "protected"
+				}
+			],
+			"answer": "c",
+			"reason": "none"
+},
+       {
+			"id": "29",
+			"subject": "JAVA",
+			"module": "Classes_Methods",
+			"question": "Which of these is used as a default for a member of a class if no access specifier is used for it? ",
+			"options": [{
+					"a": " private "
+				},
+				{
+					"b": " public"
+				},
+				{
+					"c": "public ,within its own package"
+				
+				},
+				{
+					"d": "protected"
+				}
+			],
+			"answer": "a",
+			"reason": "When we pass an argument by call-by-value a copy of argument is made into the formal parameter of the subroutine and changes made on parameters of subroutine have no effect on original argument, they remain the same. "
+},
+     {
+			"id": "30",
+			"subject": "JAVA",
+			"module": "Classes_Methods",
+			"question": "What is the process by which we can control what parts of a program can access the members of a class? ",
+			"options": [{
+					"a": " Polymorphism "
+				},
+				{
+					"b": "  Abstraction "
+				},
+				{
+					"c": " Encapsulation "
+				},
+				{
+					"d": "Recursion  "
+				}
+			],
+			"answer": "c",
+			"reason": " none"
+},
+         {
+			"id": "31",
+			"subject": "JAVA",
+			"module": "Classes_Methods",
+			"question": " Which of the following statements are incorrect?",
+			"options": [{
+					"a": " public members of class can be accessed by any code in the program "
+				},
+				{
+					"b": " private members of class can only be accessed by other members of the class "
+				},
+				{
+					"c": "  private members of class can be inherited by a subclass, and become protected members in subclass "
+				},
+				{
+					"d": " protected members of a class can be inherited by a subclass, and become private members of the subclass "
+				}
+			],
+			"answer": "c",
+			"reason": "  private members of a class can not be inherited by a subclass."
+},
+         {
+			"id": "32",
+			"subject": "JAVA",
+			"module": "Classes_Methods",
+			"question": "Which of these access specifier must be used for class so that it can be inherited by another subclass?",
+			"options": [{
+					"a": " public "
+				},
+				{
+					"b": "private  "
+				},
+				{
+					"c": "protected  "
+				},
+				{
+					"d": "none of the mentioned  "
+				}
+			],
+			"answer": "a",
+			"reason": "None "
+},
+      {
+			"id": "33",
+			"subject": "JAVA",
+			"module": "Classes_Methods",
+			"question": " Arrays in Java are implemented as?",
+			"options": [{
+					"a": " class "
+				},
+				{
+					"b": " object "
+				},
+				{
+					"c": " variable "
+				},
+				{
+					"d": " none "
+				}
+			],
+			"answer": "b",
+			"reason": "none "
+},
+       {
+			"id": "34",
+			"subject": "JAVA",
+			"module": "Classes_Methods",
+			"question": "Which of these keywords is used to prevent content of a variable from being modified? ",
+			"options": [{
+					"a": "final  "
+				},
+				{
+					"b": " last "
+				},
+				{
+					"c": " constant "
+				},
+				{
+					"d": " static "
+				}
+			],
+			"answer": "a",
+			"reason": "A variable can be declared final, doing so prevents its content from being modified. Final variables must be initialized when it is declared. "
+},
+{
+			"id": "35",
+			"subject": "JAVA",
+			"module": "Classes_Methods",
+			"question": "Which of these cannot be declared static? ",
+			"options": [{
+					"a": " class "
+				},
+				{
+					"b": " object "
+				},
+				{
+					"c": " variable "
+				},
+				{
+					"d": " method "
+				}
+			],
+			"answer": "b",
+			"reason": " static statements are run as soon as class containing then is loaded, prior to any object declaration."
+},
+       {
+			"id": "36",
+			"subject": "JAVA",
+			"module": "Classes_Methods",
+			"question": "Which of the following statements are incorrect? ",
+			"options": [{
+					"a": "  static methods can call other static methods only"
+				},
+				{
+					"b": " static methods must only access static data "
+				},
+				{
+					"c": "  static methods can not refer to this or super in any way "
+				},
+				{
+					"d": " when object of class is declared, each object contains its own copy of static variables  "
+				}
+			],
+			"answer": "d",
+			"reason": " All objects of class share same static variable, when object of a class are declared, all the objects share same copy of static members, no copy of static variables are made. "
+},
+         {
+			"id": "37",
+			"subject": "JAVA",
+			"module": "Classes_Methods",
+			"question": " Which of the following statements are incorrect?",
+			"options": [{
+					"a": "Variables declared as final occupy memory  "
+				},
+				{
+					"b": "final variable must be initialized at the time of declaration  "
+				},
+				{
+					"c": "  Arrays in java are implemented as an object "
+				},
+				{
+					"d": " All arrays contain an attribute-length which contains the number of elements stored in the array "
+				}
+			],
+			"answer": "a",
+			"reason": "None "
+} ,
+          {
+			"id": "38",
+			"subject": "JAVA",
+			"module": "Classes_Methods",
+			"question": " Which of these methods must be made static?",
+			"options": [{
+					"a": " main() "
+				},
+				{
+					"b": " delete() "
+				},
+				{
+					"c": " run() "
+				},
+				{
+					"d": " finalize() "
+				}
+			],
+			"answer": "a",
+			"reason": " main() method must be declared static, main() method is called by Java runtime system before any object of any class exists."
+},
+
+{
+			"id": "39",
+			"subject": "JAVA",
+			"module": "Classes_Methods",
+			"question": " Which of these is the method which is executed first before execution of any other thing takes place in a program?",
+			"options": [{
+					"a": " main method "
+				},
+				{
+					"b": " finalize method  "
+				},
+				{
+					"c": "static method  "
+				},
+				{
+					"d": "private method  "
+				}
+			],
+			"answer": "c",
+			"reason": "If a static method is present in the program then it will be executed first, then main will be executed. "
+}
+,
+{
+			"id": "40",
+			"subject": "JAVA",
+			"module": "Classes_Methods",
+			"question": "What is the process of defining more than one method in a class differentiated by parameters? ",
+			"options": [{
+					"a": " Function overriding "
+				},
+				{
+					"b": " Function overloading  "
+				},
+				{
+					"c": " Function doubling "
+				},
+				{
+					"d": "  None of the mentioned"
+				}
+			],
+			"answer": "b",
+			"reason": "Function overloading is a process of defining more than one method in a class with same name differentiated by function signature i:e return type or parameters type and number. Example – int volume(int length, int width) & int volume(int length , int width , int height) can be used to calculate volume. "
+}
+  	]
+}

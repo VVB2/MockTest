@@ -1,0 +1,845 @@
+
+{
+
+	"quiz": [
+		{
+			"id": "1",
+			"subject": "JAVA",
+			"module": "Inheritance",
+			"question": "Which of this keyword can be used in a subclass to call the constructor of superclass? ",
+			"options": [{
+					"a": "super "
+				},
+				{
+					"b": "this "
+				},
+				{
+					"c": " extend"
+				},
+				{
+					"d": " extends"
+				}
+			],
+			"answer": " a",
+			"reason": " none "
+},
+	{
+			"id": "2",
+			"subject": "JAVA",
+			"module": "Inheritance",
+			"question": " What is the process of defining a method in a subclass having same name & type signature as a method in its superclass?",
+			"options": [{
+					"a": "Method overloading "
+				},
+				{
+					"b": "Method overriding "
+				},
+				{
+					"c": " Method hiding "
+				},
+				{
+					"d": " None of the mentioned "
+				}
+			],
+			"answer": " b",
+			"reason": " None "
+},
+          {
+			"id": "3",
+			"subject": "JAVA",
+			"module": "Inheritance",
+			"question": " Which of these keywords can be used to prevent Method overriding?",
+			"options": [{
+					"a": "static "
+				},
+				{
+					"b": "constant "
+				},
+				{
+					"c": " protected"
+				},
+				{
+					"d": " final"
+				}
+			],
+			"answer": "d",
+			"reason": " To disallow a method from being overridden, specify final as a modifier at the start of its declaration. Methods declared as final cannot be overridden. "
+},
+     {
+			"id": "4",
+			"subject": "JAVA",
+			"module": "Inheritance",
+			"question": " Which of these is correct way of calling a constructor having no parameters, of superclass A by subclass B?",
+			"options": [{
+					"a": "  super(void);"
+				},
+				{
+					"b": " superclass.();"
+				},
+				{
+					"c": " super.A(); "
+				},
+				{
+					"d": "super() "
+				}
+			],
+			"answer": "d ",
+			"reason": " none "
+},
+     {
+			"id": "5",
+			"subject": "JAVA",
+			"module": "Inheritance",
+			"question": " Which of these is supported by method overriding in Java?",
+			"options": [{
+					"a": " Abstraction"
+				},
+				{
+					"b": " Encapsulation "
+				},
+				{
+					"c": " Polymorphism "
+				},
+				{
+					"d": " None of the mentioned "
+				}
+			],
+			"answer": "C",
+			"reason": " None "
+},
+       {
+			"id": "6",
+			"subject": "JAVA",
+			"module": "Inheritance",
+			"question": " Which among the following best describes the Inheritance?",
+			"options": [{
+					"a": "Copying the code already written "
+				},
+				{
+					"b": " Using the code already written once"
+				},
+				{
+					"c": "Using already defined functions in programming language "
+				},
+				{
+					"d": " Using the data and functions into derived segment "
+				}
+			],
+			"answer": "d",
+			"reason": " It can only be indicated by using the data and functions that we use in derived class, being provided by parent class. Copying code is nowhere similar to this concept, also using the code already written is same as copying. Using already defined functions is not inheritance as we are not adding any of our own features. "
+},
+        {
+			"id": "7",
+			"subject": "JAVA",
+			"module": "Inheritance",
+			"question": " How many basic types of inheritance are provided as OOP feature?",
+			"options": [{
+					"a": "4 "
+				},
+				{
+					"b": "3 "
+				},
+				{
+					"c": "2 "
+				},
+				{
+					"d": " 1"
+				}
+			],
+			"answer": "a",
+			"reason": "There are basically 4 types of inheritance provided in OOP, namely, single level, multilevel, multiple and hierarchical inheritance. We can add one more type as Hybrid inheritance but that is actually the combination any types of inheritance from the 4 basic ones.  "
+},
+       {
+			"id": "8",
+			"subject": "JAVA",
+			"module": "Inheritance",
+			"question": "Which among the following best defines single level inheritance? ",
+			"options": [{
+					"a": " A class inheriting a derived class"
+				},
+				{
+					"b": "A class inheriting a base class "
+				},
+				{
+					"c": "A class inheriting a nested class "
+				},
+				{
+					"d": " A class which gets inherited by 2 classes"
+				}
+			],
+			"answer": "b ",
+			"reason": " A class inheriting a base class defines single level inheritance. Inheriting an already derived class makes it multilevel inheritance. And if base class is inherited by 2 other classes, it is multiple inheritance. "
+},
+      {
+			"id": "9",
+			"subject": "JAVA",
+			"module": "Inheritance",
+			"question": " Which among the following is correct for multiple inheritance?",
+			"options": [{
+					"a": "class student{public: int marks;}s; class stream{int total;}; class topper:public student, public stream{ };"
+				},
+				{
+					"b": "class student{int marks;}; class stream{ }; class topper: public student{ }; "
+				},
+				{
+					"c": "class student{int marks;}; class stream:public student{ }; "
+				},
+				{
+					"d": " class student{ }; class stream{ }; class topper{ }; "
+				}
+			],
+			"answer": "a ",
+			"reason": " Class topper is getting derived from 2 other classes and hence it is multiple inheritance. Topper inherits class stream and class student publicly and hence can use its features. If only few classes are defined, there we are not even using inheritance (as in option class student{ }; class stream{ }; class topper{ };). "
+},
+{
+			"id": "10",
+			"subject": "JAVA",
+			"module": "Inheritance",
+			"question": "Which programming language doesn’t support multiple inheritance? ",
+			"options": [{
+					"a": "C++ and Java "
+				},
+				{
+					"b": " C and C++ "
+				},
+				{
+					"c": "Java and SmallTalk "
+				},
+				{
+					"d": " Java "
+				}
+			],
+			"answer": "d ",
+			"reason": " Java doesn’t support multiple inheritance. But that feature can be implemented by using the interfaces concept. Multiple inheritance is not supported because of diamond problem and similar issues. "
+},
+    {
+			"id": "11",
+			"subject": "JAVA",
+			"module": "Inheritance",
+			"question": "Which among the following is correct for a hierarchical inheritance? ",
+			"options": [{
+					"a": "Two base classes can be used to be derived into one single class "
+				},
+				{
+					"b": "Two or more classes can be derived into one class "
+				},
+				{
+					"c": " One base class can be derived into other two derived classes or more"
+				},
+				{
+					"d": " One base class can be derived into only 2 classes "
+				}
+			],
+			"answer": "c ",
+			"reason": " One base class can be derived into the other two derived classes or more. If only one class gets derived by only 2 other classes, it is also hierarchical inheritance, but it is not a mandatory condition, because any number of derived classes can be there. "
+},
+{
+			"id": "12",
+			"subject": "JAVA",
+			"module": "Inheritance",
+			"question": " Which is the correct syntax of inheritance?",
+			"options": [{
+					"a": "class derived_classname : base_classname{ /*define class body*/ }; "
+				},
+				{
+					"b": " class base_classname : derived_classname{ /*define class body*/ };"
+				},
+				{
+					"c": "  class derived_classname : access base_classname{ /*define class body*/ };"
+				},
+				{
+					"d": "  class base_classname :access derived_classname{ /*define class body*/ }"
+				}
+			],
+			"answer": "c ",
+			"reason": "  Firstly, keyword class should come, followed by the derived class name. Colon is must followed by access in which base class has to be derived, followed by the base class name. And finally the body of class. Semicolon after the body is also must. "
+},
+{
+			"id": "13",
+			"subject": "JAVA",
+			"module": "Inheritance",
+			"question": "Which type of inheritance leads to diamond problem? ",
+			"options": [{
+					"a": "  Single level"
+				},
+				{
+					"b": "Multi-level "
+				},
+				{
+					"c": " Multiple "
+				},
+				{
+					"d": " Hierarchical"
+				}
+			],
+			"answer": "c ",
+			"reason": "When 2 or more classes inherit the same class using multiple inheritance and then one more class inherits those two base classes, we get a diamond like structure. Here, ambiguity arises when same function gets derived into 2 base classes and finally to 3rd level class because same name functions are being inherited.  "
+},
+{
+			"id": "14",
+			"subject": "JAVA",
+			"module": "Inheritance",
+			"question": " Which access type data gets derived as private member in derived class?",
+			"options": [{
+					"a": "Private "
+				},
+				{
+					"b": "Public "
+				},
+				{
+					"c": " Protected"
+				},
+				{
+					"d": "Protected and Private "
+				}
+			],
+			"answer": "a ",
+			"reason": "It is a rule, that when a derived class inherits the base class in private access mode, all the members of base class gets derived as private members of the derived class.  "
+},
+ {
+			"id": "15",
+			"subject": "JAVA",
+			"module": "Inheritance",
+			"question": "  If a base class is inherited in protected access mode then which among the following is true?",
+			"options": [{
+					"a": "Public and Protected members of base class becomes protected members of derived class "
+				},
+				{
+					"b": "Only protected members become protected members of derived class "
+				},
+				{
+					"c": "  Private, Protected and Public all members of base, become private of derived class"
+				},
+				{
+					"d": "Only private members of base, become private of derived class "
+				}
+			],
+			"answer": "a ",
+			"reason": " As the programming language rules apply, all the public and protected members of base class becomes protected members of derived class in protected access mode. It can’t be changed because it would hinder the security of data and may add vulnerability in the program. "
+},
+{
+			"id": "16",
+			"subject": "JAVA",
+			"module": "Inheritance",
+			"question": " Members which are not intended to be inherited are declared as ________________",
+			"options": [{
+					"a": "Public members "
+				},
+				{
+					"b": "Protected members "
+				},
+				{
+					"c": "Private members "
+				},
+				{
+					"d": "Private or Protected members "
+				}
+			],
+			"answer": "c ",
+			"reason": " Private access specifier is the most secure access mode. It doesn’t allow members to be inherited. Even Private inheritance can only inherit protected and public members.  "
+},
+{
+			"id": "17",
+			"subject": "JAVA",
+			"module": "Inheritance",
+			"question": " While inheriting a class, if no access mode is specified, then which among the following is true? (in C++)",
+			"options": [{
+					"a": "It gets inherited publicly by default "
+				},
+				{
+					"b": "It gets inherited protected by default "
+				},
+				{
+					"c": "It gets inherited privately by default "
+				},
+				{
+					"d": " It is not possible "
+				}
+			],
+			"answer": "c",
+			"reason": " If the access mode is not specified during inheritance, the class is inherited privately by default. This is to ensure the security of data and to maintain OOP features. Hence it is not mandatory to specify the access mode if we want the class to be inherited privately. "
+},
+{
+			"id": "18",
+			"subject": "JAVA",
+			"module": "Inheritance",
+			"question": " If a derived class object is created, which constructor is called first? ",
+			"options": [{
+					"a": "Base class constructor "
+				},
+				{
+					"b": " Derived class constructor"
+				},
+				{
+					"c": " Depends on how we call the object"
+				},
+				{
+					"d": "Not possible "
+				}
+			],
+			"answer": " A",
+			"reason": " First the base class constructor is invoked. When we create a derived class object, the system tries to invoke its constructor but the class is derived so first the base class must be initialized, hence in turn the base class constructor is invoked before the derived class constructor. "
+},
+{
+			"id": "19",
+			"subject": "JAVA",
+			"module": "Inheritance",
+			"question": " How can you make the private members inheritable?",
+			"options": [{
+					"a": "By making their visibility mode as public only "
+				},
+				{
+					"b": " By making their visibility mode as protected only"
+				},
+				{
+					"c": "By making their visibility mode as private in derived class "
+				},
+				{
+					"d": " It can be done both by making the visibility mode public or protected "
+				}
+			],
+			"answer": "d",
+			"reason": " It is not mandatory that you have to make the visibility mode either public or protected. You can do either of those. That will give you permission to inherit the private members of base class.  "
+},
+{
+			"id": "20",
+			"subject": "JAVA",
+			"module": "Inheritance",
+			"question": "  Which of this keyword must be used to inherit a class?",
+			"options": [{
+					"a": "super "
+				},
+				{
+					"b": "this "
+				},
+				{
+					"c": " extend"
+				},
+				{
+					"d": " extends"
+				}
+			],
+			"answer": "d ",
+			"reason": "  none"
+},
+{
+			"id": "21",
+			"subject": "JAVA",
+			"module": "Inheritance",
+			"question": "A class member declared protected becomes a member of subclass of which type? ",
+			"options": [{
+					"a": " public member"
+				},
+				{
+					"b": "private member "
+				},
+				{
+					"c": "protected member "
+				},
+				{
+					"d": "static member "
+				}
+			],
+			"answer": "b",
+			"reason": " A class member declared protected becomes a private member of subclass.  "
+},
+{
+			"id": "22",
+			"subject": "JAVA",
+			"module": "Inheritance",
+			"question": " Which of these is correct way of inheriting class A by class B?",
+			"options": [{
+					"a": "class B + class A {} "
+				},
+				{
+					"b": " class B inherits class A {} "
+				},
+				{
+					"c": " class B extends A {}"
+				},
+				{
+					"d": "class B extends class A {} "
+				}
+			],
+			"answer": " c",
+			"reason": " none "
+},
+{
+			"id": "23",
+			"subject": "JAVA",
+			"module": "Inheritance",
+			"question": "Which of these class is superclass of every class in Java? ",
+			"options": [{
+					"a": "String class "
+				},
+				{
+					"b": " Object class"
+				},
+				{
+					"c": " Abstract class"
+				},
+				{
+					"d": "ArrayList class "
+				}
+			],
+			"answer": "b ",
+			"reason": " Object class is superclass of every class in Java. "
+},
+{
+			"id": "24",
+			"subject": "JAVA",
+			"module": "Inheritance",
+			"question": "Which of these method of Object class can clone an object? ",
+			"options": [{
+					"a": "Objectcopy() "
+				},
+				{
+					"b": "copy() "
+				},
+				{
+					"c": "Object clone() "
+				},
+				{
+					"d": "clone() "
+				}
+			],
+			"answer": " c",
+			"reason": " none "
+},{
+			"id": "25",
+			"subject": "JAVA",
+			"module": "Inheritance",
+			"question": " Which of these method of Object class is used to obtain class of an object at run time?",
+			"options": [{
+					"a": "get() "
+				},
+				{
+					"b": " void getclass()"
+				},
+				{
+					"c": "Class getclass() "
+				},
+				{
+					"d": " None of the mentioned "
+				}
+			],
+			"answer": " c",
+			"reason": " none "
+},{
+			"id": "26",
+			"subject": "JAVA",
+			"module": "Inheritance",
+			"question": " Which of these keywords can be used to prevent inheritance of a class?",
+			"options": [{
+					"a": "super "
+				},
+				{
+					"b": " constant"
+				},
+				{
+					"c": " class"
+				},
+				{
+					"d": "final "
+				}
+			],
+			"answer": " d",
+			"reason": " Declaring a class final implicitly declared all of its methods final, and makes the class inheritable. "
+},
+{
+			"id": "27",
+			"subject": "JAVA",
+			"module": "Inheritance",
+			"question": " Which of these keywords cannot be used for a class which has been declared final?",
+			"options": [{
+					"a": "abstract "
+				},
+				{
+					"b": "extends "
+				},
+				{
+					"c": "abstract and extends "
+				},
+				{
+					"d": " none of the mentioned"
+				}
+			],
+			"answer": "a",
+			"reason": "A abstract class is incomplete by itself and relies upon its subclasses to provide a complete implementation. If we declare a class final then no class can inherit that class, an abstract class needs its subclasses hence both final and abstract cannot be used for a same class.  "
+},
+{
+			"id": "28",
+			"subject": "JAVA",
+			"module": "Inheritance",
+			"question": "Which of these class relies upon its subclasses for complete implementation of its methods? ",
+			"options": [{
+					"a": "Object class "
+				},
+				{
+					"b": " abstract class"
+				},
+				{
+					"c": " ArrayList class"
+				},
+				{
+					"d": "None of the mentioned "
+				}
+			],
+			"answer": "b",
+			"reason": " None "
+},
+{
+			"id": "29",
+			"subject": "JAVA",
+			"module": "Inheritance",
+			"question": "Which of these keywords are used to define an abstract class? ",
+			"options": [{
+					"a": "abst "
+				},
+				{
+					"b": " abstract"
+				},
+				{
+					"c": "Abstract "
+				},
+				{
+					"d": " abstract class"
+				}
+			],
+			"answer": "b",
+			"reason": " None "
+},{
+			"id": "30",
+			"subject": "JAVA",
+			"module": "Inheritance",
+			"question": " Which of these is not abstract? ",
+			"options": [{
+					"a": " Thread"
+				},
+				{
+					"b": "AbstractList "
+				},
+				{
+					"c": "List "
+				},
+				{
+					"d": "  None of the Mentioned"
+				}
+			],
+			"answer": " a",
+			"reason": "  Thread is not an abstract class. "
+},
+{
+			"id": "31",
+			"subject": "JAVA",
+			"module": "Inheritance",
+			"question": "If a class inheriting an abstract class does not define all of its function then it will be known as? ",
+			"options": [{
+					"a": "Abstract "
+				},
+				{
+					"b": "A simple class "
+				},
+				{
+					"c": "Static class "
+				},
+				{
+					"d": "None of the mentioned"
+				}
+			],
+			"answer": "a ",
+			"reason": " Any subclass of an abstract class must either implement all of the abstract method in the superclass or be itself declared abstract. "
+},
+{
+			"id": "32",
+			"subject": "JAVA",
+			"module": "Inheritance",
+			"question": " Which of these is not a correct statement?",
+			"options": [{
+					"a": "Every class containing abstract method must be declared abstrac "
+				},
+				{
+					"b": "Abstract class defines only the structure of the class not its implementation "
+				},
+				{
+					"c": " Abstract class can be initiated by new operator "
+				},
+				{
+					"d": " Abstract class can be inherited "
+				}
+			],
+			"answer": "c ",
+			"reason": " Abstract class cannot be directly initiated with new operator, Since abstract class does not contain any definition of implementation it is not possible to create an abstract object. "
+},
+{
+			"id": "33",
+			"subject": "JAVA",
+			"module": "Inheritance",
+			"question": " Which of these packages contains abstract keyword?",
+			"options": [{
+					"a": " java.lang"
+				},
+				{
+					"b": "  java.util"
+				},
+				{
+					"c": "java.io "
+				},
+				{
+					"d": " java.system "
+				}
+			],
+			"answer": "a ",
+			"reason": "  None"
+},
+{
+			"id": "34",
+			"subject": "JAVA",
+			"module": "Inheritance",
+			"question": "What is not type of inheritance? ",
+			"options": [{
+					"a": "Single inheritance "
+				},
+				{
+					"b": " Double inheritance "
+				},
+				{
+					"c": "Hierarchical inheritance "
+				},
+				{
+					"d": "Multiple inheritance "
+				}
+			],
+			"answer": "b ",
+			"reason": " Inheritance is way of acquiring attributes and methods of parent class. Java supports hierarchical inheritance directly.  "
+},
+{
+			"id": "35",
+			"subject": "JAVA",
+			"module": "Inheritance",
+			"question": "Using which of the following, multiple inheritance in Java can be implemented? ",
+			"options": [{
+					"a": "Interfaces "
+				},
+				{
+					"b": "Multithreading "
+				},
+				{
+					"c": "Protected methods "
+				},
+				{
+					"d": "Private methods "
+				}
+			],
+			"answer": " a",
+			"reason": " Multiple inheritance in java is implemented using interfaces. Multiple interfaces can be implemented by a class. "
+},
+{
+			"id": "36",
+			"subject": "JAVA",
+			"module": "Inheritance",
+			"question": " All classes in Java are inherited from which class?",
+			"options": [{
+					"a": "java.lang.class "
+				},
+				{
+					"b": " java.class.inherited "
+				},
+				{
+					"c": "java.class.object "
+				},
+				{
+					"d": " java.lang.Object "
+				}
+			],
+			"answer": "d",
+			"reason": "All classes in java are inherited from Object class. Interfaces are not inherited from Object Class.  "
+},
+{
+			"id": "37",
+			"subject": "JAVA",
+			"module": "Inheritance",
+			"question": "In order to restrict a variable of a class from inheriting to subclass, how variable should be declared? ",
+			"options": [{
+					"a": "Protected "
+				},
+				{
+					"b": "Private"
+				},
+				{
+					"c": "Public"
+				},
+				{
+					"d": "Static"
+				}
+			],
+			"answer": " b",
+			"reason": " By declaring variable private, the variable will not be available in inherited to subclass."
+},
+{
+			"id": "38",
+			"subject": "JAVA",
+			"module": "Inheritance",
+			"question": " If super class and subclass have same variable name, which keyword should be used to use super class?",
+			"options": [{
+					"a": "super "
+				},
+				{
+					"b": "this "
+				},
+				{
+					"c": "Upper"
+				},
+				{
+					"d": "Classname"
+				}
+			],
+			"answer": "a",
+			"reason": "Super keyword is used to access hidden super class variable in subclass."
+}
+,
+{
+			"id": "39",
+			"subject": "JAVA",
+			"module": "Inheritance",
+			"question": " Which of the following is used for implementing inheritance through an interface?",
+			"options": [{
+					"a": " inherited"
+				},
+				{
+					"b": "using "
+				},
+				{
+					"c": " extends"
+				},
+				{
+					"d": " implements"
+				}
+			],
+			"answer": "d ",
+			"reason": " Interface is implemented using implements keyword. A concrete class must implement all the methods of an interface, else it must be declared abstract. "
+},
+{
+			"id": "40",
+			"subject": "JAVA",
+			"module": "Inheritance",
+			"question": "Which of the following is used for implementing inheritance through class? ",
+			"options": [{
+					"a": " inherited "
+				},
+				{
+					"b": " using"
+				},
+				{
+					"c": "extends "
+				},
+				{
+					"d": "implements "
+				}
+			],
+			"answer": "c ",
+			"reason": " implements "
+}
+
+  	]
+}

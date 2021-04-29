@@ -56,14 +56,17 @@
   {% endblock %}
 
 {% block content %}
-<h4 class="pb-3">
-  <span>{{ page | replace('_', ' ') | replace('Arrays', '& Arrays') }} Quiz :</span>
+<h4 class="mb-3 mt-0 heading">
+  <span>{{ module | replace('_', ' ') | replace('Arrays', '& Arrays') | replace('Control', '& Control') | replace('Methods', '& Methods')}} Quiz :</span>
   <div id="timer" class="float-right">Time left</div>
   <img src="https://i.gifer.com/XVo6.gif" class="float-right" width="30px" height="30px"></img>
 </h4>
-{% for question in data %}
+{% for question in data.items %}
+<form action="" method="POST">
 <div class="content-section">
-  <h6>Q{{ question.question_id }}. {{ question.question }}</h6>
+  {% autoescape false %}
+  <h6 class="mb-3">Q{{ question.question_id }}. {{ question.question | replace('\n', '<br>&emsp;&emsp;') }}</h6>
+  {% endautoescape %}
   <div class="form-check">
     <input class="form-check-input" type="radio" name= '{{ question.id }}' id='option' value='a'>
       <label class="form-check-label" for='{{ loop.index }}'>      
@@ -90,9 +93,29 @@
   </div>
 </div>
 {% endfor %}
-<button type="button" class="btn btn-outline-success mb-5" onclick="displayRadioValue()">
-  Submit
-</button>
+
+<div class="pagination justify-content-center ml-2 mr-2">
+{% for page_num in data.iter_pages() %}
+  {% if page_num %}
+    {% if data.page == page_num %} 
+      <a class="btn btn-success mb-4" href="{{ url_for('tests.question', page=page_num, module=module, subject=subject) }}">{{ page_num }}</a>
+    {% else %}
+    <a class="btn btn-outline-success mb-4" href="{{ url_for('tests.question', page=page_num, module=module, subject=subject) }}">{{ page_num }}</a>
+    {% endif %}
+  {% else %}
+    ...
+  {% endif %}
+{% endfor %}
+</div>
+{% if not data.has_next %}
+<span>
+  <button class="btn btn-primary" role="button" onclick="displayRadioValue()">
+    Submit
+  </button>
+</span>
+  
+{% endif %}
+</form>
 {% endblock %}
 
 {% block script %}
@@ -102,6 +125,8 @@
   let timePassed = 0;
   let timeLeft = TIME_LIMIT;
   let seconds = 0;
+  let s = $(".heading");
+	let pos = s.position();	
   startTimer();
   function formatTimeLeft(time) {
       const minutes = Math.floor(time / 60);
@@ -126,6 +151,7 @@
 
   function displayRadioValue() {
     let answers = {};
+    let score = 0;
     var ele = document.getElementsByTagName('input');           
     for(i = 0; i < ele.length; i++) {       
         if(ele[i].type="radio") {                 
@@ -133,12 +159,19 @@
               answers[ele[i].name] = ele[i].value;
             }
         }
-    }
-    console.log(answers);
+    }  
   }
 
-  $(window).bind('beforeunload', function(){
-  return 'Are you sure you want to leave?';
+$(window).scroll(function() {
+    let w = $(window);
+    let windowpos = $(window).scrollTop();
+		if (windowpos >= pos.top) {
+      s.css({"margin-top":"70px"});
+			s.addClass("fixed-top alert alert-warning");
+		}       
+    else {
+      s.removeClass("fixed-top alert alert-warning");
+    } 
 });
 
 </script>

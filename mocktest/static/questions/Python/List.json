@@ -1,0 +1,1038 @@
+{
+	"quiz":[
+	{
+		"id": "1",
+		"subject": "Python",
+		"module": "List",
+		"question": "Which of the following commands will create a list?",
+		"options": [
+			{
+				"a": "list1 = list()"
+			},
+			{
+				"b": "list1 = []"
+			},
+			{
+				"c": "list1 = list([1, 2, 3])"
+			},
+			{
+				"d": "all of the mentioned"
+			}
+		],
+		"answer": "d",
+		"reason": "Execute in the shell to verify."
+	},
+    {
+		"id": "2",
+		"subject": "Python",
+		"module": "List",
+		"question": "Which of the following commands will create a list?",
+		"options": [
+			{
+				"a": "[‘h’, ‘e’, ‘l’, ‘l’, ‘o’]"
+			},
+			{
+				"b": "[‘hello’]"
+			},
+			{
+				"c": "[‘llo’]"
+			},
+			{
+				"d": "[‘olleh’]"
+			}
+		],
+		"answer": "a",
+		"reason": "Execute in the shell to verify."
+	},
+    {
+		"id": "3",
+		"subject": "Python",
+		"module": "List",
+		"question": "Suppose listExample is [‘h’,’e’,’l’,’l’,’o’], what is len\u0028listExample)?",
+		"options": [
+			{
+				"a": "5"
+			},
+			{
+				"b": "4"
+			},
+			{
+				"c": "None"
+			},
+			{
+				"d": "Error"
+			}
+		],
+		"answer": "a",
+		"reason": "Execute in the shell to verify"
+	},
+    {
+		"id": "4",
+		"subject": "Python",
+		"module": "List",
+		"question": "Suppose list1 is [2445,133,12454,123], what is max\u0028list1)?",
+		"options": [
+			{
+				"a": "2445"
+			},
+			{
+				"b": "133"
+			},
+			{
+				"c": "12454"
+			},
+			{
+				"d": "123"
+			}
+		],
+		"answer": "c",
+		"reason": "Max returns the maximum element in the list."
+	},
+    {
+		"id": "5",
+		"subject": "Python",
+		"module": "List",
+		"question": "Suppose list1 is [3, 5, 25, 1, 3], what is min\u0028list1)?",
+		"options": [
+			{
+				"a": "3"
+			},
+			{
+				"b": "5"
+			},
+			{
+				"c": "25"
+			},
+			{
+				"d": "1"
+			}
+		],
+		"answer": "d",
+		"reason": "Min returns the minimum element in the list."
+	},
+    {
+		"id": "6",
+		"subject": "Python",
+		"module": "List",
+		"question": "Suppose list1 is [1, 5, 9], what is sum\u0028list1)?",
+		"options": [
+			{
+				"a": "1"
+			},
+			{
+				"b": "9"
+			},
+			{
+				"c": "25"
+			},
+			{
+				"d": "Error"
+			}
+		],
+		"answer": "c",
+		"reason": "Sum returns the sum of all elements in the list."
+	},
+    {
+		"id": "7",
+		"subject": "Python",
+		"module": "List",
+		"question": "To shuffle the list\u0028say list1) what function do we use?",
+		"options": [
+			{
+				"a": "list1.shuffle()"
+			},
+			{
+				"b": "shuffle(list1)"
+			},
+			{
+				"c": "random.shuffle(list1)"
+			},
+			{
+				"d": "random.shuffleList(list1)"
+			}
+		],
+		"answer": "c",
+		"reason": "Execute in the shell to verify."
+	},
+    {
+		"id": "8",
+		"subject": "Python",
+		"module": "List",
+		"question": "Suppose list1 is [4, 2, 2, 4, 5, 2, 1, 0], Which of the following is correct syntax for slicing operation?",
+		"options": [
+			{
+				"a": "print(list1[0])"
+			},
+			{
+				"b": "print(list1[:2])"
+			},
+			{
+				"c": "print(list1[:-2])"
+			},
+			{
+				"d": "all of the mentioned"
+			}
+		],
+		"answer": "d",
+		"reason": "Slicing is allowed in lists just as in the case of strings."
+	},
+    {
+		"id": "9",
+		"subject": "Python",
+		"module": "List",
+		"question": "Suppose list1 is [2, 33, 222, 14, 25], What is list1[-1]?",
+		"options": [
+			{
+				"a": "Error"
+			},
+			{
+				"b": "None"
+			},
+			{
+				"c": "25"
+			},
+			{
+				"d": "2"
+			}
+		],
+		"answer": "c",
+		"reason": "-1 corresponds to the last index in the list."
+	},
+    {
+		"id": "10",
+		"subject": "Python",
+		"module": "List",
+		"question": "Suppose list1 is [2, 33, 222, 14, 25], What is list1[:-1]?",
+		"options": [
+			{
+				"a": "[2, 33, 222, 14]"
+			},
+			{
+				"b": "Error"
+			},
+			{
+				"c": "25"
+			},
+			{
+				"d": "[25, 14, 222, 33, 2]"
+			}
+		],
+		"answer": "a",
+		"reason": "Execute in the shell to verify."
+	},
+    {
+		"id": "11",
+		"subject": "Python",
+		"module": "List",
+		"question": "Suppose listExample is [3, 4, 5, 20, 5, 25, 1, 3], what is list1 after listExample.pop(1)?",
+		"options": [
+			{
+				"a": "[3, 4, 5, 20, 5, 25, 1, 3]"
+			},
+			{
+				"b": "[1, 3, 3, 4, 5, 5, 20, 25]"
+			},
+			{
+				"c": "[3, 5, 20, 5, 25, 1, 3]"
+			},
+			{
+				"d": "[1, 3, 4, 5, 20, 5, 25]"
+			}
+		],
+		"answer": "c",
+		"reason": "pop() removes the element at the position specified in the parameter."
+	},
+    {
+		"id": "12",
+		"subject": "Python",
+		"module": "List",
+		"question": "Suppose list1 is [1, 3, 2], What is list1 * 2?",
+		"options": [
+			{
+				"a": "[2, 6, 4]"
+			},
+			{
+				"b": "[1, 3, 2, 1, 3]"
+			},
+			{
+				"c": "[1, 3, 2, 1, 3, 2]"
+			},
+			{
+				"d": "[1, 3, 2, 3, 2, 1]"
+			}
+		],
+		"answer": "c",
+		"reason": "Execute in the shell and verify."
+	},
+    {
+		"id": "13",
+		"subject": "Python",
+		"module": "List",
+		"question": "Suppose list1 \u003D [0.5 * x for x in range(0, 4)], list1 is:",
+		"options": [
+			{
+				"a": "[0, 1, 2, 3]"
+			},
+			{
+				"b": "[0, 1, 2, 3, 4]"
+			},
+			{
+				"c": "[0.0, 0.5, 1.0, 1.5]"
+			},
+			{
+				"d": "[0.0, 0.5, 1.0, 1.5, 2.0]"
+			}
+		],
+		"answer": "c",
+		"reason": "Execute in the shell to verify."
+	},
+    {
+		"id": "14",
+		"subject": "Python",
+		"module": "List",
+		"question": "To add a new element to a list we use which command?",
+		"options": [
+			{
+				"a": "list1.add(5)"
+			},
+			{
+				"b": "list1.append(5)"
+			},
+			{
+				"c": "list1.addLast(5)"
+			},
+			{
+				"d": "list1.addEnd(5)"
+			}
+		],
+		"answer": "b",
+		"reason": "We use the function append to add an element to the list."
+	},
+    {
+		"id": "15",
+		"subject": "Python",
+		"module": "List",
+		"question": "To insert 5 to the third position in list1, we use which command?",
+		"options": [
+			{
+				"a": "list1.insert(3, 5)"
+			},
+			{
+				"b": "list1.insert(2, 5)"
+			},
+			{
+				"c": "list1.add(3, 5)"
+			},
+			{
+				"d": "list1.append(3, 5)"
+			}
+		],
+		"answer": "b",
+		"reason": "Execute in the shell to verify."
+	},
+    {
+		"id": "16",
+		"subject": "Python",
+		"module": "List",
+		"question": "To remove string “hello” from list1, we use which command?",
+		"options": [
+			{
+				"a": "list1.remove(“hello”)"
+			},
+			{
+				"b": "list1.remove(hello)"
+			},
+			{
+				"c": "list1.removeAll(“hello”)"
+			},
+			{
+				"d": "list1.removeOne(“hello”)"
+			}
+		],
+		"answer": "a",
+		"reason": "Execute in the shell to verify."
+	},
+    {
+		"id": "17",
+		"subject": "Python",
+		"module": "List",
+		"question": "Suppose list1 is [3, 4, 5, 20, 5], what is list1.index(5)?",
+		"options": [
+			{
+				"a": "0"
+			},
+			{
+				"b": "1"
+			},
+			{
+				"c": "4"
+			},
+			{
+				"d": "2"
+			}
+		],
+		"answer": "d",
+		"reason": "Execute help(list.index) to get details."
+	},
+    {
+		"id": "18",
+		"subject": "Python",
+		"module": "List",
+		"question": "Suppose list1 is [3, 4, 5, 20, 5, 25, 1, 3], what is list1.count(5)?",
+		"options": [
+			{
+				"a": "0"
+			},
+			{
+				"b": "4"
+			},
+			{
+				"c": "1"
+			},
+			{
+				"d": "2"
+			}
+		],
+		"answer": "d",
+		"reason": "Execute in the shell to verify."
+	},
+    {
+		"id": "19",
+		"subject": "Python",
+		"module": "List",
+		"question": "Suppose listExample is [3, 4, 5, 20, 5, 25, 1, 3], what is list1 after listExample.extend([34, 5])?",
+		"options": [
+			{
+				"a": "[3, 4, 5, 20, 5, 25, 1, 3, 34, 5]"
+			},
+			{
+				"b": "[1, 3, 3, 4, 5, 5, 20, 25, 34, 5]"
+			},
+			{
+				"c": "[25, 20, 5, 5, 4, 3, 3, 1, 34, 5]"
+			},
+			{
+				"d": "[1, 3, 4, 5, 20, 5, 25, 3, 34, 5]"
+			}
+		],
+		"answer": "a",
+		"reason": "Execute in the shell to verify."
+	},
+    {
+		"id": "20",
+		"subject": "Python",
+		"module": "List",
+		"question": "Suppose list1 is [3, 4, 5, 20, 5, 25, 1, 3], what is list1 after list1.reverse()?",
+		"options": [
+			{
+				"a": "[3, 4, 5, 20, 5, 25, 1, 3]"
+			},
+			{
+				"b": "[1, 3, 3, 4, 5, 5, 20, 25]"
+			},
+			{
+				"c": "[25, 20, 5, 5, 4, 3, 3, 1]"
+			},
+			{
+				"d": "[3, 1, 25, 5, 20, 5, 4, 3]"
+			}
+		],
+		"answer": "d",
+		"reason": "Execute in the shell to verify."
+	},
+    {
+		"id": "21",
+		"subject": "Python",
+		"module": "List",
+		"question": "Suppose listExample is [3, 4, 5, 20, 5, 25, 1, 3], what is list1 after listExample.pop()?",
+		"options": [
+			{
+				"a": "[3, 4, 5, 20, 5, 25, 1]"
+			},
+			{
+				"b": "[1, 3, 3, 4, 5, 5, 20, 25]"
+			},
+			{
+				"c": "[3, 5, 20, 5, 25, 1, 3]"
+			},
+			{
+				"d": "[1, 3, 4, 5, 20, 5, 25]"
+			}
+		],
+		"answer": "a",
+		"reason": "pop() by default will remove the last element."
+	},
+	{
+        "id":"22",
+        "subject":"Python",
+        "module":"List",
+        "question":"Suppose listExample is [3, 4, 5, 20, 5, 25, 1, 3], what is list1 after listExample.pop(1)?",
+        "options":[
+            {
+                "a":"[3, 4, 5, 20, 5, 25, 1, 3]"
+            },
+            {
+                "b":"[1, 3, 3, 4, 5, 5, 20, 25]"
+            },
+            {
+                "c":"[3, 5, 20, 5, 25, 1, 3]"
+            },
+            {
+                "d":"[1, 3, 4, 5, 20, 5, 25]"
+            }
+        ],
+        "answer":"c",
+        "reason":"pop() removes the element at the position specified in the parameter."
+    },
+	{
+		"id":"23",
+		"subject":"Python",
+		"module":"List",
+		"question":"What will be the output of the followingPythoncode?>>>\u201CWelcome to Python\u201D.split()",
+		"options":[
+			{
+				"a":"[“Welcome”, “to”, “Python”]"
+			},
+			{
+				"b":"(“Welcome”, “to”, “Python”)"
+			},
+			{
+				"c":"{“Welcome”, “to”, “Python”}"
+			},
+			{
+				"d":"“Welcome”, “to”, “Python”"
+			}
+		],
+		"answer":"a",
+		"reason":"split() function returns the elements in a list."
+	},
+	{
+		"id":"24",
+		"subject":"Python",
+		"module":"List",
+		"question":"What will be the output of the following Python code?>>>list\u0028\u201Ca#b#c#d\u201D.split\u0028'#'\u0029\u0029",
+		"options":[
+			{
+				"a":"[‘a’, ‘b’, ‘c’, ‘d’]"
+			},
+			{
+				"b":"[‘a b c d’]"
+			},
+			{
+				"c":"[‘a#b#c#d’]"
+			},
+			{
+				"d":"[‘abcd’]"
+			}
+		],
+		"answer":"a",
+		"reason":"Execute in the shell to verify."
+	},
+	{
+		"id":"25",
+		"subject":"Python",
+		"module":"List",
+		"question":"What will be the output of the following Python code?\\n\\n>>>list1 \u003D \u005B1, 3\u005D\\n>>>list2 \u003D list1\\n>>>list1\u005B0\u005D \u003D 4\\n>>>print\u0028list2\u0029",
+		"options":[
+			{
+				"a":"[1, 3]"
+			},
+			{
+				"b":"[4, 3]"
+			},
+			{
+				"c":"[1, 4]"
+			},
+			{
+				"d":"[1, 3, 4]"
+			}
+		],
+		"answer":"b",
+		"reason":"Lists should be copied by executing [:] operation."
+	},
+	{
+		"id": "26",
+		"subject": "Python",
+		"module": "List",
+		"question": "What will be the output of the following Python code?\\n\\ndef f\u0028values\u0029:\\n\\tvalues\u005B0\u005D \u003D 44 \\n\\nv \u003D \u005B1, 2, 3\u005D\\nf\u0028v\u0029\\nprint\u0028v\u0029",
+		"options": [
+			{
+				"a": "[1, 44]"
+			},
+			{
+				"b": "[1, 2, 3, 44]"
+			},
+			{
+				"c": " [44, 2, 3]"
+			},
+			{
+				"d": " [1, 2, 3]"
+			}
+		],
+		"answer": "c",
+		"reason": "Execute in the shell to verify."
+	},
+	{
+		"id": "27",
+		"subject": "Python",
+		"module": "List",
+		"question": "What will be the output of the following Python code?\\ndef f\u0028i, values \u003D \u005B\u005D\u0028\u003A\\n\\tvalues.append\u0028i\u0029\\n\\treturn values\\n\\nf\u00281\u0029\\nf\u00282\u0029\\nv \u003D f\u00283\u0029\\nprint\u0028v\u0029",
+		"options": [
+			{
+				"a": "[1] [2] [3]"
+			},
+			{
+				"b": "[1] [1, 2] [1, 2, 3]"
+			},
+			{
+				"c": "[1, 2, 3]"
+			},
+			{
+				"d": " 1 2 3"
+			}
+		],
+		"answer": "c",
+		"reason": "Execute in the shell to verify"
+	},
+	{
+		"id": "28",
+		"subject": "Python",
+		"module": "List",
+		"question": "What will be the output of the following Python code?\\n\\nnames1 \u003D \u005B\u2019Amir\u2019, \u2018Bala\u2019, \u2018Chales\u2019\u005D\\n\\nif \u2018amir\u2019 in names1\u003A\\n\\tprint\u00281\u0029\\nelse\u003A\\n\\tprint\u00282\u0029",
+		"options": [
+			{
+				"a": "None"
+			},
+			{
+				"b": "1"
+			},
+			{
+				"c": "2"
+			},
+			{
+				"d": "Error"
+			}
+		],
+		"answer": "c",
+		"reason": "Execute in the shell to verify."
+	},
+	{
+		"id": "29",
+		"subject": "Python",
+		"module": "List",
+		"question": "What will be the output of the following Python code?\\n\\nnames1 \u003D \u005B\u2018Amir\u2019, \u2018Bala\u2019, \u2018Charlie\u2019\u005D\\nnames2 \u003D \u005Bname.lower\u0028\u0029 for name in names1\u005D\\n\\nprint\u0028names2\u005B2\u005D\u005B0\u005D\u0029",
+		"options": [
+			{
+				"a": "None"
+			},
+			{
+				"b": "a"
+			},
+			{
+				"c": "b"
+			},
+			{
+				"d": "c"
+			}
+		],
+		"answer": "d",
+		"reason": "List Comprehension are a shorthand for creating new lists."
+	},
+	{
+		"id": "30",
+		"subject": "Python",
+		"module": "List",
+		"question": "What will be the output of the following Python code?\\n\\nnumbers \u003D \u005B1, 2, 3, 4\u005D\\n\\nnumbers.append\u0028\u005B5,6,7,8\u005D\u0029\\n\\nprint\u0028len\u0028numbers\u0029\u0029",
+		"options": [
+			{
+				"a": "4"
+			},
+			{
+				"b": "5"
+			},
+			{
+				"c": "8"
+			},
+			{
+				"d": "12"
+			}
+		],
+		"answer": "b",
+		"reason": "A list is passed in append so the length is 5."
+	},
+	{
+		"id": "31",
+		"subject": "Python",
+		"module": "List",
+		"question": " To which of the following the “in” operator can be used to check if an item is in it?",
+		"options": [
+			{
+				"a": "Lists"
+			},
+			{
+				"b": "Dictionary"
+			},
+			{
+				"c": "Set"
+			},
+			{
+				"d": "All of the mentioned"
+			}
+		],
+		"answer": "d",
+		"reason": "In can be used in all data structures."
+	},
+	{
+		"id": "32",
+		"subject": "Python",
+		"module": "List",
+		"question": " What will be the output of the following Python code?\\nlist1 \u003D \u005B1, 2, 3, 4\u005D\\nlist2 \u003D \u005B5, 6, 7, 8\u005D\\n\\nprint\u0028len\u0028list1 + list2\u0029\u0029",
+		"options": [
+			{
+				"a": "2"
+			},
+			{
+				"b": "4"
+			},
+			{
+				"c": "5"
+			},
+			{
+				"d": "8"
+			}
+		],
+		"answer": "d",
+		"reason": " + appends all the elements individually into a new list."
+	},
+	{
+		"id": "33",
+		"subject": "Python",
+		"module": "List",
+		"question": "What will be the output of the following Python code?\\n\\ndef addItem\u0028listParam\u0029:\\n\\tlistParam +\u003D \u005B1\u005D\\n\\nmylist \u003D \u005B1, 2, 3, 4\u005D\\naddItem\u0028mylist\u0029\\nprint\u0028len\u0028mylist\u0029\u0029",
+		"options": [
+			{
+				"a": "1"
+			},
+			{
+				"b": "4"
+			},
+			{
+				"c": "5"
+			},
+			{
+				"d": "8"
+			}
+		],
+		"answer": "c",
+		"reason": "+ will append the element to the list."
+	},
+	{
+		"id": "34",
+		"subject": "Python",
+		"module": "List",
+		"question": "What will be the output of the following Python code?\\n\\ndef increment_items\u0028L, increment\u0029:\\n\\ti \u003D 0\\n\\twhile i < len\u0028L\u0029:\\n\\t\\tL\u005Bi\u005D \u003D L\u005Bi\u005D + increment\\n\\t\\ti \u003D i + 1\\n\\nvalues \u003D \u005B1, 2, 3\u005D\\nprint\u0028increment_items\u0028values, 2\u0029\u0029\\nprint\u0028values\u0029",
+		"options": [
+			{
+				"a": "None\\n[3, 4, 5]"
+			},
+			{
+				"b": "None\\n[1, 2, 3]"
+			},
+			{
+				"c": "[3, 4, 5]\\n[1, 2, 3]"
+			},
+			{
+				"d": "[3, 4, 5]\\nNone"
+			}
+		],
+		"answer": "a",
+		"reason": "Execute in the shell to verify."
+	},
+	{
+		"id": "35",
+		"subject": "Python",
+		"module": "List",
+		"question": " What will be the output of the following Python code?\\ndef example\u0028L\u0029:\\n\\t''' \u0028list\u0029 -> list\\n\\t'''\\n\\ti \u003D 0\\n\\tresult \u003D \u005B\u005D\\n\\twhile i < len\u0028L\u0029:\\n\\t\\tresult.append\u0028L\u005Bi\u005D\u0029\\n\\t\\ti \u003D i + 3\\n\\treturn result",
+		"options": [
+			{
+				"a": "Return a list containing every third item from L starting at index 0"
+			},
+			{
+				"b": "Return an empty list"
+			},
+			{
+				"c": " Return a list containing every third index from L starting at index 0"
+			},
+			{
+				"d": "Return a list containing the items from L starting from index 0, omitting every third item"
+			}
+		],
+		"answer": "a",
+		"reason": "Run the code to get a better understanding with many arguments."
+	},
+	{
+		"id": "36",
+		"subject": "Python",
+		"module": "List",
+		"question": "What will be the output of the following Python code?\\n\\nveggies \u003D \u005B'carrot', 'broccoli', 'potato', 'asparagus'\u005D\\n\\nveggies.insert\u0028veggies.index\u0028'broccoli'\u0029, 'celery'\u0029\\n\\nprint\u0028veggies\u0029",
+		"options": [
+			{
+				"a": " [‘carrot’, ‘celery’, ‘broccoli’, ‘potato’, ‘asparagus’] Correct 1.00"
+			},
+			{
+				"b": " [‘carrot’, ‘celery’, ‘potato’, ‘asparagus’]"
+			},
+			{
+				"c": " [‘carrot’, ‘celery’, ‘potato’, ‘asparagus’]"
+			},
+			{
+				"d": "[‘celery’, ‘carrot’, ‘broccoli’, ‘potato’, ‘asparagus’]"
+			}
+		],
+		"answer": "a",
+		"reason": "Execute in the shell to verify."
+	},
+	{
+		"id": "37",
+		"subject": "Python",
+		"module": "List",
+		"question": "What will be the output of the following Python code?\\n\\n>>>m \u003D \u005B\u005Bx, x + 1, x + 2\u005D for x in range\u00280, 3\u0029\u005D",
+		"options": [
+			{
+				"a": "[[1, 2, 3], [4, 5, 6], [7, 8, 9]]"
+			},
+			{
+				"b": "[[0, 1, 2], [1, 2, 3], [2, 3, 4]]"
+			},
+			{
+				"c": "[1, 2, 3, 4, 5, 6, 7, 8, 9]"
+			},
+			{
+				"d": "[0, 1, 2, 1, 2, 3, 2, 3, 4]"
+			}
+		],
+		"answer": "b",
+		"reason": "Execute in the shell to verify."
+	},
+	{
+		"id": "38",
+		"subject": "Python",
+		"module": "List",
+		"question": " How many elements are in m?\\n\\nm \u003D \u005B\u005Bx, y] for x in range\u00280, 4\u0029 for y in range\u00280, 4\u0029]",
+		"options": [
+			{
+				"a": "8"
+			},
+			{
+				"b": "12"
+			},
+			{
+				"c": "16"
+			},
+			{
+				"d": "32"
+			}
+		],
+		"answer": "c",
+		"reason": "Execute in the shell to verify."
+	},
+	{
+		"id": "39",
+		"subject": "Python",
+		"module": "List",
+		"question": "What will be the output of the following Python code?\\nvalues \u003D \u005B\u005B3, 4, 5, 1\u005D, \u005B33, 6, 1, 2\u005D\u005D\\n\\nv \u003D values\u005B0\u005D\u005B0\u005D\\nfor row in range\u00280, len\u0028values\u0029\u0029:\\n\\tfor column in range\u00280, len\u0028values\u005Brow\u005D\u0029\u0029:\\n\\t\\tif v < values\u005Brow\u005D\u005Bcolumn\u005D:\\n\\t\\tv \u003D values\u005Brow\u005D\u005Bcolumn\u005D\\n\\nprint\u0028v\u0029",
+		"options": [
+			{
+				"a": "3"
+			},
+			{
+				"b": "5"
+			},
+			{
+				"c": "6"
+			},
+			{
+				"d": "33"
+			}
+		],
+		"answer": "d",
+		"reason": "Execute in the shell to verify."
+	},
+	{
+		"id": "40",
+		"subject": "Python",
+		"module": "List",
+		"question": "What will be the output of the following Python code?\\n\\nvalues \u003D \u005B\u005B3, 4, 5, 1\u005D, \u005B33, 6, 1, 2\u005D\u005D\\n\\nv \u003D values\u005B0\u005D\u005B0\u005D\\nfor lst in values:\\n\\tfor element in lst:\\n\\t\\tif v > element:\\n\\t\\t\\tv \u003D element\\n\\nprint\u0028v\u0029",
+		"options": [
+			{
+				"a": "1"
+			},
+			{
+				"b": "3"
+			},
+			{
+				"c": "5"
+			},
+			{
+				"d": "6"
+			}
+		],
+		"answer": "a",
+		"reason": "Execute in the shell to verify."
+	},
+	{
+		"id": "41",
+		"subject": "Python",
+		"module": "List",
+		"question": " What will be the output of the following Python code?\\nvalues \u003D \u005B\u005B3, 4, 5, 1 \u005D, \u005B33, 6, 1, 2\u005D\u005D\\n\\nfor row in values:\\n\\trow.sort\u0028\u0029\\n\\tfor element in row:\\n\\t\\tprint\u0028element, end \u003D \u201C \u201D\u0029\\n\\tprint\u0028\u0029",
+		"options": [
+			{
+				"a": "The program prints two rows 3 4 5 1 followed by 33 6 1 2"
+			},
+			{
+				"b": "The program prints on row 3 4 5 1 33 6 1 2"
+			},
+			{
+				"c": "The program prints two rows 3 4 5 1 followed by 33 6 1 2"
+			},
+			{
+				"d": " The program prints two rows 1 3 4 5 followed by 1 2 6 33"
+			}
+		],
+		"answer": "d",
+		"reason": "Execute in the shell to verify."
+	},
+	{
+		"id": "42",
+		"subject": "Python",
+		"module": "List",
+		"question": "What will be the output of the following Python code?\\nmatrix \u003D \u005B\u005B1, 2, 3, 4\u005D,\\n\\t\u005B4, 5, 6, 7\u005D,\\n\\t\u005B8, 9, 10, 11\u005D,\\n\\t\u005B12, 13, 14, 15\u005D\u005D\\n\\nfor i in range\u00280, 4\u0029:\\n\\tprint\u0028matrix\u005Bi\u005D\u005B1\u005D, end \u003D \u201C \u201D\u0029",
+		"options": [
+			{
+				"a": "1 2 3 4"
+			},
+			{
+				"b": "4 5 6 7"
+			},
+			{
+				"c": "1 3 8 12"
+			},
+			{
+				"d": "2 5 9 13"
+			}
+		],
+		"answer": "d",
+		"reason": "Execute in the shell to verify."
+	},
+	{
+		"id": "43",
+		"subject": "Python",
+		"module": "List",
+		"question": " What will be the output of the following Python code?\\ndef m\u0028list\u0029:\\n\\tv \u003D list\u005B0\u005D\\n\\tfor e in list:\\n\\t\\tif v < e: v \u003D e\\n\\treturn v\\n\\nvalues \u003D \u005B\u005B3, 4, 5, 1\u005D, \u005B33, 6, 1, 2\u005D\u005D\\n\\nfor row in values: \\n\\tprint\u0028m\u0028row\u0029, end \u003D \u201C \u201D\u0029",
+		"options": [
+			{
+				"a": "333"
+			},
+			{
+				"b": "1 1"
+			},
+			{
+				"c": "5  6"
+			},
+			{
+				"d": "5 33"
+			}
+		],
+		"answer": "d",
+		"reason": "Execute in the shell to verify."
+	},
+	{
+		"id": "44",
+		"subject": "Python",
+		"module": "List",
+		"question": " What will be the output of the following Python code?\\n\\tdata \u003D \u005B\u005B\u005B1, 2\u005D, \u005B3, 4\u005D\u005D, \u005B\u005B5, 6\u005D, \u005B7, 8\u005D\u005D\u005D\\nprint\u0028data\u005B1\u005D\u005B0\u005D\u005B0\u005D\u0029",
+		"options": [
+			{
+				"a": "1"
+			},
+			{
+				"b": "2"
+			},
+			{
+				"c": "4"
+			},
+			{
+				"d": "5"
+			}
+		],
+		"answer": "d",
+		"reason": "Execute in the shell to verify."
+	},
+	{
+		"id": "45",
+		"subject": "Python",
+		"module": "List",
+		"question": "What will be the output of the following Python code?\\n\\ndata \u003D \u005B\u005B\u005B1, 2\u005D, \u005B3, 4\u005D\u005D, \u005B\u005B5, 6\u005D, \u005B7, 8\u005D\u005D\u005D\\n\\ndef ttt\u0028m\u0029:\\n\\tv \u003D m\u005B0\u005D\u005B0\u005D\\n\\nfor row in m:\\n\\tfor element in row:\\n\\t\\tif v < element: v \u003D element\\n\\nreturn v\\n\\nprint\u0028ttt\u0028data\u005B0\u005D\u0029\u0029",
+		"options": [
+			{
+				"a": "1"
+			},
+			{
+				"b": "2"
+			},
+			{
+				"c": "4"
+			},
+			{
+				"d": "5"
+			}
+		],
+		"answer": "c",
+		"reason": "Execute in the shell to verify."
+	},
+	{
+		"id": "46",
+		"subject": "Python",
+		"module": "List",
+		"question": " What will be the output of the following Python code?\\n\\npoints \u003D \u005B\u005B1, 2\u005D, \u005B3, 1.5\u005D, \u005B0.5, 0.5\u005D\u005D\\npoints.sort\u0028\u0029\\nprint\u0028points\u0029",
+		"options": [
+			{
+				"a": "[[1, 2], [3, 1.5], [0.5, 0.5]]"
+			},
+			{
+				"b": "[[3, 1.5], [1, 2], [0.5, 0.5]]"
+			},
+			{
+				"c": "[[0.5, 0.5], [1, 2], [3, 1.5]]"
+			},
+			{
+				"d": "[[0.5, 0.5], [3, 1.5], [1, 2]]"
+			}
+		],
+		"answer": "c",
+		"reason": "Execute in the shell to verify."
+	},
+	{
+		"id": "47",
+		"subject": "Python",
+		"module": "List",
+		"question": " What will be the output of the following Python code?\\n\\nimport copy\\na\u003D\u005B10,23,56,\u005B78\u005D\u005D\\nb\u003Dcopy.deepcopy\u0028a\u0029\\na\u005B3\u005D\u005B0\u005D\u003D95\\na\u005B1\u005D\u003D34\\nprint\u0028b\u0029",
+		"options": [
+			{
+				"a": "[10,34,56,[95]]"
+			},
+			{
+				"b": "[10,23,56,[78]]"
+			},
+			{
+				"c": "[10,23,56,[95]]"
+			},
+			{
+				"d": "[10,34,56,[78]]"
+			}
+		],
+		"answer": "b",
+		"reason": "The above copy is deepcopy. Any change made in the original list isn’t reflected."
+	}
+]
+}

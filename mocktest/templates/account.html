@@ -59,22 +59,7 @@
         <img class="rounded-circle account-img" src="{{ image_file }}">
       {% endif %}
         <div class="media-body">
-          <div class="float-right mr-5 mt-2">
-            <h4 class="text-dark">Credits</h4>
-            <h4 class="text-secondary ml-4" id="hackos">{{ current_user.hackos }}
-              <i class="bi bi-info-circle-fill ml-3" data-toggle="tooltip" data-placement="right" title="Use this to unlock answers"></i>
-            </h4>   
-          </div>
           <h2 class="account-heading">{{ current_user.username }}
-            {% if current_user.badge=='Novice' %}
-            <h4><span class="badge badge-pill badge-success"  data-toggle="tooltip" data-placement="right" title="Solve tests to get higher ranking" style="cursor: default;">{{ current_user.badge }}</span></h4>
-            {% elif current_user.badge=='Intermediate' %}
-            <h4><span class="badge badge-pill badge-info"  data-toggle="tooltip" data-placement="right" title="Solve tests to get higher ranking" style="cursor: default;">{{ current_user.badge }}</span></h4>
-            {% elif current_user.badge=='Advanced' %}
-            <h4><span class="badge badge-pill badge-dark"  data-toggle="tooltip" data-placement="right" title="Solve tests to get higher ranking" style="cursor: default;">{{ current_user.badge }}</span></h4>
-            {% elif current_user.badge=='Expert' %}
-            <h4><span class="badge badge-pill badge-danger"  data-toggle="tooltip" data-placement="right" title="Solve tests to get higher ranking" style="cursor: default;">{{ current_user.badge }}</span></h4>
-            {% endif %}
           </h2>
             <div class="row mr-3 pt-2">             
               <p class="col text-secondary"><i class="bi bi-envelope-fill mr-1" data-toggle="tooltip" data-placement="bottom" title="Email address"></i>{{ current_user.email }}</p>

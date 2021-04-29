@@ -1,0 +1,884 @@
+{
+    "quiz":[
+    {
+        "id":"1",
+        "subject":"Python",
+        "module":"Strings",
+        "question":"The output of executing string.ascii_letters can also be achieved by:",
+        "options":[
+            {
+                "a":"string.ascii_lowercase_string.digits"
+            },
+            {
+                "b":"string.ascii_lowercase+string.ascii_uppercase"
+            },
+            {
+                "c":"string.letters"
+            },
+            {
+                "d":"tring.lowercase_string.uppercase"
+            }
+        ],
+        "answer":"b",
+        "reason":"Execute in shell and check."
+    },
+    {
+        "id":"2",
+        "subject":"Python",
+        "module":"Strings",
+        "question":"What arithmetic operators cannot be used with strings?",
+        "options":[
+            {
+                "a":"+"
+            },
+            {
+                "b":"*"
+            },
+            {
+                "c":"-"
+            },
+            {
+                "d":"All of the mentioned"
+            }
+        ],
+        "answer":"c",
+        "reason":"+ is used to concatenate and * is used to multiply strings."
+    },
+    {
+        "id":"3",
+        "subject":"Python",
+        "module":"Strings",
+        "question":"Given a string example=”hello” what is the output of example.count(‘l’)?",
+        "options":[
+            {
+                "a":"2"
+            },
+            {
+                "b":"1"
+            },
+            {
+                "c":"None"
+            },
+            {
+                "d":"0"
+            }
+        ],
+        "answer":"a",
+        "reason":"l occurs twice in hello."
+    },
+    {
+        "id":"4",
+        "subject":"Python",
+        "module":"Strings",
+        "question":"To concatenate two strings to a third what statements are applicable?",
+        "options":[
+            {
+                "a":"s3 = s1 . s2"
+            },
+            {
+                "b":"s3 = s1.add(s2)"
+            },
+            {
+                "c":"s3 = s1.__add__(s2)"
+            },
+            {
+                "d":" s3 = s1 * s2"
+            }
+        ],
+        "answer":"c",
+        "reason":"__add__ is another method that can be used for concatenation."
+    },
+    {
+        "id":"5",
+        "subject":"Python",
+        "module":"Strings",
+        "question":"The format function, when applied on a string returns ___________",
+        "options":[
+            {
+                "a":"Error"
+            },
+            {
+                "b":"int"
+            },
+            {
+                "c":"bool"
+            },
+            {
+                "d":"str"
+            }
+        ],
+        "answer":"d",
+        "reason":"Format function returns a string."
+    },
+    {
+        "id":"6",
+        "subject":"Python",
+        "module":"Strings",
+        "question":"What will be the output of the “hello” +1+2+3?",
+        "options":[
+            {
+                "a":"hello123"
+            },
+            {
+                "b":"hello"
+            },
+            {
+                "c":"Error"
+            },
+            {
+                "d":"hello6"
+            }
+        ],
+        "answer":"c",
+        "reason":"Cannot concatenate str and int objects."
+    },
+    {
+        "id":"7",
+        "subject":"Python",
+        "module":"Strings",
+        "question":"What will be displayed by print(ord(‘b’) – ord(‘a’))?",
+        "options":[
+            {
+                "a":"0"
+            },
+            {
+                "b":"1"
+            },
+            {
+                "c":"-1"
+            },
+            {
+                "d":"2"
+            }
+        ],
+        "answer":"b",
+        "reason":"ASCII value of b is one more than a. Hence the output of this code is 98-97, which is equal to 1."
+    },
+    {
+        "id":"8",
+        "subject":"Python",
+        "module":"Strings",
+        "question":"Say s=”hello” what will be the return value of type(s)?",
+        "options":[
+            {
+                "a":"int"
+            },
+            {
+                "b":"bool"
+            },
+            {
+                "c":"str"
+            },
+            {
+                "d":"String"
+            }
+        ],
+        "answer":"c",
+        "reason":"str is used to represent strings in python."
+    },
+    {
+        "id":"9",
+        "subject":"Python",
+        "module":"Strings",
+        "question":"What is “Hello”.replace(“l”, “e”)?",
+        "options":[
+            {
+                "a":"Heeeo"
+            },
+            {
+                "b":"Heelo"
+            },
+            {
+                "c":"Hello"
+            },
+            {
+                "d":"None"
+            }
+        ],
+        "answer":"a",
+        "reason":"Execute in shell to verify."
+    },
+    {
+        "id":"10",
+        "subject":"Python",
+        "module":"Strings",
+        "question":"To retrieve the character at index 3 from string s=”Hello” what command do we execute (multiple answers allowed)?",
+        "options":[
+            {
+                "a":"s.__len__()"
+            },
+            {
+                "b":"len(s)"
+            },
+            {
+                "c":"size(s)"
+            },
+            {
+                "d":"s.size()"
+            }
+        ],
+        "answer":"a",
+        "reason":"Execute in shell to verify."
+    },
+    {
+        "id":"11",
+        "subject":"Python",
+        "module":"Strings",
+        "question":"If a class defines the __str__(self) method, for an object obj for the class, you can use which command to invoke the __str__ method.",
+        "options":[
+            {
+                "a":"obj.__str__()"
+            },
+            {
+                "b":"str(obj)"
+            },
+            {
+                "c":"print obj"
+            },
+            {
+                "d":"all of the mentioned"
+            }
+        ],
+        "answer":"d",
+        "reason":"Execute in shell to verify."
+    },
+    {
+        "id":"12",
+        "subject":"Python",
+        "module":"Strings",
+        "question":"To check whether string s1 contains another string s2, use ________",
+        "options":[
+            {
+                "a":"s1.__contains__(s2)"
+            },
+            {
+                "b":"s2 in s1"
+            },
+            {
+                "c":"s1.contains(s2)"
+            },
+            {
+                "d":"si.in(s2)"
+            }
+        ],
+        "answer":"a",
+        "reason":"s2 in s1 works in the same way as calling the special function __contains__ ."
+    },
+    {
+        "id":"13",
+        "subject":"Python",
+        "module":"Strings",
+        "question":"Suppose i is 5 and j is 4, i + j is same as ________",
+        "options":[
+            {
+                "a":"i.__add(j)"
+            },
+            {
+                "b":"i.__add__(j)"
+            },
+            {
+                "c":"i.__Add(j)"
+            },
+            {
+                "d":"i.__ADD(j)"
+            }
+        ],
+        "answer":"b",
+        "reason":"Execute in shell to verify."
+    },
+    {
+        "id":"14",
+        "subject":"Python",
+        "module":"Strings",
+        "question":"What function do you use to read a string?",
+        "options":[
+            {
+                "a":"input(“Enter a string”)"
+            },
+            {
+                "b":"eval(input(“Enter a string”))"
+            },
+            {
+                "c":"enter(“Enter a string”)"
+            },
+            {
+                "d":"eval(enter(“Enter a string”))"
+            }
+        ],
+        "answer":"a",
+        "reason":"Execute in shell to verify."
+    },
+    {
+        "id":"15",
+        "subject":"Python",
+        "module":"Strings",
+        "question":"Suppose x is 345.3546, what is format(x, “10.3f”) (_ indicates space).",
+        "options":[
+            {
+                "a":"__345.355"
+            },
+            {
+                "b":"___345.355"
+            },
+            {
+                "c":"____345.355"
+            },
+            {
+                "d":"_____345.354"
+            }
+        ],
+        "answer":"b",
+        "reason":"Execute in the shell to verify."
+    },
+    {
+        "id":"16",
+        "subject":"Python",
+        "module":"Strings",
+        "question":"What will be the output of the following Python code?\\n>>>print (r\u201Chello\u201C)",
+        "options":[
+            {
+                "a":"a new line and hello"
+            },
+            {
+                "b":"\nhello"
+            },
+            {
+                "c":"the letter r and then hello"
+            },
+            {
+                "d":"error"
+            }
+        ],
+        "answer":"b",
+        "reason":"When prefixed with the letter ‘r’ or ‘R’ a string literal becomes a raw string and the escape sequences such as \n are not converted."
+    },
+    {
+        "id":"17",
+        "subject":"Python",
+        "module":"Strings",
+        "question":"What will be the output of the following Python statement?\\n>>>print('new' 'line')",
+        "options":[
+            {
+                "a":"Error"
+            },
+            {
+                "b":"Output equivalent to print ‘new\nline’"
+            },
+            {
+                "c":"newline"
+            },
+            {
+                "d":"new line"
+            }
+        ],
+        "answer":"c",
+        "reason":"String literal separated by whitespace are allowed. They are concatenated."
+    },
+    {
+        "id":"18",
+        "subject":"Python",
+        "module":"Strings",
+        "question":"What will be the output of the following Python code?\\nprint(0xA + 0xB + 0xC)",
+        "options":[
+            {
+                "a":"0xA0xB0xC"
+            },
+            {
+                "b":" Error"
+            },
+            {
+                "c":"0x22"
+            },
+            {
+                "d":"33"
+            }
+        ],
+        "answer":"d",
+        "reason":"0xA and 0xB and 0xC are hexadecimal integer literals representing the decimal values 10, 11 and 12 respectively. There sum is 33."
+    },
+    {
+        "id":"19",
+        "subject":"Python",
+        "module":"Strings",
+        "question":"What will be the output of the following Python statement?\\n>>>chr(ord(\u2018A\u2019))",
+        "options":[
+            {
+                "a":"A"
+            },
+            {
+                "b":"B"
+            },
+            {
+                "c":"B"
+            },
+            {
+                "d":"Error"
+            }
+        ],
+        "answer":"a",
+        "reason":"Execute in shell to verify."
+    },
+    {
+        "id":"20",
+        "subject":"Python",
+        "module":"Strings",
+        "question":"What will be the output of the following Python statement?\\n>>>print(chr(ord(\u2018b\u2019)+1))",
+        "options":[
+            {
+                "a":"a"
+            },
+            {
+                "b":"b"
+            },
+            {
+                "c":"c"
+            },
+            {
+                "d":"A"
+            }
+        ],
+        "answer":"c",
+        "reason":"Execute in the shell to verify."
+    },
+    {
+        "id":"21",
+        "subject":"Python",
+        "module":"Strings",
+        "question":"What will be the output of the following Python code?\\nprint(\u201Cxyyzxyzxzxyy\u201C.count(\u2018yy\u2019))",
+        "options":[
+            {
+                "a":"2"
+            },
+            {
+                "b":"0"
+            },
+            {
+                "c":"erroe"
+            },
+            {
+                "d":"none of the mentioned"
+            }
+        ],
+        "answer":"a",
+        "reason":"Counts the number of times the substring ‘yy’ is present in the given string."
+    },
+    {
+        "id":"22",
+        "subject":"Python",
+        "module":"Strings",
+        "question":"What will be the output of the following Python code?\\nprint(\u201Cxyyzxyzxzxyy\u201D.count(\u2018yy\u2019, 1))",
+        "options":[
+            {
+                "a":"2"
+            },
+            {
+                "b":"0"
+            },
+            {
+                "c":"1"
+            },
+            {
+                "d":"none of the mentioned"
+            }
+        ],
+        "answer":"a",
+        "reason":"Counts the number of times the substring ‘yy’ is present in the given string, starting from position 1."
+    },
+    {
+        "id":"23",
+        "subject":"Python",
+        "module":"Strings",
+        "question":"What will be the output of the following Python code?\\nprint(\u201Dxyyzxyzxzxyy\u201D.count(\u2018yy\u2019, 2))",
+        "options":[
+            {
+                "a":"2"
+            },
+            {
+                "b":"0"
+            },
+            {
+                "c":"1"
+            },
+            {
+                "d":"error"
+            }
+        ],
+        "answer":"a",
+        "reason":"An error will not occur if the end value is greater than the length of the string itself."
+    },
+    {
+        "id":"24",
+        "subject":"Python",
+        "module":"Strings",
+        "question":"What will be the output of the following Python code?\\nprint(\u201Cxyyzxyzxzxyy\u201C.count(\u2018xyy\u2019, 2, 11))",
+        "options":[
+            {
+                "a":"2"
+            },
+            {
+                "b":"0"
+            },
+            {
+                "c":"1"
+            },
+            {
+                "d":"error"
+            }
+        ],
+        "answer":"b",
+        "reason":"Counts the number of times the substring ‘xyy’ is present in the given string, starting from position 2 and ending at position 11."
+    },
+    {
+        "id":"25",
+        "subject":"Python",
+        "module":"Strings",
+        "question":"What will be the output of the following Python code?\\nprint(\u201Cxyyzxyzxzxyy\u201D.count(\u2018xyy\u2019, -10, -1))",
+        "options":[
+            {
+                "a":"2"
+            },
+            {
+                "b":"0"
+            },
+            {
+                "c":"1"
+            },
+            {
+                "d":"error"
+            }
+        ],
+        "answer":"b",
+        "reason":"Counts the number of times the substring ‘xyy’ is present in the given string, starting from position 2 and ending at position 11."
+    },
+    {
+        "id":"26",
+        "subject":"Python",
+        "module":"Strings",
+        "question":"What will be the output of the following Python code?\\n\\nprint(\u2018abc\u2019.encode())",
+        "options":[
+            {
+                "a":"abc"
+            },
+            {
+                "b":"‘abc’"
+            },
+            {
+                "c":"b’abc’"
+            },
+            {
+                "d":"h’abc’"
+            }
+        ],
+        "answer":"c",
+        "reason":"A bytes object is returned by encode."
+    },
+    {
+        "id":"27",
+        "subject":"Python",
+        "module":"Strings",
+        "question":"What will be the output of the following Python code?\\nprint(\u201Cxyyzxyzxzxyy\u201D.endswith(\u201Cxyy\u201D))",
+        "options":[
+            {
+                "a":"1"
+            },
+            {
+                "b":"True"
+            },
+            {
+                "c":"3"
+            },
+            {
+                "d":"2"
+            }
+        ],
+        "answer":"b",
+        "reason":"The function returns True if the given string ends with the specified substring."
+    },
+    {
+        "id":"28",
+        "subject":"Python",
+        "module":"Strings",
+        "question":"What will be the output of the following Python code?\\nprint(\u201Cxyyzxyzxzxyy\u201D.endswith(\u201Cxyy\u201D, 0, 2))",
+        "options":[
+            {
+                "a":"0"
+            },
+            {
+                "b":"1"
+            },
+            {
+                "c":"True"
+            },
+            {
+                "d":"False"
+            }
+        ],
+        "answer":"d",
+        "reason":"The function returns False if the given string does not end with the specified substring."
+    },
+    {
+        "id":"29",
+        "subject":"Python",
+        "module":"Strings",
+        "question":" What will be the output of the following Python code?\\nprint(u201Cabc DEF\u201D.capitalize())",
+        "options":[
+            {
+                "a":"abc def"
+            },
+            {
+                "b":"ABC DEF"
+            },
+            {
+                "c":"Abc def"
+            },
+            {
+                "d":"Abc Def"
+            }
+        ],
+        "answer":"c",
+        "reason":"The first letter of the string is converted to uppercase and the others are converted to lowercase."
+    },
+    {
+        "id":"30",
+        "subject":"Python",
+        "module":"Strings",
+        "question":"What will be the output of the following Python code?\\nprint(\u201Cabc. DEF\u201D.capitalize())",
+        "options":[
+            {
+                "a":"abc. def"
+            },
+            {
+                "b":"ABC. DEF"
+            },
+            {
+                "c":"Abc. def"
+            },
+            {
+                "d":"Abc. Def"
+            }
+        ],
+        "answer":"c",
+        "reason":"The first letter of the string is converted to uppercase and the others are converted to lowercase."
+    },
+    {
+        "id":"31",
+        "subject":"Python",
+        "module":"Strings",
+        "question":"What will be the output of the following Python code?\\nprint(\u201Cabcdef\u201C.center())",
+        "options":[
+            {
+                "a":"cd"
+            },
+            {
+                "b":"abcdef"
+            },
+            {
+                "c":"error"
+            },
+            {
+                "d":"none of the mentioned"
+            }
+        ],
+        "answer":"c",
+        "reason":"The function center() takes at least one parameter."
+    },
+    {
+        "id":"32",
+        "subject":"Python",
+        "module":"Strings",
+        "question":"What will be the output of the following Python code?\\nprint(\u201Cabcdef\u201D.center(0))",
+        "options":[
+            {
+                "a":"cd"
+            },
+            {
+                "b":"abcdef"
+            },
+            {
+                "c":"error"
+            },
+            {
+                "d":"none of the mentioned"
+            }
+        ],
+        "answer":"b",
+        "reason":"The entire string is printed when the argument passed to center() is less than the length of the string."
+    },
+    {
+        "id":"33",
+        "subject":"Python",
+        "module":"Strings",
+        "question":"What will be the output of the following Python code?\\nprint(\u2018*\u2019, \u201Cabcdef\u201D.center(7), \u2018*\u2019)",
+        "options":[
+            {
+                "a":"* abcdef *"
+            },
+            {
+                "b":"* abcdef *"
+            },
+            {
+                "c":"*abcdef *"
+            },
+            {
+                "d":"* abcdef*"
+            }
+        ],
+        "answer":"b",
+        "reason":"Padding is done towards the left-hand-side first when the final string is of odd length. Extra spaces are present since we haven’t overridden the value of sep."
+    },
+    {
+        "id":"34",
+        "subject":"Python",
+        "module":"Strings",
+        "question":"What will be the output of the following Python code?\\nprint(\u2018*\u2019, \u201Cabcdef\u201D.center(7), \u2018*\u2019, sep=\u2018\u2019)",
+        "options":[
+            {
+                "a":"* abcdef *"
+            },
+            {
+                "b":"* abcdef *"
+            },
+            {
+                "c":"*abcdef *"
+            },
+            {
+                "d":"* abcdef*"
+            }
+        ],
+        "answer":"d",
+        "reason":"Padding is done towards the left-hand-side first when the final string is of odd length."
+    },
+    {
+        "id":"35",
+        "subject":"Python",
+        "module":"Strings",
+        "question":"What will be the output of the following Python code?\\nprint(\u2018*\u2019, \u201Cabcde\u201D.center(6), \u2018*\u2019, sep=\u2018\u2019)",
+        "options":[
+            {
+                "a":"* abcde *"
+            },
+            {
+                "b":"* abcde *"
+            },
+            {
+                "c":"*abcde *"
+            },
+            {
+                "d":"* abcde*"
+            }
+        ],
+        "answer":"c",
+        "reason":"Padding is done towards the right-hand-side first when the final string is of even length."
+    },
+    {
+        "id":"36",
+        "subject":"Python",
+        "module":"Strings",
+        "question":"What will be the output of the following Python code?\\nprint(\u201Cabcdef\u201C.center(7, 1))",
+        "options":[
+            {
+                "a":"1abcdef"
+            },
+            {
+                "b":"abcdef1"
+            },
+            {
+                "c":"abcdef"
+            },
+            {
+                "d":"error"
+            }
+        ],
+        "answer":"d",
+        "reason":"TypeError, the fill character must be a character, not an int."
+    },
+    {
+        "id":"37",
+        "subject":"Python",
+        "module":"Strings",
+        "question":"What will be the output of the following Python code?\\nprint(\u201Cabcdef\u201C.center(7, \u20181\u2019))",
+        "options":[
+            {
+                "a":"1abcdef"
+            },
+            {
+                "b":"abcdef1"
+            },
+            {
+                "c":"abcdef"
+            },
+            {
+                "d":"error"
+            }
+        ],
+        "answer":"a",
+        "reason":"The character ‘1’ is used for padding instead of a space."
+    },
+    {
+        "id":"38",
+        "subject":"Python",
+        "module":"Strings",
+        "question":"What will be the output of the following Python code?\\nprint(\u201Cabcdef\u201C.center(10, \u201812\u2019))",
+        "options":[
+            {
+                "a":"12abcdef12"
+            },
+            {
+                "b":"abcdef1212"
+            },
+            {
+                "c":"1212abcdef"
+            },
+            {
+                "d":"error"
+            }
+        ],
+        "answer":"d",
+        "reason":"The fill character must be exactly one character long."
+    },
+    {
+        "id":"39",
+        "subject":"Python",
+        "module":"Strings",
+        "question":"What will be the output of the following Python code?\\nprint(\u201Cabcdef\u201D.find(\u201Ccd\u201D))",
+        "options":[
+            {
+                "a":"True"
+            },
+            {
+                "b":"2"
+            },
+            {
+                "c":"3"
+            },
+            {
+                "d":"None of the mentioned"
+            }
+        ],
+        "answer":"b",
+        "reason":"The first position in the given string at which the substring can be found is returned."
+    },
+    {
+        "id":"40",
+        "subject":"Python",
+        "module":"Strings",
+        "question":"What will be the output of the following Python code?\\nprint(\u201Cccdcddcd\u201D.find(\u201Cc\u201D))",
+        "options":[
+            {
+                "a":"4"
+            },
+            {
+                "b":"0"
+            },
+            {
+                "c":"Error"
+            },
+            {
+                "d":"True"
+            }
+        ],
+        "answer":"b",
+        "reason":"The first position in the given string at which the substring can be found is returned."
+    }
+]
+}

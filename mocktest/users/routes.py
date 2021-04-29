@@ -58,15 +58,9 @@ def account():
                 flash('Error while updating profile picture', 'danger')   
 
         if form.address.data:
-            if current_user.address == 'None':
-                    current_user.hackos += 5
-                    current_user.address = form.address.data
             current_user.address = form.address.data
 
         if form.phoneno.data:
-            if current_user.phoneno == 'None':
-                    current_user.hackos += 5
-                    current_user.phoneno = form.phoneno.data
             current_user.phoneno = form.phoneno.data
 
         db.session.commit()

@@ -1,0 +1,1104 @@
+{
+    "quiz":[
+    {
+        "id":"1",
+        "subject":"Python",
+        "module":"Loops",
+        "question":"What will be the output of the following Python code?\\nx\u003D\u005B\u2018ab\u2018,\u2019cd\u2019\u005D\\nfor i in x:\\n\\ti.upper\u0028\u0029\\nprint\u0028x\u0029",
+        "options":[
+            {
+                "a":"[‘ab’, ‘cd’]"
+            },
+            {
+                "b":"[‘AB’, ‘CD’]"
+            },
+            {
+                "c":"[None, None]"
+            },
+            {
+                "d":"none of the mentioned"
+            }
+        ],
+        "answer":"a",
+        "reason":"The function upper\u0028\u0029 does not modify a string in place, it returns a new string which isn’t being stored anywhere."
+    },
+    {
+        "id":"2",
+        "subject":"Python",
+        "module":"Loops",
+        "question":"What will be the output of the following Python code?\\n\\nx \u003D \u005B\u2018ab\u2019, \u2018cd\u2019\u005D\\nfor i in x:\\n\\tx.append\u0028i.upper\u0028\u0029\u0029\\nprint\u0028x\u0029",
+        "options":[
+            {
+                "a":"[‘AB’, ‘CD’]"
+            },
+            {
+                "b":"[‘ab’, ‘cd’, ‘AB’, ‘CD’]"
+            },
+            {
+                "c":"[‘ab’, ‘cd’]"
+            },
+            {
+                "d":"none of the mentioned"
+            }
+        ],
+        "answer":"d",
+        "reason":"The loop does not terminate as new elements are being added to the list in each iteration."
+    },
+    {
+        "id":"3",
+        "subject":"Python",
+        "module":"Loops",
+        "question":"What will be the output of the following Python code?\\ni \u003D 1\\nwhile True:\\nif i%3 \u003D\u003D 0:\\n\\tbreak\\nprint\u0028i\u0029\\n\\ni + \u003D 1",
+        "options":[
+            {
+                "a":"1 2"
+            },
+            {
+                "b":"1 2 3"
+            },
+            {
+                "c":"error"
+            },
+            {
+                "d":"none of the mentioned"
+            }
+        ],
+        "answer":"c",
+        "reason":"SyntaxError, there shouldn’t be a space between + and \u003D in +\u003D."
+    },
+    {
+        "id":"4",
+        "subject":"Python",
+        "module":"Loops",
+        "question":"What will be the output of the following Python code?\\ni \u003D 1\\nwhile True:\\n\\tif i%0O7 \u003D\u003D 0:\\n\\t\\tbreak\\n\\tprint\u0028i\u0029\\n\\ti +\u003D 1",
+        "options":[
+            {
+                "a":"1 2 3 4 5 6"
+            },
+            {
+                "b":"1 2 3 4 5 6 7"
+            },
+            {
+                "c":"error"
+            },
+            {
+                "d":"none of the mentioned"
+            }
+        ],
+        "answer":"a",
+        "reason":"Control exits the loop when i becomes 7."
+    },
+    {
+        "id":"5",
+        "subject":"Python",
+        "module":"Loops",
+        "question":"What will be the output of the following Python code?\\ni \u003D 5\\nwhile True:\\n\\tif i%0O11 \u003D\u003D 0:\\n\\t\\tbreak\\n\\tprint\u0028i\u0029\\n\\ti +\u003D 1",
+        "options":[
+            {
+                "a":"5 6 7 8 9 10"
+            },
+            {
+                "b":"5 6 7 8"
+            },
+            {
+                "c":"5 6"
+            },
+            {
+                "d":"error"
+            }
+        ],
+        "answer":"b",
+        "reason":"0O11  is an octal number."
+    },
+    {
+        "id":"6",
+        "subject":"Python",
+        "module":"Loops",
+        "question":"What will be the output of the following Python code?\\ni \u003D 5\\nwhile True:\\n\\tif i%0O9 \u003D\u003D 0:\\n\\t\\tbreak\\n\\tprint\u0028i\u0029\\n\\ti +\u003D 1",
+        "options":[
+            {
+                "a":"5 6 7 8"
+            },
+            {
+                "b":"5 6 7 8 9"
+            },
+            {
+                "c":"5 6 7 8 9 10 11 12 13 14 5 ..."
+            },
+            {
+                "d":"error"
+            }
+        ],
+        "answer":"d",
+        "reason":"9 isn’t allowed in an octal number."
+    },
+    {
+        "id":"7",
+        "subject":"Python",
+        "module":"Loops",
+        "question":"What will be the output of the following Python code?\\ni \u003D 1\\nwhile True:\\n\\tif i%2 \u003D\u003D 0:\\n\\t\\tbreak\\n\\tprint\u0028i\u0029\\n\\ti +\u003D 2",
+        "options":[
+            {
+                "a":"1"
+            },
+            {
+                "b":"1 2"
+            },
+            {
+                "c":"1 2 3 4 5 6 ..."
+            },
+            {
+                "d":"1 2 3 4 5 6 11 ..."
+            }
+        ],
+        "answer":"d",
+        "reason":"The loop does not terminate since i is never an even number."
+    },
+    {
+        "id":"8",
+        "subject":"Python",
+        "module":"Loops",
+        "question":"What will be the output of the following Python code?\\ni \u003D 2\\nwhile True:\\n\\tif i%3 \u003D\u003D 0:\\n\\tbreak\\n\\tprint\u0028i\u0029\\n\\ti +\u003D 2",
+        "options":[
+            {
+                "a":"2 4 6 8 10 ..."
+            },
+            {
+                "b":"2 4"
+            },
+            {
+                "c":"2 3"
+            },
+            {
+                "d":"error"
+            }
+        ],
+        "answer":"b",
+        "reason":"The numbers 2 and 4 are printed. The next value of i is 6 which is divisible by 3 and hence control exits the loop."
+    },
+    {
+        "id":"9",
+        "subject":"Python",
+        "module":"Loops",
+        "question":"What will be the output of the following Python code?\\ni \u003D 1\\nwhile False:\\n\\tif i%2 \u003D\u003D 0:\\n\\t\\tbreak\\n\\tprint\u0028i\u0029\\n\\ti +\u003D 2",
+        "options":[
+            {
+                "a":"1"
+            },
+            {
+                "b":"1 3 5 7 ..."
+            },
+            {
+                "c":"1 2 3 4 ..."
+            },
+            {
+                "d":"none of the mentioned"
+            }
+        ],
+        "answer":"d",
+        "reason":"Control does not enter the loop because of False."
+    },
+    {
+        "id":"10",
+        "subject":"Python",
+        "module":"Loops",
+        "question":"What will be the output of the following Python code?\\nTrue \u003D False\\nwhile True:\\n\\tprint\u0028True\u0029\\n\\tbreak",
+        "options":[
+            {
+                "a":"True"
+            },
+            {
+                "b":"False"
+            },
+            {
+                "c":"None"
+            },
+            {
+                "d":"none of the mentioned"
+            }
+        ],
+        "answer":"d",
+        "reason":"SyntaxError, True is a keyword and it’s value cannot be changed."
+    },
+    {
+        "id":"11",
+        "subject":"Python",
+        "module":"Loops",
+        "question":"What will be the output of the following Python code?\\ni \u003D 0\\nwhile i < 5:\\n\\tprint\u0028i\u0029\\n\\ti +\u003D 1\\n\\tif i \u003D\u003D 3:\\n\\t\\tbreak\\nelse:\\n\\tprint\u00280\u0029",
+        "options":[
+            {
+                "a":"0 1 2 3 0"
+            },
+            {
+                "b":"0 1 2 0"
+            },
+            {
+                "c":"error"
+            },
+            {
+                "d":"none of the mentioned"
+            }
+        ],
+        "answer":"b",
+        "reason":"The else part is not executed if control breaks out of the loop."
+    },
+    {
+        "id":"12",
+        "subject":"Python",
+        "module":"Loops",
+        "question":"What will be the output of the following Python code?\\n\\ni \u003D 0\\nwhile i < 3:\\n\\tprint\u0028i\u0029\\n\\ti +\u003D 1\\nelse:\\n\\tprint\u00280\u0029",
+        "options":[
+            {
+                "a":"0 1 2 3 0"
+            },
+            {
+                "b":"0 1 2 0"
+            },
+            {
+                "c":"0 1 2"
+            },
+            {
+                "d":"error"
+            }
+        ],
+        "answer":"b",
+        "reason":"The else part is executed when the condition in the while statement is false."
+    },
+    {
+        "id":"13",
+        "subject":"Python",
+        "module":"Loops",
+        "question":"What will be the output of the following Python code?\\n\\nx \u003D \u201Cabcdef\u201D\\nwhile i in x:\\n\\tprint\u0028i, end\u003D\u201C \u201D\u0029",
+        "options":[
+            {
+                "a":"a b c d e f"
+            },
+            {
+                "b":"abcdef"
+            },
+            {
+                "c":"i i i i i i ..."
+            },
+            {
+                "d":"error"
+            }
+        ],
+        "answer":"d",
+        "reason":"NameError, i is not defined."
+    },
+    {
+        "id":"14",
+        "subject":"Python",
+        "module":"Loops",
+        "question":"What will be the output of the following Python code?\\n\\nx \u003D \u201Cabcdef\u201D\\ni \u003D \u201Ci\u201D\\nwhile i in x:\\n\\tprint\u0028i, end\u003D\u201C \u201D\u0029",
+        "options":[
+            {
+                "a":"no output"
+            },
+            {
+                "b":"i i i i i i..."
+            },
+            {
+                "c":"a b c d e f"
+            },
+            {
+                "d":"abcdef"
+            }
+        ],
+        "answer":"a",
+        "reason":"“i” is not in “abcdef”."
+    },
+    {
+        "id":"15",
+        "subject":"Python",
+        "module":"Loops",
+        "question":"What will be the output of the following Python code?\\nx \u003D \u201Cabcdef\u201D\\ni \u003D \u201Ca\u201D\\nwhile i in x:\\nprint\u0028i, end \u003D \u201C \u201D\u0029",
+        "options":[
+            {
+                "a":"no output"
+            },
+            {
+                "b":"i i i i i..."
+            },
+            {
+                "c":"a a a a a a..."
+            },
+            {
+                "d":"a b c d e f"
+            }
+        ],
+        "answer":"c",
+        "reason":"As the value of i or x isn’t changing, the condition will always evaluate to True."
+    },
+    {
+        "id":"16",
+        "subject":"Python",
+        "module":"Loops",
+        "question":"What will be the output of the following Python code?\\n\\nx \u003D \u201Cabcdef\u201D\\ni \u003D \u201Da\u201D\\nwhile i in x:\\n\\tprint\u0028'i', end \u003D \u201C \u201D\u0029",
+        "options":[
+            {
+                "a":"no output"
+            },
+            {
+                "b":"i i i i i i..."
+            },
+            {
+                "c":"a a a a a a..."
+            },
+            {
+                "d":"a b c d e f"
+            }
+        ],
+        "answer":"b",
+        "reason":"Here i i i i i … printed continuously because as the value of i or x isn’t changing, the condition will always evaluate to True. But also here we use a citation marks on “i”, so, here i treated as a string, not like a variable."
+    },
+    {
+        "id":"17",
+        "subject":"Python",
+        "module":"Loops",
+        "question":"What will be the output of the following Python code?\\n\\nx \u003D \u201Cabcdef\u201D\\ni \u003D \u201Da\u201D\\nwhile i in x:\\n\\tx \u003D x\u005B:-1\u005D\\n\\tprint\u0028i, end \u003D \u201D \u201D\u0029",
+        "options":[
+            {
+                "a":" i i i i i"
+            },
+            {
+                "b":"a a a a a a"
+            },
+            {
+                "c":"a a a a a"
+            },
+            {
+                "d":"none of the mentioned"
+            }
+        ],
+        "answer":"b",
+        "reason":"The string x is being shortened by one character in each iteration."
+    },
+    {
+        "id":"18",
+        "subject":"Python",
+        "module":"Loops",
+        "question":"What will be the output of the following Python code?\\n\\nx \u003D \u201Cabcdef\u201D\\ni \u003D \u201Ca\u201D\\nwhile i in x\u005B:-1\u005D:\\n\\tprint\u0028i, end \u003D \u201C \u201D\u0029",
+        "options":[
+            {
+                "a":"a a a a a"
+            },
+            {
+                "b":"a a a a a a"
+            },
+            {
+                "c":"a a a a a a..."
+            },
+            {
+                "d":"a"
+            }
+        ],
+        "answer":"c",
+        "reason":"String x is not being altered and i is in x\u005B:-1\u005D."
+    },
+    {
+        "id":"19",
+        "subject":"Python",
+        "module":"Loops",
+        "question":"What will be the output of the following Python code?\\n\\nx \u003D \u201Cabcdef\u201D\\ni \u003D \u201Ca\u201D\\nwhile i in x:\\n\\tx \u003D x\u005B1:\u005D\\n\\tprint\u0028i, end \u003D \u201C \u201D\u0029",
+        "options":[
+            {
+                "a":"a a a a a a"
+            },
+            {
+                "b":"a"
+            },
+            {
+                "c":"no output"
+            },
+            {
+                "d":"error"
+            }
+        ],
+        "answer":"b",
+        "reason":"The string x is being shortened by one character in each iteration."
+    },
+    {
+        "id":"20",
+        "subject":"Python",
+        "module":"Loops",
+        "question":"What will be the output of the following Python code?\\nx \u003D \u201Cabcdef\u201D\\ni \u003D \u201Ca\u201D\\nwhile i in x\u005B1:\u005D:\\n\\tprint\u0028i, end \u003D \u201C \u201D\u0029",
+        "options":[
+            {
+                "a":"a a a a a a"
+            },
+            {
+                "b":"a"
+            },
+            {
+                "c":"no output"
+            },
+            {
+                "d":"error"
+            }
+        ],
+        "answer":"c",
+        "reason":"i is not in x\u005B1:\u005D."
+    },
+    {
+        "id":"21",
+        "subject":"Python",
+        "module":"Loops",
+        "question":"What will be the output of the following Python code?\\n\\nx \u003D 'abcd'\\nfor i in x:\\n\\tprint\u0028i\u0029\\n\\tx.upper\u0028\u0029",
+        "options":[
+            {
+                "a":"a B C D"
+            },
+            {
+                "b":"a b c d"
+            },
+            {
+                "c":"A B C D"
+            },
+            {
+                "d":"error"
+            }
+        ],
+        "answer":"b",
+        "reason":"Changes do not happen in-place, rather a new instance of the string is returned."
+    },
+    {
+        "id":"22",
+        "subject":"Python",
+        "module":"Loops",
+        "question":"What will be the output of the following Python code?\\nx \u003D 'abcd'\\nfor i in x:\\n\\tprint\u0028i.upper\u0028\u0029\u0029",
+        "options":[
+            {
+                "a":"a B C D"
+            },
+            {
+                "b":"a b c d"
+            },
+            {
+                "c":"A B C D"
+            },
+            {
+                "d":"error"
+            }
+        ],
+        "answer":"c",
+        "reason":"The instance of the string returned by upper\u0028\u0029 is being printed."
+    },
+    {
+        "id":"23",
+        "subject":"Python",
+        "module":"Loops",
+        "question":"What will be the output of the following Python code?\\nx \u003D 'abcd'\\nfor i in range\u0028x\u0029:\\n\\tprint\u0028i\u0029",
+        "options":[
+            {
+                "a":"a b c d"
+            },
+            {
+                "b":"1 2 3 4"
+            },
+            {
+                "c":"error"
+            },
+            {
+                "d":"none of the mentioned"
+            }
+        ],
+        "answer":"c",
+        "reason":"range\u0028str\u0029 is not allowed."
+    },
+    {
+        "id":"24",
+        "subject":"Python",
+        "module":"Loops",
+        "question":"What will be the output of the following Python code?\\n\\nx \u003D 'abcd'\\nfor i in range\u0028len\u0028x\u0029\u0029:\\n\\tprint\u0028i\u0029",
+        "options":[
+            {
+                "a":"a b c d"
+            },
+            {
+                "b":"0 1 2 3 4"
+            },
+            {
+                "c":"errror"
+            },
+            {
+                "d":"1 2 3 4"
+            }
+        ],
+        "answer":"b",
+        "reason":"i takes values 0, 1, 2 and 3."
+    },
+    {
+        "id":"25",
+        "subject":"Python",
+        "module":"Loops",
+        "question":"What will be the output of the following Python code?\\n\\nx \u003D 'abcd'\\nfor i in range\u0028len\u0028x\u0029\u0029:\\n\\tprint\u0028i.upper\u0028\u0029\u0029",
+        "options":[
+            {
+                "a":"a b c d"
+            },
+            {
+                "b":"0 1 2 3 4"
+            },
+            {
+                "c":"error"
+            },
+            {
+                "d":"1 2 3 4"
+            }
+        ],
+        "answer":"c",
+        "reason":"Objects of type int have no attribute upper\u0028\u0029."
+    },
+    {
+        "id":"26",
+        "subject":"Python",
+        "module":"Loops",
+        "question":"What will be the output of the following Python code snippet?\\n\\nx \u003D 'abcd'\\nfor i in range\u0028len\u0028x\u0029\u0029:\\n\\ti.upper\u0028\u0029\\nprint \u0028x\u0029",
+        "options":[
+            {
+                "a":"a b c d"
+            },
+            {
+                "b":"0 1 2 3"
+            },
+            {
+                "c":"error"
+            },
+            {
+                "d":"none of the mentioned"
+            }
+        ],
+        "answer":"c",
+        "reason":"Objects of type int have no attribute upper\u0028\u0029."
+    },
+    {
+        "id":"27",
+        "subject":"Python",
+        "module":"Loops",
+        "question":"What will be the output of the following Python code snippet?\\n\\nx \u003D 'abcd'\\nfor i in range\u0028len\u0028x\u0029\u0029:\\n\\tx\u005Bi\u005D.upper\u0028\u0029\\nprint \u0028x\u0029",
+        "options":[
+            {
+                "a":"abcd"
+            },
+            {
+                "b":"ABCD"
+            },
+            {
+                "c":"error"
+            },
+            {
+                "d":"nonr of the mentioned"
+            }
+        ],
+        "answer":"a",
+        "reason":"Changes do not happen in-place, rather a new instance of the string is returned."
+    },
+    {
+        "id":"28",
+        "subject":"Python",
+        "module":"Loops",
+        "question":"What will be the output of the following Python code snippet?\\n\\nx \u003D 'abcd'\\nfor i in range\u0028len\u0028x\u0029\u0029:\\n\\ti\u005Bx\u005D.upper\u0028\u0029\\nprint \u0028x\u0029",
+        "options":[
+            {
+                "a":"abcd"
+            },
+            {
+                "b":"ABCD"
+            },
+            {
+                "c":"error"
+            },
+            {
+                "d":"nonr of the mentioned"
+            }
+        ],
+        "answer":"c",
+        "reason":"Objects of type int aren’t subscriptable. However, if the statement was x\u005Bi\u005D, an error would not have been thrown."
+    },
+    {
+        "id":"29",
+        "subject":"Python",
+        "module":"Loops",
+        "question":"What will be the output of the following Python code snippet?\\n\\nx \u003D 'abcd'\\nfor i in range\u0028len\u0028x\u0029\u0029:\\n\\tx \u003D 'a'\\n\\tprint\u0028x\u0029",
+        "options":[
+            {
+                "a":"a"
+            },
+            {
+                "b":"abcd abcd abcd abcd"
+            },
+            {
+                "c":"a a a a"
+            },
+            {
+                "d":"nonr of the mentioned"
+            }
+        ],
+        "answer":"c",
+        "reason":"range\u0028\u0029 is computed only at the time of entering the loop."
+    },
+    {
+        "id":"30",
+        "subject":"Python",
+        "module":"Loops",
+        "question":"What will be the output of the following Python code snippet?\\n\\nx \u003D 'abcd'\\nfor i in range\u0028len\u0028x\u0029\u0029:\\n\\tprint\u0028x\u0029\\n\\tx \u003D 'a'",
+        "options":[
+            {
+                "a":"a"
+            },
+            {
+                "b":"abcd abcd abcd abcd"
+            },
+            {
+                "c":"a a a a"
+            },
+            {
+                "d":"none of the mentioned"
+            }
+        ],
+        "answer":"d",
+        "reason":"abcd a a a is the output as x is modified only after ‘abcd’ has been printed once."
+    },
+    {
+        "id":"31",
+        "subject":"Python",
+        "module":"Loops",
+        "question":"What will be the output of the following Python code?\\n\\nx \u003D 123\\nfor i in x:\\n\\tprint\u0028i\u0029",
+        "options":[
+            {
+                "a":"1 2 3"
+            },
+            {
+                "b":"123"
+            },
+            {
+                "c":"error"
+            },
+            {
+                "d":"none of the mentioned"
+            }
+        ],
+        "answer":"c",
+        "reason":"Objects of type int are not iterable."
+    },
+    {
+        "id":"32",
+        "subject":"Python",
+        "module":"Loops",
+        "question":"What will be the output of the following Python code?\\n\\nd \u003D \u007B0: 'a', 1: 'b', 2: 'c'\u007D\\nfor i in d:\\n\\tprint\u0028i\u0029",
+        "options":[
+            {
+                "a":"0 1 2"
+            },
+            {
+                "b":"a b c"
+            },
+            {
+                "c":"0a 1b 2c"
+            },
+            {
+                "d":"none of the mentioned"
+            }
+        ],
+        "answer":"a",
+        "reason":"Loops over the keys of the dictionary."
+    },
+    {
+        "id":"33",
+        "subject":"Python",
+        "module":"Loops",
+        "question":"What will be the output of the following Python code?\\nd \u003D {0: 'a', 1: 'b', 2: 'c'}\\nfor x, y in d:\\n\\tprint\u0028x, y\u0029",
+        "options":[
+            {
+                "a":"0 1 2"
+            },
+            {
+                "b":"a b c"
+            },
+            {
+                "c":"0a 1b 2c"
+            },
+            {
+                "d":"none of the mentioned"
+            }
+        ],
+        "answer":"d",
+        "reason":"Error, objects of type int aren’t iterable."
+    },
+    {
+        "id":"34",
+        "subject":"Python",
+        "module":"Loops",
+        "question":"What will be the output of the following Python code?\\nd \u003D {0: 'a', 1: 'b', 2: 'c'}\\nfor x, y in d.items\u0028\u0029:\\n\\tprint\u0028x, y\u0029",
+        "options":[
+            {
+                "a":"0 1 2"
+            },
+            {
+                "b":"a b c"
+            },
+            {
+                "c":"0a 1b 2c"
+            },
+            {
+                "d":"none of the mentioned"
+            }
+        ],
+        "answer":"c",
+        "reason":"Loops over key, value pairs."
+    },
+    {
+        "id":"35",
+        "subject":"Python",
+        "module":"Loops",
+        "question":"What will be the output of the following Python code?\\nd \u003D {0: 'a', 1: 'b', 2: 'c'}\\nfor x in d.keys\u0028\u0029:\\n\\tprint\u0028d\u005Bx\u005D\u0029",
+        "options":[
+            {
+                "a":"0 1 2"
+            },
+            {
+                "b":"a b c"
+            },
+            {
+                "c":"0a 1b 2c"
+            },
+            {
+                "d":"none of the mentioned"
+            }
+        ],
+        "answer":"b",
+        "reason":"Loops over the keys and prints the values."
+    },
+    {
+        "id":"36",
+        "subject":"Python",
+        "module":"Loops",
+        "question":"What will be the output of the following Python code?\\nd \u003D {0: 'a', 1: 'b', 2: 'c'}\\nfor x in d.values\u0028\u0029:\\n\\tprint\u0028x\u0029",
+        "options":[
+            {
+                "a":"0 1 2"
+            },
+            {
+                "b":"a b c"
+            },
+            {
+                "c":"0a 1b 2c"
+            },
+            {
+                "d":"none of the mentioned"
+            }
+        ],
+        "answer":"d",
+        "reason":"Causes a KeyError."
+    },
+    {
+        "id":"37",
+        "subject":"Python",
+        "module":"Loops",
+        "question":"What will be the output of the following Python code?\\nd \u003D {0, 1, 2}\\nfor x in d.values\u0028\u0029:\\n\\tprint\u0028x\u0029",
+        "options":[
+            {
+                "a":"0 1 2"
+            },
+            {
+                "b":"None None None"
+            },
+            {
+                "c":"error"
+            },
+            {
+                "d":"none of the mentioned"
+            }
+        ],
+        "answer":"c",
+        "reason":"Objects of type set have no attribute values."
+    },
+    {
+        "id":"38",
+        "subject":"Python",
+        "module":"Loops",
+        "question":"What will be the output of the following Python code?\\nd \u003D {0, 1, 2}\\nfor x in d:\\n\\tprint\u0028x\u0029",
+        "options":[
+            {
+                "a":"0 1 2"
+            },
+            {
+                "b":"{0, 1, 2} {0, 1, 2} {0, 1, 2}"
+            },
+            {
+                "c":"error"
+            },
+            {
+                "d":"none of the mentioned"
+            }
+        ],
+        "answer":"a",
+        "reason":"Loops over the elements of the set and prints them."
+    },
+    {
+        "id":"39",
+        "subject":"Python",
+        "module":"Loops",
+        "question":"What will be the output of the following Python code?\\nd \u003D {0, 1, 2}\\nfor x in d:\\n\\tprint\u0028d.add\u0028x\u0029\u0029",
+        "options":[
+            {
+                "a":"0 1 2"
+            },
+            {
+                "b":"0 1 2 0 1 2 0 1 2 …"
+            },
+            {
+                "c":"None None None"
+            },
+            {
+                "d":"None of the mentioned"
+            }
+        ],
+        "answer":"c",
+        "reason":"Variable x takes the values 0, 1 and 2. set.add\u0028\u0029 returns None which is printed."
+    },
+    {
+        "id":"40",
+        "subject":"Python",
+        "module":"Loops",
+        "question":"What will be the output of the following Python code?\\nfor i in range\u00280\u0029:\\n\\tprint\u0028i\u0029",
+        "options":[
+            {
+                "a":"0"
+            },
+            {
+                "b":"no output"
+            },
+            {
+                "c":"error"
+            },
+            {
+                "d":"none of the mentioned"
+            }
+        ],
+        "answer":"b",
+        "reason":"range\u00280\u0029 is empty."
+    },
+    {
+        "id":"41",
+        "subject":"Python",
+        "module":"Loops",
+        "question":"What will be the output of the following Python code?\\nfor i in range\u00282.0\u0029:\\n\\tprint\u0028i\u0029",
+        "options":[
+            {
+                "a":"0.0 1.0"
+            },
+            {
+                "b":"0 1"
+            },
+            {
+                "c":"error"
+            },
+            {
+                "d":"none of the mentioned"
+            }
+        ],
+        "answer":"b",
+        "reason":"range\u0028int\u00282.0\u0029\u0029 is the same as range\u00282\u0029."
+    },
+    {
+        "id":"42",
+        "subject":"Python",
+        "module":"Loops",
+        "question":"What will be the output of the following Python code?\\nfor i in range\u0028float\u0028'inf'\u0029\u0029:\\n\\tprint \u0028i\u0029",
+        "options":[
+            {
+                "a":"0.0 0.1 0.2 0.3 ..."
+            },
+            {
+                "b":"0 1 2 3 ..."
+            },
+            {
+                "c":"0.0 1.0 2.0 3.0 ..."
+            },
+            {
+                "d":"none of the mentioned"
+            }
+        ],
+        "answer":"d",
+        "reason":"Error, objects of type float cannot be interpreted as an integer."
+    },
+    {
+        "id":"43",
+        "subject":"Python",
+        "module":"Loops",
+        "question":"What will be the output of the following Python code?\\nfor i in range\u0028int\u0028float\u0028'inf'\u0029\u0029\u0029:\\n\\tprint \u0028i\u0029",
+        "options":[
+            {
+                "a":"0.0 0.1 0.2 0.3 ..."
+            },
+            {
+                "b":"0 1 2 3 ..."
+            },
+            {
+                "c":"0.0 1.0 2.0 3.0 ..."
+            },
+            {
+                "d":"none of the mentioned"
+            }
+        ],
+        "answer":"d",
+        "reason":"OverflowError, cannot convert float infinity to integer."
+    },
+    {
+        "id":"44",
+        "subject":"Python",
+        "module":"Loops",
+        "question":"What will be the output of the following Python code snippet?\\nfor i in \u005B1, 2, 3, 4\u005D\u005B::-1\u005D:\\n\\tprint \u0028i\u0029",
+        "options":[
+            {
+                "a":"1 2 3 4"
+            },
+            {
+                "b":"4 3 2 1"
+            },
+            {
+                "c":"error"
+            },
+            {
+                "d":"none of the mentioned"
+            }
+        ],
+        "answer":"b",
+        "reason":"\u005B::-1\u005D reverses the list."
+    },
+    {
+        "id":"45",
+        "subject":"Python",
+        "module":"Loops",
+        "question":"What will be the output of the following Python code snippet?\\nfor i in ''.join\u0028reversed\u0028list\u0028'abcd'\u0029\u0029\u0029:\\n\\tprint \u0028i\u0029",
+        "options":[
+            {
+                "a":"a b c d"
+            },
+            {
+                "b":"d c b a"
+            },
+            {
+                "c":"eror"
+            },
+            {
+                "d":"none of the mentioned"
+            }
+        ],
+        "answer":"b",
+        "reason":"‘ ‘.join\u0028reversed\u0028list\u0028‘abcd’\u0029\u0029\u0029 reverses a string."
+    },
+    {
+        "id":"46",
+        "subject":"Python",
+        "module":"Loops",
+        "question":"What will be the output of the following Python code snippet?\\nfor i in 'abcd'\u005B::-1\u005D:\\n\\tprint \u0028i\u0029",
+        "options":[
+            {
+                "a":"a b c d"
+            },
+            {
+                "b":"d c b a"
+            },
+            {
+                "c":"error"
+            },
+            {
+                "d":"none of the menioned"
+            }
+        ],
+        "answer":"b",
+        "reason":"\u005B::-1\u005D reverses the string."
+    },
+    {
+        "id":"47",
+        "subject":"Python",
+        "module":"Loops",
+        "question":"What will be the output of the following Python code snippet?\\nfor i in '':\\n\\tprint \u0028i\u0029",
+        "options":[
+            {
+                "a":"None"
+            },
+            {
+                "b":"\u0028nothing is printed\u0029"
+            },
+            {
+                "c":"error"
+            },
+            {
+                "d":"none of the mentioned"
+            }
+        ],
+        "answer":"b",
+        "reason":"The string does not have any character to loop over."
+    },
+    {
+        "id":"48",
+        "subject":"Python",
+        "module":"Loops",
+        "question":"What will be the output of the following Python code snippet?\\nx \u003D 2\\nfor i in range\u0028x\u0029:\\n\\tx +\u003D 1\\n\\tprint \u0028x\u0029",
+        "options":[
+            {
+                "a":"0 1 2 3 4 ..."
+            },
+            {
+                "b":"0 1"
+            },
+            {
+                "c":"3 4"
+            },
+            {
+                "d":"0 1 2 3"
+            }
+        ],
+        "answer":"c",
+        "reason":"Variable x is incremented and printed twice."
+    },
+    {
+        "id":"49",
+        "subject":"Python",
+        "module":"Loops",
+        "question":"What will be the output of the following Python code snippet?\\nx \u003D 2\\nfor i in range\u0028x\u0029:\\n\\tx -\u003D 2\\n\\tprint \u0028x\u0029",
+        "options":[
+            {
+                "a":"0 1 2 3 4"
+            },
+            {
+                "b":"0 - 2"
+            },
+            {
+                "c":"0"
+            },
+            {
+                "d":"error"
+            }
+        ],
+        "answer":"b",
+        "reason":"The loop is entered twice."
+    },
+    {
+        "id":"50",
+        "subject":"Python",
+        "module":"Loops",
+        "question":"What will be the output of the following Python code?\\nfor i in range\u002810\u0029:\\n\\tif i \u003D\u003D 5:\\n\\t\\tbreak\\n\\telse:\\n\\t\\tprint\u0028i\u0029\\nelse:\\n\\tprint\u0028\u201CHere\u201D\u0029",
+        "options":[
+            {
+                "a":"0 1 2 3 4 Here"
+            },
+            {
+                "b":"0 1 2 3 4 5 Here"
+            },
+            {
+                "c":"0 1 2 3 4"
+            },
+            {
+                "d":"1 2 3 4 5"
+            }
+        ],
+        "answer":"c",
+        "reason":"The else part is executed if control doesn’t break out of the loop."
+    }
+]
+}

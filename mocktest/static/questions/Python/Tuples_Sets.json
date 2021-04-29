@@ -1,0 +1,1082 @@
+{
+"quiz":[
+    {
+        "id": "1",
+        "subject": "Python",
+        "module": "Tuples_Sets",
+        "question": "Which of the following is a Python tuple?",
+        "options": [
+            {
+                "a": "\u005B1, 2, 3\u005D"
+            },
+            {
+                "b": "\u00281, 2, 3\u0029"
+            },
+            {
+                "c": "{1, 2, 3}"
+            },
+            {
+                "d": "{}"
+            }
+        ],
+        "answer": "b",
+        "reason": "Tuples are represented with round brackets."
+    },
+    {
+        "id": "2",
+        "subject": "Python",
+        "module": "Tuples_Sets",
+        "question": "Suppose t \u003D \u00281, 2, 4, 3\u0029, which of the following is incorrect?",
+        "options": [
+            {
+                "a": "print\u0028t[3\u005D\u0029"
+            },
+            {
+                "b": " t[3\u005D \u003D 45"
+            },
+            {
+                "c": "print\u0028max\u0028t\u0029\u0029"
+            },
+            {
+                "d": "print\u0028len\u0028t\u0029\u0029"
+            }
+        ],
+        "answer": "b",
+        "reason": "Values cannot be modified in the case of tuple, that is, tuple is immutable."
+    },
+    {
+        "id": "3",
+        "subject": "Python",
+        "module": "Tuples_Sets",
+        "question": " What will be the output ofthefollowingPythoncode?\\n\\n>>>t\u003D\u00281,2,4,3\u0029\\n>>>t\u005C1:3\u005D",
+        "options": [
+            {
+                "a": "\u00281, 2\u0029"
+            },
+            {
+                "b": "\u00281, 2,4\u0029"
+            },
+            {
+                "c": "\u00282, 4\u0029"
+            },
+            {
+                "d": "\u00282, 4, 3\u0029"
+            }
+        ],
+        "answer": "c",
+        "reason": " Slicing in tuples takes place just as it does in strings."
+    },
+    {
+        "id": "4",
+        "subject": "Python",
+        "module": "Tuples_Sets",
+        "question": "What is the data type of \u00281\u0029?",
+        "options": [
+            {
+                "a": " Tuple"
+            },
+            {
+                "b": "Integer"
+            },
+            {
+                "c": "List"
+            },
+            {
+                "d": "Both tuple and integer"
+            }
+        ],
+        "answer": "b",
+        "reason": "A tuple of one element must be created as \u00281,\u0029."
+    },
+    {
+        "id": "5",
+        "subject": "Python",
+        "module": "Tuples_Sets",
+        "question": " If a\u003D\u00281,2,3,4\u0029, a\u005B1:-1\u005D is _________",
+        "options": [
+            {
+                "a": "Error, tuple slicing doesn’t exist"
+            },
+            {
+                "b": "\u005B2,3\u005D"
+            },
+            {
+                "c": "\u00282,3,4\u0029"
+            },
+            {
+                "d": "\u00282,3\u0029"
+            }
+        ],
+        "answer": "d",
+        "reason": "Tuple slicing exists and a\u005B1:-1\u005D returns \u00282,3\u0029."
+    },
+    {
+        "id": "6",
+        "subject": "Python",
+        "module": "Tuples_Sets",
+        "question": " What type of data is: a\u003D\u005B\u00281,1\u0029,\u00282,4\u0029,\u00283,9\u0029\u005D?",
+        "options": [
+            {
+                "a": "Array of tuples"
+            },
+            {
+                "b": "List of tuples"
+            },
+            {
+                "c": "Tuples of lists"
+            },
+            {
+                "d": "Invalid type"
+            }
+        ],
+        "answer": "b",
+        "reason": "The variable a has tuples enclosed in a list making it a list of tuples."
+    },
+    {
+        "id": "7",
+        "subject": "Python",
+        "module": "Tuples_Sets",
+        "question": "Tuples can’t be made keys of a dictionary.",
+        "options": [
+            {
+                "a": "True"
+            },
+            {
+                "b": "False"
+            }
+        ],
+        "answer": "b",
+        "reason": "Tuples can be made keys of a dictionary because they are hashable."
+    },
+    {
+        "id": "8",
+        "subject": "Python",
+        "module": "Tuples_Sets",
+        "question": " Which of these about a set is not true?",
+        "options": [
+            {
+                "a": "Mutable data type"
+            },
+            {
+                "b": "Allows duplicate values"
+            },
+            {
+                "c": "Data type with unordered values"
+            },
+            {
+                "d": "Immutable data type"
+            }
+        ],
+        "answer": "d",
+        "reason": "A set is a mutable data type with non-duplicate, unordered values, providing the usual mathematical set operations."
+    },
+    {
+        "id": "9",
+        "subject": "Python",
+        "module": "Tuples_Sets",
+        "question": " Which of the following is not the correct syntax for creating a set?",
+        "options": [
+            {
+                "a": "set\u0028\u005B\u005B1,2\u005D,\u005B3,4\u005D\u005D\u0029"
+            },
+            {
+                "b": "set\u0028\u005B1,2,2,3,4\u005D\u0029"
+            },
+            {
+                "c": "set\u0028\u00281,2,3,4\u0029\u0029"
+            },
+            {
+                "d": "{1,2,3,4}"
+            }
+        ],
+        "answer": "a",
+        "reason": "The argument given for the set must be an iterable."
+    },
+    {
+        "id": "10",
+        "subject": "Python",
+        "module": "Tuples_Sets",
+        "question": " If a\u003D{5,6,7,8}, which of the following statements is false?",
+        "options": [
+            {
+                "a": "print\u0028len\u0028a\u0029\u0029"
+            },
+            {
+                "b": "print\u0028min\u0028a\u0029\u0029"
+            },
+            {
+                "c": "a.remove\u00285\u0029"
+            },
+            {
+                "d": "a\u005B2\u005D\u003D45"
+            }
+        ],
+        "answer": "d",
+        "reason": "The members of a set can be accessed by their index values since the elements of the set are unordered."
+    },
+    {
+        "id": "11",
+        "subject": "Python",
+        "module": "Tuples_Sets",
+        "question": " If a\u003D{5,6,7}, what happens when a.add\u00285\u0029 is executed?",
+        "options": [
+            {
+                "a": "a\u003D{5,5,6,7}"
+            },
+            {
+                "b": "a\u003D{5,6,7}"
+            },
+            {
+                "c": "Error as there is no add function for set data type"
+            },
+            {
+                "d": "Error as 5 already exists in the set"
+            }
+        ],
+        "answer": "b",
+        "reason": "There exists add method for set data type. However 5 isn’t added again as set consists of only non-duplicate elements and 5 already exists in the set. Execute in python shell to verify."
+    },
+    {
+        "id": "12",
+        "subject": "Python",
+        "module": "Tuples_Sets",
+        "question": "Which of these about a frozenset is not true?",
+        "options": [
+            {
+                "a": "Mutable data type"
+            },
+            {
+                "b": "Allows duplicate values"
+            },
+            {
+                "c": "Data type with unordered values"
+            },
+            {
+                "d": "Immutable data type"
+            }
+        ],
+        "answer": "a",
+        "reason": "A frozenset is an immutable data type."
+    },
+    {
+        "id": "13",
+        "subject": "Python",
+        "module": "Tuples_Sets",
+        "question": "Set makes use of __________Dictionary makes use of ____________",
+        "options": [
+            {
+                "a": "keys, keys"
+            },
+            {
+                "b": "key values, keys"
+            },
+            {
+                "c": "keys, key values"
+            },
+            {
+                "d": "key values, key values"
+            }
+        ],
+        "answer": "c",
+        "reason": "Set makes use of keys.Dictionary makes use of key values."
+    },
+    {
+        "id": "14",
+        "subject": "Python",
+        "module": "Tuples_Sets",
+        "question": " Input order is preserved in sets.",
+        "options": [
+            {
+                "a": "True"
+            },
+            {
+                "b": "False"
+            }
+        ],
+        "answer": "b",
+        "reason": "The input order in sets is not maintained. This is demonstrated by the code shown below:\\n>>> s\u003D{2, 6, 8, 1, 5}\\n>>> s\\n{8, 1, 2, 5, 6}"
+    },
+    {
+        "id": "15",
+        "subject": "Python",
+        "module": "Tuples_Sets",
+        "question": "Which of the following functions cannot be used on heterogeneous sets?",
+        "options": [
+            {
+                "a": "pop"
+            },
+            {
+                "b": "remove"
+            },
+            {
+                "c": "update"
+            },
+            {
+                "d": "sum"
+            }
+        ],
+        "answer": "d",
+        "reason": "he functions sum, min and max cannot be used on mixed type \u0028heterogeneous\u0029 sets. The functions pop, remove, update etc can be used on homogenous as well as heterogeneous sets. An example of heterogeneous sets is: {‘abc’, 4, \u00281, 2\u0029}"
+    },
+    {
+        "id": "16",
+        "subject": "Python",
+        "module": "Tuples_Sets",
+        "question": " Which of the following functions will return the symmetric difference between two sets, x and y?",
+        "options": [
+            {
+                "a": "x | y"
+            },
+            {
+                "b": "x ^ y"
+            },
+            {
+                "c": "x & y"
+            },
+            {
+                "d": "x - y"
+            }
+        ],
+        "answer": "b",
+        "reason": "he function x ^ y returns the symmetric difference between the two sets x and y. This is basically an XOR operation being performed on the two sets."
+    },
+    
+    {
+        "id": "17",
+        "subject": "Python",
+        "module": "Tuples_Sets",
+        "question": "The ____________ function removes the first element of a set and the last element of a list.",
+        "options": [
+            {
+                "a": "remove"
+            },
+            {
+                "b": "pop"
+            },
+            {
+                "c": "discard"
+            },
+            {
+                "d": "dispose"
+            }
+        ],
+        "answer": "b",
+        "reason": "The function pop removes the first element when used on a set and the last element when used to a list."
+    },
+    {
+        "id": "18",
+        "subject": "Python",
+        "module": "Tuples_Sets",
+        "question": "The difference between the functions discard and remove is that:",
+        "options": [
+            {
+                "a": "Discard removes the last element of the set whereas remove removes the first element of the set"
+            },
+            {
+                "b": " Discard throws an error if the specified element is not present in the set whereas remove does not throw an error in case of absence of the specified element"
+            },
+            {
+                "c": "Remove removes the last element of the set whereas discard removes the first element of the set"
+            },
+            {
+                "d": "Remove throws an error if the specified element is not present in the set whereas discard does not throw an error in case of absence of the specified element"
+            }
+        ],
+        "answer": "d",
+        "reason": "The function remove removes the element if it is present in the set. If the element is not present, it throws an error. The function discard removes the element if it is present in the set. If the element is not present, no action is performed \u0028Error is not thrown\u0029."
+    },
+    {
+        "id": "19",
+        "subject": "Python",
+        "module": "Tuples_Sets",
+        "question": "If we have two sets, s1 and s2, and we want to check if all the elements of s1 are present in s2 or not, we can use the function:",
+        "options": [
+            {
+                "a": "s2.issubset\u0028s1\u0029"
+            },
+            {
+                "b": "s2.issuperset\u0028s1\u0029"
+            },
+            {
+                "c": " s1.issuperset\u0028s2\u0029"
+            },
+            {
+                "d": "s1.isset\u0028s2\u0029"
+            }
+        ],
+        "answer": "b",
+        "reason": "Since we are checking whether all the elements present in the set s1 are present in the set s2. This means that s1 is the subset and s1 is the superset. Hence the function to be used is: s2.issuperset\u0028s1\u0029. This operation can also be performed by the function: s1.issubset\u0028s2\u0029."
+    },
+    {
+        "id": "20",
+        "subject": "Python",
+        "module": "Tuples_Sets",
+        "question": " What will be the output of the following Python code?\\n\\nx\u003Dset\u0028'abcde'\u0029\\ny\u003Dset\u0028'xyzbd'\u0029\\nx.difference_update\u0028y\u0029\\nx\\ny",
+        "options": [
+            {
+                "a": " {‘a’, ‘b’, ‘c’, ‘d’, ‘e’}\\n{‘x’, ‘y’, ‘z’}"
+            },
+            {
+                "b": "{‘a’, ‘c’, ‘e’}\\n{‘x’, ‘y’, ‘z’, ‘b’, ‘d’}"
+            },
+            {
+                "c": " {‘b’, ‘d’}\\n{‘b’, ‘d’}"
+            },
+            {
+                "d": " {‘a’, ‘c’, ‘e’}\\n{‘x’, ‘y’, ‘z’}"
+            }
+        ],
+        "answer": "b",
+        "reason": "The function x.difference_update\u0028y\u0029 removes all the elements of the set y from the set x. Hence the output of the code is:\\n{‘a’, ‘c’, ‘e’}\\n{‘x’, ‘y’, ‘z’, ‘b’, ‘d’}."
+    },
+
+    {
+        "id": "21",
+        "subject": "Python",
+        "module": "Tuples_Sets",
+        "question": "What will be the output of the following Python code, if s1\u003D {1, 2, 3}?\\n\\ns1.issubset\u0028s1\u0029",
+        "options": [
+            {
+                "a": "True"
+            },
+            {
+                "b": "Error"
+            },
+            {
+                "c": "No output"
+            },
+            {
+                "d": "False"
+            }
+        ],
+        "answer": "a",
+        "reason": " Every set is a subset of itself and hence the output of this line of code is true."
+    },
+    {
+        "id": "22",
+        "subject": "Python",
+        "module": "Tuples_Sets",
+        "question": "What will be the output of the following Python code?\\na\u003Dset\u0028'abc'\u0029\\nb\u003Dset\u0028'def'\u0029\\nb.intersection_update\u0028a\u0029\\na\\nb",
+        "options": [
+            {
+                "a": "set\u0028\u0029\\n\u0028‘e’, ‘d’, ‘f’}"
+            },
+            {
+                "b": "{}\\n{}"
+            },
+            {
+                "c": "{‘b’, ‘c’, ‘a’}\\nset\u0028\u0029"
+            },
+            {
+                "d": "set\u0028\u0029\\nset\u0028\u0029"
+            }
+        ],
+        "answer": "c",
+        "reason": "The function b.intersection_update\u0028a\u0029 puts those elements in the set b which are common to both the sets a and b. The set a remains as it is. Since there are no common elements between the sets a and b, the output is:"
+    },
+    {
+        "id": "23",
+        "subject": "Python",
+        "module": "Tuples_Sets",
+        "question": "What will be the output of the following Python code?\\ns1\u003D{1, 2, 3}\\ns2\u003D{4, 5, 6}\\ns1.isdisjoint\u0028s2\u0029\\ns2.isdisjoint\u0028s1\u0029",
+        "options": [
+            {
+                "a": "True\\nFalse"
+            },
+            {
+                "b": "False\\nTrue"
+            },
+            {
+                "c": "True\\nTrue"
+            },
+            {
+                "d": "Flase\\nFalse"
+            }
+        ],
+        "answer": "vc",
+        "reason": "The function isdisjoint returns true the two sets in question are disjoint, that is if they do not have even a single element in common. The two sets s1 and s2 do not have any elements in common, hence true is returned in both the cases."
+    },
+    {
+        "id": "24",
+        "subject": "Python",
+        "module": "Tuples_Sets",
+        "question": "What will be the output of the following Python code?\\ns1\u003D{1, 2, 3, 8}\\ns2\u003D{3, 4, 5, 6}\\ns1|s2\\ns1.union\u0028s2\u0029",
+        "options": [
+            {
+                "a": "{3}\\n{1, 2, 3, 4, 5, 6, 8}"
+            },
+            {
+                "b": "{1, 2, 4, 5, 6, 8}\\n{1, 2, 4, 5, 6, 8}"
+            },
+            {
+                "c": "{3}\\n{3}"
+            },
+            {
+                "d": "{1, 2, 3, 4, 5, 6, 8}\\n{1, 2, 3, 4, 5, 6, 8}"
+            }
+        ],
+        "answer": "d",
+        "reason": " The function s1|s2 as well as the function s1.union\u0028s2\u0029 returns a union of the two sets s1 and s2. Hence the output of both of these functions is: {1, 2, 3, 4, 5, 6, 8}."
+    },
+    {
+        "id": "25",
+        "subject": "Python",
+        "module": "Tuples_Sets",
+        "question": "What will be the output of the following Python code snippet?\\nz\u003Dset\u0028'abc$de'\u0029\\n'a' in z",
+        "options": [
+            {
+                "a": "True"
+            },
+            {
+                "b": "False"
+            },
+            {
+                "c": "No output"
+            },
+            {
+                "d": "Error"
+            }
+        ],
+        "answer": "a",
+        "reason": "The code shown above is used to check whether a particular item is a part of a given set or not. Since ‘a’ is a part of the set z, the output is true. Note that this code would result in an error in the absence of the quotes."
+    },
+    {
+        "id": "26",
+        "subject": "Python",
+        "module": "Tuples_Sets",
+        "question": "What will be the output of the following Python code snippet?\\nz\u003Dset\u0028'abc'\u0029\\nz.add\u0028'san'\u0029\\nz.update\u0028set\u0028\u005B'p', 'q'\u005D\u0029\u0029\\nz",
+        "options": [
+            {
+                "a": "{‘abc’, ‘p’, ‘q’, ‘san’}"
+            },
+            {
+                "b": "{‘a’, ‘b’, ‘c’, \u005B‘p’, ‘q’\u005D, ‘san}"
+            },
+            {
+                "c": " {‘a’, ‘c’, ‘c’, ‘p’, ‘q’, ‘s’, ‘a’, ‘n’}"
+            },
+            {
+                "d": "{‘a’, ‘b’, ‘c’, ‘p’, ‘q’, ‘san’}"
+            }
+        ],
+        "answer": "d",
+        "reason": "The code shown first adds the element ‘san’ to the set z. The set z is then updated and two more elements, namely, ‘p’ and ‘q’ are added to it. Hence the output is: {‘a’, ‘b’, ‘c’, ‘p’, ‘q’, ‘san’}"
+    },
+    {
+        "id": "27",
+        "subject": "Python",
+        "module": "Tuples_Sets",
+        "question": " What will be the output of the following Python code snippet?\\nfor x in set\u0028'pqr'\u0029:\\n\\tprint\u0028x*2\u0029",
+        "options": [
+            {
+                "a": "pp\\nqq\\nrr"
+            },
+            {
+                "b": "pqr\\npqr"
+            },
+            {
+                "c": "ppqqrr"
+            },
+            {
+                "d": "pqrpqr"
+            }
+        ],
+        "answer": "a",
+        "reason": "The code shown above prints each element of the set twice separately. Hence the output of this code is:\\npp\\nqq\\nrr"
+    },
+    {
+        "id": "28",
+        "subject": "Python",
+        "module": "Tuples_Sets",
+        "question": "What will be the output of the following Python code snippet?\\n{a**2 for a in range\u00284\u0029}",
+        "options": [
+            {
+                "a": "{1, 4, 9, 16}"
+            },
+            {
+                "b": "{0, 1, 4, 9, 16}"
+            },
+            {
+                "c": "Error"
+            },
+            {
+                "d": "{0, 1, 4, 9}"
+            }
+        ],
+        "answer": "d",
+        "reason": "The code shown above returns a set containing the square of values in the range 0-3, that is 0, 1, 2 and 3. Hence the output of this line of code is: {0, 1, 4, 9}."
+    },
+    {
+        "id": "29",
+        "subject": "Python",
+        "module": "Tuples_Sets",
+        "question": "What will be the output of the following Python function?\\n{x for x in 'abc'}",
+        "options": [
+            {
+                "a": "{abc}\\naaa\\nbbb\\nccc"
+            },
+            {
+                "b": "abc\\nabc abc abc"
+            },
+            {
+                "c": "{‘a’, ‘b’, ‘c’}\\n{‘aaa’, ‘bbb’, ‘ccc’}"
+            },
+            {
+                "d": "{‘a’, ‘b’, ‘c’}\\nabc\\nabc\\nabc"
+            }
+        ],
+        "answer": "c",
+        "reason": "The first function prints each element of the set separately, hence the output is: {‘a’, ‘b’, ‘c’}. The second function prints each element of the set thrice, contained in a new set. Hence the output of the second function is: {‘aaa’, ‘bbb’, ‘ccc’}. \u0028Note that the order may not be the same\u0029"
+    },
+    {
+        "id": "30",
+        "subject": "Python",
+        "module": "Tuples_Sets",
+        "question": " The output of the following code is: class<’set’>.\\ntype\u0028{}\u0029",
+        "options": [
+            {
+                "a": "True"
+            },
+            {
+                "b": "False"
+            }
+        ],
+        "answer": "b",
+        "reason": "The output of the line of code shown above is: class<’dict’>. This is because {} represents an empty dictionary, whereas set\u0028\u0029 initializes an empty set. Hence the statement is false."
+    },
+    {
+        "id": "31",
+        "subject": "Python",
+        "module": "Tuples_Sets",
+        "question": " What will be the output of the following Python code snippet?\\na\u003D\u005B1, 4, 3, 5, 2\u005D\\nb\u003D\u005B3, 1, 5, 2, 4\u005D\\na\u003D\u003Db\\nset\u0028a\u0029\u003D\u003Dset\u0028b\u0029",
+        "options": [
+            {
+                "a": "True\\nFalse"
+            },
+            {
+                "b": "False\\nFalse"
+            },
+            {
+                "c": "False\\nTrue"
+            },
+            {
+                "d": "True\\nTrue"
+            }
+        ],
+        "answer": "c",
+        "reason": "In the code shown above, when we check the equality of the two lists, a and b, we get the output false. This is because of the difference in the order of elements of the two lists. However, when these lists are converted to sets and checked for equality, the output is true. This is known as order-neutral equality. Two sets are said to be equal if and only if they contain exactly the same elements, regardless of order."
+    },
+    {
+        "id": "32",
+        "subject": "Python",
+        "module": "Tuples_Sets",
+        "question": " What will be the output of the following Python code snippet?\\nl\u003D\u005B1, 2, 4, 5, 2, 'xy', 4\u005D\\nset\u0028l\u0029\\nl",
+        "options": [
+            {
+                "a": "{1, 2, 4, 5, 2, ‘xy’, 4}\\n\u005B1, 2, 4, 5, 2, ‘xy’, 4\u005D"
+            },
+            {
+                "b": "{1, 2, 4, 5, ‘xy’}\\n\u005B1, 2, 4, 5, 2, ‘xy’, 4\u005D"
+            },
+            {
+                "c": "{1, 5, ‘xy’}\\n\u005B1, 5, ‘xy’\u005D"
+            },
+            {
+                "d": "{1, 2, 4, 5, ‘xy’}\\n\u005B1, 2, 4, 5, ‘xy’\u005D"
+            }
+        ],
+        "answer": "b",
+        "reason": "In the code shown above, the function set\u0028l\u0029 converts the given list into a set. When this happens, all the duplicates are automatically removed. Hence the output is: {1, 2, 4, 5, ‘xy’}. On the other hand, the list l remains unchanged. Therefore the output is: \u005B1, 2, 4, 5, 2, ‘xy’, 4\u005D."
+    },
+    {
+        "id": "33",
+        "subject": "Python",
+        "module": "Tuples_Sets",
+        "question": " The following Python code results in an error.\\n\\ns\u003D{2, 3, 4, \u005B5, 6\u005D}",
+        "options": [
+            {
+                "a": "True"
+            },
+            {
+                "b": "False"
+            }
+        ],
+        "answer": "a",
+        "reason": "The set data type makes use of a principle known as hashing. This means that each item in the set should be hashable. Hashable in this context means immutable. List is mutable and hence the line of code shown above will result in an error."
+    },
+    {
+        "id": "34",
+        "subject": "Python",
+        "module": "Tuples_Sets",
+        "question": "What will be the output of the following Python code?\\ns\u003D{2, 5, 6, 6, 7}\\ns",
+        "options": [
+            {
+                "a": "{2, 5, 7}"
+            },
+            {
+                "b": "{2, 5, 6, 7}"
+            },
+            {
+                "c": "{2, 5, 6, 6, 7}"
+            },
+            {
+                "d": "Error"
+            }
+        ],
+        "answer": "b",
+        "reason": " Duplicate values are not allowed in sets. Hence, the output of the code shown above will be a set containing the duplicate value only once. Therefore the output is: {2, 5, 6, 7}"
+    },
+    {
+        "id": "35",
+        "subject": "Python",
+        "module": "Tuples_Sets",
+        "question": " Write a list comprehension for number and its cube for:\\nl\u003D\u005B1, 2, 3, 4, 5, 6, 7, 8, 9\u005D",
+        "options": [
+            {
+                "a": "\u005Bx**3 for x in l\u005D"
+            },
+            {
+                "b": "\u005Bx^3 for x in l\u005D"
+            },
+            {
+                "c": "\u005Bx**3 in l\u005D"
+            },
+            {
+                "d": "\u005Bx^3 in l\u005D"
+            }
+        ],
+        "answer": "a",
+        "reason": "The list comprehension to print a list of cube of the numbers for the given list is: \u005Bx**3 for x in l\u005D."
+    },
+    {
+        "id": "36",
+        "subject": "Python",
+        "module": "Tuples_Sets",
+        "question": " What will be the output of the following Python code?\\ns\u003D{1, 2, 3}\\ns.update\u00284\u0029\\ns",
+        "options": [
+            {
+                "a": "{1, 2, 3, 4}"
+            },
+            {
+                "b": "{1, 2, 4, 3}"
+            },
+            {
+                "c": "{4, 1, 2, 3}"
+            },
+            {
+                "d": "Error"
+            }
+        ],
+        "answer": "d",
+        "reason": "The code shown above will result in an error because the argument given to the function update should necessarily be an iterable. Hence if we write this function as: s.update\u0028\u005B4\u005D\u0029, there will be no error."
+    },
+    {
+        "id": "37",
+        "subject": "Python",
+        "module": "Tuples_Sets",
+        "question": "What is the syntax of the following Python code?\\n>>> a\u003Dfrozenset\u0028set\u0028\u005B5,6,7\u005D\u0029\u0029\\n>>> a",
+        "options": [
+            {
+                "a": "{5,6,7}"
+            },
+            {
+                "b": "frozenset\u0028{5,6,7}\u0029"
+            },
+            {
+                "c": "Error, not possible to convert set into frozenset"
+            },
+            {
+                "d": "Syntax error"
+            }
+        ],
+        "answer": "b",
+        "reason": "The above piece of code is the correct syntax for creating a frozenset."
+    },
+    {
+        "id": "38",
+        "subject": "Python",
+        "module": "Tuples_Sets",
+        "question": "Is the following Python code valid?\\n>>> a\u003Dfrozenset\u0028\u005B5,6,7\u005D\u0029\\n>>> a\\n>>> a.add\u00285\u0029",
+        "options": [
+            {
+                "a": "Yes, now a is {5,5,6,7}"
+            },
+            {
+                "b": "No, frozen set is immutable"
+            },
+            {
+                "c": "No, invalid syntax for add method"
+            },
+            {
+                "d": "Yes, now a is {5,6,7}"
+            }
+        ],
+        "answer": "b",
+        "reason": "Since a frozen set is immutable, add method doesn’t exist for frozen method."
+    },
+    {
+        "id": "39",
+        "subject": "Python",
+        "module": "Tuples_Sets",
+        "question": " What will be the output of the following Python code?\\n>>> a\u003D{3,4,5}\\n>>> a.update\u0028\u005B1,2,3\u005D\u0029\\n>>> a",
+        "options": [
+            {
+                "a": "Error, no method called update for set data type"
+            },
+            {
+                "b": "{1, 2, 3, 4, 5}"
+            },
+            {
+                "c": "Error, list can’t be added to set"
+            },
+            {
+                "d": "Error, duplicate item present in list"
+            }
+        ],
+        "answer": "b",
+        "reason": " The method update adds elements to a set."
+    },
+    {
+        "id": "40",
+        "subject": "Python",
+        "module": "Tuples_Sets",
+        "question": "What will be the output of the following Python code?\\n>>> a\u003D{1,2,3}\\n>>> a.intersection_update\u0028{2,3,4,5}\u0029\\n>>> a",
+        "options": [
+            {
+                "a": "{2,3}"
+            },
+            {
+                "b": "Error, duplicate item present in list"
+            },
+            {
+                "c": "Error, no method called intersection_update for set data type"
+            },
+            {
+                "d": " {1,4,5}"
+            }
+        ],
+        "answer": "a",
+        "reason": "The method intersection_update returns a set which is an intersection of both the sets."
+    },
+    {
+        "id": "41",
+        "subject": "Python",
+        "module": "Tuples_Sets",
+        "question": "What will be the output of the following Python code?\\n>>> a\u003D{1,2,3}\\n>>> b\u003Da\\n>>> b.remove\u00283\u0029\\n>>> a",
+        "options": [
+            {
+                "a": "{1,2,3}"
+            },
+            {
+                "b": "Error, copying of sets isn’t allowed"
+            },
+            {
+                "c": "{1,2}"
+            },
+            {
+                "d": "Error, invalid syntax for remove"
+            }
+        ],
+        "answer": "c",
+        "reason": "Any change made in b is reflected in a because b is an alias of a."
+    },
+    {
+        "id": "42",
+        "subject": "Python",
+        "module": "Tuples_Sets",
+        "question": " What will be the output of the following Python code?\\n>>> a\u003D{1,2,3}\\n>>> b\u003Da.copy\u0028\u0029\\n>>> b.add\u00284\u0029\\n>>> a",
+        "options": [
+            {
+                "a": "{1,2,3}"
+            },
+            {
+                "b": "Error, invalid syntax for add"
+            },
+            {
+                "c": "{1,2,3,4}"
+            },
+            {
+                "d": "Error, copying of sets isn’t allowed"
+            }
+        ],
+        "answer": "a",
+        "reason": " In the above piece of code, b is barely a copy and not an alias of a. Hence any change made in b isn’t reflected in a."
+    },
+    {
+        "id": "43",
+        "subject": "Python",
+        "module": "Tuples_Sets",
+        "question": "What will be the output of the following Python code?\\n>>> a\u003D{1,2,3}\\n>>> b\u003Da.add\u00284\u0029\\n>>> b",
+        "options": [
+            {
+                "a": "0"
+            },
+            {
+                "b": "{1,2,3,4}"
+            },
+            {
+                "c": "{1,2,3}"
+            },
+            {
+                "d": "Nothing is printed"
+            }
+        ],
+        "answer": "d",
+        "reason": "The method add returns nothing, hence nothing is printed."
+    },
+    {
+        "id": "44",
+        "subject": "Python",
+        "module": "Tuples_Sets",
+        "question": "What will be the output of the following Python code?\\n>>> a\u003D{1,2,3}\\n>>> b\u003Dfrozenset\u0028\u005B3,4,5\u005D\u0029\\n>>> a-b",
+        "options": [
+            {
+                "a": "{1,2}"
+            },
+            {
+                "b": "Error as difference between a set and frozenset can’t be found out"
+            },
+            {
+                "c": "Error as unsupported operand type for set data type"
+            },
+            {
+                "d": "frozenset\u0028{1,2}\u0029"
+            }
+        ],
+        "answer": "a",
+        "reason": "frozenset\u0028{1,2}\u0029"
+    },
+    {
+        "id": "45",
+        "subject": "Python",
+        "module": "Tuples_Sets",
+        "question": " What will be the output of the following Python code?\\n>>> a\u003D{5,6,7}\\n>>> sum\u0028a,5\u0029",
+        "options": [
+            {
+                "a": "5"
+            },
+            {
+                "b": "23"
+            },
+            {
+                "c": "18"
+            },
+            {
+                "d": "Invalid syntax for sum method, too many arguments"
+            }
+        ],
+        "answer": "b",
+        "reason": "The second parameter is the start value for the sum of elements in set a. Thus, sum\u0028a,5\u0029 \u003D 5+\u00285+6+7\u0029\u003D23."
+    },
+    {
+        "id": "46",
+        "subject": "Python",
+        "module": "Tuples_Sets",
+        "question": "What will be the output of the following Python code?\\n>>> a\u003D{1,2,3}\\n>>> {x*2 for x in a|{4,5}}",
+        "options": [
+            {
+                "a": "{2,4,6}"
+            },
+            {
+                "b": "Error, set comprehensions aren’t allowed"
+            },
+            {
+                "c": "{8, 2, 10, 4, 6}"
+            },
+            {
+                "d": "{8,10}"
+            }
+        ],
+        "answer": "c",
+        "reason": "Set comprehensions are allowed."
+    },
+    {
+        "id": "47",
+        "subject": "Python",
+        "module": "Tuples_Sets",
+        "question": " What will be the output of the following Python code?\\n>>> a\u003D{5,6,7,8}\\n>>> b\u003D{7,8,9,10}\\n>>> len\u0028a+b\u0029",
+        "options": [
+            {
+                "a": "8"
+            },
+            {
+                "b": "Error, unsupported operand ‘+’ for sets"
+            },
+            {
+                "c": "6"
+            },
+            {
+                "d": "Nothing is displayed"
+            }
+        ],
+        "answer": "b",
+        "reason": "Duplicate elements in a+b is eliminated and the length of a+b is computed."
+    },
+    {
+        "id": "48",
+        "subject": "Python",
+        "module": "Tuples_Sets",
+        "question": "What will be the output of the following Python code?\\na\u003D{1,2,3}\\nb\u003D{1,2,3}\\nc\u003Da.issubset\u0028b\u0029\\nprint\u0028c\u0029",
+        "options": [
+            {
+                "a": "True"
+            },
+            {
+                "b": "Error, no method called issubset\u0028\u0029 exists"
+            },
+            {
+                "c": "Syntax error for issubset\u0028\u0029 method"
+            },
+            {
+                "d": "False"
+            }
+        ],
+        "answer": "a",
+        "reason": "The method issubset\u0028\u0029 returns True if b is a proper subset of a."
+    },
+    {
+        "id": "49",
+        "subject": "Python",
+        "module": "Tuples_Sets",
+        "question": "Is the following Python code valid?\\na\u003D{1,2,3}\\nb\u003D{1,2,3,4}\\nc\u003Da.issuperset\u0028b\u0029\\nprint\u0028c\u0029",
+        "options": [
+            {
+                "a": "False"
+            },
+            {
+                "b": "True"
+            },
+            {
+                "c": "Syntax error for issuperset\u0028\u0029 method"
+            },
+            {
+                "d": "Error, no method called issuperset\u0028\u0029 exists"
+            }
+        ],
+        "answer": "a",
+        "reason": " The method issubset\u0028\u0029 returns True if b is a proper subset of a."
+    },
+    {
+        "id": "50",
+        "subject": "Python",
+        "module": "Tuples_Sets",
+        "question": " What will be the output of the following Python code?\\n>>> a\u003D\u00281,2\u0029\\n>>> b\u003D\u00283,4\u0029\\n>>> c\u003Da+b\\n>>> c",
+        "options": [
+            {
+                "a": " \u00284,6\u0029"
+            },
+            {
+                "b": "\u00281,2,3,4\u0029"
+            },
+            {
+                "c": "Error as tuples are immutable"
+            },
+            {
+                "d": "None"
+            }
+        ],
+        "answer": "b",
+        "reason": "In the above piece of code, the values of the tuples aren’t being changed. Both the tuples are simply concatenated."
+    }
+]
+}

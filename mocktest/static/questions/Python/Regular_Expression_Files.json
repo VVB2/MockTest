@@ -1,0 +1,967 @@
+{
+    "quiz":[
+    {
+        "id": "1",
+        "subject": "Python",
+        "module": "Regular_Expression_Files",
+        "question": "Which module in Python supports regular expressions?",
+        "options": [
+            {
+                "a": "re"
+            },
+            {
+                "b": "regex"
+            },
+            {
+                "c": "pyregex"
+            },
+            {
+                "d": "none of the mentioned"
+            }
+        ],
+        "answer": "a",
+        "reason": "re is a part of the standard library and can be imported using: import re."
+    },
+    {
+        "id": "2",
+        "subject": "Python",
+        "module": "Regular_Expression_Files",
+        "question": "Which of the following creates a pattern object?",
+        "options": [
+            {
+                "a": "re.create(str)"
+            },
+            {
+                "b": "re.regex(str)"
+            },
+            {
+                "c": "re.compile(str)"
+            },
+            {
+                "d": " re.assemble(str)"
+            }
+        ],
+        "answer": "c",
+        "reason": " It converts a given string into a pattern object."
+    },
+    {
+        "id": "3",
+        "subject": "Python",
+        "module": "Regular_Expression_Files",
+        "question": "What does the function re.match do?",
+        "options": [
+            {
+                "a": "matches a pattern at the start of the string"
+            },
+            {
+                "b": " matches a pattern at any position in the string"
+            },
+            {
+                "c": " such a function does not exist"
+            },
+            {
+                "d": "none of the mentioned"
+            }
+        ],
+        "answer": "a",
+        "reason": "t will look for the pattern at the beginning and return None if it isn’t found."
+    },
+    {
+        "id": "4",
+        "subject": "Python",
+        "module": "Regular_Expression_Files",
+        "question": "What does the function re.search do?",
+        "options": [
+            {
+                "a": "matches a pattern at the start of the string"
+            },
+            {
+                "b": "matches a pattern at any position in the string"
+            },
+            {
+                "c": "such a function does not exist"
+            },
+            {
+                "d": "none of the mentioned"
+            }
+        ],
+        "answer": "b",
+        "reason": "It will look for the pattern at any position in the string."
+    },
+    {
+        "id": "5",
+        "subject": "Python",
+        "module": "Regular_Expression_Files",
+        "question": "The character Dot (that is, ‘.’) in the default mode, matches any character other than _____________",
+        "options": [
+            {
+                "a": "caret"
+            },
+            {
+                "b": "ampersand"
+            },
+            {
+                "c": "percentage symbol"
+            },
+            {
+                "d": "newline"
+            }
+        ],
+        "answer":"d", 
+        "reason": "The character Dot (that is, ‘,’) in the default mode, matches any character other than newline. If DOTALL flag is used, then it matches any character other than newline."
+    },
+    {
+        "id": "6",
+        "subject": "Python",
+        "module": "Regular_Expression_Files",
+        "question": "The expression a{5} will match _____________ characters with the previous regular expression.",
+        "options": [
+            {
+                "a": "5 or less"
+            },
+            {
+                "b": "exactly 5"
+            },
+            {
+                "c": "5 or more"
+            },
+            {
+                "d": "exactly 4"
+            }
+        ],
+        "answer": "b",
+        "reason": " The character {m} is used to match exactly m characters to the previous regular expression. Hence the expression a{5} will match exactly 5 characters and not less than that."
+    },
+    {
+        "id": "7",
+        "subject": "Python",
+        "module": "Regular_Expression_Files",
+        "question": "________ matches the start of the string.\n________ matches the end of the string.",
+        "options": [
+            {
+                "a": "‘^’, ‘$’"
+            },
+            {
+                "b": "‘$’, ‘^’"
+            },
+            {
+                "c": "‘$’, ‘?’"
+            },
+            {
+                "d": "‘?’, ‘^’"
+            }
+        ],
+        "answer": "a",
+        "reason": " ‘^’ (carat) matches the start of the string.\n‘$’ (dollar sign) matches the end of the string."
+    },
+    {
+        "id": "8",
+        "subject": "Python",
+        "module": "Regular_Expression_Files",
+        "question": " Which of the following functions clears the regular expression cache?",
+        "options": [
+            {
+                "a": "re.sub()"
+            },
+            {
+                "b": "re.pos()"
+            },
+            {
+                "c": "re.purge()"
+            },
+            {
+                "d": "re.subn()"
+            }
+        ],
+        "answer": "c",
+        "reason": "The function which clears the regular expression cache is re.purge(). Note that this function takes zero positional arguments."
+    },
+    {
+        "id": "9",
+        "subject": "Python",
+        "module": "Regular_Expression_Files",
+        "question": "Which of the following functions results in case insensitive matching?",
+        "options": [
+            {
+                "a": "re.A"
+            },
+            {
+                "b": "re.U"
+            },
+            {
+                "c": "re.I"
+            },
+            {
+                "d": "re.X"
+            }
+        ],
+        "answer": "c",
+        "reason": "The function re.I (that is, re.IGNORECASE) results in case-insensitive matching. That is, expressions such as [A-Z] will match lowercase characters too."
+    },
+    {
+        "id": "10",
+        "subject": "Python",
+        "module": "Regular_Expression_Files",
+        "question": "The function re.error raises an exception if a particular string contains no match for the given pattern.",
+        "options": [
+            {
+                "a": "True"
+            },
+            {
+                "b": "False"
+            }
+        ],
+        "answer": "b",
+        "reason": "The function re.error raises an exception when a string passed to one of its functions here is not a valid regular expression. It does not raise an exception if a particular string does not contain a match for the given pattern."
+    },
+    {
+        "id": "11",
+        "subject": "Python",
+        "module": "Regular_Expression_Files",
+        "question": "Choose the option wherein the two choices do not refer to the same option.",
+        "options": [
+            {
+                "a": " re.I\nre.IGNORECASE"
+            },
+            {
+                "b": "re.M\nre.MULTILINE"
+            },
+            {
+                "c": " re.X\n                re.VERBOSE"
+            },
+            {
+                "d": " re.L\n                re.LOWERCASE"
+            }
+        ],
+        "answer": "d",
+        "reason": "The function re.L is also written as re.LOCALE. There is no function such as re.LOWERCASE in the re module of Python."
+    },
+    {
+        "id": "12",
+        "subject": "Python",
+        "module": "Regular_Expression_Files",
+        "question": "The difference between the functions re.sub and re.subn is that re.sub returns a _______________ whereas re.subn returns a __________________",
+        "options": [
+            {
+                "a": "string, list"
+            },
+            {
+                "b": "list, tuple"
+            },
+            {
+                "c": "string, tuple"
+            },
+            {
+                "d": "tuple, list"
+            }
+        ],
+        "answer": "c",
+        "reason": "The difference the functions re.sub and re.subn is that re.sub returns a string whereas re.subn returns a tuple."
+    },
+    {
+        "id": "13",
+        "subject": "Python",
+        "module": "Regular_Expression_Files",
+        "question": "The function of re.search is __________",
+        "options": [
+            {
+                "a": "Matches a pattern at the start of the string"
+            },
+            {
+                "b": "Matches a pattern at the end of the string" 
+            },
+            {
+                "c": "Matches a pattern from any part of a string"
+            },
+            {
+                "d": " Such a function does not exist"
+            }
+        ],
+        "answer": "c",
+        "reason": "The re module of Python consists of a function re.search. It’s function is to match a pattern from anywhere in a string."
+    },
+    {
+        "id": "14",
+        "subject": "Python",
+        "module": "Regular_Expression_Files",
+        "question": "Which of the following functions creates a Python object?",
+        "options": [
+            {
+                "a": "re.compile(str)"
+            },
+            {
+                "b": "re.assemble(str)"
+            },
+            {
+                "c": "re.regex(str)"
+            },
+            {
+                "d": "re.create(str)"
+            }
+        ],
+        "answer": "a",
+        "reason": "The function re.compile(srt) compiles a pattern of regular expression into an object of regular expression. Hence re.compile(str) is the only function from the above options which creates an object."
+    },
+    {
+        "id": "15",
+        "subject": "Python",
+        "module": "Regular_Expression_Files",
+        "question": "Which of the following pattern matching modifiers permits whitespace and comments inside the regular expression?",
+        "options": [
+            {
+                "a": "re.L"
+            },
+            {
+                "b": " re.S"
+            },
+            {
+                "c": " re.U"
+            },
+            {
+                "d": " re.X"
+            }
+        ],
+        "answer": "d",
+        "reason": "The modifier re.X allows whitespace and comments inside the regular expressions."
+    },
+    {
+        "id": "16",
+        "subject": "Python",
+        "module": "Regular_Expression_Files",
+        "question": "What will be the output of the following Python code?",
+        "options": [
+            {
+                "a": " (‘welcome’, ‘home’)"
+            },
+            {
+                "b": " [‘welcome’, ‘home’]"
+            },
+            {
+                "c": " ‘Welcome’, ‘home’"
+            },
+            {
+                "d": "[‘welcome’ // ‘home’ ]"
+            }
+        ],
+        "answer": "c",
+        "reason": "The code shown above shows the function re.match combined with the use of special characters. Hence the output of this code is: welcome home."
+    },
+    {
+        "id": "17",
+        "subject": "Python",
+        "module": "Regular_Expression_Files",
+        "question": "The function of re.match is ____________",
+        "options": [
+            {
+                "a": "Error"
+            },
+            {
+                "b": "Matches a pattern anywhere in the string"
+            },
+            {
+                "c": "Matches a pattern at the end of the string"
+            },
+            {
+                "d": "Matches a pattern at the start of the string"
+            }
+        ],
+        "answer": "d",
+        "reason": "The function of re.match matches a pattern at the start of the string."
+    },
+    {
+        "id": "18",
+        "subject": "Python",
+        "module": "Regular_Expression_Files",
+        "question": "Which of the following special characters matches a pattern only at the end of the string?",
+        "options": [
+            {
+                "a": "\\B"
+            },
+            {
+                "b": "\\X"
+            },
+            {
+                "c": "\\Z"
+            },
+            {
+                "d": "\\Z"
+            }
+        ],
+        "answer": "c",
+        "reason": "\\B matches a pattern which is not at the beginning or end of a string.\\X refers to re.VERBOSE.\\A matches a pattern only at the start of a string.\\Z matches a pattern only at the end of a string."
+    },
+    {
+        "id": "19",
+        "subject": "Python",
+        "module": "Regular_Expression_Files",
+        "question": "Which of the following special characters represents a comment (that is, the contents of the parenthesis are simply ignores)?",
+        "options": [
+            {
+                "a": "(?:…)"
+            },
+            {
+                "b": "(?=…)"
+            },
+            {
+                "c": "(?!…)"
+            },
+            {
+                "d": "(?#…)"
+            }
+        ],
+        "answer": "d",
+        "reason": "The special character (?#…) represent a comment, that is, the contents of the parenthesis are simply ignored."
+    },
+    {
+        "id": "20",
+        "subject": "Python",
+        "module": "Regular_Expression_Files",
+        "question": "Which of the codes shown below results in a match?",
+        "options": [
+            {
+                "a": "re.match(‘George(?=Washington)’, ‘George Washington’)"
+            },
+            {
+                "b": "re.match(‘George(?=Washington)’, ‘George’)"
+            },
+            {
+                "c": "re.match(‘George(?=Washington)’, ‘GeorgeWashington’)"
+            },
+            {
+                "d": "re.match(‘George(?=Washington)’, ‘Georgewashington’)"
+            }
+        ],
+        "answer": "c",
+        "reason": "The code shown above demonstrates the use of the function re.match, along with the special character ?=. This results in a match only when ‘George’ is immediately followed by ‘Washington’. Also, we have not used the module to ignore case. Hence the match is case-sensitive. Therefore the only option which results in a match is:re.match(‘George(?=Washington)’, ‘GeorgeWashington’)"
+    },
+    {
+        "id": "21",
+        "subject": "Python",
+        "module": "Regular_Expression_Files",
+        "question": "In the functions re.search.start(group) and re.search.end(group), if the argument groups not specified, it defaults to __________",
+        "options": [
+            {
+                "a": "Zero"
+            },
+            {
+                "b": "None"
+            },
+            {
+                "c": "One"
+            },
+            {
+                "d": "Error"
+            }
+        ],
+        "answer": "a",
+        "reason": "In the functions re.search.start(group) and re.search.end(group), if the argument groups not specified, it defaults to Zero."
+    },
+    {
+        "id": "22",
+        "subject": "Python",
+        "module": "Regular_Expression_Files",
+        "question": "Which of the following functions returns a dictionary mapping group names to group numbers?",
+        "options": [
+            {
+                "a": "re.compile.group"
+            },
+            {
+                "b": "re.compile.groupindex"
+            },
+            {
+                "c": " re.compile.index"
+            },
+            {
+                "d": "re.compile.indexgroup"
+            }
+        ],
+        "answer": "b",
+        "reason": "The function re.compile.groupindex returns a dictionary mapping group names to group numbers."
+    },
+    {
+        "id": "23",
+        "subject": "Python",
+        "module": "Regular_Expression_Files",
+        "question": "Which of the following statements regarding the output of the function re.match is incorrect?",
+        "options": [
+            {
+                "a": "‘pq*’ will match ‘pq"
+            },
+            {
+                "b": "‘pq?’ matches ‘p’"
+            },
+            {
+                "c": "‘p{4}, q’ does not match ‘pppq’"
+            },
+            {
+                "d": "‘pq+’ matches ‘p’"
+            }
+        ],
+        "answer": "d",
+        "reason": "All of the above statements are correct except that ‘pq+’ match ‘p’. ‘pq+’ will match ‘p’ followed by any non-zero number of q’s, but it will not match ‘p’."
+    },
+    {
+        "id": "24",
+        "subject": "Python",
+        "module": "Regular_Expression_Files",
+        "question": " Which of the following functions does not accept any argument?",
+        "options": [
+            {
+                "a": "re.purge"
+            },
+            {
+                "b": " re.compile"
+            },
+            {
+                "c": "re.findall"
+            },
+            {
+                "d": " re.match"
+            }
+        ],
+        "answer": "a",
+        "reason": "The function re.purge is used to clear the cache and it does not accept any arguments."
+    },
+    {
+        "id": "25",
+        "subject": "Python",
+        "module": "Regular_Expression_Files",
+        "question": " Which of the following lines of code will not show a match?",
+        "options": [
+            {
+                "a": ">>> re.match(‘ab*’, ‘a’)"
+            },
+            {
+                "b": " >>> re.match(‘ab*’, ‘ab’)"
+            },
+            {
+                "c": ">>> re.match(‘ab*’, ‘abb’)"
+            },
+            {
+                "d": ">>> re.match(‘ab*’, ‘ba’)"
+            }
+        ],
+        "answer": "d",
+        "reason": "In the code shown above, ab* will match to ‘a’ or ‘ab’ or ‘a’ followed by any number of b’s. Hence the only line of code from the above options which does not result in a match is:>>> re.match(‘ab*’, ‘ba’)."
+    },
+    {
+        "id": "26",
+        "subject": "Python",
+        "module": "Regular_Expression_Files",
+        "question": "To open a file c:\\scores.txt for reading, we use _____________",
+        "options": [
+            {
+                "a": "infile = open(“c:\\scores.txt”, “r”)"
+            },
+            {
+                "b": " infile = open(“c:\\scores.txt”, “r”"
+            },
+            {
+                "c": "infile = open(file = “c:\\scores.txt”, “r”)"
+            },
+            {
+                "d": " infile = open(file = “c:\\scores.txt”, “r”)"
+            }
+        ],
+        "answer": "b",
+        "reason": "Execute help(open) to get more details"
+    },
+    {
+        "id": "27",
+        "subject": "Python",
+        "module": "Regular_Expression_Files",
+        "question": "To open a file c:\\scores.txt for writing, we use ____________",
+        "options": [
+            {
+                "a": "outfile = open(“c:\\scores.txt”, “w”)"
+            },
+            {
+                "b": "outfile = open(“c:\\scores.txt”, “w”)"
+            },
+            {
+                "c": "outfile = open(file = “c:\\scores.txt”, “w”)"
+            },
+            {
+                "d": "outfile = open(file = “c:\\scores.txt”, “w”)"
+            }
+        ],
+        "answer": "b",
+        "reason": "w is used to indicate that file is to be written to."
+    },
+    {
+        "id": "28",
+        "subject": "Python",
+        "module": "Regular_Expression_Files",
+        "question": "To open a file c:\\scores.txt for appending data, we use ____________",
+        "options": [
+            {
+                "a": "outfile = open(“c:\\scores.txt”, “a”)"
+            },
+            {
+                "b": "outfile = open(“c:\\scores.txt”, “rw”)"
+            },
+            {
+                "c": "outfile = open(file = “c:\\scores.txt”, “w”)"
+            },
+            {
+                "d": "outfile = open(file = “c:\\scores.txt”, “w”)"
+            }
+        ],
+        "answer": "a",
+        "reason": "a is used to indicate that data is to be appended."
+    },
+    {
+        "id": "29",
+        "subject": "Python",
+        "module": "Regular_Expression_Files",
+        "question": "Which of the following statements are true?",
+        "options": [
+            {
+                "a": "When you open a file for reading, if the file does not exist, an error occurs"
+            },
+            {
+                "b": " When you open a file for writing, if the file does not exist, a new file is created"
+            },
+            {
+                "c": "When you open a file for writing, if the file exists, the existing file is overwritten with the new fil"
+            },
+            {
+                "d": "All of the mentioned"
+            }
+        ],
+        "answer": "d",
+        "reason": "The program will throw an error."
+    },
+    {
+        "id": "30",
+        "subject": "Python",
+        "module": "Regular_Expression_Files",
+        "question": "To read two characters from a file object infile, we use ____________",
+        "options": [
+            {
+                "a": "infile.read(2)"
+            },
+            {
+                "b": "infile.read()"
+            },
+            {
+                "c": "infile.readline()"
+            },
+            {
+                "d": "infile.readlines()"
+            }
+        ],
+        "answer": "a",
+        "reason": " Execute in the shell to verify."
+    },
+    {
+        "id": "31",
+        "subject": "Python",
+        "module": "Regular_Expression_Files",
+        "question": "To read the entire remaining contents of the file as a string from a file object infile, we use ____________",
+        "options": [
+            {
+                "a": "infile.read(2)"
+            },
+            {
+                "b": "infile.read()"
+            },
+            {
+                "c": "infile.readline()"
+            },
+            {
+                "d": "infile.readlines()"
+            }
+        ],
+        "answer": "b",
+        "reason": "read function is used to read all the lines in a file."
+    },
+    {
+        "id": "32",
+        "subject": "Python",
+        "module": "Regular_Expression_Files",
+        "question": "To read the next line of the file from a file object infile, we use ____________",
+        "options": [
+            {
+                "a": "infile.read(2)"
+            },
+            {
+                "b": "infile.read()"
+            },
+            {
+                "c": "infile.readline()"
+            },
+            {
+                "d": "infile.readlines()"
+            }
+        ],
+        "answer": "c",
+        "reason": "Execute in the shell to verify."
+    },
+    {
+        "id": "33",
+        "subject": "Python",
+        "module": "Regular_Expression_Files",
+        "question": " To read the remaining lines of the file from a file object infile, we use ____________",
+        "options": [
+            {
+                "a": "infile.read(2)"
+            },
+            {
+                "b": "infile.read()"
+            },
+            {
+                "c": "infile.readline()"
+            },
+            {
+                "d": "infile.readlines()"
+            }
+        ],
+        "answer": "d",
+        "reason": " Execute in the shell to verify."
+    },
+    {
+        "id": "34",
+        "subject": "Python",
+        "module": "Regular_Expression_Files",
+        "question": "The readlines() method returns ____________",
+        "options": [
+            {
+                "a": "str"
+            },
+            {
+                "b": " a list of lines"
+            },
+            {
+                "c": "a list of single characters"
+            },
+            {
+                "d": " a list of integers"
+            }
+        ],
+        "answer": "b",
+        "reason": "Every line is stored in a list and returned."
+    },
+    {
+        "id": "35",
+        "subject": "Python",
+        "module": "Regular_Expression_Files",
+        "question": "Which are the two built-in functions to read a line of text from standard input, which by default comes from the keyboard?",
+        "options": [
+            {
+                "a": "Raw_input & Input"
+            },
+            {
+                "b": "Input & Scan"
+            },
+            {
+                "c": "Scan & Scanner"
+            },
+            {
+                "d": "Scanner"
+            }
+        ],
+        "answer": "a",
+        "reason": "Python provides two built-in functions to read a line of text from standard input, which by default comes from the keyboard. These functions are:raw_input and input"
+    },         
+    {
+        "id": "37",
+        "subject": "Python",
+        "module": "Regular_Expression_Files",
+        "question": "What is the use of tell() method in python?",
+        "options": [
+            {
+                "a": "tells you the current position within the file"
+            },
+            {
+                "b": "tells you the end position within the file"
+            },
+            {
+                "c": "tells you the file is opened or not"
+            },
+            {
+                "d": "none of the mentioned"
+            }
+        ],
+        "answer": "a",
+        "reason": "The tell() method tells you the current position within the file; in other words, the next read or write will occur at that many bytes from the beginning of the file."
+    },
+    {
+        "id": "38",
+        "subject": "Python",
+        "module": "Regular_Expression_Files",
+        "question": " What is the current syntax of rename() a file?",
+        "options": [
+            {
+                "a": "rename(current_file_name, new_file_name)"
+            },
+            {
+                "b": "rename(new_file_name, current_file_name,)"
+            },
+            {
+                "c": " rename(()(current_file_name, new_file_name))"
+            },
+            {
+                "d": "none of the mentioned"
+            }
+        ],
+        "answer": "a",
+        "reason": "This is the correct syntax which has shown below.Rename(current_file_name, new_file_name)"
+    },
+    {
+        "id": "39",
+        "subject": "Python",
+        "module": "Regular_Expression_Files",
+        "question": "What is the current syntax of remove() a file?",
+        "options": [
+            {
+                "a": "remove(file_name)"
+            },
+            {
+                "b": "remove(new_file_name, current_file_name,)"
+            },
+            {
+                "c": "remove(() , file_name))"
+            },
+            {
+                "d": "none of the mentioned"
+            }
+        ],
+        "answer": "a",
+        "reason": "remove(file_name)"
+    },
+    {
+        "id": "40",
+        "subject": "Python",
+        "module": "Regular_Expression_Files",
+        "question": "What is the use of seek() method in files?",
+        "options": [
+            {
+                "a": "sets the file’s current position at the offset"
+            },
+            {
+                "b": "sets the file’s previous position at the offset"
+            },
+            {
+                "c": "sets the file’s current position within the file"
+            },
+            {
+                "d": "none of the mentioned"
+            }
+        ],
+        "answer": "a",
+        "reason": "Sets the file’s current position at the offset. The method seek() sets the file’s current position at the offset.Following is the syntax for seek() method:fileObject.seek(offset[, whence])"
+    },
+    {
+        "id": "41",
+        "subject": "Python",
+        "module": "Regular_Expression_Files",
+        "question": "What is the use of truncate() method in file?",
+        "options": [
+            {
+                "a": "truncates the file size"
+            },
+            {
+                "b": "deletes the content of the file"
+            },
+            {
+                "c": " deletes the file size"
+            },
+            {
+                "d": "none of the mentioned"
+            }
+        ],
+        "answer": "a",
+        "reason": "The method truncate() truncates the file size. Following is the syntax for truncate() method:fileObject.truncate( [ size ])Parameters size — If this optional argument is present, the file is truncated to (at most) that size."
+    },
+    {
+        "id": "42",
+        "subject": "Python",
+        "module": "Regular_Expression_Files",
+        "question": "Which is/are the basic I/O connections in file?",
+        "options": [
+            {
+                "a": "Standard Input"
+            },
+            {
+                "b": "Standard Output"
+            },
+            {
+                "c": "Standard Error"
+            },
+            {
+                "d": "All of the mentioned"
+            }
+        ],
+        "answer": "d",
+        "reason": "Standard input, standard output and standard error. Standard input is the data that goes to the program. The standard input comes from a keyboard. Standard output is where we print our data with the print keyword. Unless redirected, it is the terminal console. The standard error is a stream where programs write their error messages. It is usually the text terminal."
+    },
+    {
+        "id": "44",
+        "subject": "Python",
+        "module": "Regular_Expression_Files",
+        "question": "What is the pickling?",
+        "options": [
+            {
+                "a": "It is used for object serialization"
+            },
+            {
+                "b": "It is used for object deserialization"
+            },
+            {
+                "c": "None of the mentioned"
+            },
+            {
+                "d": " All of the mentioned"
+            }
+        ],
+        "answer": "a",
+        "reason": " Pickle is the standard mechanism for object serialization. Pickle uses a simple stack-based virtual machine that records the instructions used to reconstruct the object. This makes pickle vulnerable to security risks by malformed or maliciously constructed data, that may cause the deserializer to import arbitrary modules and instantiate any object."
+    },
+    {
+        "id": "49",
+        "subject": "Python",
+        "module": "Regular_Expression_Files",
+        "question": "What is the use of “w” in file handling?",
+        "options": [
+            {
+                "a": "Read"
+            },
+            {
+                "b": "Write"
+            },
+            {
+                "c": "Append"
+            },
+            {
+                "d": "None of the mentioned"
+            }
+        ],
+        "answer": "b",
+        "reason": "This opens the file for writing. It will create the file if it doesn’t exist, and if it does, it will overwrite it.fh = open(“filename_here”, “w”)."
+    },
+    {
+        "id": "50",
+        "subject": "Python",
+        "module": "Regular_Expression_Files",
+        "question": " In file handling, what does this terms means “r, a”?",
+        "options": [
+            {
+                "a": "read, append"
+            },
+            {
+                "b": "append, read"
+            },
+            {
+                "c": " write, append"
+            },
+            {
+                "d": "none of the mentioned"
+            }
+        ],
+        "answer": "a",
+        "reason": "r- reading, a-appending."
+    }
+    ]
+
+}

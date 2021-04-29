@@ -16,11 +16,9 @@ class User(db.Model, UserMixin):
     email = db.Column(db.String(120), unique=True, nullable=False)
     image_file = db.Column(db.String(20), nullable=False, default='default.png')
     password = db.Column(db.String(60), nullable=False)
-    hackos = db.Column(db.Integer, default=20)
     phoneno = db.Column(db.String(20), default='None')
     address = db.Column(db.String(255), default='None')
     gender = db.Column(db.String(6), nullable=False)
-    badge = db.Column(db.String(20), default='Novice')
     created = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
 
     def get_reset_token(self, expires_sec = 600):

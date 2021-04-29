@@ -53,12 +53,12 @@
 <h2>Java Quiz</h2>
 <p class="lead">You can test your Java skills with Web Academy Quiz.</p>
 <ul class="list-group">
-  <li class="list-group-item list-group-item-action">Data Types, Variables & Arrays<a href="{{ url_for('tests.question', page='Data_Types_Variables_Arrays', subject='java-question')}}" class="float-right btn btn-outline-success">Take a test<i class="bi bi-journals ml-1"></i></a></li>
-  <li class="list-group-item list-group-item-action">A second item<a href="{{ url_for('tests.question', page='None', subject='java-question') }}" class="float-right btn btn-outline-success">Take a test<i class="bi bi-journals ml-1"></i></a></li>
-  <li class="list-group-item list-group-item-action">A third button item<a href="{{ url_for('tests.question', page='None', subject='java-question') }}" class="float-right btn btn-outline-success">Take a test<i class="bi bi-journals ml-1"></i></a></li>
-  <li class="list-group-item list-group-item-action">Exception<a href="{{ url_for('tests.question', page='Exception', subject='java-question') }}" class="float-right btn btn-outline-success">Take a test<i class="bi bi-journals ml-1"></i></a></li>
-  <li class="list-group-item list-group-item-action">A disabled button item<a href="{{ url_for('tests.question', page='None', subject='java-question') }}" class="float-right btn btn-outline-success">Take a test<i class="bi bi-journals ml-1"></i></a></li>
-  <li class="list-group-item list-group-item-action">Threads<a href="{{ url_for('tests.question', page='Threads', subject='java-question') }}" class="float-right btn btn-outline-success">Take a test<i class="bi bi-journals ml-1"></i></a></li>
+  <li class="list-group-item list-group-item-action">Data Types, Variables & Arrays<a href="{{ url_for('tests.question', module='Data_Types_Variables_Arrays', subject='java-question')}}" class="float-right btn btn-outline-success">Take a test<i class="bi bi-journals ml-1"></i></a></li>
+  <li class="list-group-item list-group-item-action">Operators & Control Statements<a href="{{ url_for('tests.question', module='Operators_Control_Statements', subject='java-question') }}" class="float-right btn btn-outline-success">Take a test<i class="bi bi-journals ml-1"></i></a></li>
+  <li class="list-group-item list-group-item-action">Classes & Methods<a href="{{ url_for('tests.question', module='Classes_Methods', subject='java-question') }}" class="float-right btn btn-outline-success">Take a test<i class="bi bi-journals ml-1"></i></a></li>
+  <li class="list-group-item list-group-item-action">Exception<a href="{{ url_for('tests.question', module='Exception', subject='java-question') }}" class="float-right btn btn-outline-success">Take a test<i class="bi bi-journals ml-1"></i></a></li>
+  <li class="list-group-item list-group-item-action">A disabled button item<a href="{{ url_for('tests.question', module='None', subject='java-question') }}" class="float-right btn btn-outline-success">Take a test<i class="bi bi-journals ml-1"></i></a></li>
+  <li class="list-group-item list-group-item-action">Threads<a href="{{ url_for('tests.question', module='Threads', subject='java-question') }}" class="float-right btn btn-outline-success">Take a test<i class="bi bi-journals ml-1"></i></a></li>
 </ul>
 
 {% endblock %}

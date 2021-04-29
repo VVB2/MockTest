@@ -1,0 +1,900 @@
+{
+  "quiz": [
+    {
+      "id": "1",
+      "subject": "JAVA",
+      "module": "Operators_Control_Statements",
+      "question": "Which of the following can be operands of arithmetic operators?",
+      "options": [
+        {
+          "a": "Numeric"
+        },
+        {
+          "b": "Boolean"
+        },
+        {
+          "c": "Characters"
+        },
+        {
+          "d": "Both Numeric & Characters"
+        }
+      ],
+      "answer": "d",
+      "reason": "The operand of arithmetic operators can be any of numeric or character type, But not boolean."
+    },
+    {
+      "id": "2",
+      "subject": "JAVA",
+      "module": "Operators_Control_Statements",
+      "question": "Modulus operator, %, can be applied to which of these?",
+      "options": [
+        {
+          "a": " Integers"
+        },
+        {
+          "b": "Floating – point numbers"
+        },
+        {
+          "c": "Both Integers and floating – point numbers"
+        },
+        {
+          "d": " None of the mentioned"
+        }
+      ],
+      "answer": "c",
+      "reason": "Modulus operator can be applied to both integers and floating point numbers."
+    },
+    {
+      "id": "3",
+      "subject": "JAVA",
+      "module": "Operators_Control_Statements",
+      "question": "With x = 0, which of the following are legal lines of Java code for changing the value of x to 1? \n1. x++;\n2. x = x + 1;\n3. x += 1;\n4. x =+ 1;",
+      "options": [
+        {
+          "a": " 1, 2 & 3"
+        },
+        {
+          "b": "1 & 4"
+        },
+        {
+          "c": "1, 2, 3 & 4"
+        },
+        {
+          "d": "3 & 2"
+        }
+      ],
+      "answer": "c",
+      "reason": "Operator ++ increases value of variable by 1. x = x + 1 can also be written in shorthand form as x += 1. Also x =+ 1 will set the value of x to 1."
+    },
+    {
+      "id": "4",
+      "subject": "JAVA",
+      "module": "Operators_Control_Statements",
+      "question": "Decrement operator, −−, decreases the value of variable by what number?",
+      "options": [
+        {
+          "a": " 1"
+        },
+        {
+          "b": "2"
+        },
+        {
+          "c": "3"
+        },
+        {
+          "d": "4"
+        }
+      ],
+      "answer": "a",
+      "reason": "None"
+    },
+    {
+      "id": "5",
+      "subject": "JAVA",
+      "module": "Operators_Control_Statements",
+      "question": "Which of these statements are incorrect?",
+      "options": [
+        {
+          "a": " Assignment operators are more efficiently implemented by Java run-time system than their equivalent long forms"
+        },
+        {
+          "b": "Assignment operators run faster than their equivalent long forms"
+        },
+        {
+          "c": "Assignment operators can be used only with numeric and character data type"
+        },
+        {
+          "d": "None of the mentioned"
+        }
+      ],
+      "answer": "d",
+      "reason": "None"
+    },
+    {
+      "id": "6",
+      "subject": "JAVA",
+      "module": "Operators_Control_Statements",
+      "question": "Which of these is not a bitwise operator?",
+      "options": [
+        {
+          "a": " &"
+        },
+        {
+          "b": "&="
+        },
+        {
+          "c": "|="
+        },
+        {
+          "d": "<="
+        }
+      ],
+      "answer": "d",
+      "reason": "<= is a relational operator."
+    },
+    {
+      "id": "7",
+      "subject": "JAVA",
+      "module": "Operators_Control_Statements",
+      "question": "Which operator is used to invert all the digits in a binary representation of a number?",
+      "options": [
+        {
+          "a": " ~"
+        },
+        {
+          "b": "<<<"
+        },
+        {
+          "c": ">>>"
+        },
+        {
+          "d": "^"
+        }
+      ],
+      "answer": "a",
+      "reason": "Unary not operator, ~, inverts all of the bits of its operand in binary representation."
+    },
+    {
+      "id": "8",
+      "subject": "JAVA",
+      "module": "Operators_Control_Statements",
+      "question": "On applying Left shift operator, <<, on integer bits are lost one they are shifted past which position bit?",
+      "options": [
+        {
+          "a": " 1"
+        },
+        {
+          "b": "32"
+        },
+        {
+          "c": "33"
+        },
+        {
+          "d": "31"
+        }
+      ],
+      "answer": "d",
+      "reason": "The left shift operator shifts all of the bits in a value to the left specified number of times. For each shift left, the high order bit is shifted out and lost, zero is brought in from the right. When a left shift is applied to an integer operand, bits are lost once they are shifted past the bit position 31."
+    },
+    {
+      "id": "9",
+      "subject": "JAVA",
+      "module": "Operators_Control_Statements",
+      "question": "Which right shift operator preserves the sign of the value?",
+      "options": [
+        {
+          "a": "  <<"
+        },
+        {
+          "b": " >>"
+        },
+        {
+          "c": " <<="
+        },
+        {
+          "d": ">>="
+        }
+      ],
+      "answer": "b",
+      "reason": "None"
+    },
+    {
+      "id": "10",
+      "subject": "JAVA",
+      "module": "Operators_Control_Statements",
+      "question": " Which of these statements are incorrect?",
+      "options": [
+        {
+          "a": "The left shift operator, <<, shifts all of the bits in a value to the left specified number of times"
+        },
+        {
+          "b": "The right shift operator, >>, shifts all of the bits in a value to the right specified number of times"
+        },
+        {
+          "c": "The left shift operator can be used as an alternative to multiplying by 2"
+        },
+        {
+          "d": "The right shift operator automatically fills the higher order bits with 0"
+        }
+      ],
+      "answer": "d",
+      "reason": "The right shift operator automatically fills the higher order bit with its previous contents each time a shift occurs. This also preserves the sign of the value."
+    },
+    {
+      "id": "11",
+      "subject": "JAVA",
+      "module": "Operators_Control_Statements",
+      "question": " What is the output of relational operators?",
+      "options": [
+        {
+          "a": " Integer"
+        },
+        {
+          "b": "Boolean"
+        },
+        {
+          "c": "Characters"
+        },
+        {
+          "d": "Double"
+        }
+      ],
+      "answer": "b",
+      "reason": "None"
+    },
+    {
+      "id": "12",
+      "subject": "JAVA",
+      "module": "Operators_Control_Statements",
+      "question": "Which of these is returned by “greater than”, “less than” and “equal to” operators?",
+      "options": [
+        {
+          "a": " Integers"
+        },
+        {
+          "b": "Floating – point numbers"
+        },
+        {
+          "c": "Boolean"
+        },
+        {
+          "d": "None of the mentioned"
+        }
+      ],
+      "answer": "c",
+      "reason": "All relational operators return a boolean value ie. true and false."
+    },
+    {
+      "id": "13",
+      "subject": "JAVA",
+      "module": "Operators_Control_Statements",
+      "question": "Which of the following operators can operate on a boolean variable?\n1. &&\n2. ==\n3. ?:\n4. +=",
+      "options": [
+        {
+          "a": "  3 & 2"
+        },
+        {
+          "b": "1 & 4"
+        },
+        {
+          "c": " 1, 2 & 4"
+        },
+        {
+          "d": "1, 2 & 3"
+        }
+      ],
+      "answer": "d",
+      "reason": " Operator Short circuit AND, &&, equal to, == , ternary if-then-else, ?:, are boolean logical operators. += is an arithmetic operator it can operate only on numeric values."
+    },
+    {
+      "id": "14",
+      "subject": "JAVA",
+      "module": "Operators_Control_Statements",
+      "question": "Which of these operators can skip evaluating right hand operand?",
+      "options": [
+        {
+          "a": " !"
+        },
+        {
+          "b": "|"
+        },
+        {
+          "c": "&"
+        },
+        {
+          "d": "&&"
+        }
+      ],
+      "answer": "d",
+      "reason": "Operator short circuit and, &&, and short circuit or, ||, skip evaluating right hand operand when output can be determined by left operand alone."
+    },
+    {
+      "id": "15",
+      "subject": "JAVA",
+      "module": "Operators_Control_Statements",
+      "question": "Which of these statements is correct?",
+      "options": [
+        {
+          "a": " true and false are numeric values 1 and 0"
+        },
+        {
+          "b": "true and false are numeric values 0 and 1"
+        },
+        {
+          "c": "true is any non zero value and false is 0"
+        },
+        {
+          "d": "true and false are non numeric values"
+        }
+      ],
+      "answer": "d",
+      "reason": "True and false are keywords, they are non numeric values which do not relate to zero or non zero numbers. true and false are boolean values."
+    },
+    {
+      "id": "16",
+      "subject": "JAVA",
+      "module": "Operators_Control_Statements",
+      "question": "Which of these have highest precedence?",
+      "options": [
+        {
+          "a": "  ()"
+        },
+        {
+          "b": "++"
+        },
+        {
+          "c": "*"
+        },
+        {
+          "d": ">>"
+        }
+      ],
+      "answer": "a",
+      "reason": "Order of precedence is (highest to lowest) a -> b -> c -> d."
+    },
+    {
+      "id": "17",
+      "subject": "JAVA",
+      "module": "Operators_Control_Statements",
+      "question": "What should be expression1 evaluate to in using ternary operator as in this line?expression1 ?  expression2  :  expression3",
+      "options": [
+        {
+          "a": " Integer"
+        },
+        {
+          "b": " Floating – point numbers"
+        },
+        {
+          "c": " Boolean"
+        },
+        {
+          "d": "None of the mentioned"
+        }
+      ],
+      "answer": "c",
+      "reason": "The controlling condition of ternary operator must evaluate to boolean."
+    },
+    {
+      "id": "18",
+      "subject": "JAVA",
+      "module": "Operators_Control_Statements",
+      "question": "What is the value stored in x in the following lines of Java code?\nint x, y, z;\nx = 0;\ny = 1;\nx = y = z = 8;",
+      "options": [
+        {
+          "a": " 0"
+        },
+        {
+          "b": "1"
+        },
+        {
+          "c": "9"
+        },
+        {
+          "d": "8"
+        }
+      ],
+      "answer": "d",
+      "reason": "None"
+    },
+    {
+      "id": "19",
+      "subject": "JAVA",
+      "module": "Operators_Control_Statements",
+      "question": "What is the order of precedence (highest to lowest) of following operators?\n1.&    \n2.^\n3.?:",
+      "options": [
+        {
+          "a": " 1 -> 2 -> 3"
+        },
+        {
+          "b": " 2 -> 1 -> 3"
+        },
+        {
+          "c": "3 -> 2 -> 1"
+        },
+        {
+          "d": " 2 -> 3 -> 1"
+        }
+      ],
+      "answer": "a",
+      "reason": "None"
+    },
+    {
+      "id": "20",
+      "subject": "JAVA",
+      "module": "Operators_Control_Statements",
+      "question": " Which of these statements are incorrect?",
+      "options": [
+        {
+          "a": "Equal to operator has least precedence"
+        },
+        {
+          "b": "Brackets () have highest precedence"
+        },
+        {
+          "c": "Division operator, /, has higher precedence than multiplication operator"
+        },
+        {
+          "d": "Addition operator, +, and subtraction operator have equal precedence"
+        }
+      ],
+      "answer": "c",
+      "reason": " Division operator, /, has equal precedence as of multiplication operator. In expression involving multiplication and division evaluation of expression will begin from the right side when no brackets are used."
+    },
+    {
+      "id": "21",
+      "subject": "JAVA",
+      "module": "Operators_Control_Statements",
+      "question": "Which of these lines of Java code will give better performance?\n1. a | 4 + c >> b & 7;\n2. (a | ((( 4 * c ) >> b ) & 7 ))",
+      "options": [
+        {
+          "a": " 1 will give better performance as it has no parentheses"
+        },
+        {
+          "b": "2 will give better performance as it has parentheses"
+        },
+        {
+          "c": "Both 1 & 2 will give equal performance"
+        },
+        {
+          "d": "Dependent on the computer system"
+        }
+      ],
+      "answer": "c",
+      "reason": "Parentheses do not degrade the performance of the program. Adding parentheses to reduce ambiguity does not negatively affect your system."
+    },
+    {
+      "id": "22",
+      "subject": "JAVA",
+      "module": "Operators_Control_Statements",
+      "question": "Which of these selection statements test only for equality?",
+      "options": [
+        {
+          "a": "if"
+        },
+        {
+          "b": " switch"
+        },
+        {
+          "c": " if & switch"
+        },
+        {
+          "d": "none of the mentioned"
+        }
+      ],
+      "answer": "b",
+      "reason": "Switch statements checks for equality between the controlling variable and its constant cases."
+    },
+    {
+      "id": "23",
+      "subject": "JAVA",
+      "module": "Operators_Control_Statements",
+      "question": " Which of these are selection statements in Java?",
+      "options": [
+        {
+          "a": "if()"
+        },
+        {
+          "b": " for()"
+        },
+        {
+          "c": " continue"
+        },
+        {
+          "d": "break"
+        }
+      ],
+      "answer": "a",
+      "reason": "Continue and break are jump statements, and for is a looping statement."
+    },
+    {
+      "id": "24",
+      "subject": "JAVA",
+      "module": "Operators_Control_Statements",
+      "question": "Which of the following loops will execute the body of loop even when condition controlling the loop is initially false?",
+      "options": [
+        {
+          "a": "do-while"
+        },
+        {
+          "b": "  while"
+        },
+        {
+          "c": "for"
+        },
+        {
+          "d": "none of the mentioned"
+        }
+      ],
+      "answer": "a",
+      "reason": "None"
+    },
+    {
+      "id": "25",
+      "subject": "JAVA",
+      "module": "Operators_Control_Statements",
+      "question": "Which of these jump statements can skip processing the remainder of the code in its body for a particular iteration?",
+      "options": [
+        {
+          "a": "break"
+        },
+        {
+          "b": " return"
+        },
+        {
+          "c": "exit"
+        },
+        {
+          "d": "continue"
+        }
+      ],
+      "answer": "d",
+      "reason": "None"
+    },
+    {
+      "id": "26",
+      "subject": "JAVA",
+      "module": "Operators_Control_Statements",
+      "question": "The while loop repeats a set of code while the condition is not met?",
+      "options": [
+        {
+          "a": "True"
+        },
+        {
+          "b": "False"
+        }
+      ],
+      "answer": "b",
+      "reason": "While loop repeats a set of code only until the condition is met."
+    },
+    {
+      "id": "27",
+      "subject": "JAVA",
+      "module": "Operators_Control_Statements",
+      "question": "What is true about a break?",
+      "options": [
+        {
+          "a": " Break stops the execution of entire program"
+        },
+        {
+          "b": "Break halts the execution and forces the control out of the loop"
+        },
+        {
+          "c": "Break forces the control out of the loop and starts the execution of next iteration"
+        },
+        {
+          "d": "Break halts the execution of the loop for certain time frame"
+        }
+      ],
+      "answer": "b",
+      "reason": " Break halts the execution and forces the control out of the loop."
+    },
+    {
+      "id": "28",
+      "subject": "JAVA",
+      "module": "Operators_Control_Statements",
+      "question": "What is true about do statement?",
+      "options": [
+        {
+          "a": " do statement executes the code of a loop at least once"
+        },
+        {
+          "b": "do statement does not get execute if condition is not matched in the first iteration"
+        },
+        {
+          "c": "do statement checks the condition at the beginning of the loop"
+        },
+        {
+          "d": "do statement executes the code more than once always"
+        }
+      ],
+      "answer": "a",
+      "reason": "Do statement checks the condition at the end of the loop. Hence, code gets executed at least once."
+    },
+    {
+      "id": "29",
+      "subject": "JAVA",
+      "module": "Operators_Control_Statements",
+      "question": "Which of the following is used with the switch statement?",
+      "options": [
+        {
+          "a": "Continue"
+        },
+        {
+          "b": "Exit"
+        },
+        {
+          "c": "break"
+        },
+        {
+          "d": "do"
+        }
+      ],
+      "answer": "c",
+      "reason": "Break is used with a switch statement to shift control out of switch."
+    },
+    {
+      "id": "30",
+      "subject": "JAVA",
+      "module": "Operators_Control_Statements",
+      "question": " Which of the following is not a decision making statement?",
+      "options": [
+        {
+          "a": "if"
+        },
+        {
+          "b": " if-else"
+        },
+        {
+          "c": "switch"
+        },
+        {
+          "d": "do-while"
+        }
+      ],
+      "answer": "d",
+      "reason": "do-while is an iteration statement. Others are decision making statements."
+    },
+    {
+      "id": "31",
+      "subject": "JAVA",
+      "module": "Operators_Control_Statements",
+      "question": " Which of the following is not a valid jump statement?",
+      "options": [
+        {
+          "a": "break"
+        },
+        {
+          "b": " goto"
+        },
+        {
+          "c": "continue"
+        },
+        {
+          "d": "return"
+        }
+      ],
+      "answer": "b",
+      "reason": "break, continue and return transfer control to another part of the program and returns back to caller after execution. However, goto is marked as not used in Java."
+    },
+    {
+      "id": "32",
+      "subject": "JAVA",
+      "module": "Operators_Control_Statements",
+      "question": "From where break statement causes an exit?",
+      "options": [
+        {
+          "a": "Only from innermost loop"
+        },
+        {
+          "b": "Terminates a program"
+        },
+        {
+          "c": "Only from innermost switch"
+        },
+        {
+          "d": "From innermost loops or switches"
+        }
+      ],
+      "answer": "d",
+      "reason": "The break statement causes an exit from innermost loop or switch."
+    },
+    {
+      "id": "33",
+      "subject": "JAVA",
+      "module": "Operators_Control_Statements",
+      "question": "Which of the following is not a valid flow control statement?",
+      "options": [
+        {
+          "a": " exit()"
+        },
+        {
+          "b": "break"
+        },
+        {
+          "c": " continue"
+        },
+        {
+          "d": "return"
+        }
+      ],
+      "answer": "a",
+      "reason": "exit() is not a flow control statement in Java. exit() terminates the currently running JVM."
+    },
+    {
+      "id": "34",
+      "subject": "JAVA",
+      "module": "Operators_Control_Statements",
+      "question": "An IF-ELSE statement is also called ___.",
+      "options": [
+        {
+          "a": "Branching statement"
+        },
+        {
+          "b": "  Control statement"
+        },
+        {
+          "c": "Block statements"
+        },
+        {
+          "d": "All"
+        }
+      ],
+      "answer": "d",
+      "reason": "Block statements are those that are usually surrounded by Braces { and }. So, a WHILE statement is also called a Block statement."
+    },
+    {
+      "id": "35",
+      "subject": "JAVA",
+      "module": "Operators_Control_Statements",
+      "question": "An IF or ELSE IF statement accepts ___ as input before branching.",
+      "options": [
+        {
+          "a": "boolean"
+        },
+        {
+          "b": " int"
+        },
+        {
+          "c": "float"
+        },
+        {
+          "d": "char"
+        }
+      ],
+      "answer": "a",
+      "reason": "None"
+    },
+    {
+      "id": "36",
+      "subject": "JAVA",
+      "module": "Operators_Control_Statements",
+      "question": "An IF statement in Java is also a ___ statement.",
+      "options": [
+        {
+          "a": "boolean"
+        },
+        {
+          "b": " conditional"
+        },
+        {
+          "c": "iterative"
+        },
+        {
+          "d": "optional"
+        }
+      ],
+      "answer": "b",
+      "reason": "None"
+    },
+    {
+      "id": "37",
+      "subject": "JAVA",
+      "module": "Operators_Control_Statements",
+      "question": "The condition of an IF statement evaluates to boolean only if the expression contains?",
+      "options": [
+        {
+          "a": " logical operators"
+        },
+        {
+          "b": "  relational operators"
+        },
+        {
+          "c": " boolean operands"
+        },
+        {
+          "d": "All of the above"
+        }
+      ],
+      "answer": "d",
+      "reason": "None"
+    },
+    {
+      "id": "38",
+      "subject": "JAVA",
+      "module": "Operators_Control_Statements",
+      "question": "If the condition of an IF-statement is false, which is true below.",
+      "options": [
+        {
+          "a": "IF block is executed."
+        },
+        {
+          "b": " ELSE block is executed."
+        },
+        {
+          "c": "Both IF and ELSE blocks are skipped."
+        },
+        {
+          "d": "Both IF and ELSE blocks are executed."
+        }
+      ],
+      "answer": "b",
+      "reason": "If the condition is TRUE, IF-block is executed. Otherwise, ELSE-block is executed."
+    },
+    {
+      "id": "39",
+      "subject": "JAVA",
+      "module": "Operators_Control_Statements",
+      "question": "What is maximum lines of code that can be written inside a Java style IF, ELSE or IF-ELSE block?",
+      "options": [
+        {
+          "a": "32"
+        },
+        {
+          "b": " 64"
+        },
+        {
+          "c": "512"
+        },
+        {
+          "d": "None"
+        }
+      ],
+      "answer": "d",
+      "reason": "There is no such limit on the number of lines of code in any block or statement in Java."
+    },
+    {
+      "id": "40",
+      "subject": "JAVA",
+      "module": "Operators_Control_Statements",
+      "question": " The condition of an IF statement evaluates to boolean only if the expression contains?",
+      "options": [
+        {
+          "a": " logical operators"
+        },
+        {
+          "b": " relational operators"
+        },
+        {
+          "c": "boolean operands"
+        },
+        {
+          "d": "All"
+        }
+      ],
+      "answer": "d",
+      "reason": "None"
+    },
+    {
+      "id": "41",
+      "subject": "JAVA",
+      "module": "Operators_Control_Statements",
+      "question": "Which of this statement is incorrect?",
+      "options": [
+        {
+          "a": " switch statement is more efficient than a set of nested ifs"
+        },
+        {
+          "b": "two case constants in the same switch can have identical values"
+        },
+        {
+          "c": "switch statement can only test for equality, whereas if statement can evaluate any type of boolean expression"
+        },
+        {
+          "d": " it is possible to create a nested switch statements"
+        }
+      ],
+      "answer": "b",
+      "reason": "No two case constants in the same switch can have identical values."
+    }
+  ]
+}

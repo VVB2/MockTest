@@ -3,7 +3,7 @@
     {
       "id": "1",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "Is Python case sensitive when dealing with identifiers?",
       "options": [
         {
@@ -25,7 +25,7 @@
     {
       "id": "2",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "What is the maximum possible length of an identifier?",
       "options": [
         {
@@ -47,7 +47,7 @@
     {
       "id": "3",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "Which of the following is invalid?",
       "options": [
         {
@@ -69,7 +69,7 @@
     {
       "id": "4",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "Which of the following is an invalid variable?",
       "options": [
         {
@@ -91,7 +91,7 @@
     {
       "id": "5",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "Why are local variable names beginning with an underscore discouraged?",
       "options": [
         {
@@ -113,7 +113,7 @@
     {
       "id": "6",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "Which of the following is not a keyword?",
       "options": [
         {
@@ -135,7 +135,7 @@
     {
       "id": "7",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "All keywords in Python are in _________",
       "options": [
         {
@@ -157,7 +157,7 @@
     {
       "id": "8",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "Which of the following is true for variable names in Python?",
       "options": [
         {
@@ -179,7 +179,7 @@
     {
       "id": "9",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "Which of the following is an invalid statement?",
       "options": [
         {
@@ -201,7 +201,7 @@
     {
       "id": "10",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "Which of the following cannot be a variable? ",
       "options": [
         {
@@ -223,7 +223,7 @@
     {
       "id": "11",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "Which is the correct operator for power(xy)?",
       "options": [
         {
@@ -245,7 +245,7 @@
     {
       "id": "12",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "Which one of these is floor division?",
       "options": [
         {
@@ -267,7 +267,7 @@
     {
       "id": "13",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "What is the answer to this expression, 22 % 3 is?",
       "options": [
         {
@@ -289,7 +289,7 @@
     {
       "id": "14",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "Mathematical operations can be performed on a string.",
       "options": [
         {
@@ -305,7 +305,7 @@
     {
       "id": "15",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "Operators with the same precedence are evaluated in which manner?",
       "options": [
         {
@@ -327,7 +327,7 @@
     {
       "id": "16",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "What is the output of this expression, 3*1**3?",
       "options": [
         {
@@ -349,7 +349,7 @@
     {
       "id": "17",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "Which one of the following has the same precedence level?",
       "options": [
         {
@@ -371,7 +371,7 @@
     {
       "id": "18",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "The expression Int(x) implies that the variable x is converted to integer.",
       "options": [
         {
@@ -387,7 +387,7 @@
     {
       "id": "19",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "Which one of the following has the highest precedence in the expression?",
       "options": [
         {
@@ -409,7 +409,7 @@
     {
       "id": "20",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "Which of these in not a core data type?",
       "options": [
         {
@@ -431,7 +431,7 @@
     {
       "id": "21",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "Given a function that does not return any value, What value is thrown by default when executed in shell.",
       "options": [
         {
@@ -453,7 +453,7 @@
     {
       "id": "22",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "Which of the following will run without errors?",
       "options": [
         {
@@ -475,7 +475,7 @@
     {
       "id": "23",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "What is the return type of function id?",
       "options": [
         {
@@ -497,7 +497,7 @@
     {
       "id": "24",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": " In order to store values in terms of key and value we use what core data type.",
       "options": [
         {
@@ -519,7 +519,7 @@
     {
       "id": "25",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "What is the return value of trunc()?",
       "options": [
         {
@@ -541,7 +541,7 @@
     {
       "id": "26",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "What is the output of print 0.1 + 0.2 == 0.3?",
       "options": [
         {
@@ -563,7 +563,7 @@
     {
       "id": "27",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "Which of the following is not a complex number?",
       "options": [
         {
@@ -585,7 +585,7 @@
     {
       "id": "28",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "What is the type of inf?",
       "options": [
         {
@@ -607,7 +607,7 @@
     {
       "id": "29",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "What does ~4 evaluate to?",
       "options": [
         {
@@ -629,7 +629,7 @@
     {
       "id": "30",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "Which of the following is incorrect?",
       "options": [
         {
@@ -651,7 +651,7 @@
     {
       "id": "31",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "What is the result of cmp(3, 1)?",
       "options": [
         {
@@ -673,7 +673,7 @@
     {
       "id": "32",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "Which of the following is incorrect?",
       "options": [
         {
@@ -695,7 +695,7 @@
     {
       "id": "33",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "What is the result of round(0.5) – round(-0.5)?",
       "options": [
         {
@@ -717,7 +717,7 @@
     {
       "id": "34",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "What does 3 ^ 4 evaluate to?",
       "options": [
         {
@@ -739,7 +739,7 @@
     {
       "id": "35",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "The value of the expressions 4/(3*(2-1)) and 4/3*(2-1) is the same.",
       "options": [
         {
@@ -761,7 +761,7 @@
     {
       "id": "36",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "What will be the value of the 4 + 3 % 5 Python expression?",
       "options": [
         {
@@ -783,7 +783,7 @@
     {
       "id": "37",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "Evaluate the expression A % B // A if A = 16 and B = 15.",
       "options": [
         {
@@ -805,7 +805,7 @@
     {
       "id": "38",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "Which of the following operators has its associativity from right to left?",
       "options": [
         {
@@ -827,7 +827,7 @@
     {
       "id": "39",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "What will be the value of x in the x = int(43.55+2/2) Python expression?",
       "options": [
         {
@@ -849,7 +849,7 @@
     {
       "id": "40",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "What is the value of the expression: 2+4.00, 2**4.0",
       "options": [
         {
@@ -871,7 +871,7 @@
     {
       "id": "41",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "Which of the following is the truncation division operator?",
       "options": [
         {
@@ -893,7 +893,7 @@
     {
       "id": "42",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "What is the value of the expression: 8/4/2, 8/(4/2)",
       "options": [
         {
@@ -915,7 +915,7 @@
     {
       "id": "43",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "What is the value of the expression: float(22//3+3/3)",
       "options": [
         {
@@ -937,7 +937,7 @@
     {
       "id": "44",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "What will be the output of the Python expression: print(4.00/(2.0+2.0))",
       "options": [
         {
@@ -959,7 +959,7 @@
     {
       "id": "45",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "Which of the following expressions involves coercion when evaluated in Python?",
       "options": [
         {
@@ -981,7 +981,7 @@
     {
       "id": "46",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "What will be the output of the following Python expression: 24//6%3, 24//4//2",
       "options": [
         {
@@ -1003,7 +1003,7 @@
     {
       "id": "47",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": " Which among the list of operators: +, -, **, %, /, <<, >>, | has the highest precedence?",
       "options": [
         {
@@ -1025,7 +1025,7 @@
     {
       "id": "48",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "What will be the value of the Python expression: float(4+int(2.39)%2)",
       "options": [
         {
@@ -1047,7 +1047,7 @@
     {
       "id": "49",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "Which of the following expressions is an example of type conversion?",
       "options": [
         {
@@ -1069,7 +1069,7 @@
     {
       "id": "50",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "Which of the following expressions results in an error?",
       "options": [
         {
@@ -1091,7 +1091,7 @@
     {
       "id": "51",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "What will be the value of the Python expression: 4+2**5//10",
       "options": [
         {
@@ -1113,7 +1113,7 @@
     {
       "id": "52",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "The expression 2**2**3 is evaluates as: (2**2)**3.",
       "options": [
         {
@@ -1129,7 +1129,7 @@
     {
       "id": "53",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "What will be the output of the Python code snippet x<<2 if x=1",
       "options": [
         {
@@ -1151,7 +1151,7 @@
     {
       "id": "54",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "What will be the output of the Python expression: bin(29)",
       "options": [
         {
@@ -1173,7 +1173,7 @@
     {
       "id": "55",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "What will be the value of x in the Python expression: x>>2, if the result of that expression is 2?",
       "options": [
         {
@@ -1195,7 +1195,7 @@
     {
       "id": "56",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "What will be the output of the following Python expression: int(1011)?",
       "options": [
         {
@@ -1217,7 +1217,7 @@
     {
       "id": "57",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "To find the decimal value of 1111, that is 15, we can use the function:",
       "options": [
         {
@@ -1239,7 +1239,7 @@
     {
       "id": "58",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "What will be the output of the Python expression: x & y if x=15 and y=12?",
       "options": [
         {
@@ -1261,7 +1261,7 @@
     {
       "id": "59",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": " Which of the following expressions results in an error?",
       "options": [
         {
@@ -1283,7 +1283,7 @@
     {
       "id": "60",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "Which of the following represents the bitwise XOR operator?",
       "options": [
         {
@@ -1305,7 +1305,7 @@
     {
       "id": "61",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": " What is the value of the following Python expression: bin(0x8)",
       "options": [
         {
@@ -1327,7 +1327,7 @@
     {
       "id": "62",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "What will be the output of the following Python expression: 0x35 | 0x75",
       "options": [
         {
@@ -1349,7 +1349,7 @@
     {
       "id": "63",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "It is not possible for the two’s complement value to be equal to the original value in any case.",
       "options": [
         {
@@ -1365,7 +1365,7 @@
     {
       "id": "64",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "The one’s complement of 110010101 is:",
       "options": [
         {
@@ -1387,7 +1387,7 @@
     {
       "id": "65",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "Bitwise _________ gives 1 if either of the bits is 1 and 0 when both of the bits are 1.",
       "options": [
         {
@@ -1409,7 +1409,7 @@
     {
       "id": "66",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "What will be the output of the following Python expression: 4^12",
       "options": [
         {
@@ -1431,7 +1431,7 @@
     {
       "id": "67",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "Any odd number on being AND-ed with ________ always gives 1. Hint: Any even number on being AND-ed with this value always gives 0.",
       "options": [
         {
@@ -1453,7 +1453,7 @@
     {
       "id": "68",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "What will be the value of the following Python expression: bin(10-2)+bin(12^4)",
       "options": [
         {
@@ -1475,7 +1475,7 @@
     {
       "id": "69",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "Which of the following expressions can be used to multiply a given number ‘a’ by 4?",
       "options": [
         {
@@ -1497,7 +1497,7 @@
     {
       "id": "70",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "What is the two’s complement of -44?",
       "options": [
         {
@@ -1519,7 +1519,7 @@
     {
       "id": "71",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": " What will be the output of the following Python expression: ~100?",
       "options": [
         {
@@ -1541,7 +1541,7 @@
     {
       "id": "72",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "What will be the output of the following Python code snippet: ['hello', 'morning'][bool('')]",
       "options": [
         {
@@ -1563,7 +1563,7 @@
     {
       "id": "73",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": " What will be the output of the following Python code: ['f', 't'][bool('spam')]",
       "options": [
         {
@@ -1585,7 +1585,7 @@
     {
       "id": "74",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "Which of the following Boolean expressions is not logically equivalent to the other three?",
       "options": [
         {
@@ -1607,7 +1607,7 @@
     {
       "id": "75",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "What will be the output of the following Python code snippet: not(10<20) and not(10>30)",
       "options": [
         {
@@ -1629,7 +1629,7 @@
     {
       "id": "76",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "Which of the following results in a SyntaxError?",
       "options": [
         {
@@ -1651,7 +1651,7 @@
     {
       "id": "77",
       "subject": "Python",
-      "module": "Python Basic",
+      "module": "Python_Basics",
       "question": "What will be the value of X in the Python expression: X = 2+9*((3*12)-8)/10 ?",
       "options": [
         {
