@@ -2,7 +2,7 @@
 
 {% block header %}
 <header class="site-header">
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top mb-3">
       <div class="container">
         <a class="navbar-brand mr-4" href="/">Web Academy</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,33 +46,20 @@
 
 {% block content %}
 <div class="content-section">
-    <div class="media">
-      {% if current_user.image_file=='default.png' %}
-        {% if current_user.gender=='Male'%}
-          <img class="rounded-circle account-img" src="../static/profile_pics/male.png">
-        {% elif current_user.gender=='Female'%}
-          <img class="rounded-circle account-img" src="../static/profile_pics/female.png">
-        {% else %}
-          <img class="rounded-circle account-img" src="../static/profile_pics/other.png">
-        {% endif %}
-      {% else %}
-        <img class="rounded-circle account-img" src="{{ image_file }}">
-      {% endif %}
+    <div class="media mb-4">
+        <img class="rounded-circle" src="{{ image_file }}" width="150" height="150">
         <div class="media-body">
-          <h2 class="account-heading">{{ current_user.username }}
-          </h2>
-            <div class="row mr-3 pt-2">             
-              <p class="col text-secondary"><i class="bi bi-envelope-fill mr-1" data-toggle="tooltip" data-placement="bottom" title="Email address"></i>{{ current_user.email }}</p>
-              <p class="col text-secondary"><i class="bi bi-clock-fill mr-1" data-toggle="tooltip" data-placement="left" title="Joining date"></i>Joined on {{ current_user.created.strftime("%B") + " " + current_user.created.strftime("%Y") }}</p>
-              <button type="button" class="col-auto btn btn-info" id="edit"><i class="bi bi-pen-fill mr-1"></i>Edit Info</button>
-            </div>
+          <h2 class="account-heading ml-2">{{ current_user.username }}</h2>             
+          <p class="col text-secondary">{{ current_user.email }}</p>
+          <p class="col text-secondary">Joined on {{ current_user.created.strftime("%B") + " " + current_user.created.strftime("%Y") }}</p>
           </div>
       </div>
-    <form method="POST" action="" enctype="multipart/form-data" >
-        {{ form.hidden_tag() }}
-        <fieldset class="form-group" id="mainForm">
+      <div class="card p-3">
+    <form method="POST" enctype="multipart/form-data">
+        <fieldset class="form-group">
             <legend class="border-bottom mb-4">Public Profile</legend>
             <div class="form-group">
+                {{ form.hidden_tag() }}
                 {{ form.username.label(class="form-control-label") }}
                 {% if form.username.errors %}
                     {{ form.username(class="form-control form-control-md is-invalid") }}
@@ -128,22 +115,11 @@
             {{ form.submit(class="btn btn-outline-info submit") }}
         </div>
     </form>
+  </div>
 </div>
 {% endblock %}
 
 {% block script %}
-<script src='https://cdnjs.cloudflare.com/ajax/libs/countup.js/1.8.2/countUp.min.js'></script>
 <script type="text/javascript">  
-  $(document).ready(function(){
-    var end = '{{ current_user.hackos }}'
-    var anim = new CountUp("hackos",0,end);
-    anim.start();
-    $("#mainForm").toggle(false);
-    $(".submit").toggle(false);
-    $("#edit").click(function(){
-      $("#mainForm").slideToggle(500);
-      $(".submit").toggle(600);
-    });
-}); 
-  </script>
+</script>
 {% endblock %}

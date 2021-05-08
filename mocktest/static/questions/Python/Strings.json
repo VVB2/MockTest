@@ -334,7 +334,7 @@
         "id":"16",
         "subject":"Python",
         "module":"Strings",
-        "question":"What will be the output of the following Python code?\\n>>>print (r\u201Chello\u201C)",
+        "question":"What will be the output of the following Python code?\n >>>print (r\u201Chello\u201C)",
         "options":[
             {
                 "a":"a new line and hello"
@@ -356,7 +356,7 @@
         "id":"17",
         "subject":"Python",
         "module":"Strings",
-        "question":"What will be the output of the following Python statement?\\n>>>print('new' 'line')",
+        "question":"What will be the output of the following Python statement?\n >>>print('new' 'line')",
         "options":[
             {
                 "a":"Error"
@@ -378,7 +378,7 @@
         "id":"18",
         "subject":"Python",
         "module":"Strings",
-        "question":"What will be the output of the following Python code?\\nprint(0xA + 0xB + 0xC)",
+        "question":"What will be the output of the following Python code?\n print(0xA + 0xB + 0xC)",
         "options":[
             {
                 "a":"0xA0xB0xC"
@@ -400,7 +400,7 @@
         "id":"19",
         "subject":"Python",
         "module":"Strings",
-        "question":"What will be the output of the following Python statement?\\n>>>chr(ord(\u2018A\u2019))",
+        "question":"What will be the output of the following Python statement?\n >>>chr(ord(\u2018A\u2019))",
         "options":[
             {
                 "a":"A"
@@ -422,7 +422,7 @@
         "id":"20",
         "subject":"Python",
         "module":"Strings",
-        "question":"What will be the output of the following Python statement?\\n>>>print(chr(ord(\u2018b\u2019)+1))",
+        "question":"What will be the output of the following Python statement?\n >>>print(chr(ord(\u2018b\u2019)+1))",
         "options":[
             {
                 "a":"a"
@@ -444,7 +444,7 @@
         "id":"21",
         "subject":"Python",
         "module":"Strings",
-        "question":"What will be the output of the following Python code?\\nprint(\u201Cxyyzxyzxzxyy\u201C.count(\u2018yy\u2019))",
+        "question":"What will be the output of the following Python code?\n print(\u201Cxyyzxyzxzxyy\u201C.count(\u2018yy\u2019))",
         "options":[
             {
                 "a":"2"
@@ -466,7 +466,7 @@
         "id":"22",
         "subject":"Python",
         "module":"Strings",
-        "question":"What will be the output of the following Python code?\\nprint(\u201Cxyyzxyzxzxyy\u201D.count(\u2018yy\u2019, 1))",
+        "question":"What will be the output of the following Python code?\n print(\u201Cxyyzxyzxzxyy\u201D.count(\u2018yy\u2019, 1))",
         "options":[
             {
                 "a":"2"
@@ -488,7 +488,7 @@
         "id":"23",
         "subject":"Python",
         "module":"Strings",
-        "question":"What will be the output of the following Python code?\\nprint(\u201Dxyyzxyzxzxyy\u201D.count(\u2018yy\u2019, 2))",
+        "question":"What will be the output of the following Python code?\n print(\u201Dxyyzxyzxzxyy\u201D.count(\u2018yy\u2019, 2))",
         "options":[
             {
                 "a":"2"
@@ -510,7 +510,7 @@
         "id":"24",
         "subject":"Python",
         "module":"Strings",
-        "question":"What will be the output of the following Python code?\\nprint(\u201Cxyyzxyzxzxyy\u201C.count(\u2018xyy\u2019, 2, 11))",
+        "question":"What will be the output of the following Python code?\n print(\u201Cxyyzxyzxzxyy\u201C.count(\u2018xyy\u2019, 2, 11))",
         "options":[
             {
                 "a":"2"
@@ -532,7 +532,7 @@
         "id":"25",
         "subject":"Python",
         "module":"Strings",
-        "question":"What will be the output of the following Python code?\\nprint(\u201Cxyyzxyzxzxyy\u201D.count(\u2018xyy\u2019, -10, -1))",
+        "question":"What will be the output of the following Python code?\n print(\u201Cxyyzxyzxzxyy\u201D.count(\u2018xyy\u2019, -10, -1))",
         "options":[
             {
                 "a":"2"
@@ -554,7 +554,7 @@
         "id":"26",
         "subject":"Python",
         "module":"Strings",
-        "question":"What will be the output of the following Python code?\\n\\nprint(\u2018abc\u2019.encode())",
+        "question":"What will be the output of the following Python code?\n \n print(\u2018abc\u2019.encode())",
         "options":[
             {
                 "a":"abc"
@@ -576,7 +576,7 @@
         "id":"27",
         "subject":"Python",
         "module":"Strings",
-        "question":"What will be the output of the following Python code?\\nprint(\u201Cxyyzxyzxzxyy\u201D.endswith(\u201Cxyy\u201D))",
+        "question":"What will be the output of the following Python code?\n print(\u201Cxyyzxyzxzxyy\u201D.endswith(\u201Cxyy\u201D))",
         "options":[
             {
                 "a":"1"
@@ -598,7 +598,7 @@
         "id":"28",
         "subject":"Python",
         "module":"Strings",
-        "question":"What will be the output of the following Python code?\\nprint(\u201Cxyyzxyzxzxyy\u201D.endswith(\u201Cxyy\u201D, 0, 2))",
+        "question":"What will be the output of the following Python code?\n print(\u201Cxyyzxyzxzxyy\u201D.endswith(\u201Cxyy\u201D, 0, 2))",
         "options":[
             {
                 "a":"0"
@@ -620,7 +620,7 @@
         "id":"29",
         "subject":"Python",
         "module":"Strings",
-        "question":" What will be the output of the following Python code?\\nprint(u201Cabc DEF\u201D.capitalize())",
+        "question":" What will be the output of the following Python code?\n print(u201Cabc DEF\u201D.capitalize())",
         "options":[
             {
                 "a":"abc def"
@@ -642,7 +642,7 @@
         "id":"30",
         "subject":"Python",
         "module":"Strings",
-        "question":"What will be the output of the following Python code?\\nprint(\u201Cabc. DEF\u201D.capitalize())",
+        "question":"What will be the output of the following Python code?\n print(\u201Cabc. DEF\u201D.capitalize())",
         "options":[
             {
                 "a":"abc. def"
@@ -664,7 +664,7 @@
         "id":"31",
         "subject":"Python",
         "module":"Strings",
-        "question":"What will be the output of the following Python code?\\nprint(\u201Cabcdef\u201C.center())",
+        "question":"What will be the output of the following Python code?\n print(\u201Cabcdef\u201C.center())",
         "options":[
             {
                 "a":"cd"
@@ -686,7 +686,7 @@
         "id":"32",
         "subject":"Python",
         "module":"Strings",
-        "question":"What will be the output of the following Python code?\\nprint(\u201Cabcdef\u201D.center(0))",
+        "question":"What will be the output of the following Python code?\n print(\u201Cabcdef\u201D.center(0))",
         "options":[
             {
                 "a":"cd"
@@ -708,7 +708,7 @@
         "id":"33",
         "subject":"Python",
         "module":"Strings",
-        "question":"What will be the output of the following Python code?\\nprint(\u2018*\u2019, \u201Cabcdef\u201D.center(7), \u2018*\u2019)",
+        "question":"What will be the output of the following Python code?\n print(\u2018*\u2019, \u201Cabcdef\u201D.center(7), \u2018*\u2019)",
         "options":[
             {
                 "a":"* abcdef *"
@@ -730,7 +730,7 @@
         "id":"34",
         "subject":"Python",
         "module":"Strings",
-        "question":"What will be the output of the following Python code?\\nprint(\u2018*\u2019, \u201Cabcdef\u201D.center(7), \u2018*\u2019, sep=\u2018\u2019)",
+        "question":"What will be the output of the following Python code?\n print(\u2018*\u2019, \u201Cabcdef\u201D.center(7), \u2018*\u2019, sep=\u2018\u2019)",
         "options":[
             {
                 "a":"* abcdef *"
@@ -752,7 +752,7 @@
         "id":"35",
         "subject":"Python",
         "module":"Strings",
-        "question":"What will be the output of the following Python code?\\nprint(\u2018*\u2019, \u201Cabcde\u201D.center(6), \u2018*\u2019, sep=\u2018\u2019)",
+        "question":"What will be the output of the following Python code?\n print(\u2018*\u2019, \u201Cabcde\u201D.center(6), \u2018*\u2019, sep=\u2018\u2019)",
         "options":[
             {
                 "a":"* abcde *"
@@ -774,7 +774,7 @@
         "id":"36",
         "subject":"Python",
         "module":"Strings",
-        "question":"What will be the output of the following Python code?\\nprint(\u201Cabcdef\u201C.center(7, 1))",
+        "question":"What will be the output of the following Python code?\n print(\u201Cabcdef\u201C.center(7, 1))",
         "options":[
             {
                 "a":"1abcdef"
@@ -796,7 +796,7 @@
         "id":"37",
         "subject":"Python",
         "module":"Strings",
-        "question":"What will be the output of the following Python code?\\nprint(\u201Cabcdef\u201C.center(7, \u20181\u2019))",
+        "question":"What will be the output of the following Python code?\n print(\u201Cabcdef\u201C.center(7, \u20181\u2019))",
         "options":[
             {
                 "a":"1abcdef"
@@ -818,7 +818,7 @@
         "id":"38",
         "subject":"Python",
         "module":"Strings",
-        "question":"What will be the output of the following Python code?\\nprint(\u201Cabcdef\u201C.center(10, \u201812\u2019))",
+        "question":"What will be the output of the following Python code?\n print(\u201Cabcdef\u201C.center(10, \u201812\u2019))",
         "options":[
             {
                 "a":"12abcdef12"
@@ -840,7 +840,7 @@
         "id":"39",
         "subject":"Python",
         "module":"Strings",
-        "question":"What will be the output of the following Python code?\\nprint(\u201Cabcdef\u201D.find(\u201Ccd\u201D))",
+        "question":"What will be the output of the following Python code?\n print(\u201Cabcdef\u201D.find(\u201Ccd\u201D))",
         "options":[
             {
                 "a":"True"
@@ -862,7 +862,7 @@
         "id":"40",
         "subject":"Python",
         "module":"Strings",
-        "question":"What will be the output of the following Python code?\\nprint(\u201Cccdcddcd\u201D.find(\u201Cc\u201D))",
+        "question":"What will be the output of the following Python code?\n print(\u201Cccdcddcd\u201D.find(\u201Cc\u201D))",
         "options":[
             {
                 "a":"4"

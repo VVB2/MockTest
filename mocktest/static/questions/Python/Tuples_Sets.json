@@ -48,7 +48,7 @@
         "id": "3",
         "subject": "Python",
         "module": "Tuples_Sets",
-        "question": " What will be the output ofthefollowingPythoncode?\\n\\n>>>t\u003D\u00281,2,4,3\u0029\\n>>>t\u005C1:3\u005D",
+        "question": " What will be the output ofthefollowingPythoncode? \n  \n >>>t\u003D\u00281,2,4,3\u0029 \n >>>t\u005C1:3\u005D",
         "options": [
             {
                 "a": "\u00281, 2\u0029"
@@ -294,7 +294,7 @@
             }
         ],
         "answer": "b",
-        "reason": "The input order in sets is not maintained. This is demonstrated by the code shown below:\\n>>> s\u003D{2, 6, 8, 1, 5}\\n>>> s\\n{8, 1, 2, 5, 6}"
+        "reason": "The input order in sets is not maintained. This is demonstrated by the code shown below: \n >>> s\u003D{2, 6, 8, 1, 5} \n >>> s \n {8, 1, 2, 5, 6}"
     },
     {
         "id": "15",
@@ -411,30 +411,30 @@
         "id": "20",
         "subject": "Python",
         "module": "Tuples_Sets",
-        "question": " What will be the output of the following Python code?\\n\\nx\u003Dset\u0028'abcde'\u0029\\ny\u003Dset\u0028'xyzbd'\u0029\\nx.difference_update\u0028y\u0029\\nx\\ny",
+        "question": " What will be the output of the following Python code? \n  \n x\u003Dset\u0028'abcde'\u0029 \n y\u003Dset\u0028'xyzbd'\u0029 \n x.difference_update\u0028y\u0029 \n x \n y",
         "options": [
             {
-                "a": " {‘a’, ‘b’, ‘c’, ‘d’, ‘e’}\\n{‘x’, ‘y’, ‘z’}"
+                "a": " {‘a’, ‘b’, ‘c’, ‘d’, ‘e’} \n {‘x’, ‘y’, ‘z’}"
             },
             {
-                "b": "{‘a’, ‘c’, ‘e’}\\n{‘x’, ‘y’, ‘z’, ‘b’, ‘d’}"
+                "b": "{‘a’, ‘c’, ‘e’} \n {‘x’, ‘y’, ‘z’, ‘b’, ‘d’}"
             },
             {
-                "c": " {‘b’, ‘d’}\\n{‘b’, ‘d’}"
+                "c": " {‘b’, ‘d’} \n {‘b’, ‘d’}"
             },
             {
-                "d": " {‘a’, ‘c’, ‘e’}\\n{‘x’, ‘y’, ‘z’}"
+                "d": " {‘a’, ‘c’, ‘e’} \n {‘x’, ‘y’, ‘z’}"
             }
         ],
         "answer": "b",
-        "reason": "The function x.difference_update\u0028y\u0029 removes all the elements of the set y from the set x. Hence the output of the code is:\\n{‘a’, ‘c’, ‘e’}\\n{‘x’, ‘y’, ‘z’, ‘b’, ‘d’}."
+        "reason": "The function x.difference_update\u0028y\u0029 removes all the elements of the set y from the set x. Hence the output of the code is: \n {‘a’, ‘c’, ‘e’} \n {‘x’, ‘y’, ‘z’, ‘b’, ‘d’}."
     },
 
     {
         "id": "21",
         "subject": "Python",
         "module": "Tuples_Sets",
-        "question": "What will be the output of the following Python code, if s1\u003D {1, 2, 3}?\\n\\ns1.issubset\u0028s1\u0029",
+        "question": "What will be the output of the following Python code, if s1\u003D {1, 2, 3}? \n  \n s1.issubset\u0028s1\u0029",
         "options": [
             {
                 "a": "True"
@@ -456,19 +456,19 @@
         "id": "22",
         "subject": "Python",
         "module": "Tuples_Sets",
-        "question": "What will be the output of the following Python code?\\na\u003Dset\u0028'abc'\u0029\\nb\u003Dset\u0028'def'\u0029\\nb.intersection_update\u0028a\u0029\\na\\nb",
+        "question": "What will be the output of the following Python code? \n a\u003Dset\u0028'abc'\u0029 \n b\u003Dset\u0028'def'\u0029 \n b.intersection_update\u0028a\u0029 \n a \n b",
         "options": [
             {
-                "a": "set\u0028\u0029\\n\u0028‘e’, ‘d’, ‘f’}"
+                "a": "set\u0028\u0029 \n \u0028‘e’, ‘d’, ‘f’}"
             },
             {
-                "b": "{}\\n{}"
+                "b": "{} \n {}"
             },
             {
-                "c": "{‘b’, ‘c’, ‘a’}\\nset\u0028\u0029"
+                "c": "{‘b’, ‘c’, ‘a’} \n set\u0028\u0029"
             },
             {
-                "d": "set\u0028\u0029\\nset\u0028\u0029"
+                "d": "set\u0028\u0029 \n set\u0028\u0029"
             }
         ],
         "answer": "c",
@@ -478,19 +478,19 @@
         "id": "23",
         "subject": "Python",
         "module": "Tuples_Sets",
-        "question": "What will be the output of the following Python code?\\ns1\u003D{1, 2, 3}\\ns2\u003D{4, 5, 6}\\ns1.isdisjoint\u0028s2\u0029\\ns2.isdisjoint\u0028s1\u0029",
+        "question": "What will be the output of the following Python code? \n s1\u003D{1, 2, 3} \n s2\u003D{4, 5, 6} \n s1.isdisjoint\u0028s2\u0029 \n s2.isdisjoint\u0028s1\u0029",
         "options": [
             {
-                "a": "True\\nFalse"
+                "a": "True \n False"
             },
             {
-                "b": "False\\nTrue"
+                "b": "False \n True"
             },
             {
-                "c": "True\\nTrue"
+                "c": "True \n True"
             },
             {
-                "d": "Flase\\nFalse"
+                "d": "Flase \n False"
             }
         ],
         "answer": "vc",
@@ -500,19 +500,19 @@
         "id": "24",
         "subject": "Python",
         "module": "Tuples_Sets",
-        "question": "What will be the output of the following Python code?\\ns1\u003D{1, 2, 3, 8}\\ns2\u003D{3, 4, 5, 6}\\ns1|s2\\ns1.union\u0028s2\u0029",
+        "question": "What will be the output of the following Python code? \n s1\u003D{1, 2, 3, 8} \n s2\u003D{3, 4, 5, 6} \n s1|s2 \n s1.union\u0028s2\u0029",
         "options": [
             {
-                "a": "{3}\\n{1, 2, 3, 4, 5, 6, 8}"
+                "a": "{3} \n {1, 2, 3, 4, 5, 6, 8}"
             },
             {
-                "b": "{1, 2, 4, 5, 6, 8}\\n{1, 2, 4, 5, 6, 8}"
+                "b": "{1, 2, 4, 5, 6, 8} \n {1, 2, 4, 5, 6, 8}"
             },
             {
-                "c": "{3}\\n{3}"
+                "c": "{3} \n {3}"
             },
             {
-                "d": "{1, 2, 3, 4, 5, 6, 8}\\n{1, 2, 3, 4, 5, 6, 8}"
+                "d": "{1, 2, 3, 4, 5, 6, 8} \n {1, 2, 3, 4, 5, 6, 8}"
             }
         ],
         "answer": "d",
@@ -522,7 +522,7 @@
         "id": "25",
         "subject": "Python",
         "module": "Tuples_Sets",
-        "question": "What will be the output of the following Python code snippet?\\nz\u003Dset\u0028'abc$de'\u0029\\n'a' in z",
+        "question": "What will be the output of the following Python code snippet? \n z\u003Dset\u0028'abc$de'\u0029 \n 'a' in z",
         "options": [
             {
                 "a": "True"
@@ -544,7 +544,7 @@
         "id": "26",
         "subject": "Python",
         "module": "Tuples_Sets",
-        "question": "What will be the output of the following Python code snippet?\\nz\u003Dset\u0028'abc'\u0029\\nz.add\u0028'san'\u0029\\nz.update\u0028set\u0028\u005B'p', 'q'\u005D\u0029\u0029\\nz",
+        "question": "What will be the output of the following Python code snippet? \n z\u003Dset\u0028'abc'\u0029 \n z.add\u0028'san'\u0029 \n z.update\u0028set\u0028\u005B'p', 'q'\u005D\u0029\u0029 \n z",
         "options": [
             {
                 "a": "{‘abc’, ‘p’, ‘q’, ‘san’}"
@@ -566,13 +566,13 @@
         "id": "27",
         "subject": "Python",
         "module": "Tuples_Sets",
-        "question": " What will be the output of the following Python code snippet?\\nfor x in set\u0028'pqr'\u0029:\\n\\tprint\u0028x*2\u0029",
+        "question": " What will be the output of the following Python code snippet? \n for x in set\u0028'pqr'\u0029: \n \\tprint\u0028x*2\u0029",
         "options": [
             {
-                "a": "pp\\nqq\\nrr"
+                "a": "pp \n qq \n rr"
             },
             {
-                "b": "pqr\\npqr"
+                "b": "pqr \n pqr"
             },
             {
                 "c": "ppqqrr"
@@ -582,13 +582,13 @@
             }
         ],
         "answer": "a",
-        "reason": "The code shown above prints each element of the set twice separately. Hence the output of this code is:\\npp\\nqq\\nrr"
+        "reason": "The code shown above prints each element of the set twice separately. Hence the output of this code is: \n pp \n qq \n rr"
     },
     {
         "id": "28",
         "subject": "Python",
         "module": "Tuples_Sets",
-        "question": "What will be the output of the following Python code snippet?\\n{a**2 for a in range\u00284\u0029}",
+        "question": "What will be the output of the following Python code snippet? \n {a**2 for a in range\u00284\u0029}",
         "options": [
             {
                 "a": "{1, 4, 9, 16}"
@@ -610,19 +610,19 @@
         "id": "29",
         "subject": "Python",
         "module": "Tuples_Sets",
-        "question": "What will be the output of the following Python function?\\n{x for x in 'abc'}",
+        "question": "What will be the output of the following Python function? \n {x for x in 'abc'}",
         "options": [
             {
-                "a": "{abc}\\naaa\\nbbb\\nccc"
+                "a": "{abc} \n aaa \n bbb \n ccc"
             },
             {
-                "b": "abc\\nabc abc abc"
+                "b": "abc \n abc abc abc"
             },
             {
-                "c": "{‘a’, ‘b’, ‘c’}\\n{‘aaa’, ‘bbb’, ‘ccc’}"
+                "c": "{‘a’, ‘b’, ‘c’} \n {‘aaa’, ‘bbb’, ‘ccc’}"
             },
             {
-                "d": "{‘a’, ‘b’, ‘c’}\\nabc\\nabc\\nabc"
+                "d": "{‘a’, ‘b’, ‘c’} \n abc \n abc \n abc"
             }
         ],
         "answer": "c",
@@ -632,7 +632,7 @@
         "id": "30",
         "subject": "Python",
         "module": "Tuples_Sets",
-        "question": " The output of the following code is: class<’set’>.\\ntype\u0028{}\u0029",
+        "question": " The output of the following code is: class<’set’>. \n type\u0028{}\u0029",
         "options": [
             {
                 "a": "True"
@@ -648,19 +648,19 @@
         "id": "31",
         "subject": "Python",
         "module": "Tuples_Sets",
-        "question": " What will be the output of the following Python code snippet?\\na\u003D\u005B1, 4, 3, 5, 2\u005D\\nb\u003D\u005B3, 1, 5, 2, 4\u005D\\na\u003D\u003Db\\nset\u0028a\u0029\u003D\u003Dset\u0028b\u0029",
+        "question": " What will be the output of the following Python code snippet? \n a\u003D\u005B1, 4, 3, 5, 2\u005D \n b\u003D\u005B3, 1, 5, 2, 4\u005D \n a\u003D\u003Db \n set\u0028a\u0029\u003D\u003Dset\u0028b\u0029",
         "options": [
             {
-                "a": "True\\nFalse"
+                "a": "True \n False"
             },
             {
-                "b": "False\\nFalse"
+                "b": "False \n False"
             },
             {
-                "c": "False\\nTrue"
+                "c": "False \n True"
             },
             {
-                "d": "True\\nTrue"
+                "d": "True \n True"
             }
         ],
         "answer": "c",
@@ -670,19 +670,19 @@
         "id": "32",
         "subject": "Python",
         "module": "Tuples_Sets",
-        "question": " What will be the output of the following Python code snippet?\\nl\u003D\u005B1, 2, 4, 5, 2, 'xy', 4\u005D\\nset\u0028l\u0029\\nl",
+        "question": " What will be the output of the following Python code snippet? \n l\u003D\u005B1, 2, 4, 5, 2, 'xy', 4\u005D \n set\u0028l\u0029 \n l",
         "options": [
             {
-                "a": "{1, 2, 4, 5, 2, ‘xy’, 4}\\n\u005B1, 2, 4, 5, 2, ‘xy’, 4\u005D"
+                "a": "{1, 2, 4, 5, 2, ‘xy’, 4} \n \u005B1, 2, 4, 5, 2, ‘xy’, 4\u005D"
             },
             {
-                "b": "{1, 2, 4, 5, ‘xy’}\\n\u005B1, 2, 4, 5, 2, ‘xy’, 4\u005D"
+                "b": "{1, 2, 4, 5, ‘xy’} \n \u005B1, 2, 4, 5, 2, ‘xy’, 4\u005D"
             },
             {
-                "c": "{1, 5, ‘xy’}\\n\u005B1, 5, ‘xy’\u005D"
+                "c": "{1, 5, ‘xy’} \n \u005B1, 5, ‘xy’\u005D"
             },
             {
-                "d": "{1, 2, 4, 5, ‘xy’}\\n\u005B1, 2, 4, 5, ‘xy’\u005D"
+                "d": "{1, 2, 4, 5, ‘xy’} \n \u005B1, 2, 4, 5, ‘xy’\u005D"
             }
         ],
         "answer": "b",
@@ -692,7 +692,7 @@
         "id": "33",
         "subject": "Python",
         "module": "Tuples_Sets",
-        "question": " The following Python code results in an error.\\n\\ns\u003D{2, 3, 4, \u005B5, 6\u005D}",
+        "question": " The following Python code results in an error. \n  \n s\u003D{2, 3, 4, \u005B5, 6\u005D}",
         "options": [
             {
                 "a": "True"
@@ -708,7 +708,7 @@
         "id": "34",
         "subject": "Python",
         "module": "Tuples_Sets",
-        "question": "What will be the output of the following Python code?\\ns\u003D{2, 5, 6, 6, 7}\\ns",
+        "question": "What will be the output of the following Python code? \n s\u003D{2, 5, 6, 6, 7} \n s",
         "options": [
             {
                 "a": "{2, 5, 7}"
@@ -730,7 +730,7 @@
         "id": "35",
         "subject": "Python",
         "module": "Tuples_Sets",
-        "question": " Write a list comprehension for number and its cube for:\\nl\u003D\u005B1, 2, 3, 4, 5, 6, 7, 8, 9\u005D",
+        "question": " Write a list comprehension for number and its cube for: \n l\u003D\u005B1, 2, 3, 4, 5, 6, 7, 8, 9\u005D",
         "options": [
             {
                 "a": "\u005Bx**3 for x in l\u005D"
@@ -752,7 +752,7 @@
         "id": "36",
         "subject": "Python",
         "module": "Tuples_Sets",
-        "question": " What will be the output of the following Python code?\\ns\u003D{1, 2, 3}\\ns.update\u00284\u0029\\ns",
+        "question": " What will be the output of the following Python code? \n s\u003D{1, 2, 3} \n s.update\u00284\u0029 \n s",
         "options": [
             {
                 "a": "{1, 2, 3, 4}"
@@ -774,7 +774,7 @@
         "id": "37",
         "subject": "Python",
         "module": "Tuples_Sets",
-        "question": "What is the syntax of the following Python code?\\n>>> a\u003Dfrozenset\u0028set\u0028\u005B5,6,7\u005D\u0029\u0029\\n>>> a",
+        "question": "What is the syntax of the following Python code? \n >>> a\u003Dfrozenset\u0028set\u0028\u005B5,6,7\u005D\u0029\u0029 \n >>> a",
         "options": [
             {
                 "a": "{5,6,7}"
@@ -796,7 +796,7 @@
         "id": "38",
         "subject": "Python",
         "module": "Tuples_Sets",
-        "question": "Is the following Python code valid?\\n>>> a\u003Dfrozenset\u0028\u005B5,6,7\u005D\u0029\\n>>> a\\n>>> a.add\u00285\u0029",
+        "question": "Is the following Python code valid? \n >>> a\u003Dfrozenset\u0028\u005B5,6,7\u005D\u0029 \n >>> a \n >>> a.add\u00285\u0029",
         "options": [
             {
                 "a": "Yes, now a is {5,5,6,7}"
@@ -818,7 +818,7 @@
         "id": "39",
         "subject": "Python",
         "module": "Tuples_Sets",
-        "question": " What will be the output of the following Python code?\\n>>> a\u003D{3,4,5}\\n>>> a.update\u0028\u005B1,2,3\u005D\u0029\\n>>> a",
+        "question": " What will be the output of the following Python code? \n >>> a\u003D{3,4,5} \n >>> a.update\u0028\u005B1,2,3\u005D\u0029 \n >>> a",
         "options": [
             {
                 "a": "Error, no method called update for set data type"
@@ -840,7 +840,7 @@
         "id": "40",
         "subject": "Python",
         "module": "Tuples_Sets",
-        "question": "What will be the output of the following Python code?\\n>>> a\u003D{1,2,3}\\n>>> a.intersection_update\u0028{2,3,4,5}\u0029\\n>>> a",
+        "question": "What will be the output of the following Python code? \n >>> a\u003D{1,2,3} \n >>> a.intersection_update\u0028{2,3,4,5}\u0029 \n >>> a",
         "options": [
             {
                 "a": "{2,3}"
@@ -862,7 +862,7 @@
         "id": "41",
         "subject": "Python",
         "module": "Tuples_Sets",
-        "question": "What will be the output of the following Python code?\\n>>> a\u003D{1,2,3}\\n>>> b\u003Da\\n>>> b.remove\u00283\u0029\\n>>> a",
+        "question": "What will be the output of the following Python code? \n >>> a\u003D{1,2,3} \n >>> b\u003Da \n >>> b.remove\u00283\u0029 \n >>> a",
         "options": [
             {
                 "a": "{1,2,3}"
@@ -884,7 +884,7 @@
         "id": "42",
         "subject": "Python",
         "module": "Tuples_Sets",
-        "question": " What will be the output of the following Python code?\\n>>> a\u003D{1,2,3}\\n>>> b\u003Da.copy\u0028\u0029\\n>>> b.add\u00284\u0029\\n>>> a",
+        "question": " What will be the output of the following Python code? \n >>> a\u003D{1,2,3} \n >>> b\u003Da.copy\u0028\u0029 \n >>> b.add\u00284\u0029 \n >>> a",
         "options": [
             {
                 "a": "{1,2,3}"
@@ -906,7 +906,7 @@
         "id": "43",
         "subject": "Python",
         "module": "Tuples_Sets",
-        "question": "What will be the output of the following Python code?\\n>>> a\u003D{1,2,3}\\n>>> b\u003Da.add\u00284\u0029\\n>>> b",
+        "question": "What will be the output of the following Python code? \n >>> a\u003D{1,2,3} \n >>> b\u003Da.add\u00284\u0029 \n >>> b",
         "options": [
             {
                 "a": "0"
@@ -928,7 +928,7 @@
         "id": "44",
         "subject": "Python",
         "module": "Tuples_Sets",
-        "question": "What will be the output of the following Python code?\\n>>> a\u003D{1,2,3}\\n>>> b\u003Dfrozenset\u0028\u005B3,4,5\u005D\u0029\\n>>> a-b",
+        "question": "What will be the output of the following Python code? \n >>> a\u003D{1,2,3} \n >>> b\u003Dfrozenset\u0028\u005B3,4,5\u005D\u0029 \n >>> a-b",
         "options": [
             {
                 "a": "{1,2}"
@@ -950,7 +950,7 @@
         "id": "45",
         "subject": "Python",
         "module": "Tuples_Sets",
-        "question": " What will be the output of the following Python code?\\n>>> a\u003D{5,6,7}\\n>>> sum\u0028a,5\u0029",
+        "question": " What will be the output of the following Python code? \n >>> a\u003D{5,6,7} \n >>> sum\u0028a,5\u0029",
         "options": [
             {
                 "a": "5"
@@ -972,7 +972,7 @@
         "id": "46",
         "subject": "Python",
         "module": "Tuples_Sets",
-        "question": "What will be the output of the following Python code?\\n>>> a\u003D{1,2,3}\\n>>> {x*2 for x in a|{4,5}}",
+        "question": "What will be the output of the following Python code? \n >>> a\u003D{1,2,3} \n >>> {x*2 for x in a|{4,5}}",
         "options": [
             {
                 "a": "{2,4,6}"
@@ -994,7 +994,7 @@
         "id": "47",
         "subject": "Python",
         "module": "Tuples_Sets",
-        "question": " What will be the output of the following Python code?\\n>>> a\u003D{5,6,7,8}\\n>>> b\u003D{7,8,9,10}\\n>>> len\u0028a+b\u0029",
+        "question": " What will be the output of the following Python code? \n >>> a\u003D{5,6,7,8} \n >>> b\u003D{7,8,9,10} \n >>> len\u0028a+b\u0029",
         "options": [
             {
                 "a": "8"
@@ -1016,7 +1016,7 @@
         "id": "48",
         "subject": "Python",
         "module": "Tuples_Sets",
-        "question": "What will be the output of the following Python code?\\na\u003D{1,2,3}\\nb\u003D{1,2,3}\\nc\u003Da.issubset\u0028b\u0029\\nprint\u0028c\u0029",
+        "question": "What will be the output of the following Python code? \n a\u003D{1,2,3} \n b\u003D{1,2,3} \n c\u003Da.issubset\u0028b\u0029 \n print\u0028c\u0029",
         "options": [
             {
                 "a": "True"
@@ -1038,7 +1038,7 @@
         "id": "49",
         "subject": "Python",
         "module": "Tuples_Sets",
-        "question": "Is the following Python code valid?\\na\u003D{1,2,3}\\nb\u003D{1,2,3,4}\\nc\u003Da.issuperset\u0028b\u0029\\nprint\u0028c\u0029",
+        "question": "Is the following Python code valid? \n a\u003D{1,2,3} \n b\u003D{1,2,3,4} \n c\u003Da.issuperset\u0028b\u0029 \n print\u0028c\u0029",
         "options": [
             {
                 "a": "False"
@@ -1060,7 +1060,7 @@
         "id": "50",
         "subject": "Python",
         "module": "Tuples_Sets",
-        "question": " What will be the output of the following Python code?\\n>>> a\u003D\u00281,2\u0029\\n>>> b\u003D\u00283,4\u0029\\n>>> c\u003Da+b\\n>>> c",
+        "question": " What will be the output of the following Python code? \n >>> a\u003D\u00281,2\u0029 \n >>> b\u003D\u00283,4\u0029 \n >>> c\u003Da+b \n >>> c",
         "options": [
             {
                 "a": " \u00284,6\u0029"

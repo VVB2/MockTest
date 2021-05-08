@@ -2,7 +2,7 @@
 
 {% block header %}
     <header class="site-header">
-      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top mb-3">
         <div class="container">
           <a class="navbar-brand mr-4" href="/">Web Academy</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,14 +44,55 @@
 {% endblock %}
 
 {% block content %}
-<h2>Java Quiz</h2>
+<h2>Python Quiz</h2>
 <p class="lead">You can test your Python skills with Web Academy Quiz.</p>
 <ul class="list-group">
-  <li class="list-group-item list-group-item-action">Python Basics<a href="{{ url_for('tests.question', page='Python_Basic', subject='python-question') }}" class="float-right btn btn-outline-success">Take a test<i class="bi bi-journals ml-1"></i></a></li>
-  <li class="list-group-item list-group-item-action">A second item<a href="{{ url_for('tests.question', page='Python_Basic', subject='python-question') }}" class="float-right btn btn-outline-success">Take a test<i class="bi bi-journals ml-1"></i></a></li>
-  <li class="list-group-item list-group-item-action">A third button item<a href="{{ url_for('tests.question', page='Python_Basic', subject='python-question') }}" class="float-right btn btn-outline-success">Take a test<i class="bi bi-journals ml-1"></i></a></li>
-  <li class="list-group-item list-group-item-action">Exception<a href="{{ url_for('tests.question', page='Python_Basic', subject='python-question') }}" class="float-right btn btn-outline-success">Take a test<i class="bi bi-journals ml-1"></i></a></li>
-  <li class="list-group-item list-group-item-action">A disabled button item<a href="{{ url_for('tests.question', page='Python_Basic', subject='python-question') }}" class="float-right btn btn-outline-success">Take a test<i class="bi bi-journals ml-1"></i></a></li>
-  <li class="list-group-item list-group-item-action">Threads<a href="{{ url_for('tests.question', page='Python_Basic', subject='python-question') }}" class="float-right btn btn-outline-success">Take a test<i class="bi bi-journals ml-1"></i></a></li>
+  <li class="list-group-item list-group-item-action">Python Basics
+    <a href="{{ url_for('tests.question', module='Python_Basics', subject='python-question') }}" class="float-right btn btn-outline-success">
+      Take a test
+      <i class="bi bi-journals ml-1"></i>
+    </a>
+    <span class="mr-3 mt-1 p-2 float-right badge badge-primary badge-pill">{{ module[0] }} Questions</span>
+  </li>
+  
+  <li class="list-group-item list-group-item-action">Strings
+    <a href="{{ url_for('tests.question', module='Strings', subject='python-question') }}" class="float-right btn btn-outline-success">
+      Take a test
+      <i class="bi bi-journals ml-1"></i>
+    </a>
+    <span class="mr-3 mt-1 p-2 float-right badge badge-primary badge-pill">{{ module[1] }} Questions</span>
+  </li>
+  
+  <li class="list-group-item list-group-item-action">Python List
+    <a href="{{ url_for('tests.question', module='List', subject='python-question') }}" class="float-right btn btn-outline-success">
+      Take a test
+      <i class="bi bi-journals ml-1"></i>
+    </a>
+    <span class="mr-3 mt-1 p-2 float-right badge badge-primary badge-pill">{{ module[2] }} Questions</span>
+  </li>
+  
+  <li class="list-group-item list-group-item-action">Python Loops
+    <a href="{{ url_for('tests.question', module='Loops', subject='python-question') }}" class="float-right btn btn-outline-success">
+      Take a test
+      <i class="bi bi-journals ml-1"></i>
+    </a>
+    <span class="mr-3 mt-1 p-2 float-right badge badge-primary badge-pill">{{ module[3] }} Questions</span>
+  </li>
+  
+  <li class="list-group-item list-group-item-action">Tuples & Sets
+    <a href="{{ url_for('tests.question', module='Tuples_Sets', subject='python-question') }}" class="float-right btn btn-outline-success">
+      Take a test
+      <i class="bi bi-journals ml-1"></i>
+    </a>
+    <span class="mr-3 mt-1 p-2 float-right badge badge-primary badge-pill">{{ module[4] }} Questions</span>
+  </li>
+  
+  <li class="list-group-item list-group-item-action">Regular Expression & Files
+    <a href="{{ url_for('tests.question', module='Regular_Expression_Files', subject='python-question') }}" class="float-right btn btn-outline-success">
+      Take a test
+      <i class="bi bi-journals ml-1"></i>
+    </a>
+    <span class="mr-3 mt-1 p-2 float-right badge badge-primary badge-pill">{{ module[5] }} Questions</span>
+  </li>
 </ul>
 {% endblock %}

@@ -15,7 +15,13 @@ def register():
     form = RegistrationForm()
     if form.validate_on_submit():
         hashed_password = bcrypt.generate_password_hash(form.password.data).decode('utf-8')
-        user = User(username=form.username.data, email=form.email.data, password=hashed_password, gender=form.gender.data)
+        if form.gender.data == 'Male':
+            image_file = 'male.png'
+        elif form.gender.data == 'Female':
+            image_file = 'female.png'
+        else :
+            image_file = 'other.png'
+        user = User(username=form.username.data, email=form.email.data, password=hashed_password, gender=form.gender.data, image_file=image_file)
         db.session.add(user)
         db.session.commit()
         flash('Your account has been created! You are now able to login', 'success')
@@ -49,24 +55,19 @@ def account():
     if form.validate_on_submit():
         if form.username.data:
             current_user.username = form.username.data
-
         if form.picture.data:
-            picture_file, picture_success = save_picture(form.picture.data)      
+            picture_file, picture_success = save_picture(form.picture.data)     
             if picture_success:
                 current_user.image_file = picture_file
             else:
                 flash('Error while updating profile picture', 'danger')   
-
         if form.address.data:
             current_user.address = form.address.data
-
         if form.phoneno.data:
             current_user.phoneno = form.phoneno.data
-
         db.session.commit()
         flash('Your account was successfully updated!', 'success')  
         return redirect(url_for('users.account'))
-
     elif request.method == 'GET':
         form.username.data = current_user.username
         if not current_user.phoneno=='None':

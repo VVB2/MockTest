@@ -136,7 +136,7 @@
         "id": "7",
         "subject": "Python",
         "module": "Regular_Expression_Files",
-        "question": "________ matches the start of the string.\n________ matches the end of the string.",
+        "question": "________ matches the start of the string.\n ________ matches the end of the string.",
         "options": [
             {
                 "a": "‘^’, ‘$’"
@@ -152,7 +152,7 @@
             }
         ],
         "answer": "a",
-        "reason": " ‘^’ (carat) matches the start of the string.\n‘$’ (dollar sign) matches the end of the string."
+        "reason": " ‘^’ (carat) matches the start of the string.\n ‘$’ (dollar sign) matches the end of the string."
     },
     {
         "id": "8",
@@ -221,16 +221,16 @@
         "question": "Choose the option wherein the two choices do not refer to the same option.",
         "options": [
             {
-                "a": " re.I\nre.IGNORECASE"
+                "a": " re.I\n re.IGNORECASE"
             },
             {
-                "b": "re.M\nre.MULTILINE"
+                "b": "re.M\n re.MULTILINE"
             },
             {
-                "c": " re.X\n                re.VERBOSE"
+                "c": " re.X\n                 re.VERBOSE"
             },
             {
-                "d": " re.L\n                re.LOWERCASE"
+                "d": " re.L\n                 re.LOWERCASE"
             }
         ],
         "answer": "d",

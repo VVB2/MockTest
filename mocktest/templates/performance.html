@@ -2,7 +2,7 @@
 
 {% block header %}
 <header class="site-header">
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top mb-3">
       <div class="container">
         <a class="navbar-brand mr-4" href="/">Web Academy</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,4 +44,65 @@
 {% endblock %}
 
 {% block content %}
+<h3 class="mb-3">{{ current_user.username }}'s Overall Performance</h3>
+  <h5 class="h5">Java MCQ's Result</h5>
+  <canvas id="java-graph" class="mb-5" width="400" height="100"></canvas>
+  <h5 class="h5">Python MCQ's Result</h5>
+  <canvas id="python-graph" width="400" height="100"></canvas>
+{% endblock %}
+
+{% block script %}
+<script>
+  var sets = ['vinod','vinay','raju','hello','world','morning']
+  var ctx1 = document.getElementById('java-graph').getContext('2d');
+  var java = new Chart(ctx1, {
+      type: 'line',
+      data: {
+          labels: sets,
+          datasets: [{
+              label: 'Marks Obtained',
+              data: [12, 19, 3, 5, 2, 3],
+              backgroundColor: [
+                  'rgba(255, 99, 132, 0.2)'
+              ],
+              borderColor: [
+                  'rgba(255, 99, 132, 1)'
+              ],
+              borderWidth: 1
+          }]
+      },
+      options: {
+          scales: {
+              y: {
+                  beginAtZero: true
+              }
+          }
+      }
+  });
+  var ctx2 = document.getElementById('python-graph').getContext('2d');
+  var python = new Chart(ctx2, {
+      type: 'line',
+      data: {
+          labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+          datasets: [{
+              label: 'Marks Obtained',
+              data: [12, 19, 3, 5, 2, 3],
+              backgroundColor: [
+                  'rgba(255, 99, 132, 0.2)'
+              ],
+              borderColor: [
+                  'rgba(255, 99, 132, 1)'
+              ],
+              borderWidth: 1
+          }]
+      },
+      options: {
+          scales: {
+              y: {
+                  beginAtZero: true
+              }
+          }
+      }
+  });
+  </script>
 {% endblock %}

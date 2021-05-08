@@ -10,10 +10,8 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart 
 from dotenv import load_dotenv
 
-
-
 def save_picture(form_picture):
-    if current_user.image_file=='default.png':       
+    if current_user.image_file=='male.png' or current_user.image_file=='female.png' or current_user.image_file=='other.png':       
         random_hex = secrets.token_hex(8)
         _, f_ext = os.path.splitext(form_picture.filename)
         picture_name = random_hex + f_ext
@@ -21,13 +19,15 @@ def save_picture(form_picture):
         _, f_ext = os.path.splitext(form_picture.filename)
         try:
             os.remove(os.path.join(current_app.root_path, 'static', 'profile_pics', current_user.image_file))
+            picture_name = os.path.splitext(current_user.image_file)[0] + "a" + f_ext
+            picture_path = os.path.join(current_app.root_path, 'static', 'profile_pics/', picture_name)
         except:
             pass
-        picture_name = os.path.splitext(current_user.image_file)[0] + f_ext
+        picture_name = os.path.splitext(current_user.image_file)[0] + "a" + f_ext
     picture_path = os.path.join(current_app.root_path, 'static', 'profile_pics/', picture_name)
     try:
         image = Image.open(form_picture)
-        image.thumbnail((150,150))
+        image.thumbnail((250,250))
         image.save(picture_path)
         success = True
     except:
@@ -35,13 +35,12 @@ def save_picture(form_picture):
     return picture_name, success
 
 def send_reset_email(user):
-    load_dotenv(current_app.root_path, '.env')
-    sender_email = os.getenv('EMAIL_USER')
+    sender_email = 'webacademyuserhelp@gmail.com'
     receiver_email = user.email
-    password = os.getenv('EMAIL_PASS')
+    password = 'Webacademy2021'
     token = user.get_reset_token()
     message = MIMEMultipart("alternative")
-    message["Subject"] = "multipart test"
+    message["Subject"] = "About Password Reset"
     message["From"] = sender_email
     message["To"] = receiver_email
 #     msg = Message('Password Reset Request',
@@ -55,7 +54,6 @@ def send_reset_email(user):
     html = f'''\
 <!DOCTYPE html>
 <html lang="en">
-    <link href="http://steveville.org/assets/css/cosmo.css" rel="stylesheet" type="text/css" media="all" />
     <body>
         <div style="background-color:#1d1b1b;width:60%;margin:auto;color:#fff">
             <div style="padding:5px;background-color:#4285f4;border-bottom:0.5px solid #91a3b0">
