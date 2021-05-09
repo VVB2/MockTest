@@ -57,14 +57,15 @@
 
 {% block content %}
 <h4 class="mb-3 mt-0 heading">
-  <span class="h2">{{ subject.split('-')[0] | capitalize }} - {{ module | replace('_', ' ') | replace('Arrays', '& Arrays') | replace('Control', '& Control') | replace('Methods', '& Methods')
-    | replace('Files', '& Files') | replace('Sets', '& Sets')}} Quiz :</span>
+  <span class="h2">{{ subject.split('-')[0] | capitalize }} - {{ module | replace('_', ' ') 
+    | replace('Arrays', '& Arrays') | replace('Control', '& Control') | replace('Methods', '& Methods')
+    | replace('Files', '& Files') | replace('Sets', '& Sets') | replace('Python', '')}} Quiz :</span>
   <div id="timer" class="float-right">Time left</div>
   <img src="https://i.gifer.com/XVo6.gif" class="float-right" width="30px" height="30px"></img>
 </h4>
 {% for question in data %}
 <form action="" method="POST">
-<div class="card mb-3">
+<div class="card mb-3" id="data">
   {% autoescape false %}
   <div class="card-body">
   <h5 class="mb-3">Q{{ loop.index }}. {{ question.question | replace('\n', '<br>&emsp;&emsp;') }}</h5>
@@ -96,11 +97,11 @@
 </div>
 </div>
 {% endfor %}
-
-<button class="btn btn-primary mt-3" role="button" onclick="displayRadioValue()">
+</form>
+<button class="btn btn-outline-success mt-3" role="button" onclick="submit_result()">
   Submit
 </button>
-</form>
+
 {% endblock %}
 
 {% block script %}
@@ -134,19 +135,6 @@
       }, 1000);
   }
 
-  function displayRadioValue() {
-    let answers = {};
-    let score = 0;
-    var ele = document.getElementsByTagName('input');           
-    for(i = 0; i < ele.length; i++) {       
-        if(ele[i].type="radio") {                 
-            if(ele[i].checked) {
-              answers[ele[i].name] = ele[i].value;
-            }
-        }
-    }  
-  }
-
 $(window).scroll(function() {
     let w = $(window);
     let windowpos = $(window).scrollTop();
@@ -158,6 +146,36 @@ $(window).scroll(function() {
       s.removeClass("fixed-top alert alert-warning");
     } 
 });
+
+function submit_result() {
+  let answers = {};
+  var ele = document.getElementsByTagName('input');           
+    for(i = 0; i < ele.length; i++) {       
+        if(ele[i].type="radio") {                 
+            if(ele[i].checked) {
+              answers[ele[i].name] = ele[i].value;
+            }
+        }
+    } 
+    fetch(`${window.origin}/{{ subject }}/{{ module }}`, {
+      method: 'POST',
+      credentials: 'include',
+      body: JSON.stringify(answers),
+      cache: 'no-cache',
+      headers: new Headers({
+        'content-type': 'application/json'
+      })
+    })
+    .then(function (response) {
+      if(response.status == 200) {
+        window.location.href = "{{ url_for('main.home') }}"
+      }
+      else if(response.status !== 200) {
+        console.log(`Response status was not 200: ${response.status}`);
+        return ;
+      }
+    })
+}
 
 </script>
 {% endblock %}

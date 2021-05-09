@@ -54,8 +54,8 @@
 {% block script %}
 <script>
   var sets = ['vinod','vinay','raju','hello','world','morning']
-  var ctx1 = document.getElementById('java-graph').getContext('2d');
-  var java = new Chart(ctx1, {
+  var java_graph = document.getElementById('java-graph').getContext('2d');
+  var java = new Chart(java_graph, {
       type: 'line',
       data: {
           labels: sets,
@@ -68,7 +68,7 @@
               borderColor: [
                   'rgba(255, 99, 132, 1)'
               ],
-              borderWidth: 1
+              borderWidth: 3
           }]
       },
       options: {
@@ -79,21 +79,21 @@
           }
       }
   });
-  var ctx2 = document.getElementById('python-graph').getContext('2d');
-  var python = new Chart(ctx2, {
+  var python_graph = document.getElementById('python-graph').getContext('2d');
+  var python = new Chart(python_graph, {
       type: 'line',
       data: {
-          labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+          labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange', 'Pink'],
           datasets: [{
               label: 'Marks Obtained',
-              data: [12, 19, 3, 5, 2, 3],
+              data: [12, 19, 3, 5, 2, 3,39],
               backgroundColor: [
                   'rgba(255, 99, 132, 0.2)'
               ],
               borderColor: [
                   'rgba(255, 99, 132, 1)'
               ],
-              borderWidth: 1
+              borderWidth: 3
           }]
       },
       options: {

@@ -20,8 +20,7 @@ class User(db.Model, UserMixin):
     address = db.Column(db.String(255), default='None')
     gender = db.Column(db.String(6), nullable=False)
     created = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
-    javaMarksobtained = db.relationship('Java_Marks', backref='author', lazy=True)
-    pythonMarksobtained = db.relationship('Python_Marks', backref='author', lazy=True)
+    Marksobtained = db.relationship('Marks', backref='author', lazy=True)
 
     def get_reset_token(self, expires_sec = 600):
         s = Serializer(app.config['SECRET_KEY'], expires_sec)
@@ -73,10 +72,10 @@ class Python(db.Model, UserMixin):
     def __repr__(self):
         return f"Variable('{self.module}', '{self.question}')"
 
-class Python_Marks(db.Model, UserMixin):
-    __tablename__ = 'PYTHON_MARKS'
+class Marks(db.Model, UserMixin):
+    __tablename__ = 'MARKS'
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
-    subject = db.Column(db.String(10), default='Python')
+    subject = db.Column(db.String(10), nullable=False)
     module = db.Column(db.String(30), nullable=False)
     marks_obtained = db.Column(db.Integer, nullable=False)
     attempted_on = db.Column(db.DateTime, nullable=False, default=datetime.now)
@@ -85,17 +84,29 @@ class Python_Marks(db.Model, UserMixin):
     def __repr__(self):
         return f"Variable('{self.user_id}', '{self.module}')"
 
-class Java_Marks(db.Model, UserMixin):
-    __tablename__ = 'JAVA_MARKS'
-    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
-    subject = db.Column(db.String(10), default='Java')
-    module = db.Column(db.String(30), nullable=False)
-    marks_obtained = db.Column(db.Integer, nullable=False)
-    attempted_on = db.Column(db.DateTime, nullable=False, default=datetime.now)
-    user_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)
+# class Python_Marks(db.Model, UserMixin):
+#     __tablename__ = 'PYTHON_MARKS'
+#     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+#     subject = db.Column(db.String(10), default='Python')
+#     module = db.Column(db.String(30), nullable=False)
+#     marks_obtained = db.Column(db.Integer, nullable=False)
+#     attempted_on = db.Column(db.DateTime, nullable=False, default=datetime.now)
+#     user_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)
 
-    def __repr__(self):
-        return f"Variable('{self.user_id}', '{self.module}','{self.marks_obtained}', '{self.attempted_on}')"
+#     def __repr__(self):
+#         return f"Variable('{self.user_id}', '{self.module}')"
+
+# class Java_Marks(db.Model, UserMixin):
+#     __tablename__ = 'JAVA_MARKS'
+#     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+#     subject = db.Column(db.String(10), default='Java')
+#     module = db.Column(db.String(30), nullable=False)
+#     marks_obtained = db.Column(db.Integer, nullable=False)
+#     attempted_on = db.Column(db.DateTime, nullable=False, default=datetime.now)
+#     user_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)
+
+#     def __repr__(self):
+#         return f"Variable('{self.user_id}', '{self.module}','{self.marks_obtained}', '{self.attempted_on}')"
 
 
 
