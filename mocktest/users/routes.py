@@ -1,7 +1,7 @@
-from flask import render_template, url_for, flash, redirect, request, Blueprint, Markup
+from flask import render_template, url_for, flash, redirect, request, Blueprint, Markup, jsonify
 from flask_login import login_user, current_user, logout_user, login_required
 from mocktest import db, bcrypt
-from mocktest.models import User
+from mocktest.models import User, Marks
 from mocktest.users.forms import (RegistrationForm, LoginForm, AccountUpdateForm,
                                    RequestResetForm, ResetPasswordForm)
 from mocktest.users.utils import save_picture,send_reset_email
@@ -109,4 +109,9 @@ def reset_token(token):
 @users.route("/performance", methods=['GET'])
 @login_required
 def performance():
-    return render_template('performance.html', title=current_user.username+"'s Performance", image_file=current_user.image_file)
+   
+    java_marks = Marks.query.filter_by(subject='java-question', user_id=current_user.id).limit(10)
+    python_marks = Marks.query.filter_by(subject='python-question', user_id=current_user.id).limit(10)
+
+    return render_template('performance.html', title=current_user.username+"'s Performance", image_file=current_user.image_file,
+     java_marks=java_marks, python_marks=python_marks)

@@ -82,32 +82,52 @@
         {{ question.optionb | trim | capitalize }}
       </label>
   </div>
+  {% if question.optionc %}
   <div class="form-check">
     <input class="form-check-input" type="radio" name= '{{ question.id }}' id='option' value='c'>
       <label class="form-check-label" for='{{ loop.index }}'>      
         {{ question.optionc | trim | capitalize }}
       </label>
   </div>
+  {% endif %}
+  {% if question.optiond %}
   <div class="form-check">
     <input class="form-check-input" type="radio" name= '{{ question.id }}' id='option' value='d'>
       <label class="form-check-label" for='{{ loop.index }}'>      
         {{ question.optiond | trim | capitalize }}
       </label>
   </div>
+  {% endif %}
 </div>
 </div>
 {% endfor %}
 </form>
-<button class="btn btn-outline-success mt-3" role="button" onclick="submit_result()">
+<button class="btn btn-outline-success mt-3" type="button" data-toggle="modal" data-target="#submitModal">
   Submit
 </button>
+<div class="modal fade" id="submitModal" tabindex="-1" aria-labelledby="submitModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="submitModalLabel">Do you really want to Submit?</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" onclick="submit_result()">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 {% endblock %}
 
 {% block script %}
 <script>
   let timerInterval = null;
-  let TIME_LIMIT = 1800;
+  let TIME_LIMIT = 1200;
   let timePassed = 0;
   let timeLeft = TIME_LIMIT;
   let seconds = 0;
@@ -121,6 +141,7 @@
           seconds = `0${seconds}`;
       }
       if (seconds == 0) {
+        submit_result();
       }
       return `${minutes}:${seconds}`;
   }

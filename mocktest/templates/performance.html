@@ -45,28 +45,67 @@
 
 {% block content %}
 <h3 class="mb-3">{{ current_user.username }}'s Overall Performance</h3>
-  <h5 class="h5">Java MCQ's Result</h5>
-  <canvas id="java-graph" class="mb-5" width="400" height="100"></canvas>
-  <h5 class="h5">Python MCQ's Result</h5>
-  <canvas id="python-graph" width="400" height="100"></canvas>
+  <h5 class="h5 float-left">Java MCQ's Result</h5>
+  <div class="btn-group float-right">
+    <select class="custom-select" id="javaModules" onchange="getModule()">
+      <option selected>All Modules</option>
+      <option value="Data_Types_Variables_Arrays">Data Types,Variables & Arrays</option>
+      <option value="Operators_Control_Statements">Operators & Control Statements</option>
+       <option value="Classes_Methods">Classes & Methods</option>
+       <option value="Exception">Exception</option>
+        <option value="Inheritance">Inheritance</option>
+        <option value="Threads">Threads</option>
+    </select>
+  </div>
+  <canvas id="java-graph" class="mb-5" height="90"></canvas>
+  <h5 class="h5 float-left">Python MCQ's Result</h5>
+  <div class="btn-group float-right">
+    <select class="custom-select" id="javaModules">
+      <option selected>All Modules</option>
+      <option value="1">Data Types,Variables & Arrays</option>
+      <option value="2">Operators & Control Statements</option>
+       <option value="">Classes & Methods</option>
+       <option value="">Exception</option>
+        <option value="">Inheritance</option>
+        <option value="">Threads</option>
+    </select>
+  </div>
+  <canvas id="python-graph" height="90"></canvas>
 {% endblock %}
 
 {% block script %}
 <script>
-  var sets = ['vinod','vinay','raju','hello','world','morning']
+  var javaDate = [];
+  var javaMarks = [];
+  var pythonDate = [];
+  var pythonMarks = [];
+  {% for marks in java_marks %}
+    javaDate.push("{{ marks.attempted_on.strftime('%Y-%m-%d') }}");
+    javaMarks.push("{{ marks.marks_obtained }}")
+  {% endfor %}
+
+  {% for marks in python_marks %}
+    pythonDate.push("{{ marks.attempted_on.strftime('%Y-%m-%d') }}");
+    pythonMarks.push("{{ marks.marks_obtained }}")
+  {% endfor %}
+
+  function getModule() {
+    console.log($("#javaModules :selected").text());  
+  }
+
   var java_graph = document.getElementById('java-graph').getContext('2d');
   var java = new Chart(java_graph, {
       type: 'line',
       data: {
-          labels: sets,
+          labels: javaDate,
           datasets: [{
               label: 'Marks Obtained',
-              data: [12, 19, 3, 5, 2, 3],
+              data: javaMarks,
               backgroundColor: [
-                  'rgba(255, 99, 132, 0.2)'
+                  'rgba(173, 255, 47, 0.2)'
               ],
               borderColor: [
-                  'rgba(255, 99, 132, 1)'
+                  'rgba(173, 255, 47, 1)'
               ],
               borderWidth: 3
           }]
@@ -83,10 +122,10 @@
   var python = new Chart(python_graph, {
       type: 'line',
       data: {
-          labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange', 'Pink'],
+          labels: pythonDate,
           datasets: [{
               label: 'Marks Obtained',
-              data: [12, 19, 3, 5, 2, 3,39],
+              data: pythonMarks,
               backgroundColor: [
                   'rgba(255, 99, 132, 0.2)'
               ],

@@ -1,7 +1,6 @@
 import json
-from datetime import datetime
 from itsdangerous import TimedJSONWebSignatureSerializer as Serializer
-from datetime import datetime
+from datetime import date,datetime
 from mocktest import db, login_manager, app
 from flask_login import UserMixin
 
@@ -72,7 +71,7 @@ class Python(db.Model, UserMixin):
     def __repr__(self):
         return f"Variable('{self.module}', '{self.question}')"
 
-class Marks(db.Model, UserMixin):
+class Marks(db.Model, UserMixin, Serializer):
     __tablename__ = 'MARKS'
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     subject = db.Column(db.String(10), nullable=False)

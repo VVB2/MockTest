@@ -43,7 +43,7 @@ def question(module, subject):
                 model_answer = Java.query.filter_by(id=int(answer)).first()
             else:
                 model_answer = Python.query.filter_by(id=int(answer)).first()
-            score += 2 if model_answer.answer == answers[answer] else 0
+            score += 2 if model_answer.answer == answers[answer] else 0      
 
         marks_obj = Marks(subject=subject, module=module, marks_obtained=score, user_id=current_user.id)
         db.session.add(marks_obj)
@@ -54,9 +54,8 @@ def question(module, subject):
             data = Java.query.filter_by(module=module).order_by(func.random()).limit(20).all()
         else:     
             data = Python.query.filter_by(module=module).order_by(func.random()).limit(20).all()
-        
         return render_template('questions.html', title=module.replace('_',' '), image_file=current_user.image_file, data=data
         , module=module, subject=subject)
-
     return render_template('futureUseCode.html', title=module.replace('_',' '), image_file=current_user.image_file, data=answers)
+
    
