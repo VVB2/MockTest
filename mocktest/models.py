@@ -3,6 +3,7 @@ from itsdangerous import TimedJSONWebSignatureSerializer as Serializer
 from datetime import date,datetime
 from mocktest import db, login_manager, app
 from flask_login import UserMixin
+from sqlalchemy_serializer import SerializerMixin
 
 @login_manager.user_loader
 def load_user(user_id):
@@ -71,8 +72,11 @@ class Python(db.Model, UserMixin):
     def __repr__(self):
         return f"Variable('{self.module}', '{self.question}')"
 
-class Marks(db.Model, UserMixin, Serializer):
+class Marks(db.Model, UserMixin, SerializerMixin):
     __tablename__ = 'MARKS'
+
+    serialize_rules = ('-user_id','-id')
+
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     subject = db.Column(db.String(10), nullable=False)
     module = db.Column(db.String(30), nullable=False)
@@ -81,7 +85,7 @@ class Marks(db.Model, UserMixin, Serializer):
     user_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)
 
     def __repr__(self):
-        return f"Variable('{self.user_id}', '{self.module}')"
+        return f"Variable('{self.id}', '{self.module}')"
 
 # class Python_Marks(db.Model, UserMixin):
 #     __tablename__ = 'PYTHON_MARKS'
