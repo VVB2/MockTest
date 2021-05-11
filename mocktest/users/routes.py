@@ -110,8 +110,8 @@ def reset_token(token):
 @login_required
 def performance():
    
-    temp_java_marks = Marks.query.filter_by(subject='java-question', user_id=current_user.id).limit(10)
-    temp_python_marks = Marks.query.filter_by(subject='python-question', user_id=current_user.id).limit(10)
+    temp_java_marks = Marks.query.filter_by(subject='java-question', user_id=current_user.id).all()
+    temp_python_marks = Marks.query.filter_by(subject='python-question', user_id=current_user.id).all()
 
     java_marks = [java_mark.to_dict(only=('id','subject','module','marks_obtained','attempted_on')) for java_mark in temp_java_marks]
     python_marks = [python_mark.to_dict(only=('id','subject','module','marks_obtained','attempted_on')) for python_mark in temp_python_marks]
