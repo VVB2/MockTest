@@ -46,225 +46,216 @@
 {% block content %}
 <h3 class="mb-3">{{ current_user.username }}'s Overall Performance</h3>
 <div id="checkJavaData"></div>
-<div id="checkPythonData"></div>
+<div id="checkPythonData" class="mt-5"></div>
 {% endblock %}
 
 {% block script %}
 <script>
   //javaMarks Data
+  var javaMarks = [];
   var javaDate = [];
-  var data_types = [];
-  var operators = [];
-  var classes = [];
-  var exception = [];
-  var inheritance = [];
-  var threads = [];
+  var javaModules = [];
+  var javaChart;
 
   //pythonMarks Data
-  var string = [];
-  var list = [];
-  var loop = []
-  var basics = []
-  var set = [];
-  var files = [];
+  var pythonMarks= [];
   var pythonDate = [];
+  var pythonModules = [];
+  var pythonChart;
 
+  //data to json
   var java_data = JSON.parse('{{java_marks|tojson}}');
   var python_data = JSON.parse('{{python_marks|tojson}}');
 
-  if(java_data.length != 0){
-    $('#checkJavaData').append('<h5 class="h5">Java MCQ\'s Result</h5><canvas id="java-graph" class="mb-5" height="90"></canvas>');
-    javaGraph();
+  for (const marks in java_data) {
+    javaModules.push(java_data[marks].module);
+    javaMarks.push(java_data[marks].marks_obtained);
+    javaDate.push(moment(java_data[marks].attempted_on).format('L')); 
+  }
+  for (const marks in python_data) {
+    pythonModules.push(python_data[marks].module);
+    pythonMarks.push(python_data[marks].marks_obtained);
+    pythonDate.push(moment(python_data[marks].attempted_on).format('L')); 
+  }
+  if(java_data.length!=0){
+    $('#checkJavaData').append('<div class="form-row">\
+    <h4 class="h5 col-md-9">Java Marks</h4>\
+    <select class="custom-select col-md-3" id="javaModule" onChange="updateGraph(java_data, \'java\')">\
+      <option selected value="all">All Modules</option>\
+    </select>\
+    </div>\
+    <canvas id="javaChart" width="80" height="22"></canvas>');
+  }
+  if(python_data.length!=0){
+    $('#checkPythonData').append('<div class="form-row">\
+    <h4 class="h5 col-md-9">Python Marks</h4>\
+    <select class="custom-select col-md-3" id="pythonModule" onChange="updateGraph(python_data, \'python\')">\
+      <option selected value="all">All Modules</option>\
+    </select>\
+    </div>\
+    <canvas id="pythonChart" width="80" height="22"></canvas>');
   } 
-  else {
-    $('#checkJavaData').append('<div class="card text-center mb-5">\
-<h5 class="card-header">\
-  Java Test Result\
-</h5>\
-<div class="card-body">\
-  <h5 class="card-title">No Data Found!</h5>\
-  <p class="card-text">Looks like you didn\'t give any Java MCQ test.</p>\
-  <a href='+`${window.origin}/java-practice`+' class="btn btn-primary">Take Java Test</a>\
-</div>\
-</div>');
+  allModules();
+  javaGraph();
+  pythonGraph();
+
+
+  function updateGraph(data, name) {
+    if(name == 'java') {
+      javaMarks = [];
+      javaDate = [];
+      for (const marks in data) {
+        if($('#javaModule').children('option:selected').val() == 'all') {
+          javaMarks.push(data[marks].marks_obtained);
+          javaDate.push(moment(data[marks].attempted_on).format('L'));
+        }
+        else if(data[marks].module == $('#javaModule').children('option:selected').val()) {
+          javaMarks.push(data[marks].marks_obtained);
+          javaDate.push(moment(data[marks].attempted_on).format('L'));
+        }
+      }
+      javaChart.config.data.labels = javaDate;
+      javaChart.config.data.datasets[0].data = javaMarks;
+      javaChart.config.data.datasets[0].label = $('#javaModule').children('option:selected').text()+
+      " (" + javaMarks.length + " Test/s)";
+      javaChart.update();
+    }
+    else {
+      pythonMarks= [];
+      pythonDate = [];
+      for (const marks in data) {
+        if($('#pythonModule').children('option:selected').val() == 'all') {
+          pythonMarks.push(data[marks].marks_obtained);
+          pythonDate.push(moment(data[marks].attempted_on).format('L'));
+        }
+        else if(data[marks].module == $('#pythonModule').children('option:selected').val()) {
+          pythonMarks.push(data[marks].marks_obtained);
+          pythonDate.push(moment(data[marks].attempted_on).format('L'));
+        }
+      }
+      pythonChart.config.data.labels = pythonDate;
+      pythonChart.config.data.datasets[0].data = pythonMarks;
+      pythonChart.config.data.datasets[0].label = $('#pythonModule').children('option:selected').text()+
+      " (" + pythonMarks.length + " Test/s)";
+      pythonChart.update();
+    }
   }
 
-  if(python_data.length != 0){
-    $('#checkPythonData').append('<h5 class="h5">Python MCQ\'s Result</h5><canvas id="python-graph" height="90"></canvas>');
-    pythonGraph();
-  } 
-  else {
-    $('#checkPythonData').append('<div class="card text-center">\
-<h5 class="card-header">\
-  Python Test Result\
-</h5>\
-<div class="card-body">\
-  <h5 class="card-title">No Data Found!</h5>\
-  <p class="card-text">Looks like you didn\'t give any Python MCQ test.</p>\
-  <a href='+`${window.origin}/python-practice`+' class="btn btn-primary">Take Python Test</a>\
-</div>\
-</div>');
+  function allModules() {
+    if(javaModules.includes('Data_Types_Variables_Arrays')) {
+      $('#javaModule').append('<option value="Data_Types_Variables_Arrays">Data Types Variables & Arrays</option>');
+    }
+    if(javaModules.includes('Operators_Control_Statements')) {
+      $('#javaModule').append('<option value="Operators_Control_Statements">Operators & Control Statements</option>');
+    }
+    if(javaModules.includes('Classes_Methods')) {
+      $('#javaModule').append('<option value="Classes_Methods">Classes & Methods</option>');
+    }
+    if(javaModules.includes('Exception')) {
+      $('#javaModule').append('<option value="Exception">Exception</option>');
+    }
+    if(javaModules.includes('Inheritance')) {
+      $('#javaModule').append('<option value="Inheritance">Inheritance</option>');
+    }
+    if(javaModules.includes('Threads')) {
+      $('#javaModule').append('<option value="Threads">Threads</option>');
+    }
+    if(pythonModules.includes('Python_Basics')) {
+      $('#pythonModule').append('<option value="Python_Basics">Python Basics</option>');
+    }
+    if(pythonModules.includes('Strings')) {
+      $('#pythonModule').append('<option value="Strings">Strings</option>');
+    }
+    if(pythonModules.includes('List')) {
+      $('#pythonModule').append('<option value="List">Python List</option>');
+    }
+    if(pythonModules.includes('Loops')) {
+      $('#pythonModule').append('<option value="Loops">Python Loops</option>');
+    }
+    if(pythonModules.includes('Tuples_Sets')) {
+      $('#pythonModule').append('<option value="Tuples_Sets">Tuples & Sets</option>');
+    }
+    if(pythonModules.includes('Regular_Expression_Files')) {
+      $('#pythonModule').append('<option value="Regular_Expression_Files">Regular Expression & Files</option>');
+    }
   }
 
-  //java graph
   function javaGraph() {
-    for (const marks in java_data) {
-    if(java_data[marks].module=='Classes_Methods') {
-      classes.push(java_data[marks].marks_obtained ); 
-    }
-    if(java_data[marks].module=='Data_Types_Variables_Arrays'){
-      data_types.push(java_data[marks].marks_obtained); 
-    }
-    if(java_data[marks].module=='Operators_Control_Statements') {
-      operators.push(java_data[marks].marks_obtained); 
-    }
-    if(java_data[marks].module=='Exception') {
-      exception.push(java_data[marks].marks_obtained); 
-    }
-    if(java_data[marks].module=='Inheritance') {
-      inheritance.push(java_data[marks].marks_obtained); 
-    }
-    if(java_data[marks].module=='Threads') {
-      threads.push(java_data[marks].marks_obtained); 
-    }
-    javaDate.push(moment(java_data[marks].attempted_on).format('L'));
-  } 
-  var java_graph = document.getElementById('java-graph').getContext('2d');
-  var javaData = {
-    labels: javaDate,
-    datasets: [{
-      data: data_types,
-      label: "Data Types, Variables & Arrays",
-      backgroundColor: 'rgba(173, 255, 47, 0.2)',
-      borderColor: 'rgba(173, 255, 47, 1)',
-      borderWidth: 3
-    }
-    , {
-      data: operators,
-      label: "Operators & Control Statements",
-      backgroundColor: 'rgba(255, 99, 132, 0.2)',
-      borderColor: 'rgba(255, 99, 132, 0.2)',
-      borderWidth: 3
-    }, {
-      data: classes,
-      label: "Classes & Methods",
-      backgroundColor: 'rgba(255, 159, 64, 0.2)',
-      borderColor: 'rgba(255, 159, 64, 0.2)',
-      borderWidth: 3
-    }, {
-      data: exception,
-      label: "Exception",
-      backgroundColor: 'rgba(255, 205, 86, 0.2)',
-      borderColor: 'rgba(255, 205, 86, 0.2)',
-      borderWidth: 3
-    }, {
-      data: inheritance,
-      label: "Inheritance",
-      backgroundColor: 'rgba(75, 192, 192, 0.2)',
-      borderColor: 'rgba(75, 192, 192, 0.2)',
-      borderWidth: 3
-    }, {
-      data: threads,
-      label: "Threads",
-      backgroundColor: 'rgba(54, 162, 235, 0.2)',
-      borderColor: 'rgba(54, 162, 235, 0.2)',
-      borderWidth: 3
-    }]
-  };
-  var java = new Chart(java_graph, {
-      type: 'line',
-      data: javaData,
-      options: {
-          scales: {
-              y: {
-                beginAtZero: true,
+    if(java_data.length!=0){
+    var ctx = document.getElementById('javaChart').getContext('2d');
+    javaChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: javaDate,
+        datasets: [{
+            label: 'All Modules'+" (" + javaMarks.length + " Test/s)",
+            data: javaMarks,
+            backgroundColor:'rgba(248, 150, 19, 1)',
+            borderColor:'rgba(248, 150, 19, 1)',
+            borderWidth: 3
+        }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true,
                 max: 40
-              }
-          }
-      }
-  });
-}
+            }
+        }
+    }
+    });
+    }
+    else {
+      $('#checkJavaData').append("<h4 class=\"h5 col-md-9\">Java Marks</h4>\
+      <div class=\"card text-center\">\
+    <div class=\"card-header h5\">\
+      No Record Found!\
+    </div>\
+    <div class=\"card-body\">\
+      <p class=\"card-text\">Please take a test and check back later.</p>\
+      <a href=\"{{ url_for('tests.java') }}\" class=\"btn btn-primary\">Take a test.</a>\
+    </div>\
+    </div>")
+    }
+  }
 
-  //python graph
   function pythonGraph() {
-    for (const marks in python_data) {
-    if(python_data[marks].module=='Python_Basics') {
-      basics.push(python_data[marks].marks_obtained ); 
+    if(python_data.length!=0){
+    var ctx = document.getElementById('pythonChart').getContext('2d');
+    pythonChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: pythonDate,
+        datasets: [{
+            label: 'All Modules'+" (" + pythonMarks.length + " Test/s)",
+            data: pythonMarks,
+            backgroundColor:'rgba(248, 150, 19, 1)',
+            borderColor:'rgba(248, 150, 19, 1)',
+            borderWidth: 3
+        }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true,
+                max: 40
+            }
+        }
     }
-    if(python_data[marks].module=='List'){
-      list.push(python_data[marks].marks_obtained); 
-    }
-    if(python_data[marks].module=='Loops') {
-      loop.push(python_data[marks].marks_obtained); 
-    }
-    if(python_data[marks].module=='Strings') {
-      string.push(python_data[marks].marks_obtained); 
-    }
-    if(python_data[marks].module=='Tuples_Sets') {
-      set.push(python_data[marks].marks_obtained); 
-    }
-    if(python_data[marks].module=='Regular_Expression_Files') {
-      files.push(python_data[marks].marks_obtained); 
-    }
-    pythonDate.push(moment(python_data[marks].attempted_on).format('L'));
-  } 
-  console.log(pythonDate.length);
-  console.log(pythonDate);
-  var python_graph = document.getElementById('python-graph').getContext('2d');
-  var pythonData = {
-    labels: pythonDate,
-    datasets: [{
-      data: basics,
-      label: "Python Basics",
-      backgroundColor: 'rgba(173, 255, 47, 0.2)',
-      borderColor: 'rgba(173, 255, 47, 1)',
-      borderWidth: 3
-    }
-    , {
-      data: string,
-      label: "Strings",
-      backgroundColor: 'rgba(255, 99, 132, 0.2)',
-      borderColor: 'rgba(255, 99, 132, 0.2)',
-      borderWidth: 3
-    }, {
-      data: list,
-      label: "Python List",
-      backgroundColor: 'rgba(255, 159, 64, 0.2)',
-      borderColor: 'rgba(255, 159, 64, 0.2)',
-      borderWidth: 3
-    }, {
-      data: loop,
-      label: "Python Loops",
-      backgroundColor: 'rgba(255, 205, 86, 0.2)',
-      borderColor: 'rgba(255, 205, 86, 0.2)',
-      borderWidth: 3
-    }, {
-      data: set,
-      label: "Tuples & Sets",
-      backgroundColor: 'rgba(75, 192, 192, 0.2)',
-      borderColor: 'rgba(75, 192, 192, 0.2)',
-      borderWidth: 3
-    }, {
-      data: files,
-      label: "Regular Expression & Files",
-      backgroundColor: 'rgba(54, 162, 235, 0.2)',
-      borderColor: 'rgba(54, 162, 235, 0.2)',
-      borderWidth: 3
-    }]
-  };
-  var python = new Chart(python_graph, {
-      type: 'line',
-      data: pythonData,
-      options: {
-          scales: {
-              y: {
-                  beginAtZero: true,
-                  max: 40
-              },
-              
-          }
-      }
-  });
-}
+    });
+  }
+  else {
+    $('#checkPythonData').append("<h4 class=\"h5 col-md-9\">Python Marks</h4>\
+      <div class=\"card text-center\">\
+    <div class=\"card-header h5\">\
+      No Record Found!\
+    </div>\
+    <div class=\"card-body\">\
+      <p class=\"card-text\">Please take a test and check back later.</p>\
+      <a href=\"{{ url_for('tests.python') }}\" class=\"btn btn-primary\">Take a test.</a>\
+    </div>\
+    </div>")
+  }
+  }
   </script>
 {% endblock %}

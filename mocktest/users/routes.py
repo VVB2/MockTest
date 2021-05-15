@@ -5,6 +5,8 @@ from mocktest.models import User, Marks
 from mocktest.users.forms import (RegistrationForm, LoginForm, AccountUpdateForm,
                                    RequestResetForm, ResetPasswordForm)
 from mocktest.users.utils import save_picture,send_reset_email
+# from sqlalchemy import desc
+
 
 users = Blueprint('users', __name__)
 
@@ -110,8 +112,8 @@ def reset_token(token):
 @login_required
 def performance():
    
-    temp_java_marks = Marks.query.filter_by(subject='java-question', user_id=current_user.id).all()
-    temp_python_marks = Marks.query.filter_by(subject='python-question', user_id=current_user.id).all()
+    temp_java_marks = Marks.query.filter_by(subject='java-question', user_id=current_user.id).order_by(Marks.attempted_on.desc()).limit(10)
+    temp_python_marks = Marks.query.filter_by(subject='python-question', user_id=current_user.id).order_by(Marks.attempted_on.desc()).limit(10)
 
     java_marks = [java_mark.to_dict(only=('id','subject','module','marks_obtained','attempted_on')) for java_mark in temp_java_marks]
     python_marks = [python_mark.to_dict(only=('id','subject','module','marks_obtained','attempted_on')) for python_mark in temp_python_marks]
