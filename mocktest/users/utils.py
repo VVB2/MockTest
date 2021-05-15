@@ -67,7 +67,7 @@ def send_reset_email(user):
                 <p>
                     <strong>We're here to help. Click on the button below to reset your password.</strong>              
                 </p>
-                <p><button style="background-color:#1ca9c9;border-radius:5px;padding:10px;text-align:center;display:inline-block;font-size:16px;border:none"><a style="text-decoration:none;color:#fff" href="{url_for('users.reset_token', token=token, _external=True)}">Change my password</a></button></p>     
+                <p style="background-color:white;color:black;border-radius:5px">Copy paste this in your browser <br/>{url_for('users.reset_token', token=token, _external=True)}</p>
                 <p style="margin-top:30px;padding-bottom:20px"><i>If you didn't ask to reset your password, please ignore this email.</i></p>
             </div>
         </div>
