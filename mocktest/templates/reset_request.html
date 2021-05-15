@@ -1,53 +1,50 @@
-{% extends "base.html" %}
-
-
-{% block header %}
+{% extends "base.html" %} {% block header %}
 <header class="site-header">
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top mb-3">
-      <div class="container">
-        <a class="navbar-brand mr-4" href="/">Web Academy</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarToggle">
-          <div class="navbar-nav mr-auto">
-            <a class="nav-item nav-link" href="{{ url_for('main.home') }}">Home</a>
-          </div>
-          <!-- Navbar Right Side -->
-          <div class="navbar-nav">
-            <a class="nav-item nav-link" href="{{ url_for('users.login') }}">Login</a>
-            <a class="nav-item nav-link" href="{{ url_for('users.register') }}">Register</a>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </header>
-{% endblock %}
-
-
-{% block content %}
-    <div class="content-section">
-        <form method="POST" action="">
-            {{ form.hidden_tag() }}
-            <fieldset class="form-group">
-                <legend class="border-bottom mb-4">Reset Password</legend>
-                <div class="form-group">
-                    {{ form.email.label(class="form-control-label") }}
-                    {% if form.email.errors %}
-                        {{ form.email(class="form-control form-control-md is-invalid") }}
-                        <div class="invalid-feedback">
-                            {% for error in form.email.errors %}
-                                <span>{{ error }}</span>
-                            {% endfor %}
-                        </div>
-                    {% else %}
-                        {{ form.email(class="form-control form-control-md") }}
-                    {% endif %}
-                </div>
-            </fieldset>
-            <div class="form-group">
-                {{ form.submit(class="btn btn-outline-info") }}
-            </div>
-        </form>
-    </div>
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top mb-3">
+		<div class="container">
+			<a class="navbar-brand mr-4" href="/">Web Academy</a>
+			<button
+				class="navbar-toggler"
+				type="button"
+				data-toggle="collapse"
+				data-target="#navbarToggle"
+				aria-controls="navbarToggle"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			>
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarToggle">
+				<div class="navbar-nav mr-auto">
+					<a class="nav-item nav-link" href="{{ url_for('main.home') }}">Home</a>
+				</div>
+				<!-- Navbar Right Side -->
+				<div class="navbar-nav">
+					<a class="nav-item nav-link" href="{{ url_for('users.login') }}">Login</a>
+					<a class="nav-item nav-link" href="{{ url_for('users.register') }}">Register</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+</header>
+{% endblock %} {% block content %}
+<div class="content-section">
+	<form method="POST" action="">
+		{{ form.hidden_tag() }}
+		<fieldset class="form-group">
+			<legend class="border-bottom mb-4">Reset Password</legend>
+			<div class="form-group">
+				{{ form.email.label(class="form-control-label") }} {% if form.email.errors %} {{
+				form.email(class="form-control form-control-md is-invalid") }}
+				<div class="invalid-feedback">
+					{% for error in form.email.errors %}
+					<span>{{ error }}</span>
+					{% endfor %}
+				</div>
+				{% else %} {{ form.email(class="form-control form-control-md") }} {% endif %}
+			</div>
+		</fieldset>
+		<div class="form-group">{{ form.submit(class="btn btn-outline-info") }}</div>
+	</form>
+</div>
 {% endblock content %}
