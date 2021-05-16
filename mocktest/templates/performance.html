@@ -108,12 +108,12 @@
 	for (const marks in java_data) {
 		javaModules.push(java_data[marks].module);
 		javaMarks.push(java_data[marks].marks_obtained);
-		javaDate.push(moment(java_data[marks].attempted_on).format('L'));
+		javaDate.push(moment(java_data[marks].attempted_on).format('D/MM/YYYY'));
 	}
 	for (const marks in python_data) {
 		pythonModules.push(python_data[marks].module);
 		pythonMarks.push(python_data[marks].marks_obtained);
-		pythonDate.push(moment(python_data[marks].attempted_on).format('L'));
+		pythonDate.push(moment(python_data[marks].attempted_on).format('D/MM/YYYY'));
 	}
 	if (java_data.length != 0) {
 		$('#checkJavaData').append(
@@ -148,12 +148,12 @@
 			for (const marks in data) {
 				if ($('#javaModule').children('option:selected').val() == 'all') {
 					javaMarks.push(data[marks].marks_obtained);
-					javaDate.push(moment(data[marks].attempted_on).format('L'));
+					javaDate.push(moment(data[marks].attempted_on).format('D/MM/YYYY'));
 				} else if (
 					data[marks].module == $('#javaModule').children('option:selected').val()
 				) {
 					javaMarks.push(data[marks].marks_obtained);
-					javaDate.push(moment(data[marks].attempted_on).format('L'));
+					javaDate.push(moment(data[marks].attempted_on).format('D/MM/YYYY'));
 				}
 			}
 			javaChart.config.data.labels = javaDate;
@@ -170,12 +170,12 @@
 			for (const marks in data) {
 				if ($('#pythonModule').children('option:selected').val() == 'all') {
 					pythonMarks.push(data[marks].marks_obtained);
-					pythonDate.push(moment(data[marks].attempted_on).format('L'));
+					pythonDate.push(moment(data[marks].attempted_on).format('D/MM/YYYY'));
 				} else if (
 					data[marks].module == $('#pythonModule').children('option:selected').val()
 				) {
 					pythonMarks.push(data[marks].marks_obtained);
-					pythonDate.push(moment(data[marks].attempted_on).format('L'));
+					pythonDate.push(moment(data[marks].attempted_on).format('D/MM/YYYY'));
 				}
 			}
 			pythonChart.config.data.labels = pythonDate;
@@ -265,17 +265,17 @@
 				},
 			});
 		} else {
-			$('#checkJavaData').append(
-				'<h4 class="h5 col-md-9">Java Marks</h4>\
-      <div class="card text-center">\
-    <div class="card-header h5">\
+			$("#checkJavaData").append(
+				"<h4 class=\"h5 col-md-9\">Java Marks</h4>\
+      <div class=\"card text-center\">\
+    <div class=\"card-header h5\">\
       No Record Found!\
     </div>\
-    <div class="card-body">\
-      <p class="card-text">Please take a test and check back later.</p>\
-      <a href="{{ url_for(\'tests.java\') }}" class="btn btn-primary">Take a test.</a>\
+    <div class=\"card-body\">\
+      <p class=\"card-text\">Please take a test and check back later.</p>\
+      <a href=\"{{ url_for('tests.java') }}\" class=\"btn btn-primary\">Take a test.</a>\
     </div>\
-    </div>'
+    </div>"
 			);
 		}
 	}
@@ -308,16 +308,16 @@
 			});
 		} else {
 			$('#checkPythonData').append(
-				'<h4 class="h5 col-md-9">Python Marks</h4>\
-      <div class="card text-center">\
-    <div class="card-header h5">\
+				"<h4 class=\"h5 col-md-9\">Python Marks</h4>\
+      <div class=\"card text-center\">\
+    <div class=\"card-header h5\">\
       No Record Found!\
     </div>\
-    <div class="card-body">\
-      <p class="card-text">Please take a test and check back later.</p>\
-      <a href="{{ url_for(\'tests.python\') }}" class="btn btn-primary">Take a test.</a>\
+    <div class=\"card-body\">\
+      <p class=\"card-text\">Please take a test and check back later.</p>\
+      <a href=\"{{ url_for('tests.python') }}\" class=\"btn btn-primary\">Take a test.</a>\
     </div>\
-    </div>'
+    </div>"
 			);
 		}
 	}

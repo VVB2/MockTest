@@ -118,5 +118,8 @@ def performance():
     java_marks = [java_mark.to_dict(only=('id','subject','module','marks_obtained','attempted_on')) for java_mark in temp_java_marks]
     python_marks = [python_mark.to_dict(only=('id','subject','module','marks_obtained','attempted_on')) for python_mark in temp_python_marks]
 
+    java_result = java_marks[::-1]
+    python_result = python_marks[::-1]
+
     return render_template('performance.html', title=current_user.username+"'s Performance", image_file=current_user.image_file,
-     java_marks=java_marks, python_marks=python_marks)
+     java_marks=java_result, python_marks=python_result)
